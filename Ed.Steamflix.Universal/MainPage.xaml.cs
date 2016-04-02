@@ -1,6 +1,5 @@
 ﻿using Windows.Storage;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -25,9 +24,18 @@ namespace Ed.Steamflix.Universal
 
         private void Start_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
         {
+            // http://steamcommunity.com/id/edgarssults
+            // http://steamcommunity.com/profiles/76561198084024217
+
             if (!string.IsNullOrEmpty(ProfileUrl.Text))
             {
-                // Save profile URL
+                // If the profile URL is different, clear the extracted Steam ID
+                if (ProfileUrl.Text != (string)ApplicationData.Current.RoamingSettings.Values["ProfileUrl"])
+                {
+                    ApplicationData.Current.RoamingSettings.Values["SteamId"] = null;
+                }
+
+                // Save new profile URL
                 ApplicationData.Current.RoamingSettings.Values["ProfileUrl"] = ProfileUrl.Text;
 
                 // Navigate to games page

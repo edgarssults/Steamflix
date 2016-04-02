@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Windows.ApplicationModel.Resources;
 
 namespace Ed.Steamflix.Common.Models
 {
@@ -7,8 +8,7 @@ namespace Ed.Steamflix.Common.Models
     /// </summary>
     public class Game
     {
-        // TODO: Settings/resources
-        private readonly string _apiIconUrlFormat = "http://media.steampowered.com/steamcommunity/public/images/apps/{0}/{1}.jpg";
+        private readonly ResourceLoader _settings = new ResourceLoader("Ed.Steamflix.Common/Settings");
 
         /// <summary>
         /// An integer containing the program's ID.
@@ -38,7 +38,7 @@ namespace Ed.Steamflix.Common.Models
         {
             get
             {
-                return string.Format(_apiIconUrlFormat, AppId, IconUrl);
+                return string.Format(_settings.GetString("IconUrlFormat"), AppId, IconUrl);
             }
         }
 
@@ -58,7 +58,7 @@ namespace Ed.Steamflix.Common.Models
         {
             get
             {
-                return string.Format(_apiIconUrlFormat, AppId, LogoUrl);
+                return string.Format(_settings.GetString("IconUrlFormat"), AppId, LogoUrl);
             }
         }
 

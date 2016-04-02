@@ -1,14 +1,13 @@
 ﻿using System;
-using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Windows.ApplicationModel.Resources;
 
 namespace Ed.Steamflix.Common.Repositories
 {
     public class CommunityRepository : ICommunityRepository
     {
-        // TODO: Settings/Resources
-        private readonly string _broadcastUrlFormat = "http://steamcommunity.com/app/{0}/broadcasts/";
+        private readonly ResourceLoader _settings = new ResourceLoader("Ed.Steamflix.Common/Settings");
 
         /// <summary>
         /// Retrieves the broadcasts page HTML for a game asynchronously.
@@ -17,7 +16,7 @@ namespace Ed.Steamflix.Common.Repositories
         /// <returns></returns>
         public async Task<string> GetBroadcastHtmlAsync(int appId)
         {
-            var broadcastUrl = string.Format(_broadcastUrlFormat, appId);
+            var broadcastUrl = string.Format(_settings.GetString("BroadcastUrlFormat"), appId);
 
             using (var client = new HttpClient())
             {

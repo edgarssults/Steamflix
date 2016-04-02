@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ed.Steamflix.Universal", "Ed.Steamflix.Universal\Ed.Steamflix.Universal.csproj", "{668C1652-0534-49C6-A810-C38E2BA6EA0D}"
 EndProject
@@ -36,6 +36,8 @@ Global
 		{668C1652-0534-49C6-A810-C38E2BA6EA0D}.Debug|x86.Build.0 = Debug|x86
 		{668C1652-0534-49C6-A810-C38E2BA6EA0D}.Debug|x86.Deploy.0 = Debug|x86
 		{668C1652-0534-49C6-A810-C38E2BA6EA0D}.Release|Any CPU.ActiveCfg = Release|x86
+		{668C1652-0534-49C6-A810-C38E2BA6EA0D}.Release|Any CPU.Build.0 = Release|x86
+		{668C1652-0534-49C6-A810-C38E2BA6EA0D}.Release|Any CPU.Deploy.0 = Release|x86
 		{668C1652-0534-49C6-A810-C38E2BA6EA0D}.Release|ARM.ActiveCfg = Release|ARM
 		{668C1652-0534-49C6-A810-C38E2BA6EA0D}.Release|ARM.Build.0 = Release|ARM
 		{668C1652-0534-49C6-A810-C38E2BA6EA0D}.Release|ARM.Deploy.0 = Release|ARM
@@ -74,6 +76,8 @@ Global
 		{69DB6A22-9977-44EF-8932-E88541188994}.Debug|x86.Build.0 = Debug|x86
 		{69DB6A22-9977-44EF-8932-E88541188994}.Debug|x86.Deploy.0 = Debug|x86
 		{69DB6A22-9977-44EF-8932-E88541188994}.Release|Any CPU.ActiveCfg = Release|x86
+		{69DB6A22-9977-44EF-8932-E88541188994}.Release|Any CPU.Build.0 = Release|x86
+		{69DB6A22-9977-44EF-8932-E88541188994}.Release|Any CPU.Deploy.0 = Release|x86
 		{69DB6A22-9977-44EF-8932-E88541188994}.Release|ARM.ActiveCfg = Release|ARM
 		{69DB6A22-9977-44EF-8932-E88541188994}.Release|ARM.Build.0 = Release|ARM
 		{69DB6A22-9977-44EF-8932-E88541188994}.Release|ARM.Deploy.0 = Release|ARM
