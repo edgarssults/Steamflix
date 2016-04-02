@@ -1,0 +1,70 @@
+﻿<Page
+    x:Class="Ed.Steamflix.Universal.GamesPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ed.Steamflix.Universal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mocks="using:Ed.Steamflix.Mocks.ViewModels"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <mocks:GamesPageViewModelMock x:Key="GamesPageViewModelMock" d:IsDataSource="True" />
+    </Page.Resources>
+
+    <Grid Background="{StaticResource AppBackgroundColor}">
+        <Hub x:Name="GamesHub"
+            Header="Games"
+            Orientation="Vertical"
+            d:DataContext="{StaticResource GamesPageViewModelMock}">
+            <HubSection Header="Recent"
+                        Visibility="{Binding RecentlyPlayedGames.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}">
+                <DataTemplate>
+                    <ListView
+                        ScrollViewer.HorizontalScrollMode="Enabled"
+                        Tapped="GameGridView_Tapped"
+                        ItemTemplate="{StaticResource GameListItemTemplate}"
+                        ItemsSource="{Binding Path=RecentlyPlayedGames.Result}">
+                        <ListView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <VirtualizingStackPanel Orientation="Horizontal"></VirtualizingStackPanel>
+                            </ItemsPanelTemplate>
+                        </ListView.ItemsPanel>
+                    </ListView>
+                </DataTemplate>
+            </HubSection>
+            <HubSection Header="Recent"
+                        Visibility="{Binding RecentlyPlayedGames.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}">
+                <DataTemplate>
+                    <Border Margin="0,10,0,10" Width="184" Height="69" BorderThickness="1" BorderBrush="Gray">
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Loading...</TextBlock>
+                    </Border>
+                </DataTemplate>
+            </HubSection>
+            <HubSection Header="Owned"
+                        Visibility="{Binding OwnedGames.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}">
+                <DataTemplate>
+                    <ListView
+                        ScrollViewer.HorizontalScrollMode="Enabled"
+                        Tapped="GameGridView_Tapped"
+                        ItemTemplate="{StaticResource GameListItemTemplate}"
+                        ItemsSource="{Binding Path=OwnedGames.Result}">
+                        <ListView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <VirtualizingStackPanel Orientation="Horizontal"></VirtualizingStackPanel>
+                            </ItemsPanelTemplate>
+                        </ListView.ItemsPanel>
+                    </ListView>
+                </DataTemplate>
+            </HubSection>
+            <HubSection Header="Owned"
+                        Visibility="{Binding OwnedGames.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}">
+                <DataTemplate>
+                    <Border Margin="0,10,0,10" Width="184" Height="69" BorderThickness="1" BorderBrush="Gray">
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Loading...</TextBlock>
+                    </Border>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+    </Grid>
+</Page>

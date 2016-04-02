@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="Ed.Steamflix.Universal.BroadcastsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ed.Steamflix.Universal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mocks="using:Ed.Steamflix.Mocks.ViewModels"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <mocks:BroadcastsPageViewModelMock x:Key="BroadcastsPageViewModelMock" d:IsDataSource="True" />
+    </Page.Resources>
+
+    <StackPanel Background="{StaticResource AppBackgroundColor}">
+        <CommandBar FlowDirection="LeftToRight">
+            <AppBarButton Icon="Back" Label="Back" Tapped="AppBarButton_Tapped" />
+        </CommandBar>
+
+        <Hub x:Name="BroadcastsHub"
+             Orientation="Vertical"
+             Header="{Binding Path=Game.Name}"
+             d:DataContext="{StaticResource BroadcastsPageViewModelMock}">
+            <HubSection Header="Broadcasts">
+                <DataTemplate>
+                    <ListView
+                        ScrollViewer.HorizontalScrollMode="Enabled"
+                        Tapped="BroadcastListView_Tapped"
+                        ItemTemplate="{StaticResource BroadcastListItemTemplate}"
+                        ItemsSource="{Binding Path=Broadcasts.Result}">
+                        <ListView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <VirtualizingStackPanel Orientation="Horizontal"></VirtualizingStackPanel>
+                            </ItemsPanelTemplate>
+                        </ListView.ItemsPanel>
+                    </ListView>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+    </StackPanel>
+</Page>

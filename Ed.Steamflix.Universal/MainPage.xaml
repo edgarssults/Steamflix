@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="Ed.Steamflix.Universal.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ed.Steamflix.Universal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource AppBackgroundColor}">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
+            <TextBox x:Name="ProfileUrl" Width="500"></TextBox>
+            <Button Foreground="{StaticResource AppForegroundColor}" Margin="10,0,0,0" Tapped="Start_Tapped" x:Name="Start">Start</Button>
+        </StackPanel>
+    </Grid>
+
+</Page>

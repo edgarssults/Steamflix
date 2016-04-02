@@ -1,0 +1,62 @@
+﻿<Application
+    x:Class="Ed.Steamflix.Universal.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ed.Steamflix.Universal"
+    xmlns:mocks="using:Ed.Steamflix.Mocks.ViewModels"
+    xmlns:converters="using:Ed.Steamflix.Universal.Converters"
+    RequestedTheme="Light">
+
+    <Application.Resources>
+
+        <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+
+        <DataTemplate x:Key="GameListItemTemplate">
+            <Border Margin="0,10,0,10" BorderThickness="1" BorderBrush="Gray">
+                <Image Source="{Binding FormattedLogoUrl}" Width="184" Height="69" />
+            </Border>
+        </DataTemplate>
+        
+        <DataTemplate x:Key="BroadcastListItemTemplate">
+            <Border Margin="0,10,0,10" BorderThickness="1" BorderBrush="Gray">
+                <Image Width="313" Height="176">
+                    <Image.Source>
+                        <Binding Path="ImageUrl" >
+                            <Binding.TargetNullValue>
+                                <ImageSource>/Assets/broadcast_thumbnail.jpg</ImageSource>
+                            </Binding.TargetNullValue>
+                        </Binding>
+                    </Image.Source>
+                </Image>
+            </Border>
+        </DataTemplate>
+        
+        <Color x:Key="LightGrey">#262626</Color>
+        <Color x:Key="White">#CEE2CE</Color>
+        <Color x:Key="LighterGrey">#5F5F5F</Color>
+        
+        <SolidColorBrush x:Key="AppBackgroundColor" Color="{StaticResource LightGrey}" />
+        <SolidColorBrush x:Key="AppForegroundColor" Color="{StaticResource White}" />
+        <SolidColorBrush x:Key="HoverBackgroundColor" Color="{StaticResource LighterGrey}" />
+
+        <Style TargetType="HubSection">
+            <Setter Property="HeaderTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Foreground="{StaticResource AppForegroundColor}"/>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="Hub">
+            <Setter Property="Foreground">
+                <Setter.Value>
+                    <SolidColorBrush Color="{StaticResource White}" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+    </Application.Resources>
+
+</Application>

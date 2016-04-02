@@ -1,0 +1,3079 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BroadcastsHtml292030" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html class=" responsive"&gt;
+&lt;head&gt;
+	&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
+			&lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;
+		&lt;meta name="theme-color" content="#171a21"&gt;
+		&lt;title&gt;Steam Community :: The Witcher 3: Wild Hunt&lt;/title&gt;
+	&lt;link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"&gt;
+
+	&lt;link href="http://steamcommunity-a.akamaihd.net/public/shared/css/motiva_sans.css?v=F3z3QpekjE2f" rel="stylesheet" type="text/css" &gt;
+&lt;link href="http://steamcommunity-a.akamaihd.net/public/shared/css/buttons.css?v=RPKVppE7GyO7" rel="stylesheet" type="text/css" &gt;
+&lt;link href="http://steamcommunity-a.akamaihd.net/public/shared/css/shared_global.css?v=nYGCWUqOhf6M" rel="stylesheet" type="text/css" &gt;
+&lt;link href="http://steamcommunity-a.akamaihd.net/public/css/globalv2.css?v=UsCJ40EQc3_F" rel="stylesheet" type="text/css" &gt;
+&lt;link href="http://steamcommunity-a.akamaihd.net/public/shared/css/apphub.css?v=iLll7NoeT8cs" rel="stylesheet" type="text/css" &gt;
+&lt;link href="http://steamcommunity-a.akamaihd.net/public/css/skin_1/modalContent.css?v=.vXD4gU69vdZP" rel="stylesheet" type="text/css" &gt;
+&lt;link href="http://steamcommunity-a.akamaihd.net/public/css/skin_1/apphub_home.css?v=WnPbh1vVcEYv" rel="stylesheet" type="text/css" &gt;
+&lt;link href="http://steamcommunity-a.akamaihd.net/public/shared/css/motiva_sans.css?v=F3z3QpekjE2f" rel="stylesheet" type="text/css" &gt;
+&lt;link href="http://steamcommunity-a.akamaihd.net/public/css/skin_1/apphub_broadcast.css?v=8C3CLt799-i8" rel="stylesheet" type="text/css" &gt;
+&lt;link href="http://steamcommunity-a.akamaihd.net/public/shared/css/shared_responsive.css?v=vIqQrwCTpih8" rel="stylesheet" type="text/css" &gt;
+&lt;link href="http://steamcommunity-a.akamaihd.net/public/shared/css/apphub_images.css?v=Pvy9-sPJqPGU" rel="stylesheet" type="text/css" &gt;
+&lt;link href="http://steamcommunity-a.akamaihd.net/public/css/skin_1/header.css?v=z3WBKGTLlnCN" rel="stylesheet" type="text/css" &gt;
+&lt;script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/javascript/prototype-1.7.js?v=.55t44gwuwgvw"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/javascript/scriptaculous/_combined.js?v=9XVsa_Ni33oN&amp;amp;l=english&amp;amp;load=effects,controls,slider,dragdrop"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/javascript/global.js?v=eq-0kbl3CRRa&amp;amp;l=english"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/javascript/jquery-1.11.1.min.js?v=.isFTSRckeNhC"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/shared/javascript/tooltip.js?v=.MkQ-ab-cxeF7"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/shared/javascript/shared_global.js?v=GvmJc7bEjR51&amp;amp;l=english"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;$J = jQuery.noConflict();
+if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.write( "&lt;scr" + "ipt type=\"text\/javascript\" src=\"http:\/\/steamcommunity-a.akamaihd.net\/public\/javascript\/json2.js?v=pmScf4470EZP&amp;amp;l=english\"&gt;&lt;\/script&gt;\n" ); };
+&lt;/script&gt;&lt;script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/javascript/modalv2.js?v=dfMhuy-Lrpyo&amp;amp;l=english"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/javascript/modalContent.js?v=8HIdb_WSYKYA&amp;amp;l=english"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/shared/javascript/apphub.js?v=.OjTk23xKexl_"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/shared/javascript/user_reviews.js?v=wElGfRd1klp0&amp;amp;l=english"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/javascript/apphub_home.js?v=MPVDnfizddyH&amp;amp;l=english"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/javascript/user_reviews_community.js?v=BPCSAZJ-8wZc&amp;amp;l=english"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/shared/javascript/shared_responsive_adapter.js?v=WeLSMzFqMp1e&amp;amp;l=english"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33779068-1']);
+  _gaq.push(['_setSampleRate', '0.4']);
+  _gaq.push(['_setCustomVar', 1, 'Logged In', 'true', 2]);
+  _gaq.push(['_setCustomVar', 2, 'Client Type', 'External', 2]);
+  _gaq.push(['_setCustomVar', 3, 'Cntrlr', 'app', 3]);
+  _gaq.push(['_setCustomVar', 4, 'Method', "app\/broadcasts", 3]);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_setSessionCookieTimeout', 900000]);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+&lt;/script&gt;
+
+						&lt;meta name="Description" content="The Witcher 3: Wild Hunt"&gt;
+			
+	
+	
+	
+	&lt;/head&gt;
+&lt;body class="apphub_blue responsive_page"&gt;
+
+&lt;div class="responsive_page_frame with_header"&gt;
+
+						&lt;div class="responsive_page_menu_ctn mainmenu"&gt;
+				&lt;div class="responsive_page_menu"  id="responsive_page_menu"&gt;
+										&lt;div class="mainmenu_contents"&gt;
+						&lt;div class="mainmenu_contents_items"&gt;
+															&lt;!-- profile area --&gt;
+								&lt;div class="responsive_menu_user_area"&gt;
+									&lt;div class="responsive_menu_user_persona persona online"&gt;
+										&lt;div class="playerAvatar online"&gt;
+											&lt;a href="http://steamcommunity.com/id/edgarssults/"&gt;
+												&lt;img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/6d/6dd0bc925d93a031b1493af1cbdb8b9d7550fce9.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/6d/6dd0bc925d93a031b1493af1cbdb8b9d7550fce9.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/6d/6dd0bc925d93a031b1493af1cbdb8b9d7550fce9_medium.jpg 2x"&gt;											&lt;/a&gt;
+										&lt;/div&gt;
+										&lt;a href="http://steamcommunity.com/id/edgarssults/" data-miniprofile="13815649"&gt;Eadgar&lt;/a&gt;									&lt;/div&gt;
+
+																										&lt;/div&gt;
+																&lt;div class="menuitem notifications_item"&gt;
+									Notifications									&lt;div class="notification_count_total_ctn no_notifications"&gt;
+										&lt;span class="notification_envelope"&gt;&lt;/span&gt;
+										&lt;span class="notification_count"&gt;0&lt;/span&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;div class="notification_submenu" style="display: none;" data-submenuid="notifications"&gt;
+									
+							&lt;a data-notification-type="4" class="popup_menu_item notification_ctn header_notification_comments " href="http://steamcommunity.com/id/edgarssults/commentnotifications/"&gt;
+				&lt;span class="notification_icon"&gt;&lt;/span&gt;New comments  &lt;span class="notification_count"&gt;0&lt;/span&gt;			&lt;/a&gt;
+			&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;a data-notification-type="5" class="popup_menu_item notification_ctn header_notification_items " href="http://steamcommunity.com/id/edgarssults/inventory/"&gt;
+				&lt;span class="notification_icon"&gt;&lt;/span&gt;New items  &lt;span class="notification_count"&gt;0&lt;/span&gt;			&lt;/a&gt;
+			&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;a data-notification-type="6" class="popup_menu_item notification_ctn header_notification_invites " href="http://steamcommunity.com/id/edgarssults/home/invites/"&gt;
+				&lt;span class="notification_icon"&gt;&lt;/span&gt;New invites  &lt;span class="notification_count"&gt;0&lt;/span&gt;			&lt;/a&gt;
+			&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;a data-notification-type="8" class="popup_menu_item notification_ctn header_notification_gifts " href="http://steamcommunity.com/id/edgarssults/inventory/#pending_gifts"&gt;
+				&lt;span class="notification_icon"&gt;&lt;/span&gt;New gifts  &lt;span class="notification_count"&gt;0&lt;/span&gt;			&lt;/a&gt;
+			&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;a data-notification-type="9" class="popup_menu_item notification_ctn header_notification_offlinemessages " href="#" onclick="LaunchWebChat(); HideMenu( 'header_notification_link', 'header_notification_dropdown' ); return false;"&gt;
+				&lt;span class="notification_icon"&gt;&lt;/span&gt;New messages  &lt;span class="notification_count"&gt;0&lt;/span&gt;			&lt;/a&gt;
+								&lt;a data-notification-type="1" class="popup_menu_item notification_ctn hide_when_empty header_notification_tradeoffers " href="http://steamcommunity.com/id/edgarssults/tradeoffers/"&gt;
+						&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;span class="notification_icon"&gt;&lt;/span&gt;New trade offers  &lt;span class="notification_count"&gt;0&lt;/span&gt;					&lt;/a&gt;
+								&lt;a data-notification-type="2" class="popup_menu_item notification_ctn hide_when_empty header_notification_asyncgame " href="http://steamcommunity.com/id/edgarssults/gamenotifications"&gt;
+						&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;span class="notification_icon"&gt;&lt;/span&gt;New turns waiting  &lt;span class="notification_count"&gt;0&lt;/span&gt;					&lt;/a&gt;
+								&lt;a data-notification-type="3" class="popup_menu_item notification_ctn hide_when_empty header_notification_moderatormessage " href="http://steamcommunity.com/id/edgarssults/moderatormessages"&gt;
+						&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;span class="notification_icon"&gt;&lt;/span&gt;New moderation messages  &lt;span class="notification_count"&gt;0&lt;/span&gt;					&lt;/a&gt;
+												&lt;/div&gt;
+							
+								&lt;a class="menuitem supernav" href="http://store.steampowered.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_store"&gt;
+		Store	&lt;/a&gt;
+	&lt;div class="submenu_store" style="display: none;" data-submenuid="store"&gt;
+		&lt;a class="submenuitem" href="http://store.steampowered.com/"&gt;Featured&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://store.steampowered.com/explore/"&gt;Explore&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://store.steampowered.com/curators/"&gt;Curators&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/my/wishlist/"&gt;Wishlist&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://store.steampowered.com/news/"&gt;News&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://store.steampowered.com/stats/"&gt;Stats&lt;/a&gt;
+	&lt;/div&gt;
+
+
+	&lt;a class="menuitem supernav" style="display: block" href="http://steamcommunity.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_community"&gt;
+		Community	&lt;/a&gt;
+	&lt;div class="submenu_community" style="display: none;" data-submenuid="community"&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/"&gt;Home&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/discussions/"&gt;Discussions&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/workshop/"&gt;Workshop&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/greenlight/"&gt;Greenlight&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/market/"&gt;Market&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/?subsection=broadcasts"&gt;Broadcasts&lt;/a&gt;
+					&lt;/div&gt;
+
+	
+
+			&lt;a class="menuitem supernav username" href="http://steamcommunity.com/id/edgarssults/home/" data-tooltip-type="selector" data-tooltip-content=".submenu_username"&gt;
+			You &amp;amp; Friends		&lt;/a&gt;
+		&lt;div class="submenu_username" style="display: none;" data-submenuid="username"&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/home/"&gt;Activity&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/"&gt;Profile&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/friends/"&gt;Friends&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/groups/"&gt;Groups&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/screenshots/"&gt;Content&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/badges/"&gt;Badges&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/inventory/"&gt;Inventory&lt;/a&gt;
+		&lt;/div&gt;
+	
+	
+	&lt;a class="menuitem" href="https://help.steampowered.com/"&gt;
+		Support	&lt;/a&gt;
+
+							&lt;div class="minor_menu_items"&gt;
+																	&lt;a class="menuitem" href="https://store.steampowered.com/account/"&gt;Account details&lt;/a&gt;
+																&lt;div class="menuitem change_language_action"&gt;
+									Change language								&lt;/div&gt;
+																	&lt;div class="menuitem" onclick="Logout();"&gt;Change User&lt;/div&gt;
+																									&lt;div class="menuitem" onclick="Responsive_RequestDesktopView();"&gt;
+										View desktop website									&lt;/div&gt;
+															&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class="mainmenu_footer_spacer"&gt;&lt;/div&gt;
+						&lt;div class="mainmenu_footer"&gt;
+							&lt;div class="mainmenu_footer_logo"&gt;&lt;img src="http://steamcommunity-a.akamaihd.net/public/shared/images/responsive/logo_valve_footer.png"&gt;&lt;/div&gt;
+							© Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.							&lt;span class="mainmenu_valve_links"&gt;
+								&lt;a href="http://store.steampowered.com/privacy_agreement/" target="_blank"&gt;Privacy Policy&lt;/a&gt;
+								&amp;nbsp;| &amp;nbsp;&lt;a href="http://www.valvesoftware.com/legal.htm" target="_blank"&gt;Legal&lt;/a&gt;
+								&amp;nbsp;| &amp;nbsp;&lt;a href="http://store.steampowered.com/subscriber_agreement/" target="_blank"&gt;Steam Subscriber Agreement&lt;/a&gt;
+								&amp;nbsp;| &amp;nbsp;&lt;a href="http://store.steampowered.com/steam_refunds/" target="_blank"&gt;Refunds&lt;/a&gt;
+							&lt;/span&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+									&lt;/div&gt;
+			&lt;/div&gt;
+		
+		&lt;div class="responsive_local_menu_tab" style="display: none;"&gt;
+
+		&lt;/div&gt;
+
+		&lt;div class="responsive_page_menu_ctn localmenu"&gt;
+			&lt;div class="responsive_page_menu"  id="responsive_page_local_menu"&gt;
+				&lt;div class="localmenu_content"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+
+
+					&lt;div class="responsive_header"&gt;
+				&lt;div class="responsive_header_content"&gt;
+					&lt;div id="responsive_menu_logo"&gt;
+						&lt;img src="http://steamcommunity-a.akamaihd.net/public/shared/images/responsive/header_menu_hamburger.png" height="100%"&gt;
+													&lt;div class="responsive_header_notification_badge_ctn"&gt;
+								&lt;div class="responsive_header_notification_badge notification_count_total_ctn no_notifications"&gt;
+									&lt;span class="notification_count"&gt;0&lt;/span&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+											&lt;/div&gt;
+					&lt;div class="responsive_header_logo"&gt;
+						&lt;img src="http://steamcommunity-a.akamaihd.net/public/shared/images/responsive/header_logo.png" height="36" border="0" alt="STEAM"&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		
+		&lt;div class="responsive_page_content_overlay"&gt;
+
+		&lt;/div&gt;
+
+		&lt;div class="responsive_fixonscroll_ctn nonresponsive_hidden "&gt;
+		&lt;/div&gt;
+	
+	&lt;div class="responsive_page_content"&gt;
+
+		&lt;div id="global_header"&gt;
+	&lt;div class="content"&gt;
+
+		&lt;div class="logo"&gt;
+			&lt;span id="logo_holder"&gt;
+				&lt;a href="http://store.steampowered.com/"&gt;
+					&lt;img src="http://steamcommunity-a.akamaihd.net/public/shared/images/header/globalheader_logo.png" width="176" height="44"&gt;
+				&lt;/a&gt;
+			&lt;/span&gt;
+			&lt;!--[if lt IE 7]&gt;
+			&lt;style type="text/css"&gt;
+				#logo_holder img { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
+				#logo_holder { display: inline-block; width: 176px; height: 44px; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://steamcommunity-a.akamaihd.net/public/images/v5/globalheader_logo.png'); }
+			&lt;/style&gt;
+			&lt;![endif]--&gt;
+		&lt;/div&gt;
+
+			&lt;div class="supernav_container"&gt;
+	&lt;a class="menuitem supernav" href="http://store.steampowered.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_store"&gt;
+		STORE	&lt;/a&gt;
+	&lt;div class="submenu_store" style="display: none;" data-submenuid="store"&gt;
+		&lt;a class="submenuitem" href="http://store.steampowered.com/"&gt;Featured&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://store.steampowered.com/explore/"&gt;Explore&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://store.steampowered.com/curators/"&gt;Curators&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/my/wishlist/"&gt;Wishlist&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://store.steampowered.com/news/"&gt;News&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://store.steampowered.com/stats/"&gt;Stats&lt;/a&gt;
+	&lt;/div&gt;
+
+
+	&lt;a class="menuitem supernav" style="display: block" href="http://steamcommunity.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_community"&gt;
+		COMMUNITY	&lt;/a&gt;
+	&lt;div class="submenu_community" style="display: none;" data-submenuid="community"&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/"&gt;Home&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/discussions/"&gt;Discussions&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/workshop/"&gt;Workshop&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/greenlight/"&gt;Greenlight&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/market/"&gt;Market&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/?subsection=broadcasts"&gt;Broadcasts&lt;/a&gt;
+					&lt;/div&gt;
+
+	
+
+			&lt;a class="menuitem supernav username" href="http://steamcommunity.com/id/edgarssults/home/" data-tooltip-type="selector" data-tooltip-content=".submenu_username"&gt;
+			Eadgar		&lt;/a&gt;
+		&lt;div class="submenu_username" style="display: none;" data-submenuid="username"&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/home/"&gt;Activity&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/"&gt;Profile&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/friends/"&gt;Friends&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/groups/"&gt;Groups&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/screenshots/"&gt;Content&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/badges/"&gt;Badges&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/inventory/"&gt;Inventory&lt;/a&gt;
+		&lt;/div&gt;
+	
+			&lt;a class="menuitem" href="http://store.steampowered.com/about/"&gt;
+			ABOUT		&lt;/a&gt;
+	
+	&lt;a class="menuitem" href="https://help.steampowered.com/"&gt;
+		SUPPORT	&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;script type="text/javascript"&gt;
+		jQuery(function($) {
+			$('.tooltip').v_tooltip();
+			$('#global_header .supernav').v_tooltip({'location':'bottom', 'tooltipClass': 'supernav_content', 'offsetY':-4, 'offsetX': 1, 'horizontalSnap': 4, 'tooltipParent': '#global_header .supernav_container', 'correctForScreenSize': false});
+		});
+	&lt;/script&gt;
+
+		&lt;div id="global_actions"&gt;
+			&lt;div id="global_action_menu"&gt;
+				&lt;div class="header_installsteam_btn header_installsteam_btn_gray"&gt;
+					&lt;div class="header_installsteam_btn_leftcap"&gt;&lt;/div&gt;
+					&lt;div class="header_installsteam_btn_rightcap"&gt;&lt;/div&gt;
+					&lt;a class="header_installsteam_btn_content" href="http://store.steampowered.com/about/"&gt;
+						Install Steam					&lt;/a&gt;
+				&lt;/div&gt;
+
+				
+									&lt;!-- notification inbox area --&gt;
+																				&lt;div id="header_notification_area"&gt;
+								&lt;script type="text/javascript"&gt;$J(EnableNotificationCountPolling);&lt;/script&gt;
+		&lt;div id="header_notification_link" class="header_notification_btn global_header_toggle_button notification_count_total_ctn no_notifications" onclick="ShowMenu( this, 'header_notification_dropdown', 'right' );"&gt;
+			&lt;span class="notification_count"&gt;0&lt;/span&gt;
+			&lt;span class="header_notification_envelope"&gt;
+				&lt;img src="http://steamcommunity-a.akamaihd.net/public/shared/images/responsive/header_menu_notifications.png" width="11" height="8"&gt;
+			&lt;/span&gt;
+		&lt;/div&gt;
+	
+			&lt;div class="popup_block_new" id="header_notification_dropdown" style="display: none;"&gt;
+			&lt;div class="popup_body popup_menu"&gt;
+							&lt;a data-notification-type="4" class="popup_menu_item notification_ctn header_notification_comments " href="http://steamcommunity.com/id/edgarssults/commentnotifications/"&gt;
+				&lt;span class="notification_icon"&gt;&lt;/span&gt;&lt;span class="notification_count_string singular" style="display: none;"&gt;1 new comment&lt;/span&gt;&lt;span class="notification_count_string plural" style=""&gt; &lt;span class="notification_count"&gt;0&lt;/span&gt; new comments&lt;/span&gt;			&lt;/a&gt;
+			&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;a data-notification-type="5" class="popup_menu_item notification_ctn header_notification_items " href="http://steamcommunity.com/id/edgarssults/inventory/"&gt;
+				&lt;span class="notification_icon"&gt;&lt;/span&gt;&lt;span class="notification_count_string singular" style="display: none;"&gt;1 new item in your inventory&lt;/span&gt;&lt;span class="notification_count_string plural" style=""&gt; &lt;span class="notification_count"&gt;0&lt;/span&gt; new items in your inventory&lt;/span&gt;			&lt;/a&gt;
+			&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;a data-notification-type="6" class="popup_menu_item notification_ctn header_notification_invites " href="http://steamcommunity.com/id/edgarssults/home/invites/"&gt;
+				&lt;span class="notification_icon"&gt;&lt;/span&gt;&lt;span class="notification_count_string singular" style="display: none;"&gt;1 new invite&lt;/span&gt;&lt;span class="notification_count_string plural" style=""&gt; &lt;span class="notification_count"&gt;0&lt;/span&gt; new invites&lt;/span&gt;			&lt;/a&gt;
+			&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;a data-notification-type="8" class="popup_menu_item notification_ctn header_notification_gifts " href="http://steamcommunity.com/id/edgarssults/inventory/#pending_gifts"&gt;
+				&lt;span class="notification_icon"&gt;&lt;/span&gt;&lt;span class="notification_count_string singular" style="display: none;"&gt;1 new gift&lt;/span&gt;&lt;span class="notification_count_string plural" style=""&gt; &lt;span class="notification_count"&gt;0&lt;/span&gt; new gifts&lt;/span&gt;			&lt;/a&gt;
+			&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;a data-notification-type="9" class="popup_menu_item notification_ctn header_notification_offlinemessages " href="#" onclick="LaunchWebChat(); HideMenu( 'header_notification_link', 'header_notification_dropdown' ); return false;"&gt;
+				&lt;span class="notification_icon"&gt;&lt;/span&gt;&lt;span class="notification_count_string singular" style="display: none;"&gt;1 unread chat message&lt;/span&gt;&lt;span class="notification_count_string plural" style=""&gt; &lt;span class="notification_count"&gt;0&lt;/span&gt; unread chat messages&lt;/span&gt;			&lt;/a&gt;
+								&lt;a data-notification-type="1" class="popup_menu_item notification_ctn hide_when_empty header_notification_tradeoffers " href="http://steamcommunity.com/id/edgarssults/tradeoffers/"&gt;
+						&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;span class="notification_icon"&gt;&lt;/span&gt;&lt;span class="notification_count_string singular" style="display: none;"&gt;1 new trade notification&lt;/span&gt;&lt;span class="notification_count_string plural" style=""&gt; &lt;span class="notification_count"&gt;0&lt;/span&gt; new trade notifications&lt;/span&gt;					&lt;/a&gt;
+								&lt;a data-notification-type="2" class="popup_menu_item notification_ctn hide_when_empty header_notification_asyncgame " href="http://steamcommunity.com/id/edgarssults/gamenotifications"&gt;
+						&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;span class="notification_icon"&gt;&lt;/span&gt;&lt;span class="notification_count_string singular" style="display: none;"&gt;1 turn waiting&lt;/span&gt;&lt;span class="notification_count_string plural" style=""&gt; &lt;span class="notification_count"&gt;0&lt;/span&gt; new turns waiting&lt;/span&gt;					&lt;/a&gt;
+								&lt;a data-notification-type="3" class="popup_menu_item notification_ctn hide_when_empty header_notification_moderatormessage " href="http://steamcommunity.com/id/edgarssults/moderatormessages"&gt;
+						&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;span class="notification_icon"&gt;&lt;/span&gt;&lt;span class="notification_count_string singular" style="display: none;"&gt;1 community moderation message&lt;/span&gt;&lt;span class="notification_count_string plural" style=""&gt; &lt;span class="notification_count"&gt;0&lt;/span&gt; community moderation messages&lt;/span&gt;					&lt;/a&gt;
+							&lt;/div&gt;
+		&lt;/div&gt;
+						&lt;/div&gt;
+
+					&lt;span class="pulldown global_action_link" id="account_pulldown" onclick="ShowMenu( this, 'account_dropdown', 'right', 'bottom', true );"&gt;crush_lv&lt;/span&gt;
+					&lt;div class="popup_block_new" id="account_dropdown" style="display: none;"&gt;
+						&lt;div class="popup_body popup_menu"&gt;
+															&lt;a class="popup_menu_item" href="javascript:Logout();"&gt;Logout&lt;/a&gt;
+														&lt;a class="popup_menu_item" href="https://store.steampowered.com/account/"&gt;Account details&lt;/a&gt;
+							&lt;span class="popup_menu_item" id="account_language_pulldown"&gt;Change language&lt;/span&gt;
+							&lt;div class="popup_block_new" id="language_dropdown" style="display: none;"&gt;
+								&lt;div class="popup_body popup_menu"&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=bulgarian" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'bulgarian' ); return false;"&gt;Български (Bulgarian)&lt;/a&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=czech" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'czech' ); return false;"&gt;čeština (Czech)&lt;/a&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=danish" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'danish' ); return false;"&gt;Dansk (Danish)&lt;/a&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=dutch" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'dutch' ); return false;"&gt;Nederlands (Dutch)&lt;/a&gt;
+																																							&lt;a class="popup_menu_item tight" href="?l=finnish" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'finnish' ); return false;"&gt;Suomi (Finnish)&lt;/a&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=french" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'french' ); return false;"&gt;Français (French)&lt;/a&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=german" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'german' ); return false;"&gt;Deutsch (German)&lt;/a&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=greek" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'greek' ); return false;"&gt;Ελληνικά (Greek)&lt;/a&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=hungarian" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'hungarian' ); return false;"&gt;Magyar (Hungarian)&lt;/a&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=italian" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'italian' ); return false;"&gt;Italiano (Italian)&lt;/a&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=japanese" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'japanese' ); return false;"&gt;日本語 (Japanese)&lt;/a&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=koreana" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'koreana' ); return false;"&gt;한국어 (Korean)&lt;/a&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=norwegian" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'norwegian' ); return false;"&gt;Norsk (Norwegian)&lt;/a&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=polish" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'polish' ); return false;"&gt;Polski (Polish)&lt;/a&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=portuguese" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'portuguese' ); return false;"&gt;Português (Portuguese)&lt;/a&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=brazilian" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'brazilian' ); return false;"&gt;Português-Brasil (Portuguese-Brazil)&lt;/a&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=romanian" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'romanian' ); return false;"&gt;Română (Romanian)&lt;/a&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=russian" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'russian' ); return false;"&gt;Русский (Russian)&lt;/a&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=schinese" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'schinese' ); return false;"&gt;简体中文 (Simplified Chinese)&lt;/a&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=spanish" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'spanish' ); return false;"&gt;Español (Spanish)&lt;/a&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=swedish" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'swedish' ); return false;"&gt;Svenska (Swedish)&lt;/a&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=tchinese" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'tchinese' ); return false;"&gt;繁體中文 (Traditional Chinese)&lt;/a&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=thai" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'thai' ); return false;"&gt;ไทย (Thai)&lt;/a&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=turkish" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'turkish' ); return false;"&gt;Türkçe (Turkish)&lt;/a&gt;
+																													&lt;a class="popup_menu_item tight" href="?l=ukrainian" onclick="HideMenu('account_pulldown', 'account_dropdown' ); ChangeLanguage( 'ukrainian' ); return false;"&gt;Українська (Ukrainian)&lt;/a&gt;
+																		&lt;a class="popup_menu_item tight" href="http://translation.steampowered.com" target="_blank"&gt;Help us translate Steam&lt;/a&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;a class="popup_menu_item" href="http://steamcommunity.com/id/edgarssults/"&gt;View profile&lt;/a&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;script type="text/javascript"&gt;
+						RegisterFlyout( 'account_language_pulldown', 'language_dropdown', 'leftsubmenu', 'bottomsubmenu', true );
+					&lt;/script&gt;
+												&lt;/div&gt;
+							&lt;a href="http://steamcommunity.com/id/edgarssults/" class="user_avatar playerAvatar online"&gt;
+					&lt;img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/6d/6dd0bc925d93a031b1493af1cbdb8b9d7550fce9.jpg"&gt;
+				&lt;/a&gt;
+					&lt;/div&gt;
+			&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+	g_sessionID = "f52b1ed0882c5a3fe99c01a6";
+	g_steamID = "76561197974081377";
+
+	// We always want to have the timezone cookie set for PHP to use
+	setTimezoneCookies();
+
+	$J( function() {
+
+		InitMiniprofileHovers();
+		InitEmoticonHovers();
+		window.BindCommunityTooltip = function( $Selector ) { $Selector.v_tooltip( {'tooltipClass': 'community_tooltip', 'dataName': 'communityTooltip' } ); };
+		BindCommunityTooltip( $J('[data-community-tooltip]') );
+	});
+
+	$J( function() { InitEconomyHovers( "http:\/\/steamcommunity-a.akamaihd.net\/public\/css\/skin_1\/economy.css?v=XUzwP945xwqm", "http:\/\/steamcommunity-a.akamaihd.net\/public\/javascript\/economy_common.js?v=tsXdRVB0yEaR&amp;l=english", "http:\/\/steamcommunity-a.akamaihd.net\/public\/javascript\/economy.js?v=DcJeX_ygfIom&amp;l=english" );});&lt;/script&gt;
+		&lt;div class="responsive_page_template_content"&gt;
+
+			&lt;script type="text/javascript"&gt;
+	hasAdminPrivileges = 0;
+	currentPage = 0;
+	$J( function() {
+		DisplayWaitingForContent();
+		AddContentToPage( $J('#apphub_InitialContent').children() );
+		ScrollToLast();
+		$J(window).on('scroll', InfiniteScrollingCheckForMoreContent );
+	} );
+&lt;/script&gt;
+
+&lt;div id="ModalContentContainer"&gt;
+
+
+&lt;div class="apphub_background" style="background-image: url('http://cdn.akamai.steamstatic.com/steam/apps/292030/page_bg_generated_v6b.jpg?t=1453132917');"&gt;
+
+&lt;!-- main content --&gt;
+&lt;div class="apphub_HomeHeader"&gt;
+
+&lt;script type="text/javascript"&gt;
+	$J( function() {
+		var strCookie = 'age_gate_292030';
+		if ( !WebStorage.GetLocal( strCookie, true ) )
+		{
+			var bResponsivePage = $J('html.responsive' ).length;
+
+
+			var $Content = $J('&lt;div/&gt;');
+			$Content.append( $Header );
+			$Content.append( "&lt;div class=\"adult_content_age_gate\"&gt;\r\n\t\t\t&lt;img class=\"adult_content_age_gate_header\" src=\"http:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/292030\/header.jpg?t=1453132917\"&gt;\r\n\t\t&lt;p&gt;Community content for this product may not be appropriate for all ages, or may not be appropriate for viewing at work.&lt;\/p&gt;\r\n\t&lt;div class=\"adult_content_age_gate_buttons\"&gt;\r\n\t\t&lt;div class=\"btn_grey_white_innerfade btn_medium\" id=\"age_gate_btn_cancel\"&gt;\r\n\t\t\t&lt;span&gt;Cancel&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t&amp;nbsp;\r\n\t\t&lt;div class=\"btn_grey_white_innerfade btn_medium\" id=\"age_gate_btn_continue\"&gt;\r\n\t\t\t&lt;span&gt;Continue&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t&lt;\/div&gt;\r\n&lt;\/div&gt;\r\n" );
+
+			var fnCleanup = null;
+
+			if ( bResponsivePage )
+			{
+				var $TemplateContent = $J('.responsive_page_template_content' ).hide();
+				var $Footers = $J('#footer_spacer, #footer' ).hide();
+				$TemplateContent.parent().append( $Content );
+				fnCleanup = function() {
+					$TemplateContent.show();
+					$Footers.show();
+				};
+			}
+			else
+			{
+				var $Header = $J('#global_header');
+				$Header.wrap('&lt;center/&gt;');
+				var $HeaderWrapper = $Header.parent();
+				$Header.detach();
+
+				var $VisiblePageElements = $J('body &gt; :visible')
+				$VisiblePageElements.hide();
+
+				$J(document.body).append( $Content );
+
+				fnCleanup = function() {
+					$HeaderWrapper.append( $Header );
+					$VisiblePageElements.show();
+				};
+			}
+
+			$Content.find('#age_gate_btn_cancel').click( function() {
+				window.history.back();
+
+								window.setTimeout( function() {
+					window.location = 'http://steamcommunity.com';
+				}, 1000 );
+			});
+			$Content.find('#age_gate_btn_continue').click( function() {
+				$Content.remove();
+				fnCleanup();
+				WebStorage.SetLocal( strCookie, true, true );
+
+				// the apphub layout may be broken if it was hidden while this dialog was shown
+				// (or if the user resized while this dialog was up) - just trigger a recalc
+				$J(window ).trigger('resize');
+			});
+		}
+	});
+&lt;/script&gt;&lt;div class="apphub_HomeHeaderContent"&gt;
+
+
+	
+	&lt;div class="apphub_HeaderTop"&gt;
+		&lt;div class="apphub_OtherSiteInfo responsive_hidden"&gt;
+										&lt;a style="position: relative; z-index: 1;" class="btnv6_blue_hoverfade btn_medium" href="http://store.steampowered.com/app/292030" onclick="if ( typeof _gaq != 'undefined' &amp;&amp; _gaq ) { _gaq.push(['app._link', 'http://store.steampowered.com/app/292030']);  }"&gt;
+					&lt;span&gt;Store Page&lt;/span&gt;
+				&lt;/a&gt;
+					&lt;/div&gt;
+		&lt;div class="apphub_AppIcon"&gt;&lt;img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/292030/87118494c65a92e1ac4c9734ce91950c1d6fe9a5.jpg"&gt;&lt;div class="overlay"&gt;&lt;/div&gt;&lt;/div&gt;
+		&lt;div class="apphub_AppName ellipsis"&gt;The Witcher 3: Wild Hunt&lt;/div&gt;
+		&lt;div style="clear: both"&gt;&lt;/div&gt;
+				&lt;div class="apphub_sectionTabs responsive_hidden"&gt;
+				
+	&lt;a href="http://steamcommunity.com/app/292030" class="apphub_sectionTab  "&gt;&lt;span&gt;All&lt;/span&gt;&lt;/a&gt;
+		
+	&lt;a href="http://steamcommunity.com/app/292030/discussions/" class="apphub_sectionTab  "&gt;&lt;span&gt;Discussions&lt;/span&gt;&lt;/a&gt;
+		
+	&lt;a href="http://steamcommunity.com/app/292030/screenshots/" class="apphub_sectionTab  "&gt;&lt;span&gt;Screenshots&lt;/span&gt;&lt;/a&gt;
+		
+	&lt;a href="http://steamcommunity.com/app/292030/images/" class="apphub_sectionTab  "&gt;&lt;span&gt;Artwork&lt;/span&gt;&lt;/a&gt;
+		
+	&lt;a href="http://steamcommunity.com/app/292030/broadcasts/" class="apphub_sectionTab active "&gt;&lt;span&gt;Broadcasts&lt;/span&gt;&lt;/a&gt;
+		
+	&lt;a href="http://steamcommunity.com/app/292030/videos/" class="apphub_sectionTab  "&gt;&lt;span&gt;Videos&lt;/span&gt;&lt;/a&gt;
+		
+	&lt;a href="http://steamcommunity.com/app/292030/allnews/" class="apphub_sectionTab  "&gt;&lt;span&gt;News&lt;/span&gt;&lt;/a&gt;
+		
+	&lt;a href="http://steamcommunity.com/app/292030/guides/" class="apphub_sectionTab  "&gt;&lt;span&gt;Guides&lt;/span&gt;&lt;/a&gt;
+		
+	&lt;a href="http://steamcommunity.com/app/292030/reviews/" class="apphub_sectionTab  "&gt;&lt;span&gt;Reviews&lt;/span&gt;&lt;/a&gt;
+				&lt;div style="clear: left"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div class="nonresponsive_hidden responsive_tab_ctn sharedfiles_responsive_tab"&gt;
+			&lt;div class="responsive_tab_control"&gt;
+				&lt;div class="responsive_tab_control_inner"&gt;
+										&lt;select class="responsive_tab_select" id="responsive_tab_select56d74c4d642ab"&gt;
+													&lt;option value="http://steamcommunity.com/app/292030" &gt;
+								All							&lt;/option&gt;
+													&lt;option value="http://steamcommunity.com/app/292030/discussions/" &gt;
+								Discussions							&lt;/option&gt;
+													&lt;option value="http://steamcommunity.com/app/292030/screenshots/" &gt;
+								Screenshots							&lt;/option&gt;
+													&lt;option value="http://steamcommunity.com/app/292030/images/" &gt;
+								Artwork							&lt;/option&gt;
+													&lt;option value="http://steamcommunity.com/app/292030/broadcasts/" selected&gt;
+								Broadcasts							&lt;/option&gt;
+													&lt;option value="http://steamcommunity.com/app/292030/videos/" &gt;
+								Videos							&lt;/option&gt;
+													&lt;option value="http://steamcommunity.com/app/292030/allnews/" &gt;
+								News							&lt;/option&gt;
+													&lt;option value="http://steamcommunity.com/app/292030/guides/" &gt;
+								Guides							&lt;/option&gt;
+													&lt;option value="http://steamcommunity.com/app/292030/reviews/" &gt;
+								Reviews							&lt;/option&gt;
+											&lt;/select&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="responsive_tab_baseline nonresponsive_hidden"&gt;&lt;/div&gt;
+	&lt;div class="apphub_sectionTabsHR responsive_hidden"&gt;&lt;/div&gt;
+
+
+	&lt;!-- these elements are used to populate the local menu on responsive pages --&gt;
+	&lt;div style="display: none;"&gt;
+		&lt;div class="responsive_local_menu apphub_responsive_menu"&gt;
+			&lt;h3 class="ellipsis apphub_responsive_menu_title"&gt;The Witcher 3: Wild Hunt&lt;/h3&gt;
+			&lt;div class="apphub_ResponsiveMenuCtn"&gt;
+									&lt;a style="position: relative; z-index: 1;" class="btnv6_blue_hoverfade btn_medium" href="http://store.steampowered.com/app/292030" onclick="if ( typeof _gaq != 'undefined' &amp;&amp; _gaq ) { _gaq.push(['app._link', 'http://store.steampowered.com/app/292030']);  }"&gt;
+						&lt;span&gt;Store Page&lt;/span&gt;
+					&lt;/a&gt;
+											&lt;/div&gt;
+										&lt;div class="localmenu_subarea"&gt;
+					&lt;div class="subheader"&gt;
+						View Stats:
+					&lt;/div&gt;
+											&lt;div class="apphub_ResponsiveMenuItem" &gt;
+							&lt;a href="http://steamcommunity.com/id/edgarssults/stats/292030/?tab=achievements"&gt;Eadgar's Achievements&lt;/a&gt;
+						&lt;/div&gt;
+											&lt;div class="apphub_ResponsiveMenuItem" &gt;
+							&lt;a href="http://steamcommunity.com/stats/292030/achievements/"&gt;Global Achievements&lt;/a&gt;
+						&lt;/div&gt;
+									&lt;/div&gt;
+					&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- end responsive menu --&gt;
+
+	
+&lt;/div&gt;
+
+	&lt;div class="apphub_HeaderBottomBG_ctn"&gt;
+		&lt;div class="apphub_HeaderBottomBG"&gt;&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div style="clear: both"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="apphub_InitialContent" style="display: none;"&gt;
+			&lt;div id="page1"&gt;
+		&lt;div class="Broadcast_Card apphub_Card interactable" style="display: none"&gt;
+	&lt;a href="http://steamcommunity.com/broadcast/watch/76561197993685873"&gt;
+		&lt;div class="apphub_CardContentClickable"&gt;
+			&lt;div class="apphub_CardContentTypeContainer"&gt;
+				&lt;div class="apphub_CardContentType"&gt;Broadcast&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="apphub_CardContentPreviewImageBorder"&gt;
+				&lt;div class="apphub_CardContentMain"&gt;
+					&lt;img class="apphub_CardContentPlayVideoIcon" src="http://steamcommunity-a.akamaihd.net/public/shared/images/apphubs/play_icon80.png"&gt;
+					&lt;img class="apphub_CardContentPreviewImage" src="http://br01.broadcast.sto.steamstatic.com:80/broadcast/8147562909560149710/thumbnail/" width="313" height="176" onload="$J( this ).show();"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="apphub_CardMetaData"&gt;
+						&lt;div class="apphub_CardContentViewers ellipsis"&gt;1 viewer&amp;nbsp;&lt;/div&gt;
+							&lt;div class="apphub_CardContentTitle ellipsis"&gt;The Witcher 3: Wild Hunt&lt;/div&gt;
+					&lt;/div&gt;
+		&lt;div class="apphub_CardContentAuthorBlock tall"&gt;
+			&lt;div class="apphub_friend_block_container"&gt;
+				&lt;a href="http://steamcommunity.com/id/go0ed/"&gt;
+					&lt;div class="apphub_friend_block" data-miniprofile="33420145"&gt;
+						&lt;div class="appHubIconHolder in-game"&gt;&lt;img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/19/19ec135cd905e55a473b66963a6e07d6344d6756.jpg"&gt;&lt;/div&gt;
+						&lt;div class="appHubIconHolder greyOverlay"&gt;&lt;/div&gt;
+						&lt;div class="apphub_CardContentAuthorName in-game ellipsis"&gt;&lt;a href="http://steamcommunity.com/id/go0ed/"&gt;sp1rt&lt;/a&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div style="clear: left"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="Broadcast_Card apphub_Card interactable" style="display: none"&gt;
+	&lt;a href="http://steamcommunity.com/broadcast/watch/76561198136176607"&gt;
+		&lt;div class="apphub_CardContentClickable"&gt;
+			&lt;div class="apphub_CardContentTypeContainer"&gt;
+				&lt;div class="apphub_CardContentType"&gt;Broadcast&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="apphub_CardContentPreviewImageBorder"&gt;
+				&lt;div class="apphub_CardContentMain"&gt;
+					&lt;img class="apphub_CardContentPlayVideoIcon" src="http://steamcommunity-a.akamaihd.net/public/shared/images/apphubs/play_icon80.png"&gt;
+					&lt;img class="apphub_CardContentPreviewImage" src="" width="313" height="176" onload="$J( this ).show();"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="apphub_CardMetaData"&gt;
+						&lt;div class="apphub_CardContentViewers ellipsis"&gt;0 viewers&amp;nbsp;&lt;/div&gt;
+							&lt;div class="apphub_CardContentTitle ellipsis"&gt;The Witcher 3: Wild Hunt&lt;/div&gt;
+					&lt;/div&gt;
+		&lt;div class="apphub_CardContentAuthorBlock tall"&gt;
+			&lt;div class="apphub_friend_block_container"&gt;
+				&lt;a href="http://steamcommunity.com/profiles/76561198136176607/"&gt;
+					&lt;div class="apphub_friend_block" data-miniprofile="175910879"&gt;
+						&lt;div class="appHubIconHolder in-game"&gt;&lt;img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/f0/f0b268bbd4e8292687e1b6260c695c0ee36575b3.jpg"&gt;&lt;/div&gt;
+						&lt;div class="appHubIconHolder greyOverlay"&gt;&lt;/div&gt;
+						&lt;div class="apphub_CardContentAuthorName in-game ellipsis"&gt;&lt;a href="http://steamcommunity.com/profiles/76561198136176607/"&gt;lukesethgallant&lt;/a&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div style="clear: left"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="Broadcast_Card apphub_Card interactable" style="display: none"&gt;
+	&lt;a href="http://steamcommunity.com/broadcast/watch/76561198065778769"&gt;
+		&lt;div class="apphub_CardContentClickable"&gt;
+			&lt;div class="apphub_CardContentTypeContainer"&gt;
+				&lt;div class="apphub_CardContentType"&gt;Broadcast&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="apphub_CardContentPreviewImageBorder"&gt;
+				&lt;div class="apphub_CardContentMain"&gt;
+					&lt;img class="apphub_CardContentPlayVideoIcon" src="http://steamcommunity-a.akamaihd.net/public/shared/images/apphubs/play_icon80.png"&gt;
+					&lt;img class="apphub_CardContentPreviewImage" src="" width="313" height="176" onload="$J( this ).show();"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="apphub_CardMetaData"&gt;
+						&lt;div class="apphub_CardContentViewers ellipsis"&gt;0 viewers&amp;nbsp;&lt;/div&gt;
+							&lt;div class="apphub_CardContentTitle ellipsis"&gt;The Witcher 3: Wild Hunt&lt;/div&gt;
+					&lt;/div&gt;
+		&lt;div class="apphub_CardContentAuthorBlock tall"&gt;
+			&lt;div class="apphub_friend_block_container"&gt;
+				&lt;a href="http://steamcommunity.com/profiles/76561198065778769/"&gt;
+					&lt;div class="apphub_friend_block" data-miniprofile="105513041"&gt;
+						&lt;div class="appHubIconHolder in-game"&gt;&lt;img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb.jpg"&gt;&lt;/div&gt;
+						&lt;div class="appHubIconHolder greyOverlay"&gt;&lt;/div&gt;
+						&lt;div class="apphub_CardContentAuthorName in-game ellipsis"&gt;&lt;a href="http://steamcommunity.com/profiles/76561198065778769/"&gt;Jaegeres™&lt;/a&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div style="clear: left"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="Broadcast_Card apphub_Card interactable" style="display: none"&gt;
+	&lt;a href="http://steamcommunity.com/broadcast/watch/76561198063264548"&gt;
+		&lt;div class="apphub_CardContentClickable"&gt;
+			&lt;div class="apphub_CardContentTypeContainer"&gt;
+				&lt;div class="apphub_CardContentType"&gt;Broadcast&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="apphub_CardContentPreviewImageBorder"&gt;
+				&lt;div class="apphub_CardContentMain"&gt;
+					&lt;img class="apphub_CardContentPlayVideoIcon" src="http://steamcommunity-a.akamaihd.net/public/shared/images/apphubs/play_icon80.png"&gt;
+					&lt;img class="apphub_CardContentPreviewImage" src="" width="313" height="176" onload="$J( this ).show();"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="apphub_CardMetaData"&gt;
+						&lt;div class="apphub_CardContentViewers ellipsis"&gt;0 viewers&amp;nbsp;&lt;/div&gt;
+							&lt;div class="apphub_CardContentTitle ellipsis"&gt;The Witcher 3: Wild Hunt&lt;/div&gt;
+					&lt;/div&gt;
+		&lt;div class="apphub_CardContentAuthorBlock tall"&gt;
+			&lt;div class="apphub_friend_block_container"&gt;
+				&lt;a href="http://steamcommunity.com/profiles/76561198063264548/"&gt;
+					&lt;div class="apphub_friend_block" data-miniprofile="102998820"&gt;
+						&lt;div class="appHubIconHolder in-game"&gt;&lt;img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e9/e9df8fbee35b1c27ab038b2221fd5bb0aba7a3a3.jpg"&gt;&lt;/div&gt;
+						&lt;div class="appHubIconHolder greyOverlay"&gt;&lt;/div&gt;
+						&lt;div class="apphub_CardContentAuthorName in-game ellipsis"&gt;&lt;a href="http://steamcommunity.com/profiles/76561198063264548/"&gt;R@Y&lt;/a&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div style="clear: left"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="Broadcast_Card apphub_Card interactable" style="display: none"&gt;
+	&lt;a href="http://steamcommunity.com/broadcast/watch/76561198005099507"&gt;
+		&lt;div class="apphub_CardContentClickable"&gt;
+			&lt;div class="apphub_CardContentTypeContainer"&gt;
+				&lt;div class="apphub_CardContentType"&gt;Broadcast&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="apphub_CardContentPreviewImageBorder"&gt;
+				&lt;div class="apphub_CardContentMain"&gt;
+					&lt;img class="apphub_CardContentPlayVideoIcon" src="http://steamcommunity-a.akamaihd.net/public/shared/images/apphubs/play_icon80.png"&gt;
+					&lt;img class="apphub_CardContentPreviewImage" src="" width="313" height="176" onload="$J( this ).show();"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="apphub_CardMetaData"&gt;
+						&lt;div class="apphub_CardContentViewers ellipsis"&gt;0 viewers&amp;nbsp;&lt;/div&gt;
+							&lt;div class="apphub_CardContentTitle ellipsis"&gt;The Witcher 3: Wild Hunt&lt;/div&gt;
+					&lt;/div&gt;
+		&lt;div class="apphub_CardContentAuthorBlock tall"&gt;
+			&lt;div class="apphub_friend_block_container"&gt;
+				&lt;a href="http://steamcommunity.com/profiles/76561198005099507/"&gt;
+					&lt;div class="apphub_friend_block" data-miniprofile="44833779"&gt;
+						&lt;div class="appHubIconHolder in-game"&gt;&lt;img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb.jpg"&gt;&lt;/div&gt;
+						&lt;div class="appHubIconHolder greyOverlay"&gt;&lt;/div&gt;
+						&lt;div class="apphub_CardContentAuthorName in-game ellipsis"&gt;&lt;a href="http://steamcommunity.com/profiles/76561198005099507/"&gt;lui&lt;/a&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div style="clear: left"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="Broadcast_Card apphub_Card interactable" style="display: none"&gt;
+	&lt;a href="http://steamcommunity.com/broadcast/watch/76561198053198277"&gt;
+		&lt;div class="apphub_CardContentClickable"&gt;
+			&lt;div class="apphub_CardContentTypeContainer"&gt;
+				&lt;div class="apphub_CardContentType"&gt;Broadcast&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="apphub_CardContentPreviewImageBorder"&gt;
+				&lt;div class="apphub_CardContentMain"&gt;
+					&lt;img class="apphub_CardContentPlayVideoIcon" src="http://steamcommunity-a.akamaihd.net/public/shared/images/apphubs/play_icon80.png"&gt;
+					&lt;img class="apphub_CardContentPreviewImage" src="" width="313" height="176" onload="$J( this ).show();"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="apphub_CardMetaData"&gt;
+						&lt;div class="apphub_CardContentViewers ellipsis"&gt;0 viewers&amp;nbsp;&lt;/div&gt;
+							&lt;div class="apphub_CardContentTitle ellipsis"&gt;The Witcher 3: Wild Hunt&lt;/div&gt;
+					&lt;/div&gt;
+		&lt;div class="apphub_CardContentAuthorBlock tall"&gt;
+			&lt;div class="apphub_friend_block_container"&gt;
+				&lt;a href="http://steamcommunity.com/profiles/76561198053198277/"&gt;
+					&lt;div class="apphub_friend_block" data-miniprofile="92932549"&gt;
+						&lt;div class="appHubIconHolder in-game"&gt;&lt;img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/be/be2f0c9428c63929d0663f9bc028efb068182143.jpg"&gt;&lt;/div&gt;
+						&lt;div class="appHubIconHolder greyOverlay"&gt;&lt;/div&gt;
+						&lt;div class="apphub_CardContentAuthorName in-game ellipsis"&gt;&lt;a href="http://steamcommunity.com/profiles/76561198053198277/"&gt;Anrika&lt;/a&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div style="clear: left"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="Broadcast_Card apphub_Card interactable" style="display: none"&gt;
+	&lt;a href="http://steamcommunity.com/broadcast/watch/76561198062086650"&gt;
+		&lt;div class="apphub_CardContentClickable"&gt;
+			&lt;div class="apphub_CardContentTypeContainer"&gt;
+				&lt;div class="apphub_CardContentType"&gt;Broadcast&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="apphub_CardContentPreviewImageBorder"&gt;
+				&lt;div class="apphub_CardContentMain"&gt;
+					&lt;img class="apphub_CardContentPlayVideoIcon" src="http://steamcommunity-a.akamaihd.net/public/shared/images/apphubs/play_icon80.png"&gt;
+					&lt;img class="apphub_CardContentPreviewImage" src="" width="313" height="176" onload="$J( this ).show();"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="apphub_CardMetaData"&gt;
+						&lt;div class="apphub_CardContentViewers ellipsis"&gt;0 viewers&amp;nbsp;&lt;/div&gt;
+							&lt;div class="apphub_CardContentTitle ellipsis"&gt;The Witcher 3: Wild Hunt&lt;/div&gt;
+					&lt;/div&gt;
+		&lt;div class="apphub_CardContentAuthorBlock tall"&gt;
+			&lt;div class="apphub_friend_block_container"&gt;
+				&lt;a href="http://steamcommunity.com/id/vorona_96/"&gt;
+					&lt;div class="apphub_friend_block" data-miniprofile="101820922"&gt;
+						&lt;div class="appHubIconHolder in-game"&gt;&lt;img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/f5/f5b145decad673de9b0989faed8215be6a162c93.jpg"&gt;&lt;/div&gt;
+						&lt;div class="appHubIconHolder greyOverlay"&gt;&lt;/div&gt;
+						&lt;div class="apphub_CardContentAuthorName in-game ellipsis"&gt;&lt;a href="http://steamcommunity.com/id/vorona_96/"&gt;KvanaRiN&lt;/a&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div style="clear: left"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="Broadcast_Card apphub_Card interactable" style="display: none"&gt;
+	&lt;a href="http://steamcommunity.com/broadcast/watch/76561198066590153"&gt;
+		&lt;div class="apphub_CardContentClickable"&gt;
+			&lt;div class="apphub_CardContentTypeContainer"&gt;
+				&lt;div class="apphub_CardContentType"&gt;Broadcast&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="apphub_CardContentPreviewImageBorder"&gt;
+				&lt;div class="apphub_CardContentMain"&gt;
+					&lt;img class="apphub_CardContentPlayVideoIcon" src="http://steamcommunity-a.akamaihd.net/public/shared/images/apphubs/play_icon80.png"&gt;
+					&lt;img class="apphub_CardContentPreviewImage" src="" width="313" height="176" onload="$J( this ).show();"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="apphub_CardMetaData"&gt;
+						&lt;div class="apphub_CardContentViewers ellipsis"&gt;0 viewers&amp;nbsp;&lt;/div&gt;
+							&lt;div class="apphub_CardContentTitle ellipsis"&gt;The Witcher 3: Wild Hunt&lt;/div&gt;
+					&lt;/div&gt;
+		&lt;div class="apphub_CardContentAuthorBlock tall"&gt;
+			&lt;div class="apphub_friend_block_container"&gt;
+				&lt;a href="http://steamcommunity.com/profiles/76561198066590153/"&gt;
+					&lt;div class="apphub_friend_block" data-miniprofile="106324425"&gt;
+						&lt;div class="appHubIconHolder in-game"&gt;&lt;img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/80/8047825bc1db8dc781c2d83b12f87ec08c24dd8e.jpg"&gt;&lt;/div&gt;
+						&lt;div class="appHubIconHolder greyOverlay"&gt;&lt;/div&gt;
+						&lt;div class="apphub_CardContentAuthorName in-game ellipsis"&gt;&lt;a href="http://steamcommunity.com/profiles/76561198066590153/"&gt;Kelda Tiger&lt;/a&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div style="clear: left"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="Broadcast_Card apphub_Card interactable" style="display: none"&gt;
+	&lt;a href="http://steamcommunity.com/broadcast/watch/76561198060036609"&gt;
+		&lt;div class="apphub_CardContentClickable"&gt;
+			&lt;div class="apphub_CardContentTypeContainer"&gt;
+				&lt;div class="apphub_CardContentType"&gt;Broadcast&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="apphub_CardContentPreviewImageBorder"&gt;
+				&lt;div class="apphub_CardContentMain"&gt;
+					&lt;img class="apphub_CardContentPlayVideoIcon" src="http://steamcommunity-a.akamaihd.net/public/shared/images/apphubs/play_icon80.png"&gt;
+					&lt;img class="apphub_CardContentPreviewImage" src="" width="313" height="176" onload="$J( this ).show();"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="apphub_CardMetaData"&gt;
+						&lt;div class="apphub_CardContentViewers ellipsis"&gt;0 viewers&amp;nbsp;&lt;/div&gt;
+							&lt;div class="apphub_CardContentTitle ellipsis"&gt;The Witcher 3: Wild Hunt&lt;/div&gt;
+					&lt;/div&gt;
+		&lt;div class="apphub_CardContentAuthorBlock tall"&gt;
+			&lt;div class="apphub_friend_block_container"&gt;
+				&lt;a href="http://steamcommunity.com/id/heavenly_host/"&gt;
+					&lt;div class="apphub_friend_block" data-miniprofile="99770881"&gt;
+						&lt;div class="appHubIconHolder in-game"&gt;&lt;img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/9c/9c7635de2cae0a431ee6cad83875af25269478b4.jpg"&gt;&lt;/div&gt;
+						&lt;div class="appHubIconHolder greyOverlay"&gt;&lt;/div&gt;
+						&lt;div class="apphub_CardContentAuthorName in-game ellipsis"&gt;&lt;a href="http://steamcommunity.com/id/heavenly_host/"&gt;神威&lt;/a&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div style="clear: left"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="Broadcast_Card apphub_Card interactable" style="display: none"&gt;
+	&lt;a href="http://steamcommunity.com/broadcast/watch/76561198002294540"&gt;
+		&lt;div class="apphub_CardContentClickable"&gt;
+			&lt;div class="apphub_CardContentTypeContainer"&gt;
+				&lt;div class="apphub_CardContentType"&gt;Broadcast&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="apphub_CardContentPreviewImageBorder"&gt;
+				&lt;div class="apphub_CardContentMain"&gt;
+					&lt;img class="apphub_CardContentPlayVideoIcon" src="http://steamcommunity-a.akamaihd.net/public/shared/images/apphubs/play_icon80.png"&gt;
+					&lt;img class="apphub_CardContentPreviewImage" src="" width="313" height="176" onload="$J( this ).show();"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="apphub_CardMetaData"&gt;
+						&lt;div class="apphub_CardContentViewers ellipsis"&gt;0 viewers&amp;nbsp;&lt;/div&gt;
+							&lt;div class="apphub_CardContentTitle ellipsis"&gt;The Witcher 3: Wild Hunt&lt;/div&gt;
+					&lt;/div&gt;
+		&lt;div class="apphub_CardContentAuthorBlock tall"&gt;
+			&lt;div class="apphub_friend_block_container"&gt;
+				&lt;a href="http://steamcommunity.com/id/Apifobia/"&gt;
+					&lt;div class="apphub_friend_block" data-miniprofile="42028812"&gt;
+						&lt;div class="appHubIconHolder in-game"&gt;&lt;img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/8d/8df6994e5e17e7a6603c03630349b00c8f7ecef3.jpg"&gt;&lt;/div&gt;
+						&lt;div class="appHubIconHolder greyOverlay"&gt;&lt;/div&gt;
+						&lt;div class="apphub_CardContentAuthorName in-game ellipsis"&gt;&lt;a href="http://steamcommunity.com/id/Apifobia/"&gt;Apifobia&lt;/a&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div style="clear: left"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+		&lt;/div&gt;
+					&lt;form method="GET" id="MoreContentForm1" name="MoreContentForm1" action="http://steamcommunity.com/app/292030/homecontent/"&gt;
+			&lt;input type="hidden" name="userreviewsoffset" value="0"&gt;&lt;input type="hidden" name="broadcastsoffset" value="10"&gt;&lt;input type="hidden" name="p" value="2"&gt;&lt;input type="hidden" name="itemspage" value="2"&gt;&lt;input type="hidden" name="screenshotspage" value="2"&gt;&lt;input type="hidden" name="videospage" value="2"&gt;&lt;input type="hidden" name="artpage" value="2"&gt;&lt;input type="hidden" name="allguidepage" value="2"&gt;&lt;input type="hidden" name="webguidepage" value="2"&gt;&lt;input type="hidden" name="integratedguidepage" value="2"&gt;&lt;input type="hidden" name="discussionspage" value="2"&gt;				&lt;input type="hidden" name="l" value="english"&gt;
+				&lt;input type="hidden" name="appHubSubSection" value="13"&gt;
+				&lt;input type="hidden" name="browsefilter" value="trend"&gt;
+				&lt;input type="hidden" name="filterLanguage" value="default"&gt;
+				&lt;input type="hidden" name="searchText" value=""&gt;
+							&lt;/form&gt;
+			&lt;/div&gt;
+
+&lt;div id="AppHubContent" class="apphub_Content"&gt;
+	&lt;div id="AppHubCards" class="apphub_Cards"&gt;
+	&lt;/div&gt;
+	&lt;div style="clear: both"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="apphub_GetMoreContent" id="GetMoreContentBtn" style="display: none;"&gt;
+	&lt;a href="javascript:CheckForMoreContent();"&gt;See More Content&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="apphub_GetMoreContentWait" id="action_wait" style=""&gt;
+	&lt;img src="http://steamcommunity-a.akamaihd.net/public/images/login/throbber.gif"&gt;Loading&lt;/a&gt;
+	&lt;div id="LoadingProgressBarContainer" class="apphub_ProgressBarBG"&gt;
+		&lt;div id="LoadingProgressBar" class="apphub_ProgressBar"&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="apphub_NoMoreContent" id="NoMoreContent" style="display: none"&gt;
+	&lt;div class="apphub_NoMoreContentText1"&gt;No more content. So sad.&lt;/div&gt;
+			&lt;div class="apphub_NoMoreContentText2"&gt;
+		You can help: &lt;a href="http://steamcommunity.com/sharedfiles/filedetails/?id=181142704"&gt;share a screenshot, make a video, or start a new discussion!&lt;/a&gt;		&lt;/div&gt;
+		&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+&lt;div id="BackToTop" class="apphub_BackToTop" style="display: none"&gt;
+	&lt;!--&lt;div class="apphub_BackTopTopShadow"&gt;&lt;/div&gt;--&gt;
+	&lt;a href="#"&gt;
+		&lt;span class="apphub_BackToTopButton leftcap"&gt;&lt;/span&gt;
+		&lt;span class="apphub_BackToTopButton middle"&gt;Back to top&lt;/span&gt;
+		&lt;span class="apphub_BackToTopButton rightcap"&gt;&lt;/span&gt;
+	&lt;/a&gt;
+	&lt;div style="clear: left"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="loadingPageModal" class="modal_frame" style="display:none;"&gt;
+	&lt;div class="modal_box"&gt;
+		&lt;div class="modal_box_ctn"&gt;
+		&lt;div class="appHubLoadingPageModal" id="appHubLoadingPageModal"&gt;
+			&lt;div&gt;
+				&lt;img src="http://steamcommunity-a.akamaihd.net/public/images/login/throbber.gif"&gt;
+				Returning to where you were last on this page...			&lt;/div&gt;
+			&lt;div&gt;&lt;a href="javascript:ScrollToLastCancel();"&gt;Cancel&lt;/a&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="modalContentScrollbarHack" style="display: none"&gt;&lt;/div&gt;
+
+&lt;div id="modalContent" class="modal_frame" style="display: none"&gt;
+	&lt;div id="modalContentTitleBar"&gt;
+		&lt;a id="modalContentTitleBarLink" href="" target="_blank"&gt;&amp;nbsp;&lt;/a&gt;
+		&lt;a id="modalContentTitleBarImageLink" href="" target="_blank"&gt;&lt;img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_external_link.gif" alt=""&gt;&lt;/a&gt;
+		&lt;div id="modalContentDismiss" class="modalContentDismissImage" onclick="HideModalContent();"&gt;
+			&lt;img src="http://steamcommunity-a.akamaihd.net/public/images/x9x9.gif" width="9" height="9" border="0" alt="Close"&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div id="modalContentWait"&gt;&lt;img src="http://steamcommunity-a.akamaihd.net/public/images/login/throbber.gif" alt="Loading"&gt;&lt;/div&gt;
+	&lt;div id="modalContentFrameContainer"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+		&lt;/div&gt;	&lt;!-- responsive_page_legacy_content --&gt;
+
+			&lt;div id="footer_spacer"&gt;&lt;/div&gt;
+	&lt;div id="footer_responsive_optin_spacer"&gt;&lt;/div&gt;
+	&lt;div id="footer"&gt;
+		&lt;div class="footer_content"&gt;
+			&lt;span id="footerLogo"&gt;&lt;img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/footerLogo_valve.png?v=1" width="96" height="26" border="0" alt="Valve Logo" /&gt;&lt;/span&gt;
+			&lt;span id="footerText"&gt;
+				&amp;copy; Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.&lt;br/&gt;Some geospatial data on this website is provided by &lt;a target="_blank" href="https://steamcommunity.com/linkfilter/?url=http://www.geonames.org"&gt;geonames.org&lt;/a&gt;.				&lt;br&gt;
+									&lt;span class="valve_links"&gt;
+						&lt;a href="http://store.steampowered.com/privacy_agreement/" target="_blank"&gt;Privacy Policy&lt;/a&gt;
+						&amp;nbsp; | &amp;nbsp;&lt;a href="http://www.valvesoftware.com/legal.htm" target="_blank"&gt;Legal&lt;/a&gt;
+						&amp;nbsp;| &amp;nbsp;&lt;a href="http://store.steampowered.com/subscriber_agreement/" target="_blank"&gt;Steam Subscriber Agreement&lt;/a&gt;
+					&lt;/span&gt;
+							&lt;/span&gt;
+		&lt;/div&gt;
+					&lt;div class="responsive_optin_link"&gt;
+				&lt;div class="btn_medium btnv6_grey_black" onclick="Responsive_RequestMobileView()"&gt;
+					&lt;span&gt;View mobile website&lt;/span&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;/div&gt;
+	
+	&lt;/div&gt;	&lt;!-- responsive_page_content --&gt;
+
+&lt;/div&gt;	&lt;!-- responsive_page_frame --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="GetFriendListResponseJson" xml:space="preserve">
+    <value>{
+	"friendslist": {
+		"friends": [
+			{
+				"steamid": "76561197961947067",
+				"relationship": "friend",
+				"friend_since": 1377244904
+			},
+			{
+				"steamid": "76561197966204794",
+				"relationship": "friend",
+				"friend_since": 1387481620
+			},
+			{
+				"steamid": "76561197968580199",
+				"relationship": "friend",
+				"friend_since": 1377643611
+			},
+			{
+				"steamid": "76561197970693534",
+				"relationship": "friend",
+				"friend_since": 1377260639
+			},
+			{
+				"steamid": "76561197971460087",
+				"relationship": "friend",
+				"friend_since": 1380145814
+			},
+			{
+				"steamid": "76561197972552305",
+				"relationship": "friend",
+				"friend_since": 1383411655
+			},
+			{
+				"steamid": "76561197978129413",
+				"relationship": "friend",
+				"friend_since": 1391633463
+			},
+			{
+				"steamid": "76561197983495927",
+				"relationship": "friend",
+				"friend_since": 1378141692
+			},
+			{
+				"steamid": "76561197990441719",
+				"relationship": "friend",
+				"friend_since": 1380633154
+			},
+			{
+				"steamid": "76561197994713592",
+				"relationship": "friend",
+				"friend_since": 1452460455
+			},
+			{
+				"steamid": "76561197999389779",
+				"relationship": "friend",
+				"friend_since": 1377362864
+			},
+			{
+				"steamid": "76561198003957156",
+				"relationship": "friend",
+				"friend_since": 1300621394
+			},
+			{
+				"steamid": "76561198007633269",
+				"relationship": "friend",
+				"friend_since": 1450383750
+			},
+			{
+				"steamid": "76561198007851662",
+				"relationship": "friend",
+				"friend_since": 1390497809
+			},
+			{
+				"steamid": "76561198010798979",
+				"relationship": "friend",
+				"friend_since": 1383163984
+			},
+			{
+				"steamid": "76561198014694119",
+				"relationship": "friend",
+				"friend_since": 1390427731
+			},
+			{
+				"steamid": "76561198039304328",
+				"relationship": "friend",
+				"friend_since": 1300012931
+			},
+			{
+				"steamid": "76561198054791756",
+				"relationship": "friend",
+				"friend_since": 1387313151
+			},
+			{
+				"steamid": "76561198060747792",
+				"relationship": "friend",
+				"friend_since": 1334420610
+			},
+			{
+				"steamid": "76561198067262767",
+				"relationship": "friend",
+				"friend_since": 1450569073
+			},
+			{
+				"steamid": "76561198067713621",
+				"relationship": "friend",
+				"friend_since": 1383171488
+			},
+			{
+				"steamid": "76561198084024217",
+				"relationship": "friend",
+				"friend_since": 1449268581
+			},
+			{
+				"steamid": "76561198102054367",
+				"relationship": "friend",
+				"friend_since": 1424454073
+			},
+			{
+				"steamid": "76561198114458666",
+				"relationship": "friend",
+				"friend_since": 1401017624
+			},
+			{
+				"steamid": "76561198115267526",
+				"relationship": "friend",
+				"friend_since": 1424456186
+			},
+			{
+				"steamid": "76561198129223501",
+				"relationship": "friend",
+				"friend_since": 1405416115
+			},
+			{
+				"steamid": "76561198137443263",
+				"relationship": "friend",
+				"friend_since": 1400616494
+			},
+			{
+				"steamid": "76561198140723621",
+				"relationship": "friend",
+				"friend_since": 1403440593
+			},
+			{
+				"steamid": "76561198143615252",
+				"relationship": "friend",
+				"friend_since": 1405690596
+			},
+			{
+				"steamid": "76561198146913824",
+				"relationship": "friend",
+				"friend_since": 1408225084
+			},
+			{
+				"steamid": "76561198159461453",
+				"relationship": "friend",
+				"friend_since": 1413712417
+			},
+			{
+				"steamid": "76561198163736303",
+				"relationship": "friend",
+				"friend_since": 1416247840
+			},
+			{
+				"steamid": "76561198188274158",
+				"relationship": "friend",
+				"friend_since": 1449248649
+			},
+			{
+				"steamid": "76561198211284616",
+				"relationship": "friend",
+				"friend_since": 1423931931
+			}
+		]
+	}
+}</value>
+  </data>
+  <data name="GetNewsForAppResponseJson" xml:space="preserve">
+    <value>{
+	"appnews": {
+		"appid": 440,
+		"newsitems": [
+			{
+				"gid": "552009088092503181",
+				"title": "Team Fortress 2 s Workshop Now Accepts Merchandise",
+				"url": "http://store.steampowered.com/news/externalpost/rps/552009088092503181",
+				"is_external_url": true,
+				"author": "contact@rockpapershotgun.com (Graham Smith)",
+				"contents": "&lt;p&gt;&lt;img src=\"http://www.rockpapershotgun.com/images/14/aug/tf2merchandise.jpg\" alt=\"Don't worry, it's mostly t-shirts.\" /&gt;&lt;/p&gt;\n&lt;p&gt;&lt;a href=\"http://www.teamfortress.com/\"&gt;Team Fortress 2&lt;/a&gt;&amp;#8216;s Steam Workshop is a font of creativity, introducing all manner of new models and maps to the now seven-year-old multiplayer shooter. But what if you&amp;#8217;re tired of new guns in-game and instead want more real world materials you can stick to your wall or wrap around your meatform? &lt;/p&gt;\n&lt;p&gt;Valve are &lt;a href=\"http://www.teamfortress.com/post.php?id=14150\"&gt;now accepting Steam Workshop submissions&lt;/a&gt; for proposed TF2 merchandise. Anyone can submit a design, the community will then upvote/downvote as is their wont, and then Valve will swoop in and select the most popoular few for production and distribution via &lt;a href=\"http://www.welovefine.com/\"&gt;WeLoveFine&lt;/a&gt;. As always, the original creator receives a cut of the profits, and players get new &lt;a href=\"http://steamcommunity.com/sharedfiles/filedetails/?id=301050488&amp;#038;searchtext=\"&gt;dresses to wear like the one above&lt;/a&gt;.&lt;/p&gt;\n&lt;p&gt; &amp;#8230; [&lt;a href=\"http://www.rockpapershotgun.com/2014/08/18/tf2-workshop-merchandise/\"&gt;visit site to read more&lt;/a&gt;]&lt;/p&gt;\n",
+				"feedlabel": "Rock, Paper, Shotgun",
+				"date": 1408363203,
+				"feedname": "rps"
+			},
+			{
+				"gid": "552009088086190207",
+				"title": "Team Fortress 2 now accepting merchandise designs through the Steam Workshop",
+				"url": "http://store.steampowered.com/news/externalpost/pcgamer/552009088086190207",
+				"is_external_url": true,
+				"author": "",
+				"contents": "\n                                            &lt;a href=\"http://www.pcgamer.com/2014/08/18/team-fortress-2-now-accepting-merchandise-designs-through-the-steam-workshop/\" \n                            rel=\"bookmark\" \n                            title=\"Permanent Link to Team Fortress 2 now accepting merchandise designs through the Steam Workshop\"&gt;&lt;img width=\"590\" height=\"335\" src=\"http://media.pcgamer.com/files/2014/08/TF2-Clothing.jpg\" class=\"attachment-590x500 wp-post-image\" alt=\"TF2 Clothing\" title=\"TF2 Clothing\" /&gt;&lt;/a&gt;\n                    &lt;br /&gt;\n                    &lt;br /&gt;\n&lt;br /&gt;\nTeam Fortress 2 has shown that people will pay good money for virtual headclothes that sit upon the crown of the cartoon murderers they control in first person. Now Valve are trying something daring: seeing if people will pay for non-hats   not in the game, but in real life. The TF2 Workshop is now accepting community designs for new lines of merchandise to be sold through the Valve Store.&lt;br /&gt;\n&lt;br /&gt;\nAs per the regular TF2 item popularity contest, users can upload their designs to the Workshop to be judged by the community. \"We   ll curate the top-rated entries,\" write Valve, \"and the best of the best designs will be made available as official merchandise at the Valve Store and various online retailers. You won't just be ensuring your place in history: You'll also get paid a handsome royalty for every unit sold.\"&lt;br /&gt;\n&lt;br /&gt;\nIf you have a question, and if that question has been frequently asked, you can find the answer here. Otherwise, take a look at the current submitted designs, and perhaps dream of the day when they'll swaddle your fragile meat-frame.&lt;br /&gt;\n&lt;br /&gt;\n                ",
+				"feedlabel": "PC Gamer",
+				"date": 1408356878,
+				"feedname": "pcgamer"
+			},
+			{
+				"gid": "552009087848414215",
+				"title": "Submissions Now Being Accepted for TF2 Merch ",
+				"url": "http://store.steampowered.com/news/externalpost/tf2_blog/552009087848414215",
+				"is_external_url": true,
+				"author": "",
+				"contents": "&lt;img src=\"https://steamcdn-a.akamaihd.net/steam/news/14150/merch.jpg\"&gt;&lt;br&gt;&lt;br&gt;\n\n&lt;p&gt;For decades, humanity looked at the common baseball hat and just saw a thing you put on your head. It took a special kind of person to look at it and think, \"I could attach beer cans to the sides of that thing so I'll have my hands free to hold &lt;i&gt;two additional beers.\"&lt;/i&gt; It took a special kind of person to look at a t-shirt and realize, \"I could draw a tuxedo on that t-shirt and trick people into thinking I'm wearing a tuxedo.\"&lt;/p&gt;&lt;br&gt;\n \n&lt;p&gt;Who were these people? Drunk idiots, mostly. But also visionaries. And now we're giving the Team Fortress 2 community the chance to join that pantheon. How? By submitting your t-shirt and poster designs to be voted on by the Team Fortress 2 community. Simply navigate to the    Merchandise    tab in the &lt;a href=\"http://steamcommunity.com/workshop/browse/?appid=440&amp;section=merchandise\"&gt;Team Fortress 2 Workshop&lt;/a&gt;.&lt;/p&gt;&lt;br&gt;\n\n&lt;p&gt;Once the votes are in, we   ll curate the top-rated entries, and the best of the best designs will be made available as official merchandise at the Valve Store and various online retailers. You won't just be ensuring your place in history: You'll also get paid a handsome royalty for every unit sold. (For more info on submitting your designs, visit the &lt;a href=\"http://www.teamfortress.com/workshop/#merchandise\"&gt;FAQ&lt;/a&gt;.)&lt;/p&gt;&lt;br&gt;&lt;br&gt;\n",
+				"feedlabel": "TF2 Blog",
+				"date": 1408051620,
+				"feedname": "tf2_blog"
+			},
+			{
+				"gid": "552009087792544005",
+				"title": "Team Fortress 2 Update Released",
+				"url": "http://store.steampowered.com/news/14149/",
+				"is_external_url": false,
+				"author": "Valve",
+				"contents": "An update to Team Fortress 2 has been released. The update will be applied automatically when you restart Team Fortress 2. The major changes include:&lt;br/&gt;&lt;br&gt;&lt;ul style=\"padding-bottom: 0px; margin-bottom: 0px;\" &gt;&lt;li&gt;Added a new startup music track from Expiration Date&lt;br&gt;&lt;li&gt;Added Crate #84 and Crate #85 to the drop list&lt;br&gt;&lt;li&gt;Added a new promo item&lt;br&gt;&lt;li&gt;Fixed a Mann vs. Machine dedicated server crash&lt;br&gt;&lt;li&gt;Fixed materials not refreshing correctly in the Steam Workshop item import tool&lt;br&gt;&lt;li&gt;Fixed a bug where cloaked Spies would be visible to some players&lt;br&gt;&lt;li&gt;Fixed an exploit where Engineers could build level 3 mini-sentries&lt;br&gt;&lt;li&gt;Updated the localization files&lt;br&gt;&lt;li&gt;Updated the backpack page buttons to indicate how many items the pages contain&lt;br&gt;&lt;li&gt;Updated Hammer to add a new Normal Mode for the Sculpt tool&lt;ul style=\"padding-bottom: 0px; margin-bottom: 0px;\" &gt;&lt;li&gt;\"Screen XY\" automatically chooses the axis most aligned with current view's XY axis for push/pull displacement editing&lt;/ul&gt;&lt;/ul&gt;",
+				"feedlabel": "Product Update",
+				"date": 1407970920,
+				"feedname": "steam_updates"
+			},
+			{
+				"gid": "552009087792642063",
+				"title": "Team Fortress 2 Update Released",
+				"url": "http://store.steampowered.com/news/externalpost/tf2_blog/552009087792642063",
+				"is_external_url": true,
+				"author": "",
+				"contents": "An update to Team Fortress 2 has been released. The update will be applied automatically when you restart Team Fortress 2. The major changes include:&lt;br/&gt;\n&lt;ul&gt;\n&lt;li&gt;Added a new startup music track from Expiration Date\n&lt;li&gt;Added Crate #84 and Crate #85 to the drop list\n&lt;li&gt;Added a new promo item\n&lt;li&gt;Fixed a Mann vs. Machine dedicated server crash\n&lt;li&gt;Fixed materials not refreshing correctly in the Steam Workshop item import tool\n&lt;li&gt;Fixed a bug where cloaked Spies would be visible to some players\n&lt;li&gt;Fixed an exploit where Engineers could build level 3 mini-sentries\n&lt;li&gt;Updated the localization files\n&lt;li&gt;Updated the backpack page buttons to indicate how many items the pages contain\n&lt;li&gt;Updated Hammer to add a new Normal Mode for the Sculpt tool&lt;ul&gt;\n&lt;li&gt;\"Screen XY\" automatically chooses the axis most aligned with current view's XY axis for push/pull displacement editing&lt;/ul&gt;\n&lt;/ul&gt;",
+				"feedlabel": "TF2 Blog",
+				"date": 1407970920,
+				"feedname": "tf2_blog"
+			}
+		]
+	}
+}</value>
+  </data>
+  <data name="GetOwnedGamesResponseJson" xml:space="preserve">
+    <value>{
+	"response": {
+		"game_count": 199,
+		"games": [
+			{
+				"appid": 10,
+				"name": "Counter-Strike",
+				"playtime_forever": 0,
+				"img_icon_url": "6b0312cda02f5f777efa2f3318c307ff9acafbb5",
+				"img_logo_url": "af890f848dd606ac2fd4415de3c3f5e7a66fcb9f",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 20,
+				"name": "Team Fortress Classic",
+				"playtime_forever": 0,
+				"img_icon_url": "38ea7ebe3c1abbbbf4eabdbef174c41a972102b9",
+				"img_logo_url": "515bc393c861d91b9165f0697040c015f50bcb5e",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 30,
+				"name": "Day of Defeat",
+				"playtime_forever": 0,
+				"img_icon_url": "aadc0ce51ff6ba2042d633f8ec033b0de62091d0",
+				"img_logo_url": "beff21c4d29d2579e794c930bae599cd0c8a8f17",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 40,
+				"name": "Deathmatch Classic",
+				"playtime_forever": 0,
+				"img_icon_url": "c525f76c8bc7353db4fd74b128c4ae2028426c2a",
+				"img_logo_url": "4bb69695ef9d0ae73e73488fb6456aa4ea1215fa"
+			},
+			{
+				"appid": 50,
+				"name": "Half-Life: Opposing Force",
+				"playtime_forever": 0,
+				"img_icon_url": "04e81206c10e12416908c72c5f22aad411b3aeef",
+				"img_logo_url": "bb696ddfd8f8ef0892d5f2154d8617528d3cc2ec"
+			},
+			{
+				"appid": 60,
+				"name": "Ricochet",
+				"playtime_forever": 0,
+				"img_icon_url": "98c69e04cd59b838e05cb6980c12c05874c6419e",
+				"img_logo_url": "f7a039402735c2dea82cbd412340873535e2be4c",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 70,
+				"name": "Half-Life",
+				"playtime_forever": 0,
+				"img_icon_url": "95be6d131fc61f145797317ca437c9765f24b41c",
+				"img_logo_url": "6bd76ff700a8c7a5460fbae3cf60cb930279897d",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 80,
+				"name": "Counter-Strike: Condition Zero",
+				"playtime_forever": 0,
+				"img_icon_url": "077b050ef3e89cd84e2c5a575d78d53b54058236",
+				"img_logo_url": "acdb28ba1b4c2fcc526332c1b63fc0f7533f087f"
+			},
+			{
+				"appid": 100,
+				"name": "Counter-Strike: Condition Zero Deleted Scenes",
+				"playtime_forever": 0,
+				"img_icon_url": "077b050ef3e89cd84e2c5a575d78d53b54058236",
+				"img_logo_url": "acdb28ba1b4c2fcc526332c1b63fc0f7533f087f"
+			},
+			{
+				"appid": 130,
+				"name": "Half-Life: Blue Shift",
+				"playtime_forever": 0,
+				"img_icon_url": "b06fdee488b3220362c11704be4edad82abeed08",
+				"img_logo_url": "927d38e83e3e4ca218a0fc7b32515eeb99aa8ff7"
+			},
+			{
+				"appid": 220,
+				"name": "Half-Life 2",
+				"playtime_forever": 0,
+				"img_icon_url": "fcfb366051782b8ebf2aa297f3b746395858cb62",
+				"img_logo_url": "e4ad9cf1b7dc8475c1118625daf9abd4bdcbcad0",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 240,
+				"name": "Counter-Strike: Source",
+				"playtime_forever": 0,
+				"img_icon_url": "9052fa60c496a1c03383b27687ec50f4bf0f0e10",
+				"img_logo_url": "ee97d0dbf3e5d5d59e69dc20b98ed9dc8cad5283",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 280,
+				"name": "Half-Life: Source",
+				"playtime_forever": 0,
+				"img_icon_url": "b4f572a6cc5a6a84ae84634c31414b9123d2f26b",
+				"img_logo_url": "a612dd944b768e55389140298dcfda2165db8ced",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 300,
+				"name": "Day of Defeat: Source",
+				"playtime_forever": 322,
+				"img_icon_url": "062754bb5853b0534283ae27dc5d58200692b22d",
+				"img_logo_url": "e3a4313690bd551495a88e1c01951eb26cec7611",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 320,
+				"name": "Half-Life 2: Deathmatch",
+				"playtime_forever": 17,
+				"img_icon_url": "795e85364189511f4990861b578084deef086cb1",
+				"img_logo_url": "6dd9f66771300f2252d411e50739a1ceae9e5b30",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 340,
+				"name": "Half-Life 2: Lost Coast",
+				"playtime_forever": 0,
+				"img_icon_url": "795e85364189511f4990861b578084deef086cb1",
+				"img_logo_url": "867cce5c4f37d5ed4aeffb57c60e220ddffe4134"
+			},
+			{
+				"appid": 360,
+				"name": "Half-Life Deathmatch: Source",
+				"playtime_forever": 0,
+				"img_icon_url": "40b8a62efff5a9ab356e5c56f5c8b0532c8e1aa3",
+				"img_logo_url": "9a5b7119d4e8977fffcd370d3c24036be7cee904"
+			},
+			{
+				"appid": 380,
+				"name": "Half-Life 2: Episode One",
+				"playtime_forever": 0,
+				"img_icon_url": "795e85364189511f4990861b578084deef086cb1",
+				"img_logo_url": "b5a666a961d8b39896887abbed3b78c2b837c238",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 3830,
+				"name": "Psychonauts",
+				"playtime_forever": 108,
+				"img_icon_url": "460b6471db7d83ee6943c1a87f7a9f2898634952",
+				"img_logo_url": "b361ab26b2c47d4abd11be0ebd3d6b675512ec1b",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 2100,
+				"name": "Dark Messiah of Might &amp; Magic Single Player",
+				"playtime_forever": 20,
+				"img_icon_url": "5a08cd17d14ccb07a14f316dfa222b18a20960fd",
+				"img_logo_url": "02f650a6fe9645c6770adc7212d9879fdb1c6062"
+			},
+			{
+				"appid": 2130,
+				"name": "Dark Messiah of Might &amp; Magic Multi-Player",
+				"playtime_forever": 0,
+				"img_icon_url": "5a08cd17d14ccb07a14f316dfa222b18a20960fd",
+				"img_logo_url": "d796edc2a9efe813351827a73b69e44e8b9c107a"
+			},
+			{
+				"appid": 7670,
+				"name": "BioShock",
+				"playtime_forever": 43,
+				"img_icon_url": "9a7c9f640a76e6a32592277dbbc36a0f6da05372",
+				"img_logo_url": "4c2a7f97e6556a95319eb346aed7beff9fe0535c",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 4760,
+				"name": "Rome: Total War",
+				"playtime_forever": 21,
+				"img_icon_url": "5dc68565149dc971af6428157bcb600d80690080",
+				"img_logo_url": "134817933edf4f8d0665d456889c0315c416fff2"
+			},
+			{
+				"appid": 400,
+				"name": "Portal",
+				"playtime_forever": 109,
+				"img_icon_url": "cfa928ab4119dd137e50d728e8fe703e4e970aff",
+				"img_logo_url": "4184d4c0d915bd3a45210667f7b25361352acd8f",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 420,
+				"name": "Half-Life 2: Episode Two",
+				"playtime_forever": 0,
+				"img_icon_url": "795e85364189511f4990861b578084deef086cb1",
+				"img_logo_url": "553e6a2e7a469dcbaada729baa1f5fd7764668df",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 4700,
+				"name": "Medieval II: Total War",
+				"playtime_forever": 68,
+				"img_icon_url": "cc9c44b2c3b3b245b82d13c316a9b238705ff877",
+				"img_logo_url": "fcd1abd6380998e473b92690e28a9fe0a1a27b8d"
+			},
+			{
+				"appid": 12900,
+				"name": "Audiosurf",
+				"playtime_forever": 66,
+				"img_icon_url": "ae6d0ac6d1dd5b23b961d9f32ea5a6c8d0305cf4",
+				"img_logo_url": "75dc0398efeae1cc994714e37c893b593f9c9a88",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 2700,
+				"name": "RollerCoaster Tycoon 3: Platinum!",
+				"playtime_forever": 60,
+				"img_icon_url": "95e6320bcf5262271367a83d21fed0dcf12ba73d",
+				"img_logo_url": "7addd959192ec30a7c34793440c4ae16b59914b1",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 20900,
+				"name": "The Witcher: Enhanced Edition",
+				"playtime_forever": 0,
+				"img_icon_url": "746d1cd48fb2e57d579b05b6e9eccba95859e549",
+				"img_logo_url": "d37dedbc4104d1683385d022314d1316399b3dce"
+			},
+			{
+				"appid": 500,
+				"name": "Left 4 Dead",
+				"playtime_forever": 2591,
+				"img_icon_url": "428df26bc35b09319e31b1ffb712487b20b3245c",
+				"img_logo_url": "0f67ee504d8f04ecd83986dd7855821dc21f7a78",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 16450,
+				"name": "F.E.A.R. 2: Project Origin",
+				"playtime_forever": 338,
+				"img_icon_url": "6611d8b01c7a2cc3538c478c044d1e09f3140eaa",
+				"img_logo_url": "41734347c3f05fe7dd797570130f5069c08f9d1b"
+			},
+			{
+				"appid": 10500,
+				"name": "Empire: Total War",
+				"playtime_forever": 7312,
+				"img_icon_url": "dc10f7bad53d3d922c196d116b1c5d6a4b274768",
+				"img_logo_url": "d60c77df97439e8434f0d0be9c3e2d9f39699991",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 17470,
+				"name": "Dead Space",
+				"playtime_forever": 54,
+				"img_icon_url": "45e682594687a6c92037631225340d26c783362f",
+				"img_logo_url": "01400b8d7847c309e5d47d7ceb3f885f47247501"
+			},
+			{
+				"appid": 15620,
+				"name": "Warhammer® 40,000™: Dawn of War® II",
+				"playtime_forever": 449,
+				"img_icon_url": "63d290e28741128c7f979d329401a6c83676ec66",
+				"img_logo_url": "0a042d72a270d1a67fb42b9fc452316c01741911",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 24740,
+				"name": "Burnout Paradise: The Ultimate Box",
+				"playtime_forever": 0,
+				"img_icon_url": "eca9b0f2936018e277ee68450cd4fa8d1d3ca3e7",
+				"img_logo_url": "196d5d0945d6c608a621cf7d44429644ebeae267"
+			},
+			{
+				"appid": 22330,
+				"name": "The Elder Scrolls IV: Oblivion ",
+				"playtime_forever": 1748,
+				"img_icon_url": "e33402f6e1e4ed6dd001c7add26934f345cbd31e",
+				"img_logo_url": "531dd052b9816ce1484a2c4b46a4f271963c527f"
+			},
+			{
+				"appid": 23490,
+				"name": "Tropico 3 - Steam Special Edition",
+				"playtime_forever": 468,
+				"img_icon_url": "ac98363870a4c1cbd18372843144dfaf7dfffbf7",
+				"img_logo_url": "c8e565a740d2e2c8a1a07548c875131eae72a1a7",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 24800,
+				"name": "Command and Conquer: Red Alert 3 - Uprising",
+				"playtime_forever": 0,
+				"img_icon_url": "c65f15f9b850a0becaf708a4668e7f285eeff209",
+				"img_logo_url": "de6777c6cf277967764224514fb200af9197ae2e"
+			},
+			{
+				"appid": 10180,
+				"name": "Call of Duty: Modern Warfare 2",
+				"playtime_forever": 466,
+				"img_icon_url": "ad502494f1658220f9166c7e17ac90422bf6a479",
+				"img_logo_url": "82de30354cb5ee352609c47ea47b86797008e436",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 10190,
+				"name": "Call of Duty: Modern Warfare 2 - Multiplayer",
+				"playtime_forever": 5507,
+				"img_icon_url": "7dd7c2d5bce2413131762d7cbee3f059614ed69d",
+				"img_logo_url": "070cad064b3a81d6ede0f6054d9eb763004a07e0",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 550,
+				"name": "Left 4 Dead 2",
+				"playtime_forever": 1587,
+				"img_icon_url": "7d5a243f9500d2f8467312822f8af2a2928777ed",
+				"img_logo_url": "205863cc21e751a576d6fff851984b3170684142",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 223530,
+				"name": "Left 4 Dead 2 Beta",
+				"playtime_forever": 0,
+				"img_icon_url": "",
+				"img_logo_url": ""
+			},
+			{
+				"appid": 34030,
+				"name": "Napoleon: Total War",
+				"playtime_forever": 4930,
+				"img_icon_url": "e6263fa77b39b3b83db00d089aed8dc0aac11b20",
+				"img_logo_url": "eca670df2bb35587996bfb4da6a45a8985ace139",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 8190,
+				"name": "Just Cause 2",
+				"playtime_forever": 1142,
+				"img_icon_url": "73582e392a2b9413fe93b011665a5b9cf26ff175",
+				"img_logo_url": "26c2c027f835e968d78b212b4cc6438f692b027a",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 43110,
+				"name": "Metro 2033",
+				"playtime_forever": 841,
+				"img_icon_url": "a70fe6dc214f24107d20596f3040dbfa220ed42d",
+				"img_logo_url": "df9a163ac1f28dfc84c93a6fc0dc51719eaef518",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 33230,
+				"name": "Assassin's Creed II",
+				"playtime_forever": 160,
+				"img_icon_url": "0492d8ee860ac99168e46efeb003029c3224cb38",
+				"img_logo_url": "6d29461ee9303967cb32c2142afaf9bbdb911b6f"
+			},
+			{
+				"appid": 48700,
+				"name": "Mount &amp; Blade: Warband",
+				"playtime_forever": 6951,
+				"img_icon_url": "0773e90a6991a5427df4ee516687d832d92b050e",
+				"img_logo_url": "09b24ebdad4b8c24851ad1714e49e47a40ed25d2",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 24960,
+				"name": "Battlefield: Bad Company 2",
+				"playtime_forever": 2816,
+				"img_icon_url": "3a8b5c53efd00554eb3315681754974c3edf1c41",
+				"img_logo_url": "969a07d20786b5f536122d70f2c3eedc1eca5ede"
+			},
+			{
+				"appid": 2820,
+				"name": "X3: Terran Conflict",
+				"playtime_forever": 1966,
+				"img_icon_url": "df0df7b67ebae96d5e580d43f4a784e265ba9c38",
+				"img_logo_url": "024707ebab6dc10c057d87e53282aad5d89c0857",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 12100,
+				"name": "Grand Theft Auto III",
+				"playtime_forever": 5,
+				"img_icon_url": "646c4b3bc16b6726e190b7a29717c4b71f9abc7d",
+				"img_logo_url": "0e73825e3abd7bfe43b55a49bbcb862aee7c2e71",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 12110,
+				"name": "Grand Theft Auto: Vice City",
+				"playtime_forever": 0,
+				"img_icon_url": "5f7423da14152cfbe201103ceba3112988624a98",
+				"img_logo_url": "6ba37ecba052f89c72272dd28b2daa89087a7eb3",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 12120,
+				"name": "Grand Theft Auto: San Andreas",
+				"playtime_forever": 0,
+				"img_icon_url": "895e9391da2b8155989022d9dd95b12e09766375",
+				"img_logo_url": "32e2d1d2054295603724f30c81c3cf46dc6392c0",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 12170,
+				"name": "Grand Theft Auto",
+				"playtime_forever": 1,
+				"img_icon_url": "05170ada07df182d63e1f341b4e97e49a6749db5",
+				"img_logo_url": "7aa48bc3166266e3eadc75603229c3423ee5fb77",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 12180,
+				"name": "Grand Theft Auto 2",
+				"playtime_forever": 0,
+				"img_icon_url": "f88776c0d065fa4990da9a4c280e70b40593c3af",
+				"img_logo_url": "2d694ee5a4f8ad23cbd20899e03481ef4a3a3c75",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 12210,
+				"name": "Grand Theft Auto IV",
+				"playtime_forever": 186,
+				"img_icon_url": "a3cf6a64c73f991898a9e34681d0db8226eaa191",
+				"img_logo_url": "47fb2a3e0763be24e49662591d6e076c58b2178d",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 12220,
+				"name": "Grand Theft Auto: Episodes from Liberty City",
+				"playtime_forever": 356,
+				"img_icon_url": "603a444d9092d007f2d9640d12ebba62b1efc377",
+				"img_logo_url": "40d1512d5922313878298c3731ffc066091a113a",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 12230,
+				"name": "Grand Theft Auto III",
+				"playtime_forever": 0,
+				"img_icon_url": "",
+				"img_logo_url": "0e73825e3abd7bfe43b55a49bbcb862aee7c2e71",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 12240,
+				"name": "Grand Theft Auto: Vice City",
+				"playtime_forever": 0,
+				"img_icon_url": "",
+				"img_logo_url": "6ba37ecba052f89c72272dd28b2daa89087a7eb3",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 12250,
+				"name": "Grand Theft Auto: San Andreas",
+				"playtime_forever": 0,
+				"img_icon_url": "",
+				"img_logo_url": "32e2d1d2054295603724f30c81c3cf46dc6392c0",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 42670,
+				"name": "Singularity",
+				"playtime_forever": 329,
+				"img_icon_url": "60f6f16f956a605de67c4fbd205e51e4164e7b6d",
+				"img_logo_url": "5e3b58cab477cb070f5e7efd6ca7129744954b09",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 17410,
+				"name": "Mirror's Edge",
+				"playtime_forever": 325,
+				"img_icon_url": "cfea4731163004b2e5117c3b42a798c48c483d8f",
+				"img_logo_url": "8c5a900802fabf20a7922c6a69cec9320c940514"
+			},
+			{
+				"appid": 22380,
+				"name": "Fallout: New Vegas",
+				"playtime_forever": 3211,
+				"img_icon_url": "1711fd8c46d739feec76bd4a64eaeeca5b87e3a7",
+				"img_logo_url": "1a52975c043227184162627285e4bc0c83216e02",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 42700,
+				"name": "Call of Duty: Black Ops",
+				"playtime_forever": 757,
+				"img_icon_url": "ea744d59efded3feaeebcafed224be9eadde90ac",
+				"img_logo_url": "2b07ffc9e420c232858a60a20cdefeebaa9fd5c6",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 42710,
+				"name": "Call of Duty: Black Ops - Multiplayer",
+				"playtime_forever": 853,
+				"img_icon_url": "d595fb4b01201cade09e1232f2c41c0866840628",
+				"img_logo_url": "2b07ffc9e420c232858a60a20cdefeebaa9fd5c6",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 35130,
+				"name": "Lara Croft and the Guardian of Light",
+				"playtime_forever": 72,
+				"img_icon_url": "b06fc7740d5e2e02ffd47fec3c56f7d38534f598",
+				"img_logo_url": "fb2fdfd5c7146381b137cb8591c67f6919d6d6ea",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 47780,
+				"name": "Dead Space 2",
+				"playtime_forever": 0,
+				"img_icon_url": "6393351676edc4fdc65937a599780818fd2f18b7",
+				"img_logo_url": "38cb9890ddd639a066bf480e3f098e1b92af2376"
+			},
+			{
+				"appid": 4540,
+				"name": "Titan Quest",
+				"playtime_forever": 0,
+				"img_icon_url": "d59f857aed0d38c69960a9d80e3d23e0863f4e01",
+				"img_logo_url": "e82186f6efe8d5d593c2fb1b57f8b1e056e6d82e",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 42910,
+				"name": "Magicka",
+				"playtime_forever": 32,
+				"img_icon_url": "0eb97d0cd644ee08b1339d2160c7a6adf2ea0a65",
+				"img_logo_url": "8c59c674ef40f59c3bafde8ff0d59b7994c66477",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 47800,
+				"name": "RISK Factions",
+				"playtime_forever": 120,
+				"img_icon_url": "05f3638d03707287afa4b4b23f93690087a09c94",
+				"img_logo_url": "b3cd6711ce742a5d1e0b0c1b7b04a6641f550a9a",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 620,
+				"name": "Portal 2",
+				"playtime_forever": 458,
+				"img_icon_url": "2e478fc6874d06ae5baf0d147f6f21203291aa02",
+				"img_logo_url": "d2a1119ddc202fab81d9b87048f495cbd6377502",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 20920,
+				"name": "The Witcher 2: Assassins of Kings Enhanced Edition",
+				"playtime_forever": 1658,
+				"img_icon_url": "62dd5c627664df1bcabc47727c7dcd7ccab353e9",
+				"img_logo_url": "f0274a91931ed39f7c69dca9f907ceae6450785c",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 19680,
+				"name": "Alice: Madness Returns",
+				"playtime_forever": 379,
+				"img_icon_url": "a9dc16a5a8293cea1c1d934bdbc08721708b1399",
+				"img_logo_url": "16eb0cc15cde07377c0cb3bffa6d92bbc6dd72b2"
+			},
+			{
+				"appid": 61700,
+				"name": "Might &amp; Magic: Clash of Heroes",
+				"playtime_forever": 14,
+				"img_icon_url": "2e041398bdff936f95cecf53c208b17303e5d1ec",
+				"img_logo_url": "1b8664d4d37b0af923ea8f5693e8d6b14980533f",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 28050,
+				"name": "Deus Ex: Human Revolution",
+				"playtime_forever": 211,
+				"img_icon_url": "6c7ccd62c124ae63820e06ed9b24d4559c5b0b1f",
+				"img_logo_url": "93705ac83aa363ce6ead3f6aad7fa4292d3cd80f",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 72850,
+				"name": "The Elder Scrolls V: Skyrim",
+				"playtime_forever": 12059,
+				"img_icon_url": "b9aca8a189abd8d6aaf09047dbb0f57582683e1c",
+				"img_logo_url": "c5af3cde13610fca25cd17634a96d72487d21e74",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 201280,
+				"name": "Deus Ex: Human Revolution - The Missing Link",
+				"playtime_forever": 0,
+				"img_icon_url": "bd4ff9dbfd8dd78f8cdb09e8a99feebaaf9da094",
+				"img_logo_url": "e298cb7f1f24faaa200ea50cfa0f95e91c8489ab",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 9200,
+				"name": "RAGE",
+				"playtime_forever": 1066,
+				"img_icon_url": "258791dd730f3009acc4c6c1846ed75b2c3911fa",
+				"img_logo_url": "db0e1951e4359d76f32cf65b24ef1fa6a819afc9",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 110800,
+				"name": "L.A. Noire",
+				"playtime_forever": 617,
+				"img_icon_url": "ee09d4d2552e52c78d139a3b6dbe60173079d9f8",
+				"img_logo_url": "4176ba6f679e28225a95447082c38db290bc2557",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 201310,
+				"name": "X3: Albion Prelude",
+				"playtime_forever": 2390,
+				"img_icon_url": "0a56b4bf737c11beabe52496ed018800f37ec310",
+				"img_logo_url": "1e28a44372759d6e60a3b76b7377df735920fcbf",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 105450,
+				"name": "Age of Empires® III: Complete Collection",
+				"playtime_forever": 67,
+				"img_icon_url": "6fd62f99d3d245868d83af54eb60def5d1667402",
+				"img_logo_url": "c5ad5a14c259ea16f1193c32c2753fc037b9d42b",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 203810,
+				"name": "Dear Esther",
+				"playtime_forever": 147,
+				"img_icon_url": "f1ff3d3ea4499d02ea72971ff0d77456a1908fad",
+				"img_logo_url": "39f2f2baf454fabdd8a6161e9353ebd9ee335ed2",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 7520,
+				"name": "Two Worlds II",
+				"playtime_forever": 242,
+				"img_icon_url": "998eb03dc48a266da0f5e4fd3a1eb735a2baf7fc",
+				"img_logo_url": "a579b50f29893c4b490715fa15e493e22b30f148"
+			},
+			{
+				"appid": 50300,
+				"name": "Spec Ops: The Line",
+				"playtime_forever": 752,
+				"img_icon_url": "55ae859a90d61c08f18ed3aa0ee2579169d2c2bf",
+				"img_logo_url": "e449c7dc5a9861cf94476de1b394640f3866ddda",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 108800,
+				"name": "Crysis 2 Maximum Edition",
+				"playtime_forever": 0,
+				"img_icon_url": "5f401ab4b7d16ca8f778ff6b85dd25e0d3d49460",
+				"img_logo_url": "bee338e11932e97e995b6e2d84d0772f7b22f2a9"
+			},
+			{
+				"appid": 205100,
+				"name": "Dishonored",
+				"playtime_forever": 1150,
+				"img_icon_url": "74f8ee1ba536e0759e64a9bf801fc013e16c8dd1",
+				"img_logo_url": "b94f5ff693304b7f70f88403d444686c4af3b940",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 200260,
+				"name": "Batman: Arkham City GOTY",
+				"playtime_forever": 29,
+				"img_icon_url": "746ecf3ce44b2525eb7ad643e76a3b60913d2662",
+				"img_logo_url": "9b229e12fd5ce27bd101d5862c19b1a6e3d01239",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 212680,
+				"name": "FTL: Faster Than Light",
+				"playtime_forever": 1260,
+				"img_icon_url": "e8770ddb95fde0804694b116dfe3479f5a65900d",
+				"img_logo_url": "975193db5ca8cc2a4c969cea8f80d93157264ec1"
+			},
+			{
+				"appid": 42160,
+				"name": "War of the Roses",
+				"playtime_forever": 344,
+				"img_icon_url": "a87b69ac8257540cf378fe17dc9b6beaf7c15eee",
+				"img_logo_url": "78a33bc66b2d52371ee1dc7d210c95167bd0c895",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 206980,
+				"name": "War of the Roses Balance Beta",
+				"playtime_forever": 0,
+				"img_icon_url": "f1bf7dd2ad1010bcf6d3b58454a402c8c179fae6",
+				"img_logo_url": "edbc12973ba245bdd19d27994494ccdecbcd5520"
+			},
+			{
+				"appid": 219640,
+				"name": "Chivalry: Medieval Warfare",
+				"playtime_forever": 833,
+				"img_icon_url": "d4628be29b7e97d93a3404870dfe79642b90b907",
+				"img_logo_url": "dd3488ae69593cedf5e73b818ae98e6737aa956c",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 232210,
+				"name": "Patch testing for Chivalry",
+				"playtime_forever": 0,
+				"img_icon_url": "d4628be29b7e97d93a3404870dfe79642b90b907",
+				"img_logo_url": "dd3488ae69593cedf5e73b818ae98e6737aa956c",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 4560,
+				"name": "Company of Heroes",
+				"playtime_forever": 134,
+				"img_icon_url": "64946619217da497c9b29bc817bb40dd7d28c912",
+				"img_logo_url": "e12e8695c6766b47a089351dd9c4531e669c2a7b"
+			},
+			{
+				"appid": 9340,
+				"name": "Company of Heroes: Opposing Fronts",
+				"playtime_forever": 1,
+				"img_icon_url": "29725d719946c3e1aa4eea15d262c9fd789c1392",
+				"img_logo_url": "830c99099ea2cfecfe74c41f376fc892a09dd181"
+			},
+			{
+				"appid": 20540,
+				"name": "Company of Heroes: Tales of Valor",
+				"playtime_forever": 4,
+				"img_icon_url": "64946619217da497c9b29bc817bb40dd7d28c912",
+				"img_logo_url": "ed0c55412acea558d025a3e238e2b7341edc5c41"
+			},
+			{
+				"appid": 50620,
+				"name": "Darksiders",
+				"playtime_forever": 8,
+				"img_icon_url": "e429cee10d864faf2aae2ea9cd75e8e1942fbe08",
+				"img_logo_url": "14bd29bc9b291081b63258e3bfbbf5bb655c2347",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 55110,
+				"name": "Red Faction: Armageddon",
+				"playtime_forever": 0,
+				"img_icon_url": "e59c7e741c05c9071176b270bdbb733afe55c751",
+				"img_logo_url": "19f894d0e08dff8e284d4facc5968a1025da997d",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 228200,
+				"name": "Company of Heroes (New Steam Version)",
+				"playtime_forever": 0,
+				"img_icon_url": "df92dc239acb3cf5d3e3eba645f3df2aaf7f91ad",
+				"img_logo_url": "87aa009e93d5aa56a55d0e9056708d018ddd6483",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 4570,
+				"name": "Warhammer 40,000: Dawn of War - Game of the Year Edition",
+				"playtime_forever": 0,
+				"img_icon_url": "a4c7a8cce43d797c275aaf601d6855b90ba87769",
+				"img_logo_url": "2068980dca52521b069abc109f976d72ba0b1651",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 203160,
+				"name": "Tomb Raider",
+				"playtime_forever": 438,
+				"img_icon_url": "3ee640a8aba6992678e36f4e40cba9c71c02348b",
+				"img_logo_url": "495f7d723659add6ea476b3699be5424282ac4b8",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 8870,
+				"name": "BioShock Infinite",
+				"playtime_forever": 1076,
+				"img_icon_url": "4ebaf5f9ee74f50152f7ff361debef7553fa0e4e",
+				"img_logo_url": "870bb889e192cf8d31876ed04d329a5d51c6fc2c",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 35720,
+				"name": "Trine 2",
+				"playtime_forever": 113,
+				"img_icon_url": "061ecbbd7c70ae1c052377bad136c7759cbb708d",
+				"img_logo_url": "7d7c3b93bd85ad1db2a07f6cca01a767069c6407",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 219680,
+				"name": "Proteus",
+				"playtime_forever": 25,
+				"img_icon_url": "421489f519d7e67eed0854d169e001bebc8fafc7",
+				"img_logo_url": "a0db2a8ad167444d7132b405a11c73a57f376ced"
+			},
+			{
+				"appid": 57690,
+				"name": "Tropico 4",
+				"playtime_forever": 747,
+				"img_icon_url": "8e58ca48b978439ba4986938247fdb21a645a673",
+				"img_logo_url": "9123d91a47399baf116c2949dcebcd42b1962fbe",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 208090,
+				"name": "Loadout",
+				"playtime_forever": 0,
+				"img_icon_url": "d4dc7a4f71d4ba7c44cd05b5c235e0a387ca212b",
+				"img_logo_url": "bd03747de2f7380bd779b9a355790522b85615b2",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 212500,
+				"name": "The Lord of the Rings Online™",
+				"playtime_2weeks": 2088,
+				"playtime_forever": 14363,
+				"img_icon_url": "a8f4b23f272e552e88c42a2ece603c0ed431fa7e",
+				"img_logo_url": "bbe89aa0f4cd84242c8d748519bb49b1d8ef6113",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 236390,
+				"name": "War Thunder",
+				"playtime_forever": 109,
+				"img_icon_url": "88259dcb7014dcdb109d9ece0cfc70c100bc2f9c",
+				"img_logo_url": "219b91aa76b2c6325b763af5e4ad411fab535bf9",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 224580,
+				"name": "Arma 2: DayZ Mod",
+				"playtime_forever": 1,
+				"img_icon_url": "53ab951dfb3b53658da80dbb0f9e199215a0ed47",
+				"img_logo_url": "5e6e7acb5f64e6191c6734a860759741e3a9e2d0"
+			},
+			{
+				"appid": 107410,
+				"name": "Arma 3",
+				"playtime_forever": 3544,
+				"img_icon_url": "3212af52faf994c558bd622cb0f360c1ef295a6b",
+				"img_logo_url": "b49962441a01f1f80b180af1293608dddf7df6b0",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 221380,
+				"name": "Age of Empires II: HD Edition",
+				"playtime_2weeks": 310,
+				"playtime_forever": 4181,
+				"img_icon_url": "109c74df17f9b67ea47d8f01e3d1ec25278b9f73",
+				"img_logo_url": "37e9da3f1174891fe38f8fb0206acda8b6bfc729",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 43160,
+				"name": "Metro: Last Light",
+				"playtime_forever": 700,
+				"img_icon_url": "7b84b80d2cebe41ba87c59b28e2473d3b33e797d",
+				"img_logo_url": "b110ee3812ac0cad68505772019cf2bdc3ce1cc3",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 219740,
+				"name": "Don't Starve",
+				"playtime_forever": 111,
+				"img_icon_url": "03fe647df40dccc4d19bf42a0185cd3e6b9f2953",
+				"img_logo_url": "46cbbc2fcb14eb0bbbbaebbdf0b1e0eaf6f4c646"
+			},
+			{
+				"appid": 322330,
+				"name": "Don't Starve Together Beta",
+				"playtime_forever": 0,
+				"img_icon_url": "a80aa6cff8eebc1cbc18c367d9ab063e1553b0ee",
+				"img_logo_url": "fab2e3b2ec6d14c6fc3ccd1671e85f85d0bbd91e",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 35450,
+				"name": "Rising Storm/Red Orchestra 2 Multiplayer",
+				"playtime_forever": 0,
+				"img_icon_url": "d70423dddb3bb2a144e38ab9cc811e6fda1eb622",
+				"img_logo_url": "02d367780a6dcdba708bb8b94fbc42f23ba99a5b",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 242920,
+				"name": "Banished",
+				"playtime_forever": 397,
+				"img_icon_url": "1c499bc7d659ddde65a1cd3f2cd7b6122211b4b1",
+				"img_logo_url": "2a62342148979d18e2b50ab8c5eebcfe6c99295c",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 233250,
+				"name": "Planetary Annihilation",
+				"playtime_forever": 246,
+				"img_icon_url": "cc7e967f96e5fb35cf45c742f2c73b2d4f348bd0",
+				"img_logo_url": "c9fcec848203470a2ff487fdb42e0fc9f6500e8d",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 243120,
+				"name": "Betrayer",
+				"playtime_forever": 0,
+				"img_icon_url": "d3f4fef822c0ebd279b55f655953715a890ab587",
+				"img_logo_url": "cd708131ce1b4b5e6348c4016f2d228280f06840",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 8850,
+				"name": "BioShock 2",
+				"playtime_forever": 10,
+				"img_icon_url": "f5eda925c0e57373aaea4cae17b6f175115a8d54",
+				"img_logo_url": "fde6fa1b15e4eb409c9d592197024571fded77e7",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 9480,
+				"name": "Saints Row 2",
+				"playtime_forever": 0,
+				"img_icon_url": "1a0aef912300d396a67f9eda9d8b4e66c41c9891",
+				"img_logo_url": "2b9558ad2e909957d66b4d8aa5e8b51eda951f69"
+			},
+			{
+				"appid": 40390,
+				"name": "Risen 2 - Dark Waters",
+				"playtime_forever": 28,
+				"img_icon_url": "874236eebecff1fe070032d137722ef3cdb47383",
+				"img_logo_url": "e1b72e0af10d743a3d51800bd208bbe2890b9953",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 55230,
+				"name": "Saints Row: The Third",
+				"playtime_forever": 213,
+				"img_icon_url": "ec83645f13643999e7c91da75d418053d6b56529",
+				"img_logo_url": "1129528455a8b297fb6404cbb90e802a62881b11",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 225640,
+				"name": "Sacred 2 Gold",
+				"playtime_forever": 0,
+				"img_icon_url": "28844816d8aeca6c71b50f8b4f599c59f0d91afd",
+				"img_logo_url": "1df208627b74f8d7f45e4504ba4fdfb55011f056"
+			},
+			{
+				"appid": 91310,
+				"name": "Dead Island",
+				"playtime_forever": 150,
+				"img_icon_url": "1df9ab123c2180d8933038be7578a21e2442befb",
+				"img_logo_url": "62632a275a4cc08f0238ed3d589ce1d8627fde91",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 40300,
+				"name": "Risen",
+				"playtime_forever": 0,
+				"img_icon_url": "d5dbefdcd2e6e5def6518b3e66bf4ecf7f8aedcf",
+				"img_logo_url": "e65177f1ab3fbbde7286c1233724eca7f5b9148c"
+			},
+			{
+				"appid": 207930,
+				"name": "Sacred Citadel",
+				"playtime_forever": 0,
+				"img_icon_url": "86ba4a65a016575fec95f10717e0e37cc4771401",
+				"img_logo_url": "ac6b326412f4000453e789a8c3a104145728836c",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 225080,
+				"name": "Brothers - A Tale of Two Sons",
+				"playtime_forever": 310,
+				"img_icon_url": "9d6e8bcae597582734b382d8da93e5fa7b1c640b",
+				"img_logo_url": "12f5c3aaa2b1d69d0786e1d09e0b77e2da6f8980",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 239030,
+				"name": "Papers, Please",
+				"playtime_forever": 155,
+				"img_icon_url": "102e22fc7e0689cb5a9d8cfdd5a6725d571d1a0f",
+				"img_logo_url": "eb4c045f73f9a4b1bac708e70fb12f12cd53010f",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 47790,
+				"name": "Medal of Honor(TM) Single Player",
+				"playtime_forever": 0,
+				"img_icon_url": "65a39794d6d39bf45e3273eacd2ab0cd2ad0fc80",
+				"img_logo_url": "8a925ea4d40df32587ddae98d4e7fc5a6518b0f7"
+			},
+			{
+				"appid": 47830,
+				"name": "Medal of Honor(TM) Multiplayer",
+				"playtime_forever": 0,
+				"img_icon_url": "65a39794d6d39bf45e3273eacd2ab0cd2ad0fc80",
+				"img_logo_url": "8a925ea4d40df32587ddae98d4e7fc5a6518b0f7"
+			},
+			{
+				"appid": 252950,
+				"name": "Rocket League",
+				"playtime_forever": 407,
+				"img_icon_url": "217214f6bd922a8da8bdd684aa94b1ef8e7724d1",
+				"img_logo_url": "58d7334290672887fdd47e25251f291b812c895e",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 241540,
+				"name": "State of Decay",
+				"playtime_forever": 88,
+				"img_icon_url": "32fa1abe69d8d0fe2f4ebce58dc8a72129c114a0",
+				"img_logo_url": "b45e56af93872286efddb87d7aa5722f88459a5a",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 49520,
+				"name": "Borderlands 2",
+				"playtime_forever": 896,
+				"img_icon_url": "a3f4945226e69b6196074df4c776e342d3e5a3be",
+				"img_logo_url": "86b0fa5ddb41b4dfff7df194a017f3418130d668",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 217490,
+				"name": "Borderlands 2 RU",
+				"playtime_forever": 0,
+				"img_icon_url": "ed09ad42baa474c2ce425df24bc3dff587a9e4c0",
+				"img_logo_url": "9ed3f465fef838358566b02386a917730bcf8a98",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 2870,
+				"name": "X Rebirth",
+				"playtime_forever": 1851,
+				"img_icon_url": "9994410c43d4baa098844c10c258b4626edab0b4",
+				"img_logo_url": "68fe65afe4ec7bc2efed5b44408d5228450fd6d8",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 221910,
+				"name": "The Stanley Parable",
+				"playtime_forever": 242,
+				"img_icon_url": "d4958966dbc02d7a282c52552f71ce6910957b63",
+				"img_logo_url": "80de64fedc906c4d81123e7ddc1d61d39183ab2d",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 260430,
+				"name": "The Four Kings Casino and Slots",
+				"playtime_forever": 0,
+				"img_icon_url": "43b10e164ac2b63c14a0e22d0fc5e4a243be6034",
+				"img_logo_url": "af1e87561817d783aac75efb192950277400b1a9",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 261110,
+				"name": "Killer is Dead",
+				"playtime_forever": 13,
+				"img_icon_url": "4bb1ca7ca4ffa4be186bdf0d01d0f07c71283fd3",
+				"img_logo_url": "187ab8f22a578692b0ec5dcbe1c07e30828b566f",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 246580,
+				"name": "The Typing of The Dead: Overkill",
+				"playtime_forever": 43,
+				"img_icon_url": "7687a998ca2c0c6d3bc89280ff9d8a8d5b449de0",
+				"img_logo_url": "f3f57e1059d2e5e7dd5460a6f7bc6be95ab55c21",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 16700,
+				"name": "Stronghold Crusader Extreme HD",
+				"playtime_forever": 0,
+				"img_icon_url": "b6d157c98d12921c4a3a13182174aa0bff22d810",
+				"img_logo_url": "b95469f2d56b6825e867dda281a1e5b5779f4644"
+			},
+			{
+				"appid": 40970,
+				"name": "Stronghold Crusader HD",
+				"playtime_forever": 0,
+				"img_icon_url": "e8ab759836e51dde895aeeb53bdb35959dae00d0",
+				"img_logo_url": "209b203f33be8f793aa7288ec7e22f93a9a2dd90"
+			},
+			{
+				"appid": 40950,
+				"name": "Stronghold HD",
+				"playtime_2weeks": 36,
+				"playtime_forever": 36,
+				"img_icon_url": "d926a3fecaa591d1b64e823ba74d990ca3d94543",
+				"img_logo_url": "af85576895125cedeb8a37c15ae7abb556c509ca"
+			},
+			{
+				"appid": 265930,
+				"name": "Goat Simulator",
+				"playtime_forever": 133,
+				"img_icon_url": "edf6c28b83d5fc221338ff71d01caa11d11d3b50",
+				"img_logo_url": "f116260f6858dda8a2e4c0ccedf270c8a24a0add",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 221100,
+				"name": "DayZ",
+				"playtime_forever": 7436,
+				"img_icon_url": "16a985dfee9b093d76a0ffc4cf4c77ba20c2eb0d",
+				"img_logo_url": "3520d3db4e282585b24fe28178ca86f54874e3b5",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 8930,
+				"name": "Sid Meier's Civilization V",
+				"playtime_forever": 3905,
+				"img_icon_url": "fbe80c4743e226f0bf65559c91b12953d4446808",
+				"img_logo_url": "2203f62bd1bdc75c286c13534e50f22e3bd5bb58",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 271590,
+				"name": "Grand Theft Auto V",
+				"playtime_forever": 892,
+				"img_icon_url": "1e72f87eb927fa1485e68aefaff23c7fd7178251",
+				"img_logo_url": "e447e82f8b0c67f9e001498503c62f2a187bc609",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 237990,
+				"name": "The Banner Saga",
+				"playtime_forever": 320,
+				"img_icon_url": "0f31b43dd5dc68b3bba7a380ca24d4f0bc9485f3",
+				"img_logo_url": "337592064585a148a69e685df93680d957d4928a",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 222880,
+				"name": "Insurgency",
+				"playtime_forever": 1494,
+				"img_icon_url": "b072fc4239951c1952f4877edde340419438b528",
+				"img_logo_url": "b620a8286682299e2a1ff272b04fb09d1b4edd38",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 213670,
+				"name": "South Park™: The Stick of Truth™",
+				"playtime_forever": 166,
+				"img_icon_url": "afad8295902080fb2aedd9aaabb3e21c10eecc85",
+				"img_logo_url": "659c39e8727258477a5fab408ed0cf0c79b67fbc",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 282140,
+				"name": "SOMA",
+				"playtime_forever": 584,
+				"img_icon_url": "018a23ae2cd618b302731b91fcef5954c22d615c",
+				"img_logo_url": "ae099d49d4353982e81043704ef239d1074cc67d",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 282440,
+				"name": "Quake Live",
+				"playtime_forever": 49,
+				"img_icon_url": "bac9828d3e193c948801b14660490576fbbf9f72",
+				"img_logo_url": "bba7e836bc54e709020ee4d95c08f4dff1d23537",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 33910,
+				"name": "Arma 2",
+				"playtime_forever": 91,
+				"img_icon_url": "7fd2d12d3f91ee3e69955121323bb89063ea304e",
+				"img_logo_url": "9d4d576e4662870232eae35e50b041f93a9a6fa0"
+			},
+			{
+				"appid": 33930,
+				"name": "Arma 2: Operation Arrowhead",
+				"playtime_forever": 1409,
+				"img_icon_url": "32431d84014bf4652181f45bc7c06f1ca3f34363",
+				"img_logo_url": "c5eaa05810878e600d117be1c96107a20cd9b262",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 219540,
+				"name": "Arma 2: Operation Arrowhead Beta (Obsolete)",
+				"playtime_forever": 0,
+				"img_icon_url": "32431d84014bf4652181f45bc7c06f1ca3f34363",
+				"img_logo_url": "c2ea07874fb1a776e4c5bfc659e5f296d656777d"
+			},
+			{
+				"appid": 41900,
+				"name": "The Bard's Tale",
+				"playtime_forever": 0,
+				"img_icon_url": "66d6372dc2749f17284bf384330e74a86831c267",
+				"img_logo_url": "45a79a5608e5335dab65939dd5c679aeb3e8ae98"
+			},
+			{
+				"appid": 240760,
+				"name": "Wasteland 2",
+				"playtime_forever": 865,
+				"img_icon_url": "b86ee8dadc97895c777934d27cdc4e06b2105a34",
+				"img_logo_url": "fa2f340bb16fd48e63e3057ce0bba89b4b4d4a34",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 259130,
+				"name": "Wasteland 1 - The Original Classic",
+				"playtime_forever": 0,
+				"img_icon_url": "9129c128b196754cf9f4c4723edf5f55d956f5ec",
+				"img_logo_url": "32c6b63cdd3a0463fefe02a952167581940de795"
+			},
+			{
+				"appid": 404730,
+				"name": "Wasteland 2: Director's Cut",
+				"playtime_forever": 0,
+				"img_icon_url": "b86ee8dadc97895c777934d27cdc4e06b2105a34",
+				"img_logo_url": "ec9d8645a4a9bd4fdfdbb5aaa8482bcf8c75ce9a",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 65700,
+				"name": "Arma 2: British Armed Forces",
+				"playtime_forever": 1,
+				"img_icon_url": "ff60d26fad0a23f4bb2991ec4768aa9ca74430eb",
+				"img_logo_url": "0fc49e02b3274791d84571ec6bbd62b9cefdbdc0"
+			},
+			{
+				"appid": 65720,
+				"name": "Arma 2: Private Military Company",
+				"playtime_forever": 1,
+				"img_icon_url": "7f75e37ba32674813196757e34b6d5db0e7af270",
+				"img_logo_url": "7fb1795a0c11ee784d92fbe434949c3bd8d4179b"
+			},
+			{
+				"appid": 266840,
+				"name": "Age of Mythology: Extended Edition",
+				"playtime_forever": 989,
+				"img_icon_url": "43e500d938e87b623c11a02d7b80f7e9018fbbd7",
+				"img_logo_url": "4b7d2e9491ecf24ebf34973d80ae1a0aa066edd5",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 201810,
+				"name": "Wolfenstein: The New Order",
+				"playtime_forever": 1040,
+				"img_icon_url": "965b8943ad172d8cf0c74e86068b4aa670aba92c",
+				"img_logo_url": "e945e10daf94f6fe80d629a1c3381125df27f4cb",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 297000,
+				"name": "Heroes of Might &amp; Magic III - HD Edition",
+				"playtime_forever": 522,
+				"img_icon_url": "0ae505e74b80d1cdee125500f4467a4c7a1d7e43",
+				"img_logo_url": "28b6faf03552413f5dfdea02f951a2fec17125db",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 238460,
+				"name": "BattleBlock Theater",
+				"playtime_forever": 221,
+				"img_icon_url": "2f258aaff583d797812cdcf24830d5992f48733b",
+				"img_logo_url": "13380473acaa95f843301b8a21a383790ae384de",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 8980,
+				"name": "Borderlands",
+				"playtime_forever": 0,
+				"img_icon_url": "eb45fb32b7f4e75564a30a52aa3c35a191253ea0",
+				"img_logo_url": "88ec298ff1ff0d748df39e084892aed6e919b146",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 286690,
+				"name": "Metro 2033 Redux",
+				"playtime_forever": 188,
+				"img_icon_url": "353ea01a045c084215bca95519808eaa7319ce0c",
+				"img_logo_url": "ee15b7b90827e5450caf4ec5b021c7753153514d",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 287390,
+				"name": "Metro: Last Light Redux",
+				"playtime_forever": 0,
+				"img_icon_url": "7139b7af2ad9d248d21e98302b964cd61474318c",
+				"img_logo_url": "fe86857d70887fab98ae989d09771ee4bcbce861",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 301520,
+				"name": "Robocraft",
+				"playtime_forever": 19,
+				"img_icon_url": "939ba382462f3816cf25bae02e3b5363904297d3",
+				"img_logo_url": "25dc7c2c4ac55178c0203496f3d57c0f922b6149"
+			},
+			{
+				"appid": 244160,
+				"name": "Homeworld Remastered Collection",
+				"playtime_forever": 1350,
+				"img_icon_url": "8c74f09dfd9598adab163b2000e9696faff73024",
+				"img_logo_url": "781843882c34af271123ae226ba0681cfe52c8d9",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 303800,
+				"name": "The Witcher Adventure Game",
+				"playtime_2weeks": 2,
+				"playtime_forever": 405,
+				"img_icon_url": "c3f91a46dff04b763b0d7e41fbc9ff0dd21227d8",
+				"img_logo_url": "dca945188e9bf7dfbe4c082b41ee9fddd8ef01ff",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 304930,
+				"name": "Unturned",
+				"playtime_forever": 518,
+				"img_icon_url": "e18009fb628b35953826efe47dc3be556b689f4c",
+				"img_logo_url": "32b7ea686e0fb11e24008e4dab179a40a6b2eb09",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 38400,
+				"name": "Fallout",
+				"playtime_forever": 0,
+				"img_icon_url": "df0001a1aa011e6c7a8f38a65908070eba3d2f61",
+				"img_logo_url": "692a9f4d67fb858794887e1b8c826c754c89c467"
+			},
+			{
+				"appid": 38410,
+				"name": "Fallout 2",
+				"playtime_forever": 0,
+				"img_icon_url": "df0001a1aa011e6c7a8f38a65908070eba3d2f61",
+				"img_logo_url": "2ca37c1ab1582d9c50806d5d06ff7a63b60add10"
+			},
+			{
+				"appid": 38420,
+				"name": "Fallout Tactics",
+				"playtime_forever": 5,
+				"img_icon_url": "0f81d73db11d9b460eb268440793e76d02dd8ae6",
+				"img_logo_url": "1f869f415d23c18b4bd6d5355b4f6906b0b7b144"
+			},
+			{
+				"appid": 292030,
+				"name": "The Witcher 3: Wild Hunt",
+				"playtime_forever": 7973,
+				"img_icon_url": "87118494c65a92e1ac4c9734ce91950c1d6fe9a5",
+				"img_logo_url": "2f22c2e5528b78662988dfcb0fc9aad372f01686",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 287450,
+				"name": "Rise of Nations: Extended Edition",
+				"playtime_forever": 682,
+				"img_icon_url": "0e142a02add319e32447f957a30fd1d360e62d3e",
+				"img_logo_url": "2fde83563239a51e056de7de29b598e712e2a907",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 241930,
+				"name": "Middle-earth: Shadow of Mordor",
+				"playtime_forever": 91,
+				"img_icon_url": "161afab3c9f725f593635723cc64a7fbeb324ead",
+				"img_logo_url": "00631b918ee8799ff48b3d91d9eb0d3278aafa83",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 239140,
+				"name": "Dying Light",
+				"playtime_forever": 175,
+				"img_icon_url": "d6eafb4fab916ac475bf67054332dd1c0659f8d6",
+				"img_logo_url": "a2656cade3af57d07d0a9622d3b52745b26b2225",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 330840,
+				"name": "Game of Thrones - A Telltale Games Series",
+				"playtime_forever": 313,
+				"img_icon_url": "b981849ef37118e0cef6388f0c893d381323e4b3",
+				"img_logo_url": "93beb587402d54d1226cda1c3ba81947eae6253f",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 305620,
+				"name": "The Long Dark",
+				"playtime_forever": 204,
+				"img_icon_url": "5b58df4e4fdf9bb27eda8fa948b828761def86b9",
+				"img_logo_url": "49be8895b52f5c2f23e146a7739965dbd3e16a0f",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 282070,
+				"name": "This War of Mine",
+				"playtime_forever": 181,
+				"img_icon_url": "38ad6fd10e2b89ab24e8013584ece7961bebe086",
+				"img_logo_url": "a806ec2170dc3b10740b150bfd6392964fd92656",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 335670,
+				"name": "LISA",
+				"playtime_forever": 46,
+				"img_icon_url": "4db7f8a68772c4b4ce484fc2db896e8000c32f7a",
+				"img_logo_url": "eae97830175ff475185bbd26efa907f776912c22",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 257510,
+				"name": "The Talos Principle",
+				"playtime_forever": 0,
+				"img_icon_url": "8222673c1eb13e6a8a8367ec0e2940a887ecf270",
+				"img_logo_url": "0392d2bd5d1bec31f2fd283bc4555fdc22dd44a9",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 319630,
+				"name": "Life Is Strange™",
+				"playtime_forever": 166,
+				"img_icon_url": "e54b13da0710a35e7088664a77632e79157d8332",
+				"img_logo_url": "e92d2b3a0c01be3bdd77ec665a3014028efaa105",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 346010,
+				"name": "Besiege",
+				"playtime_forever": 161,
+				"img_icon_url": "16667f445723c720782314269e41f9daa8a7fb56",
+				"img_logo_url": "d629e7d15a59c8195d0b1c72f8e9e28e78842c96",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 350080,
+				"name": "Wolfenstein: The Old Blood ",
+				"playtime_forever": 406,
+				"img_icon_url": "e45bc4d7a8233546c74f1cbba4e7d7a02bfc53a0",
+				"img_logo_url": "91b96f8e81a82dabe53c95fd8d93b5dcdbb60fec",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 359320,
+				"name": "Elite Dangerous",
+				"playtime_forever": 580,
+				"img_icon_url": "c893e2752550a70950d90c5b881c7d6aac312356",
+				"img_logo_url": "8cec856f5350e59f874bc1171fc864175fe095eb",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 230230,
+				"name": "Divinity: Original Sin (Classic)",
+				"playtime_forever": 0,
+				"img_icon_url": "ca9cdafd4257253dba68babeed300874190fbbff",
+				"img_logo_url": "255a3ee6afe89fb84f34a8bba0faa7818f0ed400",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 373420,
+				"name": "Divinity: Original Sin Enhanced Edition",
+				"playtime_forever": 222,
+				"img_icon_url": "822ff912b2e464fbebbedf7a75ae1eb24921f16b",
+				"img_logo_url": "4e6d09ea2106beeb3ea6a481755a702f71987baf",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 234140,
+				"name": "Mad Max",
+				"playtime_forever": 257,
+				"img_icon_url": "71a4dd52273b749f96913a48dd6f439fb5ddc23e",
+				"img_logo_url": "f114c3cf063da97aac613bf408b465e50f43a644",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 440430,
+				"name": "Life Is Strange™ - Directors' Commentary - 1.Two directors",
+				"playtime_forever": 0,
+				"img_icon_url": "",
+				"img_logo_url": ""
+			},
+			{
+				"appid": 440431,
+				"name": "Life Is Strange™ - Directors' Commentary - 2. Let's play Life is Strange",
+				"playtime_forever": 0,
+				"img_icon_url": "",
+				"img_logo_url": ""
+			},
+			{
+				"appid": 440432,
+				"name": "Life Is Strange™ - Directors' Commentary - 3. Intentions",
+				"playtime_forever": 0,
+				"img_icon_url": "",
+				"img_logo_url": ""
+			},
+			{
+				"appid": 440433,
+				"name": "Life Is Strange™ - Directors' Commentary - 4. A matter of choice",
+				"playtime_forever": 0,
+				"img_icon_url": "",
+				"img_logo_url": ""
+			},
+			{
+				"appid": 440434,
+				"name": "Life Is Strange™ - Directors' Commentary - 5. A lively world",
+				"playtime_forever": 0,
+				"img_icon_url": "",
+				"img_logo_url": ""
+			},
+			{
+				"appid": 440435,
+				"name": "Life Is Strange™ - Directors' Commentary - 6. Capturing the moment",
+				"playtime_forever": 0,
+				"img_icon_url": "",
+				"img_logo_url": ""
+			},
+			{
+				"appid": 440436,
+				"name": "Life Is Strange™ - Directors' Commentary - 7. Social issues",
+				"playtime_forever": 0,
+				"img_icon_url": "",
+				"img_logo_url": ""
+			},
+			{
+				"appid": 440437,
+				"name": "Life Is Strange™ - Directors' Commentary - 8. Getting things right",
+				"playtime_forever": 0,
+				"img_icon_url": "",
+				"img_logo_url": ""
+			},
+			{
+				"appid": 440438,
+				"name": "Life Is Strange™ - Directors' Commentary - 9. Voices of Arcadia Bay",
+				"playtime_forever": 0,
+				"img_icon_url": "",
+				"img_logo_url": ""
+			},
+			{
+				"appid": 65980,
+				"name": "Sid Meier's Civilization: Beyond Earth",
+				"playtime_forever": 2031,
+				"img_icon_url": "d3ec8a47272ea6ecaf8545591df571fe6bb18f30",
+				"img_logo_url": "2d0410a3f2a203ef467f6338050c5a9a5c6b601e",
+				"has_community_visible_stats": true
+			},
+			{
+				"appid": 310380,
+				"name": "Fractured Space",
+				"playtime_forever": 61,
+				"img_icon_url": "c733bddfe3d1d6daab8a79e0d0b94c8c09ea61bb",
+				"img_logo_url": "6fb7ce7701d0715e440b723b092afac35fb79024",
+				"has_community_visible_stats": true
+			}
+		]
+		
+	}
+}</value>
+  </data>
+  <data name="GetPlayerSummariesResponseJson" xml:space="preserve">
+    <value>{
+	"response": {
+		"players": [
+			{
+				"steamid": "76561198084024217",
+				"communityvisibilitystate": 3,
+				"profilestate": 1,
+				"personaname": "trogidae",
+				"lastlogoff": 1455660378,
+				"commentpermission": 1,
+				"profileurl": "http://steamcommunity.com/profiles/76561198084024217/",
+				"avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/52/52fe41207d1ddf8c7fe1265d733c08501772ca22.jpg",
+				"avatarmedium": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/52/52fe41207d1ddf8c7fe1265d733c08501772ca22_medium.jpg",
+				"avatarfull": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/52/52fe41207d1ddf8c7fe1265d733c08501772ca22_full.jpg",
+				"personastate": 1,
+				"realname": "Dana",
+				"primaryclanid": "103582791434636960",
+				"timecreated": 1360940591,
+				"personastateflags": 0,
+				"loccountrycode": "LV",
+				"locstatecode": "25",
+				"loccityid": 27137
+			},
+			{
+				"steamid": "76561197974081377",
+				"communityvisibilitystate": 3,
+				"profilestate": 1,
+				"personaname": "Eadgar",
+				"lastlogoff": 1455660419,
+				"profileurl": "http://steamcommunity.com/id/edgarssults/",
+				"avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/6d/6dd0bc925d93a031b1493af1cbdb8b9d7550fce9.jpg",
+				"avatarmedium": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/6d/6dd0bc925d93a031b1493af1cbdb8b9d7550fce9_medium.jpg",
+				"avatarfull": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/6d/6dd0bc925d93a031b1493af1cbdb8b9d7550fce9_full.jpg",
+				"personastate": 1,
+				"realname": "Edgars Šults",
+				"primaryclanid": "103582791435937059",
+				"timecreated": 1108130336,
+				"personastateflags": 0,
+				"loccountrycode": "LV",
+				"locstatecode": "25"
+			}
+		]
+	}
+}</value>
+  </data>
+  <data name="GetRecentlyPlayedGamesResponseJson" xml:space="preserve">
+    <value>{
+	"response": {
+		"total_count": 15,
+		"games": [
+			{
+				"appid": 107410,
+				"name": "Arma 3",
+				"playtime_2weeks": 306,
+				"playtime_forever": 2167,
+				"img_icon_url": "3212af52faf994c558bd622cb0f360c1ef295a6b",
+				"img_logo_url": "b49962441a01f1f80b180af1293608dddf7df6b0"
+			},
+			{
+				"appid": 221380,
+				"name": "Age of Empires II: HD Edition",
+				"playtime_2weeks": 246,
+				"playtime_forever": 2049,
+				"img_icon_url": "109c74df17f9b67ea47d8f01e3d1ec25278b9f73",
+				"img_logo_url": "37e9da3f1174891fe38f8fb0206acda8b6bfc729"
+			},
+			{
+				"appid": 225080,
+				"name": "Brothers - A Tale of Two Sons",
+				"playtime_2weeks": 152,
+				"playtime_forever": 310,
+				"img_icon_url": "9d6e8bcae597582734b382d8da93e5fa7b1c640b",
+				"img_logo_url": "12f5c3aaa2b1d69d0786e1d09e0b77e2da6f8980"
+			},
+			{
+				"appid": 12210,
+				"name": "Grand Theft Auto IV",
+				"playtime_2weeks": 72,
+				"playtime_forever": 186,
+				"img_icon_url": "a3cf6a64c73f991898a9e34681d0db8226eaa191",
+				"img_logo_url": "47fb2a3e0763be24e49662591d6e076c58b2178d"
+			},
+			{
+				"appid": 72850,
+				"name": "The Elder Scrolls V: Skyrim",
+				"playtime_2weeks": 68,
+				"playtime_forever": 11771,
+				"img_icon_url": "b9aca8a189abd8d6aaf09047dbb0f57582683e1c",
+				"img_logo_url": "c5af3cde13610fca25cd17634a96d72487d21e74"
+			},
+			{
+				"appid": 33910,
+				"name": "Arma 2",
+				"playtime_2weeks": 53,
+				"playtime_forever": 53,
+				"img_icon_url": "7fd2d12d3f91ee3e69955121323bb89063ea304e",
+				"img_logo_url": "9d4d576e4662870232eae35e50b041f93a9a6fa0"
+			},
+			{
+				"appid": 203160,
+				"name": "Tomb Raider",
+				"playtime_2weeks": 45,
+				"playtime_forever": 438,
+				"img_icon_url": "3ee640a8aba6992678e36f4e40cba9c71c02348b",
+				"img_logo_url": "495f7d723659add6ea476b3699be5424282ac4b8"
+			},
+			{
+				"appid": 33930,
+				"name": "Arma 2: Operation Arrowhead",
+				"playtime_2weeks": 40,
+				"playtime_forever": 40,
+				"img_icon_url": "32431d84014bf4652181f45bc7c06f1ca3f34363",
+				"img_logo_url": "c5eaa05810878e600d117be1c96107a20cd9b262"
+			},
+			{
+				"appid": 221100,
+				"name": "DayZ",
+				"playtime_2weeks": 39,
+				"playtime_forever": 5653,
+				"img_icon_url": "16a985dfee9b093d76a0ffc4cf4c77ba20c2eb0d",
+				"img_logo_url": "3520d3db4e282585b24fe28178ca86f54874e3b5"
+			},
+			{
+				"appid": 110800,
+				"name": "L.A. Noire",
+				"playtime_2weeks": 24,
+				"playtime_forever": 598,
+				"img_icon_url": "ee09d4d2552e52c78d139a3b6dbe60173079d9f8",
+				"img_logo_url": "4176ba6f679e28225a95447082c38db290bc2557"
+			},
+			{
+				"appid": 236390,
+				"name": "War Thunder",
+				"playtime_2weeks": 4,
+				"playtime_forever": 4,
+				"img_icon_url": "88259dcb7014dcdb109d9ece0cfc70c100bc2f9c",
+				"img_logo_url": "219b91aa76b2c6325b763af5e4ad411fab535bf9"
+			},
+			{
+				"appid": 224580,
+				"name": "Arma 2: DayZ Mod",
+				"playtime_2weeks": 1,
+				"playtime_forever": 1,
+				"img_icon_url": "53ab951dfb3b53658da80dbb0f9e199215a0ed47",
+				"img_logo_url": "5e6e7acb5f64e6191c6734a860759741e3a9e2d0"
+			},
+			{
+				"appid": 91310,
+				"name": "Dead Island",
+				"playtime_2weeks": 1,
+				"playtime_forever": 150,
+				"img_icon_url": "1df9ab123c2180d8933038be7578a21e2442befb",
+				"img_logo_url": "62632a275a4cc08f0238ed3d589ce1d8627fde91"
+			},
+			{
+				"appid": 65720,
+				"name": "Arma 2: Private Military Company",
+				"playtime_2weeks": 1,
+				"playtime_forever": 1,
+				"img_icon_url": "7f75e37ba32674813196757e34b6d5db0e7af270",
+				"img_logo_url": "7fb1795a0c11ee784d92fbe434949c3bd8d4179b"
+			},
+			{
+				"appid": 65700,
+				"name": "Arma 2: British Armed Forces",
+				"playtime_2weeks": 1,
+				"playtime_forever": 1,
+				"img_icon_url": "ff60d26fad0a23f4bb2991ec4768aa9ca74430eb",
+				"img_logo_url": "0fc49e02b3274791d84571ec6bbd62b9cefdbdc0"
+			}
+		]
+	}
+}</value>
+  </data>
+  <data name="ResolveVanityUrlResponseJson" xml:space="preserve">
+    <value>{
+	"response": {
+		"steamid": "76561197974081377",
+		"success": 1
+	}
+}</value>
+  </data>
+</root>
