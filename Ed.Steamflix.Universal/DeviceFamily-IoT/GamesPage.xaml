@@ -18,39 +18,12 @@
         </CommandBar>
         
         <Hub x:Name="GamesHub"
-            Header="Games"
-            Orientation="Vertical"
-            d:DataContext="{StaticResource GamesPageViewModelMock}">
-            <HubSection Header="Recent">
-                <DataTemplate>
-                    <ListView
-                        ScrollViewer.HorizontalScrollMode="Enabled"
-                        Tapped="GameGridView_Tapped"
-                        ItemTemplate="{StaticResource GameListItemTemplate}"
-                        ItemsSource="{Binding Path=RecentlyPlayedGames.Result}">
-                        <ListView.ItemsPanel>
-                            <ItemsPanelTemplate>
-                                <VirtualizingStackPanel Orientation="Horizontal"></VirtualizingStackPanel>
-                            </ItemsPanelTemplate>
-                        </ListView.ItemsPanel>
-                    </ListView>
-                </DataTemplate>
-            </HubSection>
-            <HubSection Header="Owned">
-                <DataTemplate>
-                    <ListView
-                        ScrollViewer.HorizontalScrollMode="Enabled"
-                        Tapped="GameGridView_Tapped"
-                        ItemTemplate="{StaticResource GameListItemTemplate}"
-                        ItemsSource="{Binding Path=OwnedGames.Result}">
-                        <ListView.ItemsPanel>
-                            <ItemsPanelTemplate>
-                                <VirtualizingStackPanel Orientation="Horizontal"></VirtualizingStackPanel>
-                            </ItemsPanelTemplate>
-                        </ListView.ItemsPanel>
-                    </ListView>
-                </DataTemplate>
-            </HubSection>
+             Header="Games"
+             Orientation="Vertical"
+             d:DataContext="{StaticResource GamesPageViewModelMock}"
+             Tapped="Game_Tapped">
+            <HubSection Template="{StaticResource RecentGamesTemplate}" />
+            <HubSection Template="{StaticResource OwnedGamesTemplate}" />
         </Hub>
     </StackPanel>
 </Page>

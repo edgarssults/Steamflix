@@ -20,22 +20,9 @@
         <Hub x:Name="BroadcastsHub"
              Orientation="Vertical"
              Header="{Binding Path=Game.Name}"
-             d:DataContext="{StaticResource BroadcastsPageViewModelMock}">
-            <HubSection Header="Broadcasts">
-                <DataTemplate>
-                    <ListView
-                        ScrollViewer.HorizontalScrollMode="Enabled"
-                        Tapped="BroadcastListView_Tapped"
-                        ItemTemplate="{StaticResource BroadcastListItemTemplate}"
-                        ItemsSource="{Binding Path=Broadcasts.Result}">
-                        <ListView.ItemsPanel>
-                            <ItemsPanelTemplate>
-                                <VirtualizingStackPanel Orientation="Horizontal"></VirtualizingStackPanel>
-                            </ItemsPanelTemplate>
-                        </ListView.ItemsPanel>
-                    </ListView>
-                </DataTemplate>
-            </HubSection>
+             d:DataContext="{StaticResource BroadcastsPageViewModelMock}"
+             Tapped="Broadcast_Tapped">
+            <HubSection Template="{StaticResource BroadcastsTemplate}" />
         </Hub>
     </StackPanel>
 </Page>

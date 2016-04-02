@@ -56,7 +56,72 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        
+
+        <ControlTemplate x:Key="RecentGamesTemplate">
+            <HubSection Header="Recent" MinHeight="137">
+                <DataTemplate>
+                    <StackPanel>
+                        <ListView
+                            Visibility="{Binding RecentlyPlayedGames.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
+                            ScrollViewer.HorizontalScrollMode="Enabled"
+                            ItemTemplate="{StaticResource GameListItemTemplate}"
+                            ItemsSource="{Binding Path=RecentlyPlayedGames.Result}">
+                            <ListView.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <VirtualizingStackPanel Orientation="Horizontal"></VirtualizingStackPanel>
+                                </ItemsPanelTemplate>
+                            </ListView.ItemsPanel>
+                        </ListView>
+                        <Border Visibility="{Binding RecentlyPlayedGames.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
+                                Margin="0,10,0,10" Width="184" Height="69" BorderThickness="1" BorderBrush="Gray">
+                            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Loading...</TextBlock>
+                        </Border>
+                    </StackPanel>
+                </DataTemplate>
+            </HubSection>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="OwnedGamesTemplate">
+            <HubSection Header="Owned" MinHeight="137">
+                <DataTemplate>
+                    <StackPanel>
+                        <ListView
+                            Visibility="{Binding OwnedGames.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
+                            ScrollViewer.HorizontalScrollMode="Enabled"
+                            ItemTemplate="{StaticResource GameListItemTemplate}"
+                            ItemsSource="{Binding Path=OwnedGames.Result}">
+                            <ListView.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <VirtualizingStackPanel Orientation="Horizontal"></VirtualizingStackPanel>
+                                </ItemsPanelTemplate>
+                            </ListView.ItemsPanel>
+                        </ListView>
+                        <Border Visibility="{Binding OwnedGames.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
+                                Margin="0,10,0,10" Width="184" Height="69" BorderThickness="1" BorderBrush="Gray">
+                            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Loading...</TextBlock>
+                        </Border>
+                    </StackPanel>
+                </DataTemplate>
+            </HubSection>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="BroadcastsTemplate">
+            <HubSection Header="Broadcasts">
+                <DataTemplate>
+                    <ListView
+                        ScrollViewer.HorizontalScrollMode="Enabled"
+                        ItemTemplate="{StaticResource BroadcastListItemTemplate}"
+                        ItemsSource="{Binding Path=Broadcasts.Result}">
+                        <ListView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <VirtualizingStackPanel Orientation="Horizontal"></VirtualizingStackPanel>
+                            </ItemsPanelTemplate>
+                        </ListView.ItemsPanel>
+                    </ListView>
+                </DataTemplate>
+            </HubSection>
+        </ControlTemplate>
+
     </Application.Resources>
 
 </Application>

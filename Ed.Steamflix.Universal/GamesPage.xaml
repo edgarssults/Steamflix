@@ -14,57 +14,12 @@
 
     <Grid Background="{StaticResource AppBackgroundColor}">
         <Hub x:Name="GamesHub"
-            Header="Games"
-            Orientation="Vertical"
-            d:DataContext="{StaticResource GamesPageViewModelMock}">
-            <HubSection Header="Recent"
-                        Visibility="{Binding RecentlyPlayedGames.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}">
-                <DataTemplate>
-                    <ListView
-                        ScrollViewer.HorizontalScrollMode="Enabled"
-                        Tapped="GameGridView_Tapped"
-                        ItemTemplate="{StaticResource GameListItemTemplate}"
-                        ItemsSource="{Binding Path=RecentlyPlayedGames.Result}">
-                        <ListView.ItemsPanel>
-                            <ItemsPanelTemplate>
-                                <VirtualizingStackPanel Orientation="Horizontal"></VirtualizingStackPanel>
-                            </ItemsPanelTemplate>
-                        </ListView.ItemsPanel>
-                    </ListView>
-                </DataTemplate>
-            </HubSection>
-            <HubSection Header="Recent"
-                        Visibility="{Binding RecentlyPlayedGames.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}">
-                <DataTemplate>
-                    <Border Margin="0,10,0,10" Width="184" Height="69" BorderThickness="1" BorderBrush="Gray">
-                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Loading...</TextBlock>
-                    </Border>
-                </DataTemplate>
-            </HubSection>
-            <HubSection Header="Owned"
-                        Visibility="{Binding OwnedGames.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}">
-                <DataTemplate>
-                    <ListView
-                        ScrollViewer.HorizontalScrollMode="Enabled"
-                        Tapped="GameGridView_Tapped"
-                        ItemTemplate="{StaticResource GameListItemTemplate}"
-                        ItemsSource="{Binding Path=OwnedGames.Result}">
-                        <ListView.ItemsPanel>
-                            <ItemsPanelTemplate>
-                                <VirtualizingStackPanel Orientation="Horizontal"></VirtualizingStackPanel>
-                            </ItemsPanelTemplate>
-                        </ListView.ItemsPanel>
-                    </ListView>
-                </DataTemplate>
-            </HubSection>
-            <HubSection Header="Owned"
-                        Visibility="{Binding OwnedGames.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}">
-                <DataTemplate>
-                    <Border Margin="0,10,0,10" Width="184" Height="69" BorderThickness="1" BorderBrush="Gray">
-                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Loading...</TextBlock>
-                    </Border>
-                </DataTemplate>
-            </HubSection>
+             Header="Games"
+             Orientation="Vertical"
+             d:DataContext="{StaticResource GamesPageViewModelMock}"
+             Tapped="Game_Tapped">
+            <HubSection Template="{StaticResource RecentGamesTemplate}" />
+            <HubSection Template="{StaticResource OwnedGamesTemplate}" />
         </Hub>
     </Grid>
 </Page>

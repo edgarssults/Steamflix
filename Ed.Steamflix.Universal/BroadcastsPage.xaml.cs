@@ -43,10 +43,14 @@ namespace Ed.Steamflix.Universal
             this.GoBack(e);
         }
 
-        private void BroadcastListView_Tapped(object sender, TappedRoutedEventArgs e)
+        private void Broadcast_Tapped(object sender, TappedRoutedEventArgs e)
         {
             var broadcast = (e.OriginalSource as FrameworkElement).DataContext as Broadcast;
-            Frame.Navigate(typeof(WatchPage), broadcast.WatchUrl);
+
+            if (broadcast != null)
+            {
+                Frame.Navigate(typeof(WatchPage), broadcast.WatchUrl);
+            }
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
