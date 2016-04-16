@@ -1,4 +1,5 @@
-﻿using Ed.Steamflix.Common.Models;
+﻿using Ed.Steamflix.Common;
+using Ed.Steamflix.Common.Models;
 using Ed.Steamflix.Common.Repositories;
 using Ed.Steamflix.Common.Services;
 using Ed.Steamflix.Common.ViewModels;
@@ -9,9 +10,8 @@ namespace Ed.Steamflix.Universal.ViewModels
 {
     public class BroadcastsPageViewModel : IBroadcastsPageViewModel
     {
-        // TODO: DI
-        private readonly BroadcastService _broadcastService = new BroadcastService(new CommunityRepository());
-        private readonly PlayerService _playerService = new PlayerService(new ApiRepository());
+        private readonly BroadcastService _broadcastService = DependencyHelper.Get<BroadcastService>();
+        private readonly GameService _playerService = DependencyHelper.Get<GameService>();
 
         private int _appId;
         private Game _game;

@@ -8,7 +8,10 @@ using System;
 
 namespace Ed.Steamflix.Common.Services
 {
-    public class SteamUser
+    /// <summary>
+    /// Service class for Steam's ISteamUser API.
+    /// </summary>
+    public class UserService
     {
         private readonly Regex _steamIdRegex = new Regex(@"steamcommunity\.com/profiles/(?<SteamId>[^/]*)", RegexOptions.Singleline);
         private readonly Regex _vanityUrlRegex = new Regex(@"steamcommunity\.com/id/(?<VanityUrlName>[^/]*)", RegexOptions.Singleline);
@@ -20,7 +23,7 @@ namespace Ed.Steamflix.Common.Services
         /// Constructor.
         /// </summary>
         /// <param name="apiRepository">API repository implementation.</param>
-        public SteamUser(IApiRepository apiRepository)
+        public UserService(IApiRepository apiRepository)
         {
             _apiRepository = apiRepository;
         }

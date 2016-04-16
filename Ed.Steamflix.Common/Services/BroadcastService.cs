@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Ed.Steamflix.Common.Services
 {
+    /// <summary>
+    /// Service class for Steam's broadcast page.
+    /// </summary>
     public class BroadcastService
     {
         private readonly Regex _broadcastsRegex = new Regex(@"<div[^>]*class=""[^""]*Broadcast_Card[^>]*>\s*<a[^>]*href=""(?<Url>[^""]*)"".*?<div\s*style=""clear:\s*left""></div>\s*</div>", RegexOptions.Singleline);
@@ -45,5 +48,7 @@ namespace Ed.Steamflix.Common.Services
 
             return broadcasts;
         }
+
+        // TODO: Method for getting more broadcasts for the same app
     }
 }

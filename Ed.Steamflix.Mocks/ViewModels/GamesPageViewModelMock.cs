@@ -8,7 +8,7 @@ namespace Ed.Steamflix.Mocks.ViewModels
 {
     public class GamesPageViewModelMock : IGamesPageViewModel
     {
-        private readonly PlayerService _playerService = new PlayerService(new TestApiRepository());
+        private readonly GameService _playerService = new GameService(new TestApiRepository());
 
         /// <summary>
         /// User's Steam ID.

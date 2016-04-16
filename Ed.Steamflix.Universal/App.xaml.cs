@@ -1,8 +1,13 @@
-﻿using Ed.Steamflix.Common.Models;
+﻿using Ed.Steamflix.Common;
+using Ed.Steamflix.Common.Models;
+using Ed.Steamflix.Common.Repositories;
+using Ed.Steamflix.Common.Services;
+using Ninject;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
@@ -31,6 +36,19 @@ namespace Ed.Steamflix.Universal
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
+            // DI kernel
+            IKernel kernel = new StandardKernel();
+            DependencyHelper.InitNinjectKernel(kernel);
+
+            // Services
+            kernel.Bind<UserService>().To<UserService>().InSingletonScope();
+            kernel.Bind<GameService>().To<GameService>().InSingletonScope();
+            kernel.Bind<BroadcastService>().To<BroadcastService>().InSingletonScope();
+
+            // Repositories
+            kernel.Bind<IApiRepository>().To<ApiRepository>().InSingletonScope();
+            kernel.Bind<ICommunityRepository>().To<CommunityRepository>().InSingletonScope();
         }
 
         /// <summary>
@@ -99,7 +117,9 @@ namespace Ed.Steamflix.Universal
         private void OnSuspending(object sender, SuspendingEventArgs e)
         {
             var deferral = e.SuspendingOperation.GetDeferral();
+
             // TODO: Save application state and stop any background activity
+
             deferral.Complete();
         }
     }

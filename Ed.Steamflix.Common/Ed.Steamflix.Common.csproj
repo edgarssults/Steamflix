@@ -108,6 +108,7 @@
     <PRIResource Include="Settings.resw" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DependencyHelper.cs" />
     <Compile Include="Models\AppNews.cs" />
     <Compile Include="Models\Broadcast.cs" />
     <Compile Include="Models\Friend.cs" />
@@ -130,9 +131,9 @@
     <Compile Include="Repositories\IApiRepository.cs" />
     <Compile Include="Repositories\ICommunityRepository.cs" />
     <Compile Include="Services\BroadcastService.cs" />
-    <Compile Include="Services\PlayerService.cs" />
+    <Compile Include="Services\GameService.cs" />
     <Compile Include="Repositories\ApiRepository.cs" />
-    <Compile Include="Services\SteamUser.cs" />
+    <Compile Include="Services\UserService.cs" />
     <Compile Include="ViewModels\IBroadcastsPageViewModel.cs" />
     <Compile Include="ViewModels\IGamesPageViewModel.cs" />
     <Compile Include="ViewModels\NotifyTaskCompletion.cs" />

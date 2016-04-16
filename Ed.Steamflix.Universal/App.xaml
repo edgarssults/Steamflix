@@ -106,18 +106,25 @@
         </ControlTemplate>
 
         <ControlTemplate x:Key="BroadcastsTemplate">
-            <HubSection Header="Broadcasts">
+            <HubSection Header="Broadcasts" MinHeight="234">
                 <DataTemplate>
-                    <ListView
-                        ScrollViewer.HorizontalScrollMode="Enabled"
-                        ItemTemplate="{StaticResource BroadcastListItemTemplate}"
-                        ItemsSource="{Binding Path=Broadcasts.Result}">
-                        <ListView.ItemsPanel>
-                            <ItemsPanelTemplate>
-                                <VirtualizingStackPanel Orientation="Horizontal"></VirtualizingStackPanel>
-                            </ItemsPanelTemplate>
-                        </ListView.ItemsPanel>
-                    </ListView>
+                    <StackPanel>
+                        <ListView
+                            Visibility="{Binding Broadcasts.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
+                            ScrollViewer.HorizontalScrollMode="Enabled"
+                            ItemTemplate="{StaticResource BroadcastListItemTemplate}"
+                            ItemsSource="{Binding Path=Broadcasts.Result}">
+                            <ListView.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <VirtualizingStackPanel Orientation="Horizontal"></VirtualizingStackPanel>
+                                </ItemsPanelTemplate>
+                            </ListView.ItemsPanel>
+                        </ListView>
+                        <Border Visibility="{Binding Broadcasts.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
+                                Margin="0,10,0,10" Width="313" Height="176" BorderThickness="1" BorderBrush="Gray">
+                            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Loading...</TextBlock>
+                        </Border>
+                    </StackPanel>
                 </DataTemplate>
             </HubSection>
         </ControlTemplate>

@@ -1,4 +1,5 @@
-﻿using Ed.Steamflix.Common.Models;
+﻿using Ed.Steamflix.Common;
+using Ed.Steamflix.Common.Models;
 using Ed.Steamflix.Common.Repositories;
 using Ed.Steamflix.Common.Services;
 using Ed.Steamflix.Common.ViewModels;
@@ -9,9 +10,8 @@ namespace Ed.Steamflix.Universal.ViewModels
 {
     public class GamesPageViewModel : IGamesPageViewModel
     {
-        // TODO: DI
-        private readonly PlayerService _playerService = new PlayerService(new ApiRepository());
-        private readonly SteamUser _steamUser = new SteamUser(new ApiRepository());
+        private readonly GameService _playerService = DependencyHelper.Get<GameService>();
+        private readonly UserService _steamUser = DependencyHelper.Get<UserService>();
 
         private string _profileUrl;
 

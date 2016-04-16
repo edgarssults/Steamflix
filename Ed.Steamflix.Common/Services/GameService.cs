@@ -7,7 +7,10 @@ using System.Collections.Generic;
 
 namespace Ed.Steamflix.Common.Services
 {
-    public class PlayerService
+    /// <summary>
+    /// Service class for Steam's IPlayerService API.
+    /// </summary>
+    public class GameService
     {
         private readonly string _serviceName = "IPlayerService";
         private readonly IApiRepository _apiRepository;
@@ -16,7 +19,7 @@ namespace Ed.Steamflix.Common.Services
         /// Constructor.
         /// </summary>
         /// <param name="apiRepository">API repository implementation.</param>
-        public PlayerService(IApiRepository apiRepository)
+        public GameService(IApiRepository apiRepository)
         {
             _apiRepository = apiRepository;
         }
