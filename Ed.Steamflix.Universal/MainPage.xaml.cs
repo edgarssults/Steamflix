@@ -42,5 +42,7 @@ namespace Ed.Steamflix.Universal
                 Frame.Navigate(typeof(GamesPage), ProfileUrl.Text);
             }
         }
+
+        // TODO: Text box doesn't fit, Start button can't be pressed on mobile device, Enter button doesn't work
     }
 }
