@@ -6,7 +6,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:mocks="using:Ed.Steamflix.Mocks.ViewModels"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    Background="{StaticResource AppBackgroundColor}">
 
     <Page.Resources>
         <mocks:GamesPageViewModelMock x:Key="GamesPageViewModelMock" d:IsDataSource="True" />
