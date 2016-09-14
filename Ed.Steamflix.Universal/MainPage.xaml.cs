@@ -20,6 +20,12 @@ namespace Ed.Steamflix.Universal
             {
                 ProfileUrl.Text = profileUrl;
             }
+
+            // TODO: Remove for release
+            if (string.IsNullOrEmpty(profileUrl))
+            {
+                ProfileUrl.Text = "http://steamcommunity.com/id/edgarssults";
+            }
         }
 
         private void Start_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)

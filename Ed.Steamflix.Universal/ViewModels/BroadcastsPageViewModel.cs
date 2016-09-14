@@ -1,6 +1,5 @@
 ﻿using Ed.Steamflix.Common;
 using Ed.Steamflix.Common.Models;
-using Ed.Steamflix.Common.Repositories;
 using Ed.Steamflix.Common.Services;
 using Ed.Steamflix.Common.ViewModels;
 using System.Collections.Generic;
