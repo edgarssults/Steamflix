@@ -30,7 +30,7 @@ namespace Ed.Steamflix.Universal
         {
             try
             {
-                var elementsToHide = "#global_header, #footer_spacer, #footer_responsive_optin_spacer, #footer, #ChatWindow, .BroadcastInfoWrapper";
+                var elementsToHide = "#global_header, #footer_spacer, #footer_responsive_optin_spacer, #footer, #ChatWindow, .BroadcastInfoWrapper, .fullscreen_button";
 
                 // Hide HTML elements and change styles so it looks like the broadcast is in full-screen
                 // We can't call the broadcast's own toggle full-screen function
