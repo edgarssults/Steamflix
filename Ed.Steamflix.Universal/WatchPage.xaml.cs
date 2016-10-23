@@ -18,6 +18,38 @@ namespace Ed.Steamflix.Universal
             this.InitializeComponent();
 
             SystemNavigationManager.GetForCurrentView().BackRequested += App_BackRequested;
+            Browser.DOMContentLoaded += Browser_HideElements;
+        }
+
+        /// <summary>
+        /// Hides elements we don't care about on the broadcast page.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="args"></param>
+        private async void Browser_HideElements(object sender, WebViewDOMContentLoadedEventArgs args)
+        {
+            try
+            {
+                var elementsToHide = "#global_header, #footer_spacer, #footer_responsive_optin_spacer, #footer, #ChatWindow, .BroadcastInfoWrapper";
+
+                // Hide HTML elements and change styles so it looks like the broadcast is in full-screen
+                // We can't call the broadcast's own toggle full-screen function
+                var lines = new[]
+                {
+                    "document.body.style.overflow = 'hidden';",
+                    "document.getElementById('video_wrapper').className += ' fullscreen';",
+                    "document.getElementById('video_content').style.padding = 0;",
+                    "document.getElementById('video_content').style.margin = 0;",
+                    "document.getElementsByClassName('pagecontent')[0].style.padding = 0;",
+                    "var list = document.querySelectorAll('" + elementsToHide + "');",
+                    "for (var i = 0; i < list.length; i++) { var e = list[i]; e.style.display = 'none'; }"
+                };
+                await Browser.InvokeScriptAsync("eval", new[] { string.Join(" ", lines) });
+            }
+            catch
+            {
+                // Ignore script exceptions
+            }
         }
 
         private void App_BackRequested(object sender, BackRequestedEventArgs e)
@@ -30,7 +62,7 @@ namespace Ed.Steamflix.Universal
             // Stop the broadcast playback before navigating away
             Browser.NavigateToString("");
 
-            // Listen for full screen exit event
+            // Stop listening for full screen exit event
             Window.Current.SizeChanged -= OnWindowResize;
 
             base.OnNavigatedFrom(e);
@@ -45,7 +77,7 @@ namespace Ed.Steamflix.Universal
             var watchUrl = (string)e.Parameter;
             Browser.Source = new Uri(watchUrl);
 
-            // Stop listening for full screen exit event
+            // Listen for full screen exit event
             Window.Current.SizeChanged += OnWindowResize;
 
             // Show/hide the command bar
@@ -73,11 +105,6 @@ namespace Ed.Steamflix.Universal
             }
         }
 
-        /// <summary>
-        /// Handles window resizing events, such as exiting from full screen mode.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         void OnWindowResize(object sender, WindowSizeChangedEventArgs e)
         {
             UpdateContent();
