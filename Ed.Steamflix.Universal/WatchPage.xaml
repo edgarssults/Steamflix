@@ -9,6 +9,15 @@
     Background="{StaticResource AppBackgroundColor}">
 
     <Grid Background="{StaticResource AppBackgroundColor}">
-        <WebView x:Name="Browser" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <WebView Grid.Row="0" x:Name="Browser" />
+
+        <CommandBar x:Name="WatchCommandBar" Grid.Row="1" FlowDirection="LeftToRight">
+            <AppBarButton Icon="FullScreen" Label="Full Screen" Tapped="AppBarFullScreenButton_Tapped" />
+        </CommandBar>
     </Grid>
 </Page>

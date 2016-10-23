@@ -15,7 +15,7 @@
         </Grid.RowDefinitions>
 
         <CommandBar Grid.Row="0" FlowDirection="LeftToRight">
-            <AppBarButton Icon="Back" Label="Back" Tapped="AppBarButton_Tapped" />
+            <AppBarButton Icon="Back" Label="Back" Tapped="AppBarBackButton_Tapped" />
         </CommandBar>
 
         <WebView Grid.Row="1" x:Name="Browser" />

@@ -11,6 +11,7 @@ using System.Reflection;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
+using Windows.ApplicationModel.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -93,6 +94,7 @@ namespace Ed.Steamflix.Universal
                 // parameter
                 rootFrame.Navigate(typeof(MainPage), e.Arguments);
             }
+
             // Ensure the current window is active
             Window.Current.Activate();
         }

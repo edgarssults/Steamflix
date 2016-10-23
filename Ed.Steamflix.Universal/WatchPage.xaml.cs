@@ -1,18 +1,10 @@
 ﻿using Ed.Steamflix.Universal.Extensions;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Core;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
@@ -38,6 +30,9 @@ namespace Ed.Steamflix.Universal
             // Stop the broadcast playback before navigating away
             Browser.NavigateToString("");
 
+            // Listen for full screen exit event
+            Window.Current.SizeChanged -= OnWindowResize;
+
             base.OnNavigatedFrom(e);
         }
 
@@ -50,12 +45,51 @@ namespace Ed.Steamflix.Universal
             var watchUrl = (string)e.Parameter;
             Browser.Source = new Uri(watchUrl);
 
-            //Browser.InvokeScript("BroadcastWatch.m_playerUI.ToggleFullscreen()", null); // TODO
+            // Stop listening for full screen exit event
+            Window.Current.SizeChanged += OnWindowResize;
+
+            // Show/hide the command bar
+            UpdateContent();
         }
 
-        private void AppBarButton_Tapped(object sender, TappedRoutedEventArgs e)
+        private void AppBarBackButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.GoBack(e);
+        }
+
+        private void AppBarFullScreenButton_Tapped(object sender, RoutedEventArgs e)
+        {
+            var view = ApplicationView.GetForCurrentView();
+
+            if (view.IsFullScreenMode)
+            {
+                view.ExitFullScreenMode();
+                WatchCommandBar.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                view.TryEnterFullScreenMode();
+                WatchCommandBar.Visibility = Visibility.Collapsed;
+            }
+        }
+
+        /// <summary>
+        /// Handles window resizing events, such as exiting from full screen mode.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void OnWindowResize(object sender, WindowSizeChangedEventArgs e)
+        {
+            UpdateContent();
+        }
+
+        /// <summary>
+        /// Shows/hides the command bar depending on full screen mode status.
+        /// </summary>
+        void UpdateContent()
+        {
+            var view = ApplicationView.GetForCurrentView();
+            WatchCommandBar.Visibility = view.IsFullScreenMode ? Visibility.Collapsed : Visibility.Visible;
         }
     }
 }
