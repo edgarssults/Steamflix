@@ -13,7 +13,7 @@
         <mocks:GamesPageViewModelMock x:Key="GamesPageViewModelMock" d:IsDataSource="True" />
     </Page.Resources>
 
-    <Grid Background="{StaticResource AppBackgroundColor}">
+    <StackPanel Background="{StaticResource AppBackgroundColor}">
         <Hub x:Name="GamesHub"
              Header="Games"
              Orientation="Vertical"
@@ -22,5 +22,5 @@
             <HubSection Template="{StaticResource RecentGamesTemplate}" />
             <HubSection Template="{StaticResource OwnedGamesTemplate}" />
         </Hub>
-    </Grid>
+    </StackPanel>
 </Page>

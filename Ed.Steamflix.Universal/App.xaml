@@ -12,14 +12,15 @@
         <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
 
         <DataTemplate x:Key="GameListItemTemplate">
-            <Border Margin="0,10,0,10" BorderThickness="1" BorderBrush="Gray">
-                <Image Source="{Binding FormattedLogoUrl}" Width="184" Height="69" />
-            </Border>
+            <StackPanel Margin="2" Width="184">
+                <Image Margin="0 0 0 5" Source="{Binding FormattedLogoUrl}" Width="184" Height="69" />
+                <TextBlock Text="{Binding Name}" Padding="2" Foreground="{StaticResource AppForegroundColor}" TextTrimming="WordEllipsis" />
+            </StackPanel>
         </DataTemplate>
-        
+
         <DataTemplate x:Key="BroadcastListItemTemplate">
-            <Border Margin="0,10,0,10" BorderThickness="1" BorderBrush="Gray">
-                <Image Width="313" Height="176">
+            <StackPanel Margin="2" Width="313">
+                <Image Margin="0 0 0 5" Width="313" Height="176">
                     <Image.Source>
                         <Binding Path="ImageUrl" >
                             <Binding.TargetNullValue>
@@ -28,22 +29,26 @@
                         </Binding>
                     </Image.Source>
                 </Image>
-            </Border>
+                <TextBlock Text="{Binding UserName}" Padding="2" Foreground="{StaticResource AppForegroundColor}" TextTrimming="WordEllipsis" />
+            </StackPanel>
         </DataTemplate>
-        
+
         <Color x:Key="LightGrey">#262626</Color>
         <Color x:Key="White">#CEE2CE</Color>
         <Color x:Key="LighterGrey">#5F5F5F</Color>
-        
+        <Color x:Key="Blue">#2f89bc</Color>
+
         <SolidColorBrush x:Key="AppBackgroundColor" Color="{StaticResource LightGrey}" />
         <SolidColorBrush x:Key="AppForegroundColor" Color="{StaticResource White}" />
-        <SolidColorBrush x:Key="HoverBackgroundColor" Color="{StaticResource LighterGrey}" />
+        <SolidColorBrush x:Key="HoverBorderColor" Color="{StaticResource Blue}" />
+
+        <SolidColorBrush x:Key="SystemControlHighlightListLowBrush" Color="{StaticResource Blue}" />
 
         <Style TargetType="HubSection">
             <Setter Property="HeaderTemplate">
                 <Setter.Value>
                     <DataTemplate>
-                        <TextBlock Text="{Binding}" Foreground="{StaticResource AppForegroundColor}"/>
+                        <TextBlock Text="{Binding}" Foreground="{StaticResource AppForegroundColor}" />
                     </DataTemplate>
                 </Setter.Value>
             </Setter>
@@ -58,72 +63,102 @@
         </Style>
 
         <ControlTemplate x:Key="RecentGamesTemplate">
-            <HubSection Header="Recent" MinHeight="137">
+            <HubSection Header="Recent" Margin="0 0 0 20">
                 <DataTemplate>
                     <StackPanel>
-                        <ListView
+                        <ProgressBar Height="2" IsIndeterminate="{Binding RecentlyPlayedGames.IsNotCompleted}"
+                                     Visibility="{Binding RecentlyPlayedGames.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                        <GridView
                             Visibility="{Binding RecentlyPlayedGames.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
                             ScrollViewer.HorizontalScrollMode="Enabled"
+                            ScrollViewer.VerticalScrollMode="Disabled"
+                            IsItemClickEnabled="True"
+                            IsSwipeEnabled="True"
+                            SelectionMode="Single"
+                            ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                            ScrollViewer.VerticalScrollBarVisibility="Disabled"
                             ItemTemplate="{StaticResource GameListItemTemplate}"
-                            ItemsSource="{Binding Path=RecentlyPlayedGames.Result}">
-                            <ListView.ItemsPanel>
+                            ItemsSource="{Binding Path=RecentlyPlayedGames.Result}"
+                            Height="102">
+                            <GridView.ItemsPanel>
                                 <ItemsPanelTemplate>
-                                    <VirtualizingStackPanel Orientation="Horizontal"></VirtualizingStackPanel>
+                                    <ItemsWrapGrid Orientation="Horizontal" />
                                 </ItemsPanelTemplate>
-                            </ListView.ItemsPanel>
-                        </ListView>
-                        <Border Visibility="{Binding RecentlyPlayedGames.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
-                                Margin="0,10,0,10" Width="184" Height="69" BorderThickness="1" BorderBrush="Gray">
-                            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Loading...</TextBlock>
-                        </Border>
+                            </GridView.ItemsPanel>
+                            <GridView.ItemContainerStyle>
+                                <Style TargetType="FrameworkElement">
+                                    <Setter Property="Margin" Value="0 0 20 0" />
+                                </Style>
+                            </GridView.ItemContainerStyle>
+                        </GridView>
                     </StackPanel>
                 </DataTemplate>
             </HubSection>
         </ControlTemplate>
 
         <ControlTemplate x:Key="OwnedGamesTemplate">
-            <HubSection Header="Owned" MinHeight="137">
+            <HubSection Header="Owned" Margin="0 0 0 20">
                 <DataTemplate>
                     <StackPanel>
-                        <ListView
+                        <ProgressBar Height="2" IsIndeterminate="{Binding OwnedGames.IsNotCompleted}"
+                                     Visibility="{Binding OwnedGames.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                        <GridView
                             Visibility="{Binding OwnedGames.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
                             ScrollViewer.HorizontalScrollMode="Enabled"
+                            ScrollViewer.VerticalScrollMode="Disabled"
+                            IsItemClickEnabled="True"
+                            IsSwipeEnabled="True"
+                            SelectionMode="Single"
+                            ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                            ScrollViewer.VerticalScrollBarVisibility="Disabled"
                             ItemTemplate="{StaticResource GameListItemTemplate}"
-                            ItemsSource="{Binding Path=OwnedGames.Result}">
-                            <ListView.ItemsPanel>
+                            ItemsSource="{Binding Path=OwnedGames.Result}"
+                            Height="102">
+                            <GridView.ItemsPanel>
                                 <ItemsPanelTemplate>
-                                    <VirtualizingStackPanel Orientation="Horizontal"></VirtualizingStackPanel>
+                                    <ItemsWrapGrid Orientation="Horizontal" />
                                 </ItemsPanelTemplate>
-                            </ListView.ItemsPanel>
-                        </ListView>
-                        <Border Visibility="{Binding OwnedGames.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
-                                Margin="0,10,0,10" Width="184" Height="69" BorderThickness="1" BorderBrush="Gray">
-                            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Loading...</TextBlock>
-                        </Border>
+                            </GridView.ItemsPanel>
+                            <GridView.ItemContainerStyle>
+                                <Style TargetType="FrameworkElement">
+                                    <Setter Property="Margin" Value="0 0 20 0"/>
+                                </Style>
+                            </GridView.ItemContainerStyle>
+                        </GridView>
                     </StackPanel>
                 </DataTemplate>
             </HubSection>
         </ControlTemplate>
 
         <ControlTemplate x:Key="BroadcastsTemplate">
-            <HubSection Header="Broadcasts" MinHeight="234">
+            <HubSection Header="Broadcasts" Margin="0 0 0 20">
                 <DataTemplate>
                     <StackPanel>
-                        <ListView
+                        <ProgressBar Height="2" IsIndeterminate="{Binding Broadcasts.IsNotCompleted}"
+                                     Visibility="{Binding Broadcasts.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                        <GridView
                             Visibility="{Binding Broadcasts.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
                             ScrollViewer.HorizontalScrollMode="Enabled"
+                            ScrollViewer.VerticalScrollMode="Disabled"
+                            IsItemClickEnabled="True"
+                            IsSwipeEnabled="True"
+                            SelectionMode="Single"
+                            ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                            ScrollViewer.VerticalScrollBarVisibility="Disabled"
                             ItemTemplate="{StaticResource BroadcastListItemTemplate}"
-                            ItemsSource="{Binding Path=Broadcasts.Result}">
-                            <ListView.ItemsPanel>
+                            ItemsSource="{Binding Path=Broadcasts.Result}"
+                            Height="209">
+                            <GridView.ItemsPanel>
                                 <ItemsPanelTemplate>
-                                    <VirtualizingStackPanel Orientation="Horizontal"></VirtualizingStackPanel>
+                                    <ItemsWrapGrid Orientation="Horizontal" />
                                 </ItemsPanelTemplate>
-                            </ListView.ItemsPanel>
-                        </ListView>
-                        <Border Visibility="{Binding Broadcasts.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
-                                Margin="0,10,0,10" Width="313" Height="176" BorderThickness="1" BorderBrush="Gray">
-                            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Loading...</TextBlock>
-                        </Border>
+                            </GridView.ItemsPanel>
+                            <GridView.ItemContainerStyle>
+                                <Style TargetType="FrameworkElement">
+                                    <Setter Property="Margin" Value="0 0 20 0"/>
+                                </Style>
+                            </GridView.ItemContainerStyle>
+                        </GridView>
                     </StackPanel>
                 </DataTemplate>
             </HubSection>

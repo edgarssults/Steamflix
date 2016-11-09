@@ -5,7 +5,7 @@ using Windows.UI.Xaml.Data;
 namespace Ed.Steamflix.Universal.Converters
 {
     /// <summary>
-    /// Covert bool to Visibility
+    /// Coverts bool to Visibility.
     /// </summary>
     public class BooleanToVisibilityConverter : IValueConverter
     {
