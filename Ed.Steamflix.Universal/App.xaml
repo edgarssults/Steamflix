@@ -68,7 +68,7 @@
                     <StackPanel>
                         <ProgressBar Height="2" IsIndeterminate="{Binding RecentlyPlayedGames.IsNotCompleted}"
                                      Visibility="{Binding RecentlyPlayedGames.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}" />
-                        <GridView
+                        <ListView
                             Visibility="{Binding RecentlyPlayedGames.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
                             ScrollViewer.HorizontalScrollMode="Enabled"
                             ScrollViewer.VerticalScrollMode="Disabled"
@@ -78,19 +78,20 @@
                             ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                             ScrollViewer.VerticalScrollBarVisibility="Disabled"
                             ItemTemplate="{StaticResource GameListItemTemplate}"
-                            ItemsSource="{Binding Path=RecentlyPlayedGames.Result}"
-                            Height="102">
-                            <GridView.ItemsPanel>
+                            ItemsSource="{Binding Path=RecentlyPlayedGames.Result}">
+                            <ListView.ItemsPanel>
                                 <ItemsPanelTemplate>
-                                    <ItemsWrapGrid Orientation="Horizontal" />
+                                    <VirtualizingStackPanel Orientation="Horizontal" />
                                 </ItemsPanelTemplate>
-                            </GridView.ItemsPanel>
-                            <GridView.ItemContainerStyle>
-                                <Style TargetType="FrameworkElement">
-                                    <Setter Property="Margin" Value="0 0 20 0" />
+                            </ListView.ItemsPanel>
+                            <ListView.ItemContainerStyle>
+                                <Style TargetType="ListViewItem">
+                                    <Setter Property="Padding" Value="0"/>
+                                    <Setter Property="BorderThickness" Value="0"/>
+                                    <Setter Property="Margin" Value="0 0 20 0"/>
                                 </Style>
-                            </GridView.ItemContainerStyle>
-                        </GridView>
+                            </ListView.ItemContainerStyle>
+                        </ListView>
                     </StackPanel>
                 </DataTemplate>
             </HubSection>
@@ -102,7 +103,7 @@
                     <StackPanel>
                         <ProgressBar Height="2" IsIndeterminate="{Binding OwnedGames.IsNotCompleted}"
                                      Visibility="{Binding OwnedGames.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}" />
-                        <GridView
+                        <ListView
                             Visibility="{Binding OwnedGames.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
                             ScrollViewer.HorizontalScrollMode="Enabled"
                             ScrollViewer.VerticalScrollMode="Disabled"
@@ -112,19 +113,20 @@
                             ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                             ScrollViewer.VerticalScrollBarVisibility="Disabled"
                             ItemTemplate="{StaticResource GameListItemTemplate}"
-                            ItemsSource="{Binding Path=OwnedGames.Result}"
-                            Height="102">
-                            <GridView.ItemsPanel>
+                            ItemsSource="{Binding Path=OwnedGames.Result}">
+                            <ListView.ItemsPanel>
                                 <ItemsPanelTemplate>
-                                    <ItemsWrapGrid Orientation="Horizontal" />
+                                    <VirtualizingStackPanel Orientation="Horizontal" />
                                 </ItemsPanelTemplate>
-                            </GridView.ItemsPanel>
-                            <GridView.ItemContainerStyle>
-                                <Style TargetType="FrameworkElement">
+                            </ListView.ItemsPanel>
+                            <ListView.ItemContainerStyle>
+                                <Style TargetType="ListViewItem">
+                                    <Setter Property="Padding" Value="0"/>
+                                    <Setter Property="BorderThickness" Value="0"/>
                                     <Setter Property="Margin" Value="0 0 20 0"/>
                                 </Style>
-                            </GridView.ItemContainerStyle>
-                        </GridView>
+                            </ListView.ItemContainerStyle>
+                        </ListView>
                     </StackPanel>
                 </DataTemplate>
             </HubSection>
@@ -136,7 +138,7 @@
                     <StackPanel>
                         <ProgressBar Height="2" IsIndeterminate="{Binding Broadcasts.IsNotCompleted}"
                                      Visibility="{Binding Broadcasts.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}" />
-                        <GridView
+                        <ListView
                             Visibility="{Binding Broadcasts.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
                             ScrollViewer.HorizontalScrollMode="Enabled"
                             ScrollViewer.VerticalScrollMode="Disabled"
@@ -146,19 +148,20 @@
                             ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                             ScrollViewer.VerticalScrollBarVisibility="Disabled"
                             ItemTemplate="{StaticResource BroadcastListItemTemplate}"
-                            ItemsSource="{Binding Path=Broadcasts.Result}"
-                            Height="209">
-                            <GridView.ItemsPanel>
+                            ItemsSource="{Binding Path=Broadcasts.Result}">
+                            <ListView.ItemsPanel>
                                 <ItemsPanelTemplate>
-                                    <ItemsWrapGrid Orientation="Horizontal" />
+                                    <VirtualizingStackPanel Orientation="Horizontal" />
                                 </ItemsPanelTemplate>
-                            </GridView.ItemsPanel>
-                            <GridView.ItemContainerStyle>
-                                <Style TargetType="FrameworkElement">
+                            </ListView.ItemsPanel>
+                            <ListView.ItemContainerStyle>
+                                <Style TargetType="ListViewItem">
+                                    <Setter Property="Padding" Value="0"/>
+                                    <Setter Property="BorderThickness" Value="0"/>
                                     <Setter Property="Margin" Value="0 0 20 0"/>
                                 </Style>
-                            </GridView.ItemContainerStyle>
-                        </GridView>
+                            </ListView.ItemContainerStyle>
+                        </ListView>
                     </StackPanel>
                 </DataTemplate>
             </HubSection>
