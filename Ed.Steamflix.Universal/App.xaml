@@ -13,14 +13,16 @@
 
         <DataTemplate x:Key="GameListItemTemplate">
             <StackPanel Margin="2" Width="184">
-                <Image Margin="0 0 0 5" Source="{Binding FormattedLogoUrl}" Width="184" Height="69" />
-                <TextBlock Text="{Binding Name}" Padding="2" Foreground="{StaticResource AppForegroundColor}" TextTrimming="WordEllipsis" />
+                <Image Source="{Binding FormattedLogoUrl}" Width="184" Height="69" />
+                <Border Background="{StaticResource AppBackgroundColor}">
+                    <TextBlock Margin="0 5 0 0" Text="{Binding Name}" Padding="2" Foreground="{StaticResource AppForegroundColor}" TextTrimming="WordEllipsis" />
+                </Border>
             </StackPanel>
         </DataTemplate>
 
         <DataTemplate x:Key="BroadcastListItemTemplate">
             <StackPanel Margin="2" Width="313">
-                <Image Margin="0 0 0 5" Width="313" Height="176">
+                <Image Width="313" Height="176">
                     <Image.Source>
                         <Binding Path="ImageUrl" >
                             <Binding.TargetNullValue>
@@ -29,7 +31,9 @@
                         </Binding>
                     </Image.Source>
                 </Image>
-                <TextBlock Text="{Binding UserName}" Padding="2" Foreground="{StaticResource AppForegroundColor}" TextTrimming="WordEllipsis" />
+                <Border Background="{StaticResource AppBackgroundColor}">
+                    <TextBlock Margin="0 5 0 0" Text="{Binding UserName}" Padding="2" Foreground="{StaticResource AppForegroundColor}" TextTrimming="WordEllipsis" />
+                </Border>
             </StackPanel>
         </DataTemplate>
 
