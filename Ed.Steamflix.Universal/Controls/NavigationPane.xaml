@@ -1,0 +1,23 @@
+﻿<UserControl
+    x:Class="Ed.Steamflix.Universal.NavigationPane"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ed.Steamflix.Universal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <SplitView x:Name="NavigationView" DisplayMode="CompactInline" IsPaneOpen="False" CompactPaneLength="50" OpenPaneLength="150" Width="50">
+        <SplitView.Pane>
+            <StackPanel Background="{StaticResource MenuBackgroundColor}">
+                <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" FontSize="20" Foreground="{StaticResource AppForegroundColor}" Content="&#xE700;" Background="Transparent" Width="50" Height="50" Click="HamburgerButton_Click" />
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="HomeButton" FontFamily="Segoe MDL2 Assets" FontSize="20" Foreground="{StaticResource AppForegroundColor}" Content="&#xE10F;" Background="Transparent" Width="50" Height="50" Click="NavigateToGames" />
+                    <TextBlock Padding="10 0 0 0" Text="Home" FontSize="18" VerticalAlignment="Center" Foreground="{StaticResource AppForegroundColor}" />
+                </StackPanel>
+            </StackPanel>
+        </SplitView.Pane>
+    </SplitView>
+</UserControl>

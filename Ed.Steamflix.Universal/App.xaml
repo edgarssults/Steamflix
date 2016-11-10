@@ -41,12 +41,16 @@
         <Color x:Key="White">#CEE2CE</Color>
         <Color x:Key="LighterGrey">#5F5F5F</Color>
         <Color x:Key="Blue">#2f89bc</Color>
+        <Color x:Key="Grey">#1E1E1E</Color>
 
+        <SolidColorBrush x:Key="MenuBackgroundColor" Color="{StaticResource Grey}" />
         <SolidColorBrush x:Key="AppBackgroundColor" Color="{StaticResource LightGrey}" />
         <SolidColorBrush x:Key="AppForegroundColor" Color="{StaticResource White}" />
         <SolidColorBrush x:Key="HoverBorderColor" Color="{StaticResource Blue}" />
 
         <SolidColorBrush x:Key="SystemControlHighlightListLowBrush" Color="{StaticResource Blue}" />
+        <SolidColorBrush x:Key="SystemControlHighlightBaseMediumLowBrush" Color="{StaticResource Blue}" />
+        <SolidColorBrush x:Key="SystemControlHighlightBaseHighBrush" Color="{StaticResource White}" />
 
         <Style TargetType="HubSection">
             <Setter Property="HeaderTemplate">

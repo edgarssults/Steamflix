@@ -13,12 +13,17 @@
         <mocks:BroadcastsPageViewModelMock x:Key="BroadcastsPageViewModelMock" d:IsDataSource="True" />
     </Page.Resources>
 
-    <StackPanel Background="{StaticResource AppBackgroundColor}">
+    <StackPanel Background="{StaticResource AppBackgroundColor}" Orientation="Horizontal">
+        <local:NavigationPane x:Name="MyNavigationPane" />
+        
         <Hub x:Name="BroadcastsHub"
              Orientation="Vertical"
              Header="{Binding Path=Game.Name}"
              d:DataContext="{StaticResource BroadcastsPageViewModelMock}"
-             Tapped="Broadcast_Tapped">
+             Tapped="Broadcast_Tapped"
+             Grid.Column="1"
+             Grid.Row="1"
+             Margin="10 0 0 0">
             <HubSection Template="{StaticResource BroadcastsTemplate}" />
         </Hub>
     </StackPanel>
