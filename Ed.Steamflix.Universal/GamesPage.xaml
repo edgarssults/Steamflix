@@ -13,17 +13,23 @@
         <mocks:GamesPageViewModelMock x:Key="GamesPageViewModelMock" d:IsDataSource="True" />
     </Page.Resources>
 
-    <StackPanel Background="{StaticResource AppBackgroundColor}" Orientation="Horizontal">
-        <local:NavigationPane x:Name="MyNavigationPane" />
+    <Grid Background="{StaticResource AppBackgroundColor}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <local:NavigationPane x:Name="MyNavigationPane" Grid.Column="0" />
         
         <Hub x:Name="GamesHub"
              Header="Games"
              Orientation="Vertical"
              d:DataContext="{StaticResource GamesPageViewModelMock}"
              Tapped="Game_Tapped"
-             Margin="10 0 0 0">
+             Margin="10 0 0 0"
+             Grid.Column="1">
             <HubSection Template="{StaticResource RecentGamesTemplate}" />
             <HubSection Template="{StaticResource OwnedGamesTemplate}" />
         </Hub>
-    </StackPanel>
+    </Grid>
 </Page>

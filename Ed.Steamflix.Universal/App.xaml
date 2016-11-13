@@ -13,7 +13,9 @@
 
         <DataTemplate x:Key="GameListItemTemplate">
             <StackPanel Margin="2" Width="184">
-                <Image Source="{Binding FormattedLogoUrl}" Width="184" Height="69" />
+                <Border Width="184" Height="69" Background="{StaticResource MenuBackgroundColor}">
+                    <Image Source="{Binding FormattedLogoUrl}" />
+                </Border>
                 <Border Background="{StaticResource AppBackgroundColor}">
                     <TextBlock Margin="0 5 0 0" Text="{Binding Name}" Padding="2" Foreground="{StaticResource AppForegroundColor}" TextTrimming="WordEllipsis" />
                 </Border>
@@ -22,15 +24,17 @@
 
         <DataTemplate x:Key="BroadcastListItemTemplate">
             <StackPanel Margin="2" Width="313">
-                <Image Width="313" Height="176">
-                    <Image.Source>
-                        <Binding Path="ImageUrl" >
-                            <Binding.TargetNullValue>
-                                <ImageSource>/Assets/broadcast_thumbnail.jpg</ImageSource>
-                            </Binding.TargetNullValue>
-                        </Binding>
-                    </Image.Source>
-                </Image>
+                <Border Width="313" Height="176" Background="{StaticResource MenuBackgroundColor}">
+                    <Image>
+                        <Image.Source>
+                            <Binding Path="ImageUrl" >
+                                <Binding.TargetNullValue>
+                                    <ImageSource>/Assets/broadcast_thumbnail.jpg</ImageSource>
+                                </Binding.TargetNullValue>
+                            </Binding>
+                        </Image.Source>
+                    </Image>
+                </Border>
                 <Border Background="{StaticResource AppBackgroundColor}">
                     <TextBlock Margin="0 5 0 0" Text="{Binding UserName}" Padding="2" Foreground="{StaticResource AppForegroundColor}" TextTrimming="WordEllipsis" />
                 </Border>
@@ -79,12 +83,9 @@
                         <ListView
                             Visibility="{Binding RecentlyPlayedGames.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
                             ScrollViewer.HorizontalScrollMode="Enabled"
-                            ScrollViewer.VerticalScrollMode="Disabled"
                             IsItemClickEnabled="True"
                             IsSwipeEnabled="True"
                             SelectionMode="Single"
-                            ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                            ScrollViewer.VerticalScrollBarVisibility="Disabled"
                             ItemTemplate="{StaticResource GameListItemTemplate}"
                             ItemsSource="{Binding Path=RecentlyPlayedGames.Result}">
                             <ListView.ItemsPanel>
@@ -114,12 +115,9 @@
                         <ListView
                             Visibility="{Binding OwnedGames.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
                             ScrollViewer.HorizontalScrollMode="Enabled"
-                            ScrollViewer.VerticalScrollMode="Disabled"
                             IsItemClickEnabled="True"
                             IsSwipeEnabled="True"
                             SelectionMode="Single"
-                            ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                            ScrollViewer.VerticalScrollBarVisibility="Disabled"
                             ItemTemplate="{StaticResource GameListItemTemplate}"
                             ItemsSource="{Binding Path=OwnedGames.Result}">
                             <ListView.ItemsPanel>
@@ -149,12 +147,9 @@
                         <ListView
                             Visibility="{Binding Broadcasts.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
                             ScrollViewer.HorizontalScrollMode="Enabled"
-                            ScrollViewer.VerticalScrollMode="Disabled"
                             IsItemClickEnabled="True"
                             IsSwipeEnabled="True"
                             SelectionMode="Single"
-                            ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                            ScrollViewer.VerticalScrollBarVisibility="Disabled"
                             ItemTemplate="{StaticResource BroadcastListItemTemplate}"
                             ItemsSource="{Binding Path=Broadcasts.Result}">
                             <ListView.ItemsPanel>

@@ -14,6 +14,7 @@ using Windows.ApplicationModel.Activation;
 using Windows.ApplicationModel.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -92,7 +93,27 @@ namespace Ed.Steamflix.Universal
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter
-                rootFrame.Navigate(typeof(MainPage), e.Arguments);
+
+                // Load profile URL and go to Games page
+                var profileUrl = (string)ApplicationData.Current.RoamingSettings.Values["ProfileUrl"];
+                if (!string.IsNullOrEmpty(profileUrl))
+                {
+                    rootFrame.Navigate(typeof(GamesPage), profileUrl);
+                }
+                else
+                {
+                    // Start without Steam ID?
+                    var loadWithout = ApplicationData.Current.RoamingSettings.Values["StartWithoutSteamId"] as bool?;
+                    if (loadWithout.HasValue && loadWithout.Value)
+                    {
+                        rootFrame.Navigate(typeof(GamesPage), null);
+                    }
+                    else
+                    {
+                        // First time
+                        rootFrame.Navigate(typeof(MainPage), e.Arguments);
+                    }
+                }
             }
 
             // Ensure the current window is active

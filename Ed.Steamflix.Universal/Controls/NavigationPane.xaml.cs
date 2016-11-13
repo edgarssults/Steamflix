@@ -22,5 +22,10 @@ namespace Ed.Steamflix.Universal
         {
             ((Frame)Window.Current.Content).Navigate(typeof(GamesPage));
         }
+
+        private void NavigateToSettings(object sender, RoutedEventArgs e)
+        {
+            ((Frame)Window.Current.Content).Navigate(typeof(SettingsPage));
+        }
     }
 }

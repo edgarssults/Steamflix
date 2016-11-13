@@ -11,13 +11,25 @@
 
     <SplitView x:Name="NavigationView" DisplayMode="CompactInline" IsPaneOpen="False" CompactPaneLength="50" OpenPaneLength="150" Width="50">
         <SplitView.Pane>
-            <StackPanel Background="{StaticResource MenuBackgroundColor}">
-                <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" FontSize="20" Foreground="{StaticResource AppForegroundColor}" Content="&#xE700;" Background="Transparent" Width="50" Height="50" Click="HamburgerButton_Click" />
-                <StackPanel Orientation="Horizontal">
-                    <Button x:Name="HomeButton" FontFamily="Segoe MDL2 Assets" FontSize="20" Foreground="{StaticResource AppForegroundColor}" Content="&#xE10F;" Background="Transparent" Width="50" Height="50" Click="NavigateToGames" />
-                    <TextBlock Padding="10 0 0 0" Text="Home" FontSize="18" VerticalAlignment="Center" Foreground="{StaticResource AppForegroundColor}" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                
+                <StackPanel Background="{StaticResource MenuBackgroundColor}" Grid.Row="0">
+                    <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" FontSize="20" Foreground="{StaticResource AppForegroundColor}" Content="&#xE700;" Background="Transparent" Width="50" Height="50" Click="HamburgerButton_Click" />
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="HomeButton" FontFamily="Segoe MDL2 Assets" FontSize="20" Foreground="{StaticResource AppForegroundColor}" Content="&#xE10F;" Background="Transparent" Width="50" Height="50" Click="NavigateToGames" />
+                        <TextBlock Padding="10 0 0 0" Text="Home" FontSize="18" VerticalAlignment="Center" Foreground="{StaticResource AppForegroundColor}" />
+                    </StackPanel>
                 </StackPanel>
-            </StackPanel>
+
+                <StackPanel Background="{StaticResource MenuBackgroundColor}" Orientation="Horizontal" Grid.Row="1">
+                    <Button x:Name="SettingsButton" FontFamily="Segoe MDL2 Assets" FontSize="20" Foreground="{StaticResource AppForegroundColor}" Content="&#xE115;" Background="Transparent" Width="50" Height="50" Click="NavigateToSettings" />
+                    <TextBlock Padding="10 0 0 0" Text="Settings" FontSize="18" VerticalAlignment="Center" Foreground="{StaticResource AppForegroundColor}" />
+                </StackPanel>
+            </Grid>
         </SplitView.Pane>
     </SplitView>
 </UserControl>
