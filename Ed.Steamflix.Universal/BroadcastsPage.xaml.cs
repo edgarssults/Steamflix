@@ -46,7 +46,6 @@ namespace Ed.Steamflix.Universal
         private void Broadcast_Tapped(object sender, TappedRoutedEventArgs e)
         {
             var broadcast = (e.OriginalSource as FrameworkElement).DataContext as Broadcast;
-
             if (broadcast != null)
             {
                 Frame.Navigate(typeof(WatchPage), broadcast.WatchUrl);

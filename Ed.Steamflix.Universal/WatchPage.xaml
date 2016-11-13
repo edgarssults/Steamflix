@@ -16,8 +16,8 @@
 
         <WebView Grid.Row="0" x:Name="Browser" />
 
-        <CommandBar x:Name="WatchCommandBar" Grid.Row="1" FlowDirection="LeftToRight" Background="{StaticResource MenuBackgroundColor}" Foreground="{StaticResource AppForegroundColor}">
-            <AppBarButton Icon="FullScreen" Label="Full Screen" Tapped="AppBarFullScreenButton_Tapped" Foreground="{StaticResource AppForegroundColor}" />
+        <CommandBar Style="{StaticResource CommandBarStyle}" x:Name="WatchCommandBar" Grid.Row="1">
+            <AppBarButton Style="{StaticResource AppBarButtonStyle}" Icon="FullScreen" Label="Full Screen" Tapped="AppBarFullScreenButton_Tapped" />
         </CommandBar>
     </Grid>
 </Page>

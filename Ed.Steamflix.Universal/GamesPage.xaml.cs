@@ -31,21 +31,6 @@ namespace Ed.Steamflix.Universal
             this.GoBack(e);
         }
 
-        protected override void OnNavigatedFrom(NavigationEventArgs e)
-        {
-            // Set up the BroadcastsPageViewModel because we have the game info
-            if (e.Content is BroadcastsPage)
-            {
-                var page = e.Content as BroadcastsPage;
-                if (page != null)
-                {
-                    page.ViewModel = new BroadcastsPageViewModel(ViewModel.SelectedGame);
-                }
-            }
-
-            base.OnNavigatedFrom(e);
-        }
-
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             this.SetUpBackButton();
@@ -68,12 +53,8 @@ namespace Ed.Steamflix.Universal
         {
             // Get the game object from the context
             var game = (e.OriginalSource as FrameworkElement).DataContext as Game;
-
             if (game != null)
             {
-                // Change the currently selected game
-                ViewModel.SelectedGame = game;
-
                 // Navigate to broadcasts page
                 Frame.Navigate(typeof(BroadcastsPage), game.AppId);
             }

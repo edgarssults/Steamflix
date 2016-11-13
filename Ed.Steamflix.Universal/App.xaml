@@ -56,6 +56,32 @@
         <SolidColorBrush x:Key="SystemControlHighlightBaseMediumLowBrush" Color="{StaticResource Blue}" />
         <SolidColorBrush x:Key="SystemControlHighlightBaseHighBrush" Color="{StaticResource White}" />
 
+        <Style x:Key="CommandBarStyle" TargetType="CommandBar">
+            <Setter Property="FlowDirection">
+                <Setter.Value>
+                    <FlowDirection>LeftToRight</FlowDirection>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <SolidColorBrush Color="{StaticResource Grey}"></SolidColorBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Foreground">
+                <Setter.Value>
+                    <SolidColorBrush Color="{StaticResource White}"></SolidColorBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="AppBarButtonStyle" TargetType="AppBarButton">
+            <Setter Property="Foreground">
+                <Setter.Value>
+                    <SolidColorBrush Color="{StaticResource White}"></SolidColorBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
         <Style TargetType="HubSection">
             <Setter Property="HeaderTemplate">
                 <Setter.Value>

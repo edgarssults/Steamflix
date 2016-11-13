@@ -14,15 +14,16 @@
     </Page.Resources>
 
     <StackPanel Background="{StaticResource AppBackgroundColor}">
-        <CommandBar FlowDirection="LeftToRight">
-            <AppBarButton Icon="Back" Label="Back" Tapped="AppBarButton_Tapped" />
+        <CommandBar Style="{StaticResource CommandBarStyle}">
+            <AppBarButton Icon="Back" Label="Back" Tapped="AppBarButton_Tapped" Style="{StaticResource AppBarButtonStyle}" />
         </CommandBar>
 
         <Hub x:Name="BroadcastsHub"
              Orientation="Vertical"
              Header="{Binding Path=Game.Name}"
              d:DataContext="{StaticResource BroadcastsPageViewModelMock}"
-             Tapped="Broadcast_Tapped">
+             Tapped="Broadcast_Tapped"
+             Margin="10 0 10 0">
             <HubSection Template="{StaticResource BroadcastsTemplate}" />
         </Hub>
     </StackPanel>

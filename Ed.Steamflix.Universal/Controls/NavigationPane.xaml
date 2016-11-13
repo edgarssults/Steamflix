@@ -21,7 +21,7 @@
                     <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" FontSize="20" Foreground="{StaticResource AppForegroundColor}" Content="&#xE700;" Background="Transparent" Width="50" Height="50" Click="HamburgerButton_Click" />
                     <StackPanel Orientation="Horizontal">
                         <Button x:Name="HomeButton" FontFamily="Segoe MDL2 Assets" FontSize="20" Foreground="{StaticResource AppForegroundColor}" Content="&#xE10F;" Background="Transparent" Width="50" Height="50" Click="NavigateToGames" />
-                        <TextBlock Padding="10 0 0 0" Text="Home" FontSize="18" VerticalAlignment="Center" Foreground="{StaticResource AppForegroundColor}" />
+                        <TextBlock Padding="10 0 0 0" Text="Games" FontSize="18" VerticalAlignment="Center" Foreground="{StaticResource AppForegroundColor}" />
                     </StackPanel>
                 </StackPanel>
 

@@ -82,7 +82,9 @@ namespace Ed.Steamflix.Universal
                     // Not found it - search children
                     DependencyObject nextLevel = FindChildControl<T>(child, ctrlName);
                     if (nextLevel != null)
+                    {
                         return nextLevel;
+                    }
                 }
             }
             return null;

@@ -14,8 +14,9 @@
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <CommandBar Grid.Row="0" FlowDirection="LeftToRight">
-            <AppBarButton Icon="Back" Label="Back" Tapped="AppBarBackButton_Tapped" />
+        <CommandBar Grid.Row="0" Style="{StaticResource CommandBarStyle}">
+            <AppBarButton Icon="Back" Label="Back" Tapped="AppBarBackButton_Tapped" Style="{StaticResource AppBarButtonStyle}" />
+            <AppBarButton Icon="FullScreen" Label="Full Screen" Tapped="AppBarFullScreenButton_Tapped" Style="{StaticResource AppBarButtonStyle}" />
         </CommandBar>
 
         <WebView Grid.Row="1" x:Name="Browser" />

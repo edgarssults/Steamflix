@@ -11,11 +11,6 @@ namespace Ed.Steamflix.Common.ViewModels
         string SteamId { get; }
 
         /// <summary>
-        /// Currently selected game, for passing info to other pages.
-        /// </summary>
-        Game SelectedGame { get; set; }
-
-        /// <summary>
         /// List of recently played games.
         /// </summary>
         NotifyTaskCompletion<List<Game>> RecentlyPlayedGames { get; }
