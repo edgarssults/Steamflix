@@ -10,9 +10,6 @@ namespace Ed.Steamflix.Mocks.ViewModels
     {
         private readonly BroadcastService _broadcastService = new BroadcastService(new TestCommunityRepository());
 
-        /// <summary>
-        /// List of broadcasts for a game.
-        /// </summary>
         public NotifyTaskCompletion<List<Broadcast>> Broadcasts
         {
             get
@@ -21,9 +18,6 @@ namespace Ed.Steamflix.Mocks.ViewModels
             }
         }
 
-        /// <summary>
-        /// The game the broadcasts page is about.
-        /// </summary>
         public Game Game
         {
             get

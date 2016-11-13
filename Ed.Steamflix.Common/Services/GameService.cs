@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Ed.Steamflix.Common.Repositories;
 using System.Linq;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace Ed.Steamflix.Common.Services
 {
@@ -12,16 +13,21 @@ namespace Ed.Steamflix.Common.Services
     /// </summary>
     public class GameService
     {
+        private readonly Regex _statsRegex = new Regex(@"<tr[^>]*class=""player_count_row"".*?<a[^>]*class=""gameLink""[^>]*href=""[^""]*app/(?<AppId>[^""/]*)[^>]*>(?<Name>[^<]*)</a>.*?</tr>", RegexOptions.Singleline);
         private readonly string _serviceName = "IPlayerService";
+
         private readonly IApiRepository _apiRepository;
+        private readonly ICommunityRepository _communityRepository;
 
         /// <summary>
         /// Constructor.
         /// </summary>
         /// <param name="apiRepository">API repository implementation.</param>
-        public GameService(IApiRepository apiRepository)
+        /// <param name="communityRepository">Community repository implementation.</param>
+        public GameService(IApiRepository apiRepository, ICommunityRepository communityRepository)
         {
             _apiRepository = apiRepository;
+            _communityRepository = communityRepository;
         }
 
         /// <summary>
@@ -66,32 +72,65 @@ namespace Ed.Steamflix.Common.Services
             var model = JsonConvert.DeserializeObject<GetOwnedGamesResponse>(await call);
 
             // Re-order the game list
-            model.OwnedGames.Games = model.OwnedGames.Games.OrderByDescending(g => g.PlaytimeForever).ToList();
+            if (model.OwnedGames.Games != null
+                && model.OwnedGames.Games.Any())
+            {
+                model.OwnedGames.Games = model.OwnedGames.Games.OrderByDescending(g => g.PlaytimeForever).ToList();
+            }
 
             return model.OwnedGames.Games;
+        }
+
+        /// <summary>
+        /// Retrieves a list of popular games on Steam.
+        /// </summary>
+        /// <remarks>
+        /// http://store.steampowered.com/stats/
+        /// </remarks>
+        /// <returns>List of games.</returns>
+        public async Task<List<Game>> GetPopularGamesAsync()
+        {
+            var games = new List<Game>();
+            var html = await _communityRepository.GetStatsHtmlAsync().ConfigureAwait(false);
+
+            foreach (Match match in _statsRegex.Matches(html))
+            {
+                games.Add(new Game
+                {
+                    AppId = int.Parse(match.Groups["AppId"].Value),
+                    Name = match.Groups["Name"].Value
+                });
+            }
+
+            return games;
         }
 
         /// <summary>
         /// Retrieves info for one game.
         /// </summary>
         /// <remarks>
-        /// https://wiki.teamfortress.com/wiki/WebAPI/GetOwnedGames
+        /// http://store.steampowered.com/api/appdetails?appids=570
         /// </remarks>
-        /// <param name="steamId">Steam user identifier.</param>
         /// <param name="appId">Steam app identifier.</param>
-        /// <returns></returns>
-        public async Task<Game> GetGameInfoAsync(string steamId, int appId)
+        /// <returns>Game info.</returns>
+        public async Task<Game> GetGameInfoAsync(int appId)
         {
-            var call = _apiRepository.ApiCallAsync(
-                _serviceName,
-                "GetOwnedGames",
-                "v1",
-                $"steamid={steamId}&include_appinfo=1&appids_filter[0]={appId}"
-            ).ConfigureAwait(false);
+            var call = _apiRepository.ReadUrlAsync($"http://store.steampowered.com/api/appdetails?appids={appId}").ConfigureAwait(false);
+            var model = JsonConvert.DeserializeObject<GetAppDetailsResponse>(await call);
 
-            var model = JsonConvert.DeserializeObject<GetOwnedGamesResponse>(await call);
+            if (!model.AppDetails.Success)
+            {
+                return null;
+            }
 
-            return model.OwnedGames.Games.FirstOrDefault();
+            var game = model.AppDetails.Game;
+
+            return new Game
+            {
+                AppId = game.AppId,
+                Name = game.Name,
+                StoreLogoUrl = game.LogoUrl
+            };
         }
     }
 }

@@ -126,7 +126,10 @@
   <data name="BroadcastUrlFormat" xml:space="preserve">
     <value>http://steamcommunity.com/app/{0}/broadcasts/</value>
   </data>
-  <data name="IconUrlFormat" xml:space="preserve">
+  <data name="ImageUrlFormat" xml:space="preserve">
     <value>http://media.steampowered.com/steamcommunity/public/images/apps/{0}/{1}.jpg</value>
+  </data>
+  <data name="StatsUrl" xml:space="preserve">
+    <value>http://store.steampowered.com/stats/</value>
   </data>
 </root>

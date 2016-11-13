@@ -19,5 +19,10 @@ namespace Ed.Steamflix.Common.ViewModels
         /// List of owned games.
         /// </summary>
         NotifyTaskCompletion<List<Game>> OwnedGames { get; }
+
+        /// <summary>
+        /// List of popular games.
+        /// </summary>
+        NotifyTaskCompletion<List<Game>> PopularGames { get; }
     }
 }

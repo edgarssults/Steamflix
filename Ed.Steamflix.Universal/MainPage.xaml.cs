@@ -51,5 +51,6 @@ namespace Ed.Steamflix.Universal
         }
 
         // TODO: Text box doesn't fit, Start button can't be pressed on mobile device, Enter button doesn't work
+        // TODO: Profile URL guide on Main page
     }
 }

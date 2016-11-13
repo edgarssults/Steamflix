@@ -66,8 +66,14 @@ namespace Ed.Steamflix.Universal.ViewModels
         }
 
         /// <summary>
-        /// Currently selected game, for passing info to other pages.
+        /// List of popular games.
         /// </summary>
-        public Game SelectedGame { get; set; }
+        public NotifyTaskCompletion<List<Game>> PopularGames
+        {
+            get
+            {
+                return new NotifyTaskCompletion<List<Game>>(_playerService.GetPopularGamesAsync());
+            }
+        }
     }
 }

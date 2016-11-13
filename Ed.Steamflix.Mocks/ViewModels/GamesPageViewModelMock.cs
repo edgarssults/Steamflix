@@ -3,16 +3,14 @@ using Ed.Steamflix.Common.Services;
 using Ed.Steamflix.Common.ViewModels;
 using Ed.Steamflix.Mocks.Repositories;
 using System.Collections.Generic;
+using System;
 
 namespace Ed.Steamflix.Mocks.ViewModels
 {
     public class GamesPageViewModelMock : IGamesPageViewModel
     {
-        private readonly GameService _playerService = new GameService(new TestApiRepository());
+        private readonly GameService _playerService = new GameService(new TestApiRepository(), new TestCommunityRepository());
 
-        /// <summary>
-        /// User's Steam ID.
-        /// </summary>
         public string SteamId
         {
             get
@@ -21,14 +19,6 @@ namespace Ed.Steamflix.Mocks.ViewModels
             }
         }
 
-        /// <summary>
-        /// Currently selected game, for passing info to other pages.
-        /// </summary>
-        public Game SelectedGame { get; set; }
-
-        /// <summary>
-        /// List of recently played games.
-        /// </summary>
         public NotifyTaskCompletion<List<Game>> RecentlyPlayedGames
         {
             get
@@ -37,14 +27,19 @@ namespace Ed.Steamflix.Mocks.ViewModels
             }
         }
 
-        /// <summary>
-        /// List of owned games.
-        /// </summary>
         public NotifyTaskCompletion<List<Game>> OwnedGames
         {
             get
             {
                 return new NotifyTaskCompletion<List<Game>>(_playerService.GetOwnedGamesAsync(SteamId));
+            }
+        }
+
+        public NotifyTaskCompletion<List<Game>> PopularGames
+        {
+            get
+            {
+                return new NotifyTaskCompletion<List<Game>>(_playerService.GetPopularGamesAsync());
             }
         }
     }

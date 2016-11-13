@@ -3068,6 +3068,259 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 	}
 }</value>
   </data>
+  <data name="httpstoresteampoweredcomapiappdetailsappids72850" xml:space="preserve">
+    <value>{
+    "72850": {
+        "success": true,
+        "data": {
+            "type": "game",
+            "name": "The Elder Scrolls V: Skyrim",
+            "steam_appid": 72850,
+            "required_age": "18",
+            "is_free": false,
+            "dlc": [
+                226880,
+                220760,
+                211720,
+                202485
+            ],
+            "detailed_description": "&lt;strong&gt;EPIC FANTASY REBORN&lt;/strong&gt;\r&lt;br&gt;\t\t\t\t\t\t\tThe next chapter in the highly anticipated Elder Scrolls saga arrives from the makers of the 2006 and 2008 Games of the Year, Bethesda Game Studios. Skyrim reimagines and revolutionizes the open-world fantasy epic, bringing to life a complete virtual world open for you to explore any way you choose.\r&lt;br&gt;\r&lt;br&gt;\t\t\t\t\t\t\t&lt;strong&gt;LIVE ANOTHER LIFE, IN ANOTHER WORLD&lt;/strong&gt;\r&lt;br&gt;\t\t\t\t\t\t\tPlay any type of character you can imagine, and do whatever you want; the legendary freedom of choice, storytelling, and adventure of The Elder Scrolls is realized like never before.\r&lt;br&gt;\r&lt;br&gt;\t\t\t\t\t\t\t&lt;strong&gt;ALL NEW GRAPHICS AND GAMEPLAY ENGINE&lt;/strong&gt;\r&lt;br&gt;\t\t\t\t\t\t\tSkyrim2019s new game engine brings to life a complete virtual world with rolling clouds, rugged mountains, bustling cities, lush fields, and ancient dungeons.\r&lt;br&gt;\r&lt;br&gt;\t\t\t\t\t\t\t&lt;strong&gt;YOU ARE WHAT YOU PLAY&lt;/strong&gt;\r&lt;br&gt;\t\t\t\t\t\t\tChoose from hundreds of weapons, spells, and abilities.  The new character system allows you to play any way you want and define yourself through your actions.\r&lt;br&gt;\r&lt;br&gt;\t\t\t\t\t\t\t&lt;strong&gt;DRAGON RETURN&lt;/strong&gt;\r&lt;br&gt;\t\t\t\t\t\t\tBattle ancient dragons like you2019ve never seen. As Dragonborn, learn their secrets and harness their power for yourself.",
+            "about_the_game": "&lt;strong&gt;EPIC FANTASY REBORN&lt;/strong&gt;\r&lt;br&gt;\t\t\t\t\t\t\tThe next chapter in the highly anticipated Elder Scrolls saga arrives from the makers of the 2006 and 2008 Games of the Year, Bethesda Game Studios. Skyrim reimagines and revolutionizes the open-world fantasy epic, bringing to life a complete virtual world open for you to explore any way you choose.\r&lt;br&gt;\r&lt;br&gt;\t\t\t\t\t\t\t&lt;strong&gt;LIVE ANOTHER LIFE, IN ANOTHER WORLD&lt;/strong&gt;\r&lt;br&gt;\t\t\t\t\t\t\tPlay any type of character you can imagine, and do whatever you want; the legendary freedom of choice, storytelling, and adventure of The Elder Scrolls is realized like never before.\r&lt;br&gt;\r&lt;br&gt;\t\t\t\t\t\t\t&lt;strong&gt;ALL NEW GRAPHICS AND GAMEPLAY ENGINE&lt;/strong&gt;\r&lt;br&gt;\t\t\t\t\t\t\tSkyrim2019s new game engine brings to life a complete virtual world with rolling clouds, rugged mountains, bustling cities, lush fields, and ancient dungeons.\r&lt;br&gt;\r&lt;br&gt;\t\t\t\t\t\t\t&lt;strong&gt;YOU ARE WHAT YOU PLAY&lt;/strong&gt;\r&lt;br&gt;\t\t\t\t\t\t\tChoose from hundreds of weapons, spells, and abilities.  The new character system allows you to play any way you want and define yourself through your actions.\r&lt;br&gt;\r&lt;br&gt;\t\t\t\t\t\t\t&lt;strong&gt;DRAGON RETURN&lt;/strong&gt;\r&lt;br&gt;\t\t\t\t\t\t\tBattle ancient dragons like you2019ve never seen. As Dragonborn, learn their secrets and harness their power for yourself.",
+            "short_description": "",
+            "supported_languages": "English, French, German, Italian, Spanish, Japanese, Czech, Polish, Russian",
+            "header_image": "http://cdn.akamai.steamstatic.com/steam/apps/72850/header.jpg?t=1477612894",
+            "website": "http://elderscrolls.com/",
+            "pc_requirements": {
+                "minimum": "&lt;strong&gt;Minimum:&lt;/strong&gt;\r&lt;br&gt;\t\t\t\t\t\t\t\t&lt;ul class=\"bb_ul\"&gt;&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; Windows 7/Vista/XP PC (32 or 64 bit)\r&lt;br&gt;\t\t\t\t\t\t\t\t&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Processor:&lt;/strong&gt; Dual Core 2.0GHz or equivalent processor\r&lt;br&gt;\t\t\t\t\t\t\t\t&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Memory:&lt;/strong&gt; 2GB System RAM\r&lt;br&gt;\t\t\t\t\t\t\t\t&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Hard Disk Space:&lt;/strong&gt; 6GB free HDD Space\r&lt;br&gt;\t\t\t\t\t\t\t\t&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Video Card:&lt;/strong&gt; Direct X 9.0c compliant video card with 512 MB of RAM\r&lt;br&gt;\t\t\t\t\t\t\t\t&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Sound:&lt;/strong&gt; DirectX compatible sound card\r&lt;br&gt;\t\t\t\t\t\t\t\t&lt;/li&gt;&lt;/ul&gt;",
+                "recommended": "&lt;strong&gt;Recommended:&lt;/strong&gt;\r&lt;br&gt;\t\t\t\t\t\t\t\t&lt;ul class=\"bb_ul\"&gt;&lt;li&gt;&lt;strong&gt;Processor:&lt;/strong&gt; Quad-core Intel or AMD CPU\r&lt;br&gt;\t\t\t\t\t\t\t\t&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Memory:&lt;/strong&gt; 4GB System RAM\r&lt;br&gt;\t\t\t\t\t\t\t\t&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Video Card:&lt;/strong&gt; DirectX 9.0c compatible NVIDIA or AMD ATI video card with 1GB of RAM (Nvidia GeForce GTX 260 or higher; ATI Radeon 4890 or higher)\r&lt;br&gt;\t\t\t\t\t\t\t\t&lt;/li&gt;&lt;/ul&gt;"
+            },
+            "mac_requirements": [],
+            "linux_requirements": [],
+            "legal_notice": "00a9 2011 Bethesda Softworks LLC, a ZeniMax Media company. The Elder Scrolls, Skyrim, Bethesda, Bethesda Game Studios, Bethesda Softworks,&lt;br /&gt;\r\nZeniMax and related logos are registered trademarks or trademarks of ZeniMax Media Inc. in the U.S. and/or other countries. All other trademarks and&lt;br /&gt;\r\ntrade names are the properties of their respective owners. All Rights Reserved.",
+            "developers": [
+                "Bethesda Game Studios"
+            ],
+            "publishers": [
+                "Bethesda Softworks"
+            ],
+            "price_overview": {
+                "currency": "EUR",
+                "initial": 1499,
+                "final": 1499,
+                "discount_percent": 0
+            },
+            "packages": [
+                12248
+            ],
+            "package_groups": [
+                {
+                    "name": "default",
+                    "title": "Buy The Elder Scrolls V: Skyrim",
+                    "description": "",
+                    "selection_text": "Select a purchase option",
+                    "save_text": "",
+                    "display_type": 0,
+                    "is_recurring_subscription": "false",
+                    "subs": [
+                        {
+                            "packageid": 12248,
+                            "percent_savings_text": "",
+                            "percent_savings": 0,
+                            "option_text": "The Elder Scrolls V: Skyrim - 14,9920ac",
+                            "option_description": "",
+                            "can_get_free_license": "0",
+                            "is_free_license": false,
+                            "price_in_cents_with_discount": 1499
+                        }
+                    ]
+                }
+            ],
+            "platforms": {
+                "windows": true,
+                "mac": false,
+                "linux": false
+            },
+            "metacritic": {
+                "score": 94,
+                "url": "http://www.metacritic.com/game/pc/the-elder-scrolls-v-skyrim?ftag=MCD-06-10aaa1f"
+            },
+            "categories": [
+                {
+                    "id": 2,
+                    "description": "Single-player"
+                },
+                {
+                    "id": 22,
+                    "description": "Steam Achievements"
+                },
+                {
+                    "id": 29,
+                    "description": "Steam Trading Cards"
+                },
+                {
+                    "id": 30,
+                    "description": "Steam Workshop"
+                },
+                {
+                    "id": 18,
+                    "description": "Partial Controller Support"
+                },
+                {
+                    "id": 23,
+                    "description": "Steam Cloud"
+                }
+            ],
+            "genres": [
+                {
+                    "id": "3",
+                    "description": "RPG"
+                }
+            ],
+            "screenshots": [
+                {
+                    "id": 0,
+                    "path_thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_4e95fbcf72ce2a9f86075738fa9930ef2bed1ac7.600x338.jpg?t=1477612894",
+                    "path_full": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_4e95fbcf72ce2a9f86075738fa9930ef2bed1ac7.1920x1080.jpg?t=1477612894"
+                },
+                {
+                    "id": 1,
+                    "path_thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_b16a3740e032afe1c4b0477174eae7af8444b85d.600x338.jpg?t=1477612894",
+                    "path_full": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_b16a3740e032afe1c4b0477174eae7af8444b85d.1920x1080.jpg?t=1477612894"
+                },
+                {
+                    "id": 2,
+                    "path_thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_b3c5c70421af0c6a48dab2fbac88814a8827c057.600x338.jpg?t=1477612894",
+                    "path_full": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_b3c5c70421af0c6a48dab2fbac88814a8827c057.1920x1080.jpg?t=1477612894"
+                },
+                {
+                    "id": 3,
+                    "path_thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_b29aa0a2503547a15e9e210551b9c3eed42cba78.600x338.jpg?t=1477612894",
+                    "path_full": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_b29aa0a2503547a15e9e210551b9c3eed42cba78.1920x1080.jpg?t=1477612894"
+                },
+                {
+                    "id": 4,
+                    "path_thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_8aad65240099ed6f44953d051d1fca5d4f16e174.600x338.jpg?t=1477612894",
+                    "path_full": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_8aad65240099ed6f44953d051d1fca5d4f16e174.1920x1080.jpg?t=1477612894"
+                },
+                {
+                    "id": 5,
+                    "path_thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_c1dce7ea799bebeecc085bbe4879b27e6e05a33c.600x338.jpg?t=1477612894",
+                    "path_full": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_c1dce7ea799bebeecc085bbe4879b27e6e05a33c.1920x1080.jpg?t=1477612894"
+                },
+                {
+                    "id": 6,
+                    "path_thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_5ad7ed4bb147a59ced32257a80008285f0722822.600x338.jpg?t=1477612894",
+                    "path_full": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_5ad7ed4bb147a59ced32257a80008285f0722822.1920x1080.jpg?t=1477612894"
+                },
+                {
+                    "id": 7,
+                    "path_thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_59ceb8acb69485f50f236d6a10a5e5c47856681b.600x338.jpg?t=1477612894",
+                    "path_full": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_59ceb8acb69485f50f236d6a10a5e5c47856681b.1920x1080.jpg?t=1477612894"
+                },
+                {
+                    "id": 8,
+                    "path_thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_8015ccd40a8cdf6ad62913e61493e4f094b4f0e3.600x338.jpg?t=1477612894",
+                    "path_full": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_8015ccd40a8cdf6ad62913e61493e4f094b4f0e3.1920x1080.jpg?t=1477612894"
+                },
+                {
+                    "id": 9,
+                    "path_thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_674d80f91cb32c6e0fdd2dd826596823b4d65bfe.600x338.jpg?t=1477612894",
+                    "path_full": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_674d80f91cb32c6e0fdd2dd826596823b4d65bfe.1920x1080.jpg?t=1477612894"
+                },
+                {
+                    "id": 10,
+                    "path_thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_038abb71457edf636529dd7b5f898a7311dea359.600x338.jpg?t=1477612894",
+                    "path_full": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_038abb71457edf636529dd7b5f898a7311dea359.1920x1080.jpg?t=1477612894"
+                },
+                {
+                    "id": 11,
+                    "path_thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_e05468513634d03e4cc99d5b13436fe4ee653d6f.600x338.jpg?t=1477612894",
+                    "path_full": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_e05468513634d03e4cc99d5b13436fe4ee653d6f.1920x1080.jpg?t=1477612894"
+                },
+                {
+                    "id": 12,
+                    "path_thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_07bc094ab6223d680c809735bbbadfc7ff733905.600x338.jpg?t=1477612894",
+                    "path_full": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_07bc094ab6223d680c809735bbbadfc7ff733905.1920x1080.jpg?t=1477612894"
+                },
+                {
+                    "id": 13,
+                    "path_thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_5dfdc21d3fa4ffff7081f0933748b95f23c9b181.600x338.jpg?t=1477612894",
+                    "path_full": "http://cdn.akamai.steamstatic.com/steam/apps/72850/ss_5dfdc21d3fa4ffff7081f0933748b95f23c9b181.1920x1080.jpg?t=1477612894"
+                }
+            ],
+            "movies": [
+                {
+                    "id": 81281,
+                    "name": "The Elder Scrolls V: Skyrim - Full Trailer",
+                    "thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/81281/movie.293x165.jpg?t=1466707024",
+                    "webm": {
+                        "480": "http://cdn.akamai.steamstatic.com/steam/apps/81281/movie480.webm?t=1466707024",
+                        "max": "http://cdn.akamai.steamstatic.com/steam/apps/81281/movie_max.webm?t=1466707024"
+                    },
+                    "highlight": true
+                }
+            ],
+            "recommendations": {
+                "total": 187567
+            },
+            "achievements": {
+                "total": 75,
+                "highlighted": [
+                    {
+                        "name": "Unbound",
+                        "path": "http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/72850/07a5ef16690568be4686a8c0d3ba5b031acde580.jpg"
+                    },
+                    {
+                        "name": "Bleak Falls Barrow",
+                        "path": "http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/72850/c3a604f698d247b53d20f212e9f31a9ec707a180.jpg"
+                    },
+                    {
+                        "name": "The Way of the Voice",
+                        "path": "http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/72850/108a9f066026e56f3610e36a5fff22da801fe6c7.jpg"
+                    },
+                    {
+                        "name": "Diplomatic Immunity",
+                        "path": "http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/72850/99c7be8e786fa63db1911528319e398e037273d3.jpg"
+                    },
+                    {
+                        "name": "Alduin's Wall",
+                        "path": "http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/72850/4232fc8bed168a922b60d31ea79761c8de43531e.jpg"
+                    },
+                    {
+                        "name": "Elder Knowledge",
+                        "path": "http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/72850/3278ddbe854b98dc8207d149a2d7f86f648945fc.jpg"
+                    },
+                    {
+                        "name": "The Fallen",
+                        "path": "http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/72850/2b82245e53893a810c1a1ac30ee9fd975b16516e.jpg"
+                    },
+                    {
+                        "name": "Dragonslayer",
+                        "path": "http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/72850/7668bd7787758bde9211ed8d8c347f50da7f230d.jpg"
+                    },
+                    {
+                        "name": "Take Up Arms",
+                        "path": "http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/72850/4bef1c9fa55d787d4e84c89058b715882d7d579b.jpg"
+                    },
+                    {
+                        "name": "Blood Oath",
+                        "path": "http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/72850/2ebbe241120ea5a148b31c82a9bf02065397cda9.jpg"
+                    }
+                ]
+            },
+            "release_date": {
+                "coming_soon": false,
+                "date": "10 Nov, 2011"
+            },
+            "support_info": {
+                "url": "http://support.bethsoft.com/",
+                "email": ""
+            },
+            "background": "http://cdn.akamai.steamstatic.com/steam/apps/72850/page_bg_generated_v6b.jpg?t=1477612894"
+        }
+    }
+}</value>
+  </data>
   <data name="ResolveVanityUrlResponseJson" xml:space="preserve">
     <value>{
 	"response": {
@@ -3075,5 +3328,2147 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 		"success": 1
 	}
 }</value>
+  </data>
+  <data name="StatsHtml" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html class=" responsive" lang="en"&gt;
+&lt;head&gt;
+	&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
+			&lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;
+		&lt;meta name="theme-color" content="#171a21"&gt;
+		&lt;title&gt;Steam: Game and Player Statistics&lt;/title&gt;
+	&lt;link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"&gt;
+
+	&lt;link href="http://store.akamai.steamstatic.com/public/shared/css/motiva_sans.css?v=qup8GBWmVxiv" rel="stylesheet" type="text/css" &gt;
+&lt;link href="http://store.akamai.steamstatic.com/public/shared/css/shared_global.css?v=tNhZOjdLGj23" rel="stylesheet" type="text/css" &gt;
+&lt;link href="http://store.akamai.steamstatic.com/public/shared/css/buttons.css?v=FMXZx9fv9yp_" rel="stylesheet" type="text/css" &gt;
+&lt;link href="http://store.akamai.steamstatic.com/public/css/v6/store.css?v=_wvZU4um0XgA" rel="stylesheet" type="text/css" &gt;
+&lt;link href="http://store.akamai.steamstatic.com/public/css/styles_stats.css?v=x_ujB7oTtKSD" rel="stylesheet" type="text/css" &gt;
+&lt;link href="http://store.akamai.steamstatic.com/public/shared/css/shared_responsive.css?v=Dm6dKxyudx2Y" rel="stylesheet" type="text/css" &gt;
+			&lt;script&gt;
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+						(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+				ga('create', 'UA-33786258-1', 'auto', {
+					'sampleRate': 0.4				});
+				ga('set', 'dimension1', true );
+				ga('set', 'dimension2', 'External' );
+				ga('set', 'dimension3', 'stats' );
+				ga('set', 'dimension4', "stats\/DefaultAction" );
+				ga('send', 'pageview');
+
+			&lt;/script&gt;
+			&lt;script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/jquery-1.8.3.min.js?v=.TZ2NKhB-nliU"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;$J = jQuery.noConflict();&lt;/script&gt;&lt;script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/tooltip.js?v=.Kd9gxidtwUd0"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/shared_global.js?v=pJPuVgPDYILz&amp;amp;l=english"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/main.js?v=DT8O6nf36jyj&amp;amp;l=english"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/prototype-1.7.js?v=.a38iP7Khdmyy"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/scriptaculous/_combined.js?v=N9x7GFelaFEb&amp;amp;l=english&amp;amp;load=effects,controls,slider"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/dynamicstore.js?v=kkpQC5ybvNbQ&amp;amp;l=english"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript"&gt;
+jQuery(document).ready(function($) { $J.data( document, 'x_readytime', new Date().getTime() ); 
+$J.data( document, 'x_oldref', GetNavCookie() ); 
+$('.tooltip').v_tooltip();
+window.BindStoreTooltip = function( $Selector ) { $Selector.v_tooltip( {'tooltipClass': 'store_tooltip', 'dataName': 'storeTooltip' } ); };
+BindStoreTooltip( $('[data-store-tooltip]') ); 
+});&lt;/script&gt;&lt;script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/hwsurvey.js?v=.jHuaa36DsPQE"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/flot-0.8/jquery.flot.js?v=.zrJjtPpGflQQ"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/flot-0.8/jquery.flot.resize.js?v=.TWn5-WgQL6_C"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/flot-0.8/jquery.flot.time.js?v=.wh3SCHrBBvNi"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/flot-0.8/excanvas.js?v=.9q965-2pfjNq"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/shared_responsive_adapter.js?v=qLEcRmcHn-kc&amp;amp;l=english"&gt;&lt;/script&gt;
+
+	
+	
+			&lt;link rel="image_src" href="http://store.akamai.steamstatic.com/public/shared/images/responsive/share_steam_logo.png"&gt;
+	
+	
+	
+	&lt;/head&gt;
+&lt;body class="v6 responsive_page"&gt;
+
+&lt;div class="responsive_page_frame with_header"&gt;
+
+						&lt;div class="responsive_page_menu_ctn mainmenu"&gt;
+				&lt;div class="responsive_page_menu"  id="responsive_page_menu"&gt;
+										&lt;div class="mainmenu_contents"&gt;
+						&lt;div class="mainmenu_contents_items"&gt;
+															&lt;!-- profile area --&gt;
+								&lt;div class="responsive_menu_user_area"&gt;
+									&lt;div class="responsive_menu_user_persona persona online"&gt;
+										&lt;div class="playerAvatar online"&gt;
+											&lt;a href="http://steamcommunity.com/id/edgarssults/"&gt;
+												&lt;img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/6d/6dd0bc925d93a031b1493af1cbdb8b9d7550fce9.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/6d/6dd0bc925d93a031b1493af1cbdb8b9d7550fce9.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/6d/6dd0bc925d93a031b1493af1cbdb8b9d7550fce9_medium.jpg 2x"&gt;											&lt;/a&gt;
+										&lt;/div&gt;
+										&lt;a href="http://steamcommunity.com/id/edgarssults/" data-miniprofile="13815649"&gt;Eadgar&lt;/a&gt;									&lt;/div&gt;
+
+																												&lt;div class="responsive_menu_cartwallet_area persona online"&gt;
+																							&lt;div class="responsive_menu_user_cart"&gt;
+													&lt;a href="http://store.steampowered.com/cart/"&gt;
+														Cart &lt;b&gt;(0)&lt;/b&gt;													&lt;/a&gt;
+												&lt;/div&gt;
+																																		&lt;div class="responsive_menu_user_wallet"&gt;
+													&lt;a href="https://store.steampowered.com/account/"&gt;
+														Wallet &lt;b&gt;(0,--€)&lt;/b&gt;													&lt;/a&gt;
+												&lt;/div&gt;
+																					&lt;/div&gt;
+																	&lt;/div&gt;
+																&lt;div class="menuitem notifications_item"&gt;
+									Notifications									&lt;div class="notification_count_total_ctn no_notifications"&gt;
+										&lt;span class="notification_envelope"&gt;&lt;/span&gt;
+										&lt;span class="notification_count"&gt;0&lt;/span&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;div class="notification_submenu" style="display: none;" data-submenuid="notifications"&gt;
+									
+							&lt;a data-notification-type="4" class="popup_menu_item notification_ctn header_notification_comments " href="http://steamcommunity.com/id/edgarssults/commentnotifications/"&gt;
+				&lt;span class="notification_icon"&gt;&lt;/span&gt;New comments &lt;span class="notification_count"&gt;0&lt;/span&gt;			&lt;/a&gt;
+			&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;a data-notification-type="5" class="popup_menu_item notification_ctn header_notification_items " href="http://steamcommunity.com/id/edgarssults/inventory/"&gt;
+				&lt;span class="notification_icon"&gt;&lt;/span&gt;New items &lt;span class="notification_count"&gt;0&lt;/span&gt;			&lt;/a&gt;
+			&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;a data-notification-type="6" class="popup_menu_item notification_ctn header_notification_invites " href="http://steamcommunity.com/id/edgarssults/home/invites/"&gt;
+				&lt;span class="notification_icon"&gt;&lt;/span&gt;New invites &lt;span class="notification_count"&gt;0&lt;/span&gt;			&lt;/a&gt;
+			&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;a data-notification-type="8" class="popup_menu_item notification_ctn header_notification_gifts " href="http://steamcommunity.com/id/edgarssults/inventory/#pending_gifts"&gt;
+				&lt;span class="notification_icon"&gt;&lt;/span&gt;New gifts &lt;span class="notification_count"&gt;0&lt;/span&gt;			&lt;/a&gt;
+			&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;a data-notification-type="9" class="popup_menu_item notification_ctn header_notification_offlinemessages " href="javascript:void(0)" onclick="LaunchWebChat(); HideMenu( 'header_notification_link', 'header_notification_dropdown' ); return false;"&gt;
+				&lt;span class="notification_icon"&gt;&lt;/span&gt;New messages &lt;span class="notification_count"&gt;0&lt;/span&gt;			&lt;/a&gt;
+								&lt;a data-notification-type="1" class="popup_menu_item notification_ctn hide_when_empty header_notification_tradeoffers " href="http://steamcommunity.com/id/edgarssults/tradeoffers/"&gt;
+						&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;span class="notification_icon"&gt;&lt;/span&gt;New trade offers &lt;span class="notification_count"&gt;0&lt;/span&gt;					&lt;/a&gt;
+								&lt;a data-notification-type="2" class="popup_menu_item notification_ctn hide_when_empty header_notification_asyncgame " href="http://steamcommunity.com/id/edgarssults/gamenotifications"&gt;
+						&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;span class="notification_icon"&gt;&lt;/span&gt;New turns waiting &lt;span class="notification_count"&gt;0&lt;/span&gt;					&lt;/a&gt;
+								&lt;a data-notification-type="3" class="popup_menu_item notification_ctn hide_when_empty header_notification_moderatormessage " href="http://steamcommunity.com/id/edgarssults/moderatormessages"&gt;
+						&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;span class="notification_icon"&gt;&lt;/span&gt;New moderation messages &lt;span class="notification_count"&gt;0&lt;/span&gt;					&lt;/a&gt;
+								&lt;a data-notification-type="10" class="popup_menu_item notification_ctn hide_when_empty header_notification_helprequestreply " href="https://help.steampowered.com/en/wizard/HelpRequests"&gt;
+						&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;span class="notification_icon"&gt;&lt;/span&gt;Steam Support replies &lt;span class="notification_count"&gt;0&lt;/span&gt;					&lt;/a&gt;
+												&lt;/div&gt;
+							
+								&lt;a class="menuitem supernav" href="http://store.steampowered.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_store"&gt;
+		Store	&lt;/a&gt;
+	&lt;div class="submenu_store" style="display: none;" data-submenuid="store"&gt;
+		&lt;a class="submenuitem" href="http://store.steampowered.com/"&gt;Featured&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://store.steampowered.com/explore/"&gt;Explore&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://store.steampowered.com/curators/"&gt;Curators&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/my/wishlist/"&gt;Wishlist&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://store.steampowered.com/news/"&gt;News&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://store.steampowered.com/stats/"&gt;Stats&lt;/a&gt;
+	&lt;/div&gt;
+
+
+	&lt;a class="menuitem supernav" style="display: block" href="http://steamcommunity.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_community"&gt;
+		Community	&lt;/a&gt;
+	&lt;div class="submenu_community" style="display: none;" data-submenuid="community"&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/"&gt;Home&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/discussions/"&gt;Discussions&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/workshop/"&gt;Workshop&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/greenlight/"&gt;Greenlight&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/market/"&gt;Market&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/?subsection=broadcasts"&gt;Broadcasts&lt;/a&gt;
+					&lt;/div&gt;
+
+	
+
+			&lt;a class="menuitem supernav username" href="http://steamcommunity.com/id/edgarssults/home/" data-tooltip-type="selector" data-tooltip-content=".submenu_username"&gt;
+			You &amp;amp; Friends		&lt;/a&gt;
+		&lt;div class="submenu_username" style="display: none;" data-submenuid="username"&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/home/"&gt;Activity&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/"&gt;Profile&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/friends/"&gt;Friends&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/groups/"&gt;Groups&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/screenshots/"&gt;Content&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/badges/"&gt;Badges&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/inventory/"&gt;Inventory&lt;/a&gt;
+		&lt;/div&gt;
+	
+	
+	&lt;a class="menuitem" href="https://help.steampowered.com/en/"&gt;
+		Support	&lt;/a&gt;
+
+							&lt;div class="minor_menu_items"&gt;
+																	&lt;a class="menuitem" href="https://store.steampowered.com/account/"&gt;Account details&lt;/a&gt;
+									&lt;a class="menuitem" href="https://store.steampowered.com/account/preferences"&gt;Preferences&lt;/a&gt;
+																&lt;div class="menuitem change_language_action"&gt;
+									Change language								&lt;/div&gt;
+																	&lt;div class="menuitem" onclick="Logout();"&gt;Change User&lt;/div&gt;
+																									&lt;div class="menuitem" onclick="Responsive_RequestDesktopView();"&gt;
+										View desktop website									&lt;/div&gt;
+															&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class="mainmenu_footer_spacer"&gt;&lt;/div&gt;
+						&lt;div class="mainmenu_footer"&gt;
+							&lt;div class="mainmenu_footer_logo"&gt;&lt;img src="http://store.akamai.steamstatic.com/public/shared/images/responsive/logo_valve_footer.png"&gt;&lt;/div&gt;
+							© Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.							&lt;span class="mainmenu_valve_links"&gt;
+								&lt;a href="http://store.steampowered.com/privacy_agreement/" target="_blank"&gt;Privacy Policy&lt;/a&gt;
+								&amp;nbsp;| &amp;nbsp;&lt;a href="http://www.valvesoftware.com/legal.htm" target="_blank"&gt;Legal&lt;/a&gt;
+								&amp;nbsp;| &amp;nbsp;&lt;a href="http://store.steampowered.com/subscriber_agreement/" target="_blank"&gt;Steam Subscriber Agreement&lt;/a&gt;
+								&amp;nbsp;| &amp;nbsp;&lt;a href="http://store.steampowered.com/steam_refunds/" target="_blank"&gt;Refunds&lt;/a&gt;
+							&lt;/span&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+									&lt;/div&gt;
+			&lt;/div&gt;
+		
+		&lt;div class="responsive_local_menu_tab"&gt;
+
+		&lt;/div&gt;
+
+		&lt;div class="responsive_page_menu_ctn localmenu"&gt;
+			&lt;div class="responsive_page_menu"  id="responsive_page_local_menu"&gt;
+				&lt;div class="localmenu_content"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+
+
+					&lt;div class="responsive_header"&gt;
+				&lt;div class="responsive_header_content"&gt;
+					&lt;div id="responsive_menu_logo"&gt;
+						&lt;img src="http://store.akamai.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png" height="100%"&gt;
+													&lt;div class="responsive_header_notification_badge_ctn"&gt;
+								&lt;div class="responsive_header_notification_badge notification_count_total_ctn no_notifications"&gt;
+									&lt;span class="notification_count"&gt;0&lt;/span&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+											&lt;/div&gt;
+					&lt;div class="responsive_header_logo"&gt;
+						&lt;img src="http://store.akamai.steamstatic.com/public/shared/images/responsive/header_logo.png" height="36" border="0" alt="STEAM"&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		
+		&lt;div class="responsive_page_content_overlay"&gt;
+
+		&lt;/div&gt;
+
+		&lt;div class="responsive_fixonscroll_ctn nonresponsive_hidden "&gt;
+		&lt;/div&gt;
+	
+	&lt;div class="responsive_page_content"&gt;
+
+		&lt;div id="global_header"&gt;
+	&lt;div class="content"&gt;
+
+		&lt;div class="logo"&gt;
+			&lt;span id="logo_holder"&gt;
+				&lt;a href="http://store.steampowered.com/"&gt;
+					&lt;img src="http://store.akamai.steamstatic.com/public/shared/images/header/globalheader_logo.png?t=962016" width="176" height="44"&gt;
+				&lt;/a&gt;
+			&lt;/span&gt;
+			&lt;!--[if lt IE 7]&gt;
+			&lt;style type="text/css"&gt;
+				#logo_holder img { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
+				#logo_holder { display: inline-block; width: 176px; height: 44px; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://store.akamai.steamstatic.com/public/images/v5/globalheader_logo.png'); }
+			&lt;/style&gt;
+			&lt;![endif]--&gt;
+		&lt;/div&gt;
+
+			&lt;div class="supernav_container"&gt;
+	&lt;a class="menuitem supernav" href="http://store.steampowered.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_store"&gt;
+		STORE	&lt;/a&gt;
+	&lt;div class="submenu_store" style="display: none;" data-submenuid="store"&gt;
+		&lt;a class="submenuitem" href="http://store.steampowered.com/"&gt;Featured&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://store.steampowered.com/explore/"&gt;Explore&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://store.steampowered.com/curators/"&gt;Curators&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/my/wishlist/"&gt;Wishlist&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://store.steampowered.com/news/"&gt;News&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://store.steampowered.com/stats/"&gt;Stats&lt;/a&gt;
+	&lt;/div&gt;
+
+
+	&lt;a class="menuitem supernav" style="display: block" href="http://steamcommunity.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_community"&gt;
+		COMMUNITY	&lt;/a&gt;
+	&lt;div class="submenu_community" style="display: none;" data-submenuid="community"&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/"&gt;Home&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/discussions/"&gt;Discussions&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/workshop/"&gt;Workshop&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/greenlight/"&gt;Greenlight&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/market/"&gt;Market&lt;/a&gt;
+		&lt;a class="submenuitem" href="http://steamcommunity.com/?subsection=broadcasts"&gt;Broadcasts&lt;/a&gt;
+					&lt;/div&gt;
+
+	
+
+			&lt;a class="menuitem supernav username" href="http://steamcommunity.com/id/edgarssults/home/" data-tooltip-type="selector" data-tooltip-content=".submenu_username"&gt;
+			Eadgar		&lt;/a&gt;
+		&lt;div class="submenu_username" style="display: none;" data-submenuid="username"&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/home/"&gt;Activity&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/"&gt;Profile&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/friends/"&gt;Friends&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/groups/"&gt;Groups&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/screenshots/"&gt;Content&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/badges/"&gt;Badges&lt;/a&gt;
+			&lt;a class="submenuitem" href="http://steamcommunity.com/id/edgarssults/inventory/"&gt;Inventory&lt;/a&gt;
+		&lt;/div&gt;
+	
+			&lt;a class="menuitem" href="http://store.steampowered.com/about/"&gt;
+			ABOUT		&lt;/a&gt;
+	
+	&lt;a class="menuitem" href="https://help.steampowered.com/en/"&gt;
+		SUPPORT	&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;script type="text/javascript"&gt;
+		jQuery(function($) {
+			$('.tooltip').v_tooltip();
+			$('#global_header .supernav').v_tooltip({'location':'bottom', 'tooltipClass': 'supernav_content', 'offsetY':-4, 'offsetX': 1, 'horizontalSnap': 4, 'tooltipParent': '#global_header .supernav_container', 'correctForScreenSize': false});
+		});
+	&lt;/script&gt;
+
+		&lt;div id="global_actions"&gt;
+			&lt;div id="global_action_menu"&gt;
+				&lt;div class="header_installsteam_btn header_installsteam_btn_gray"&gt;
+					&lt;div class="header_installsteam_btn_leftcap"&gt;&lt;/div&gt;
+					&lt;div class="header_installsteam_btn_rightcap"&gt;&lt;/div&gt;
+					&lt;a class="header_installsteam_btn_content" href="http://store.steampowered.com/about/"&gt;
+						Install Steam					&lt;/a&gt;
+				&lt;/div&gt;
+
+				
+									&lt;!-- notification inbox area --&gt;
+																				&lt;div id="header_notification_area"&gt;
+								&lt;script type="text/javascript"&gt;$J(EnableNotificationCountPolling);&lt;/script&gt;
+		&lt;div id="header_notification_link" class="header_notification_btn global_header_toggle_button notification_count_total_ctn no_notifications" onclick="ShowMenu( this, 'header_notification_dropdown', 'right' );"&gt;
+			&lt;span class="notification_count"&gt;0&lt;/span&gt;
+			&lt;span class="header_notification_envelope"&gt;
+				&lt;img src="http://store.akamai.steamstatic.com/public/shared/images/responsive/header_menu_notifications.png" width="11" height="8"&gt;
+			&lt;/span&gt;
+		&lt;/div&gt;
+	
+			&lt;div class="popup_block_new" id="header_notification_dropdown" style="display: none;"&gt;
+			&lt;div class="popup_body popup_menu"&gt;
+							&lt;a data-notification-type="4" class="popup_menu_item notification_ctn header_notification_comments " href="http://steamcommunity.com/id/edgarssults/commentnotifications/"&gt;
+				&lt;span class="notification_icon"&gt;&lt;/span&gt;&lt;span class="notification_count_string singular" style="display: none;"&gt;1 new comment&lt;/span&gt;&lt;span class="notification_count_string plural" style=""&gt;&lt;span class="notification_count"&gt;0&lt;/span&gt; new comments&lt;/span&gt;			&lt;/a&gt;
+			&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;a data-notification-type="5" class="popup_menu_item notification_ctn header_notification_items " href="http://steamcommunity.com/id/edgarssults/inventory/"&gt;
+				&lt;span class="notification_icon"&gt;&lt;/span&gt;&lt;span class="notification_count_string singular" style="display: none;"&gt;1 new item in your inventory&lt;/span&gt;&lt;span class="notification_count_string plural" style=""&gt;&lt;span class="notification_count"&gt;0&lt;/span&gt; new items in your inventory&lt;/span&gt;			&lt;/a&gt;
+			&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;a data-notification-type="6" class="popup_menu_item notification_ctn header_notification_invites " href="http://steamcommunity.com/id/edgarssults/home/invites/"&gt;
+				&lt;span class="notification_icon"&gt;&lt;/span&gt;&lt;span class="notification_count_string singular" style="display: none;"&gt;1 new invite&lt;/span&gt;&lt;span class="notification_count_string plural" style=""&gt;&lt;span class="notification_count"&gt;0&lt;/span&gt; new invites&lt;/span&gt;			&lt;/a&gt;
+			&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;a data-notification-type="8" class="popup_menu_item notification_ctn header_notification_gifts " href="http://steamcommunity.com/id/edgarssults/inventory/#pending_gifts"&gt;
+				&lt;span class="notification_icon"&gt;&lt;/span&gt;&lt;span class="notification_count_string singular" style="display: none;"&gt;1 new gift&lt;/span&gt;&lt;span class="notification_count_string plural" style=""&gt;&lt;span class="notification_count"&gt;0&lt;/span&gt; new gifts&lt;/span&gt;			&lt;/a&gt;
+			&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;a data-notification-type="9" class="popup_menu_item notification_ctn header_notification_offlinemessages " href="javascript:void(0)" onclick="LaunchWebChat(); HideMenu( 'header_notification_link', 'header_notification_dropdown' ); return false;"&gt;
+				&lt;span class="notification_icon"&gt;&lt;/span&gt;&lt;span class="notification_count_string singular" style="display: none;"&gt;1 unread chat message&lt;/span&gt;&lt;span class="notification_count_string plural" style=""&gt;&lt;span class="notification_count"&gt;0&lt;/span&gt; unread chat messages&lt;/span&gt;			&lt;/a&gt;
+								&lt;a data-notification-type="1" class="popup_menu_item notification_ctn hide_when_empty header_notification_tradeoffers " href="http://steamcommunity.com/id/edgarssults/tradeoffers/"&gt;
+						&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;span class="notification_icon"&gt;&lt;/span&gt;&lt;span class="notification_count_string singular" style="display: none;"&gt;1 new trade notification&lt;/span&gt;&lt;span class="notification_count_string plural" style=""&gt;&lt;span class="notification_count"&gt;0&lt;/span&gt; new trade notifications&lt;/span&gt;					&lt;/a&gt;
+								&lt;a data-notification-type="2" class="popup_menu_item notification_ctn hide_when_empty header_notification_asyncgame " href="http://steamcommunity.com/id/edgarssults/gamenotifications"&gt;
+						&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;span class="notification_icon"&gt;&lt;/span&gt;&lt;span class="notification_count_string singular" style="display: none;"&gt;1 turn waiting&lt;/span&gt;&lt;span class="notification_count_string plural" style=""&gt;&lt;span class="notification_count"&gt;0&lt;/span&gt; new turns waiting&lt;/span&gt;					&lt;/a&gt;
+								&lt;a data-notification-type="3" class="popup_menu_item notification_ctn hide_when_empty header_notification_moderatormessage " href="http://steamcommunity.com/id/edgarssults/moderatormessages"&gt;
+						&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;span class="notification_icon"&gt;&lt;/span&gt;&lt;span class="notification_count_string singular" style="display: none;"&gt;1 community moderation message&lt;/span&gt;&lt;span class="notification_count_string plural" style=""&gt;&lt;span class="notification_count"&gt;0&lt;/span&gt; community moderation messages&lt;/span&gt;					&lt;/a&gt;
+								&lt;a data-notification-type="10" class="popup_menu_item notification_ctn hide_when_empty header_notification_helprequestreply " href="https://help.steampowered.com/en/wizard/HelpRequests"&gt;
+						&lt;div class="header_notification_dropdown_seperator"&gt;&lt;/div&gt;
+						&lt;span class="notification_icon"&gt;&lt;/span&gt;&lt;span class="notification_count_string singular" style="display: none;"&gt;1 reply from Steam Support&lt;/span&gt;&lt;span class="notification_count_string plural" style=""&gt;&lt;span class="notification_count"&gt;0&lt;/span&gt; replies from Steam Support&lt;/span&gt;					&lt;/a&gt;
+							&lt;/div&gt;
+		&lt;/div&gt;
+						&lt;/div&gt;
+
+					&lt;span class="pulldown global_action_link" id="account_pulldown" onclick="ShowMenu( this, 'account_dropdown', 'right', 'bottom', true );"&gt;crush_lv&lt;/span&gt;
+					&lt;div class="popup_block_new" id="account_dropdown" style="display: none;"&gt;
+						&lt;div class="popup_body popup_menu"&gt;
+															&lt;a class="popup_menu_item" href="javascript:Logout();"&gt;Logout&lt;/a&gt;
+														&lt;a class="popup_menu_item" href="https://store.steampowered.com/account/"&gt;Account details&lt;/a&gt;
+							&lt;a class="popup_menu_item" href="https://store.steampowered.com/account/preferences/"&gt;Preferences&lt;/a&gt;
+							&lt;span class="popup_menu_item" id="account_language_pulldown"&gt;Change language&lt;/span&gt;
+							&lt;div class="popup_block_new" id="language_dropdown" style="display: none;"&gt;
+								&lt;div class="popup_body popup_menu"&gt;
+																																									&lt;a class="popup_menu_item tight" href="?l=bulgarian" onclick="ChangeLanguage( 'bulgarian' ); return false;"&gt;Български (Bulgarian)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=czech" onclick="ChangeLanguage( 'czech' ); return false;"&gt;čeština (Czech)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=danish" onclick="ChangeLanguage( 'danish' ); return false;"&gt;Dansk (Danish)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=dutch" onclick="ChangeLanguage( 'dutch' ); return false;"&gt;Nederlands (Dutch)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=english" onclick="ChangeLanguage( 'english' ); return false;"&gt;English&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=finnish" onclick="ChangeLanguage( 'finnish' ); return false;"&gt;Suomi (Finnish)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=french" onclick="ChangeLanguage( 'french' ); return false;"&gt;Français (French)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=greek" onclick="ChangeLanguage( 'greek' ); return false;"&gt;Ελληνικά (Greek)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=german" onclick="ChangeLanguage( 'german' ); return false;"&gt;Deutsch (German)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=hungarian" onclick="ChangeLanguage( 'hungarian' ); return false;"&gt;Magyar (Hungarian)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=italian" onclick="ChangeLanguage( 'italian' ); return false;"&gt;Italiano (Italian)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=japanese" onclick="ChangeLanguage( 'japanese' ); return false;"&gt;日本語 (Japanese)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=koreana" onclick="ChangeLanguage( 'koreana' ); return false;"&gt;한국어 (Korean)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=norwegian" onclick="ChangeLanguage( 'norwegian' ); return false;"&gt;Norsk (Norwegian)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=polish" onclick="ChangeLanguage( 'polish' ); return false;"&gt;Polski (Polish)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=portuguese" onclick="ChangeLanguage( 'portuguese' ); return false;"&gt;Português (Portuguese)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=brazilian" onclick="ChangeLanguage( 'brazilian' ); return false;"&gt;Português-Brasil (Portuguese-Brazil)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=russian" onclick="ChangeLanguage( 'russian' ); return false;"&gt;Русский (Russian)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=romanian" onclick="ChangeLanguage( 'romanian' ); return false;"&gt;Română (Romanian)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=schinese" onclick="ChangeLanguage( 'schinese' ); return false;"&gt;简体中文 (Simplified Chinese)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=spanish" onclick="ChangeLanguage( 'spanish' ); return false;"&gt;Español (Spanish)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=swedish" onclick="ChangeLanguage( 'swedish' ); return false;"&gt;Svenska (Swedish)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=tchinese" onclick="ChangeLanguage( 'tchinese' ); return false;"&gt;繁體中文 (Traditional Chinese)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=thai" onclick="ChangeLanguage( 'thai' ); return false;"&gt;ไทย (Thai)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=turkish" onclick="ChangeLanguage( 'turkish' ); return false;"&gt;Türkçe (Turkish)&lt;/a&gt;
+																																&lt;a class="popup_menu_item tight" href="?l=ukrainian" onclick="ChangeLanguage( 'ukrainian' ); return false;"&gt;Українська (Ukrainian)&lt;/a&gt;
+																												&lt;a class="popup_menu_item tight" href="http://translation.steampowered.com" target="_blank"&gt;Help us translate Steam&lt;/a&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;a class="popup_menu_item" href="http://steamcommunity.com/id/edgarssults/"&gt;View profile&lt;/a&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;script type="text/javascript"&gt;
+						RegisterFlyout( 'account_language_pulldown', 'language_dropdown', 'leftsubmenu', 'bottomsubmenu', true );
+					&lt;/script&gt;
+											&lt;div id="header_wallet_ctn"&gt;
+							&lt;a class="global_action_link" id="header_wallet_balance" href="https://store.steampowered.com/account/store_transactions/"&gt;0,--€&lt;/a&gt;
+						&lt;/div&gt;
+												&lt;/div&gt;
+							&lt;a href="http://steamcommunity.com/id/edgarssults/" class="user_avatar playerAvatar online"&gt;
+					&lt;img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/6d/6dd0bc925d93a031b1493af1cbdb8b9d7550fce9.jpg"&gt;
+				&lt;/a&gt;
+					&lt;/div&gt;
+			&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="responsive_store_nav_ctn"&gt;&lt;/div&gt;
+		&lt;div class="responsive_page_template_content"&gt;
+
+			&lt;script type="text/javascript"&gt;
+	jQuery(function()
+	{
+		jQuery("&lt;div class='chartooltip' id='charttooltip'&gt;&lt;/div&gt;").css({
+			position: "absolute",
+			border: "1px solid #ffdddd",
+			display: "none",
+			padding: "2px",
+			"background-color": "white",
+			color: "black",
+			"font-size": "10px",
+			opacity: "1.0",
+		}).appendTo("body");
+	});
+&lt;/script&gt;
+
+&lt;div class="page_header_ctn search"&gt;
+
+	
+
+		&lt;div id="store_header" class=""&gt;
+		&lt;div class="content"&gt;
+			&lt;div id="store_controls"&gt;
+				&lt;div id="cart_status_data"&gt;
+																&lt;div class="store_header_btn_gray store_header_btn"&gt;
+							&lt;div class="store_header_btn_caps store_header_btn_leftcap"&gt;&lt;/div&gt;
+							&lt;div class="store_header_btn_caps store_header_btn_rightcap"&gt;&lt;/div&gt;
+							&lt;a id="wishlist_link" class="store_header_btn_content" href="http://steamcommunity.com/id/edgarssults/wishlist"&gt;
+								Wishlist																	(&lt;span id="wishlist_item_count_value"&gt;26&lt;/span&gt;)
+															&lt;/a&gt;
+						&lt;/div&gt;
+																&lt;div class="store_header_btn_green store_header_btn" id="store_header_cart_btn" style="display: none;"&gt;
+							&lt;div class="store_header_btn_caps store_header_btn_leftcap"&gt;&lt;/div&gt;
+							&lt;div class="store_header_btn_caps store_header_btn_rightcap"&gt;&lt;/div&gt;
+							&lt;a id="cart_link" class="store_header_btn_content" href="http://store.steampowered.com/cart/?snr=1_stats_4__12"&gt;
+								Cart								(&lt;span id="cart_item_count_value"&gt;0&lt;/span&gt;)
+							&lt;/a&gt;
+						&lt;/div&gt;
+									&lt;/div&gt;
+			&lt;/div&gt;
+							&lt;div id="store_nav_area"&gt;
+					&lt;div class="store_nav_leftcap"&gt;&lt;/div&gt;
+					&lt;div class="store_nav_bg"&gt;
+						&lt;div class="store_nav"&gt;
+
+													&lt;div class="tab  flyout_tab " id="foryou_tab" data-flyout="foryou_flyout" data-flyout-align="left" data-flyout-valign="bottom"&gt;
+								&lt;span class="pulldown"&gt;
+																			&lt;img class="foryou_avatar" src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/6d/6dd0bc925d93a031b1493af1cbdb8b9d7550fce9.jpg"&gt;
+																		&lt;a class="pulldown_desktop" href="http://store.steampowered.com/?snr=1_stats_4__12"&gt;Your Store&lt;/a&gt;
+									&lt;a class="pulldown_mobile" href="#"&gt;Your Store&lt;/a&gt;
+									&lt;span&gt;&lt;/span&gt;
+								&lt;/span&gt;
+							&lt;/div&gt;
+							&lt;div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="foryou_flyout" style="display: none;"&gt;
+								&lt;div class="popup_body popup_menu"&gt;
+									&lt;a class="popup_menu_item" href="http://store.steampowered.com/?snr=1_stats_4__12"&gt;
+										Store Home									&lt;/a&gt;
+									&lt;div class="hr"&gt;&lt;/div&gt;
+									&lt;a class="popup_menu_item" href="http://store.steampowered.com/recommended/friendactivity/?snr=1_stats_4__12"&gt;
+										Popular among friends									&lt;/a&gt;
+									&lt;a class="popup_menu_item" href="http://store.steampowered.com/curators/?snr=1_stats_4__12"&gt;
+										Steam Curators									&lt;/a&gt;
+									&lt;a class="popup_menu_item" href="http://store.steampowered.com/explore/?snr=1_stats_4__12"&gt;
+										Your Queue									&lt;/a&gt;
+									&lt;a class="popup_menu_item" href="http://store.steampowered.com/updated/myapps/?snr=1_stats_4__12"&gt;
+										Recently updated									&lt;/a&gt;
+									&lt;a class="popup_menu_item" href="http://steamcommunity.com/my/followedgames?snr=1_stats_4__12"&gt;
+										Followed Games &amp;amp; Software									&lt;/a&gt;
+									&lt;div class="hr"&gt;&lt;/div&gt;
+									&lt;div class="popup_menu_subheader"&gt;
+										&lt;div class="popup_menu_hint has_store_tooltip" data-store-tooltip="These are common tags on games you've recently played on Steam."&gt;(&lt;a href="http://store.steampowered.com/tag/"&gt;?&lt;/a&gt;)&lt;/div&gt;
+										Tags recommended for you:									&lt;/div&gt;
+									&lt;div id="foryou_yourtags"&gt;
+
+									&lt;/div&gt;
+									&lt;div class="hr"&gt;&lt;/div&gt;
+									&lt;a class="popup_menu_item" href="http://store.steampowered.com/tag/browse/?snr=1_stats_4__12#recommended"&gt;
+										Browse all recommended tags									&lt;/a&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+
+						
+
+															&lt;div class="tab  flyout_tab " id="genre_tab" data-flyout="genre_flyout" data-flyout-align="left" data-flyout-valign="bottom"&gt;
+									&lt;span class="pulldown"&gt;
+										&lt;a class="pulldown_desktop" href="http://store.steampowered.com/search/?sort_by=_ASC&amp;category1=998&amp;page=1&amp;tags=-1&amp;snr=1_stats_4__12"&gt;Games&lt;/a&gt;
+										&lt;a class="pulldown_mobile" href="#"&gt;Games&lt;/a&gt;
+										&lt;span&gt;&lt;/span&gt;
+									&lt;/span&gt;
+								&lt;/div&gt;
+								&lt;div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="genre_flyout" style="display: none;"&gt;
+									&lt;div class="popup_body popup_menu"&gt;
+																																											&lt;a class="popup_menu_item" href="http://store.steampowered.com/genre/Free%20to%20Play/?snr=1_stats_4__12"&gt;
+													Free to Play												&lt;/a&gt;
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																&lt;a class="popup_menu_item" href="http://store.steampowered.com/genre/Early%20Access/?snr=1_stats_4__12"&gt;
+													Early Access												&lt;/a&gt;
+																																																																																																																			&lt;a class="popup_menu_item" href="http://store.steampowered.com/freestuff/demos/?snr=1_stats_4__12"&gt;
+											&lt;span&gt;Demos&lt;/span&gt;
+										&lt;/a&gt;
+										&lt;a class="popup_menu_item" href="http://store.steampowered.com/search/?sort_by=_ASC&amp;vrsupport=101%2C102&amp;page=1&amp;snr=1_stats_4__12"&gt;
+											&lt;span&gt;Virtual Reality&lt;/span&gt;
+										&lt;/a&gt;
+										&lt;div class="hr"&gt;&lt;/div&gt;
+										&lt;div class="popup_menu_subheader"&gt;Browse by genre:&lt;/div&gt;
+
+																																	&lt;a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Action/?snr=1_stats_4__12"&gt;
+													Action												&lt;/a&gt;
+																																												&lt;a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Adventure/?snr=1_stats_4__12"&gt;
+													Adventure												&lt;/a&gt;
+																																												&lt;a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Casual/?snr=1_stats_4__12"&gt;
+													Casual												&lt;/a&gt;
+																																																																																						&lt;a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Indie/?snr=1_stats_4__12"&gt;
+													Indie												&lt;/a&gt;
+																																												&lt;a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Massively%20Multiplayer/?snr=1_stats_4__12"&gt;
+													Massively Multiplayer												&lt;/a&gt;
+																																												&lt;a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Racing/?snr=1_stats_4__12"&gt;
+													Racing												&lt;/a&gt;
+																																												&lt;a class="popup_menu_item" href="http://store.steampowered.com/tag/en/RPG/?snr=1_stats_4__12"&gt;
+													RPG												&lt;/a&gt;
+																																												&lt;a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Simulation/?snr=1_stats_4__12"&gt;
+													Simulation												&lt;/a&gt;
+																																												&lt;a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Sports/?snr=1_stats_4__12"&gt;
+													Sports												&lt;/a&gt;
+																																												&lt;a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Strategy/?snr=1_stats_4__12"&gt;
+													Strategy												&lt;/a&gt;
+																					
+										&lt;div class="hr"&gt;&lt;/div&gt;
+										&lt;a class="popup_menu_item" href="http://store.steampowered.com/tag/browse/?snr=1_stats_4__12"&gt;
+											See popular tags										&lt;/a&gt;
+										&lt;div class="hr"&gt;&lt;/div&gt;
+										&lt;div class="popup_menu_subheader"&gt;Browse by platform:&lt;/div&gt;
+										&lt;a class="popup_menu_item" href="http://store.steampowered.com/search/?term=&amp;sort_by=_ASC&amp;os=mac&amp;page=1&amp;snr=1_stats_4__12"&gt;
+											Mac OS X										&lt;/a&gt;
+										&lt;a class="popup_menu_item" href="http://store.steampowered.com/search/?term=&amp;sort_by=_ASC&amp;os=linux&amp;page=1&amp;snr=1_stats_4__12"&gt;
+											SteamOS + Linux										&lt;/a&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							
+							&lt;div class="tab  flyout_tab " id="software_tab" data-flyout="software_flyout" data-flyout-align="left" data-flyout-valign="bottom"&gt;
+								&lt;span class="pulldown"&gt;
+									&lt;a class="pulldown_desktop" href="http://store.steampowered.com/search/?sort_by=_ASC&amp;category1=994&amp;page=1&amp;snr=1_stats_4__12"&gt;Software&lt;/a&gt;
+									&lt;a class="pulldown_mobile" href="#"&gt;Software&lt;/a&gt;
+									&lt;span&gt;&lt;/span&gt;
+								&lt;/span&gt;
+
+							&lt;/div&gt;
+							&lt;div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="software_flyout" style="display: none;"&gt;
+								&lt;div class="popup_body popup_menu"&gt;
+
+																			&lt;a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Animation%20%26%20Modeling/?snr=1_stats_4__12"&gt;
+											Animation &amp; Modeling										&lt;/a&gt;
+																			&lt;a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Audio%20Production/?snr=1_stats_4__12"&gt;
+											Audio Production										&lt;/a&gt;
+																			&lt;a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Design%20%26%20Illustration/?snr=1_stats_4__12"&gt;
+											Design &amp; Illustration										&lt;/a&gt;
+																			&lt;a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Education/?snr=1_stats_4__12"&gt;
+											Education										&lt;/a&gt;
+																			&lt;a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Game%20Development/?snr=1_stats_4__12"&gt;
+											Game Development										&lt;/a&gt;
+																			&lt;a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Photo%20Editing/?snr=1_stats_4__12"&gt;
+											Photo Editing										&lt;/a&gt;
+																			&lt;a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Utilities/?snr=1_stats_4__12"&gt;
+											Utilities										&lt;/a&gt;
+																			&lt;a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Video%20Production/?snr=1_stats_4__12"&gt;
+											Video Production										&lt;/a&gt;
+																			&lt;a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Web%20Publishing/?snr=1_stats_4__12"&gt;
+											Web Publishing										&lt;/a&gt;
+									
+								&lt;/div&gt;
+							&lt;/div&gt;
+
+							&lt;div class="tab  flyout_tab " id="hardware_tab" data-flyout="hardware_flyout" data-flyout-align="left" data-flyout-valign="bottom"&gt;
+								&lt;span class="pulldown"&gt;
+									&lt;a class="pulldown_desktop" href="http://store.steampowered.com/hardware?snr=1_stats_4__12"&gt;Hardware&lt;/a&gt;
+									&lt;a class="pulldown_mobile" href="#"&gt;Hardware&lt;/a&gt;
+									&lt;span&gt;&lt;/span&gt;
+								&lt;/span&gt;
+
+							&lt;/div&gt;
+							&lt;div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="hardware_flyout" style="display: none;"&gt;
+								&lt;div class="popup_body popup_menu"&gt;
+									&lt;a class="popup_menu_item" href="http://store.steampowered.com/app/353370?snr=1_stats_4__12"&gt;
+										Steam Controller									&lt;/a&gt;
+									&lt;a class="popup_menu_item" href="http://store.steampowered.com/app/353380?snr=1_stats_4__12"&gt;
+										Steam Link									&lt;/a&gt;
+									&lt;a class="popup_menu_item" href="http://store.steampowered.com/hardware/?snr=1_stats_4__12#Machines"&gt;
+										Steam Machines									&lt;/a&gt;
+									&lt;a class="popup_menu_item" href="http://store.steampowered.com/app/358040?snr=1_stats_4__12"&gt;
+										HTC Vive									&lt;/a&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+
+							&lt;div class="tab  flyout_tab " id="videos_tab" data-flyout="videos_flyout" data-flyout-align="left" data-flyout-valign="bottom"&gt;
+								&lt;span class="pulldown"&gt;
+									&lt;a class="pulldown_desktop" href="http://store.steampowered.com/search/?sort_by=_ASC&amp;category1=992&amp;page=1&amp;tags=-1&amp;snr=1_stats_4__12"&gt;Videos&lt;/a&gt;
+									&lt;a class="pulldown_mobile" href="#"&gt;Videos&lt;/a&gt;
+									&lt;span&gt;&lt;/span&gt;
+								&lt;/span&gt;
+							&lt;/div&gt;
+							&lt;div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="videos_flyout" style="display: none;"&gt;
+								&lt;div class="popup_body popup_menu"&gt;
+									&lt;div class="popup_menu_subheader"&gt;Browse by type:&lt;/div&gt;
+																			&lt;a class="popup_menu_item" href="http://store.steampowered.com/search/?category1=992&amp;sort_by=Released_DESC&amp;page=1&amp;tags=15339&amp;snr=1_stats_4__12"&gt;
+											Documentary										&lt;/a&gt;
+																			&lt;a class="popup_menu_item" href="http://store.steampowered.com/search/?category1=992&amp;sort_by=Released_DESC&amp;page=1&amp;tags=4242&amp;snr=1_stats_4__12"&gt;
+											Episodic										&lt;/a&gt;
+																			&lt;a class="popup_menu_item" href="http://store.steampowered.com/search/?category1=992&amp;sort_by=Released_DESC&amp;page=1&amp;tags=4700&amp;snr=1_stats_4__12"&gt;
+											Movie										&lt;/a&gt;
+																			&lt;a class="popup_menu_item" href="http://store.steampowered.com/search/?category1=992&amp;sort_by=Released_DESC&amp;page=1&amp;tags=4234&amp;snr=1_stats_4__12"&gt;
+											Short										&lt;/a&gt;
+																			&lt;a class="popup_menu_item" href="http://store.steampowered.com/search/?category1=992&amp;sort_by=Released_DESC&amp;page=1&amp;tags=12057&amp;snr=1_stats_4__12"&gt;
+											Tutorial										&lt;/a&gt;
+									
+									&lt;div class="hr"&gt;&lt;/div&gt;
+									&lt;div class="popup_menu_subheader"&gt;Browse by genre:&lt;/div&gt;
+																			&lt;a class="popup_menu_item" href="http://store.steampowered.com/search/?category1=992&amp;sort_by=Released_DESC&amp;page=1&amp;tags=19&amp;snr=1_stats_4__12"&gt;
+											Action										&lt;/a&gt;
+																			&lt;a class="popup_menu_item" href="http://store.steampowered.com/search/?category1=992&amp;sort_by=Released_DESC&amp;page=1&amp;tags=4085&amp;snr=1_stats_4__12"&gt;
+											Anime										&lt;/a&gt;
+																			&lt;a class="popup_menu_item" href="http://store.steampowered.com/search/?category1=992&amp;sort_by=Released_DESC&amp;page=1&amp;tags=1719&amp;snr=1_stats_4__12"&gt;
+											Comedy										&lt;/a&gt;
+																			&lt;a class="popup_menu_item" href="http://store.steampowered.com/search/?category1=992&amp;sort_by=Released_DESC&amp;page=1&amp;tags=5984&amp;snr=1_stats_4__12"&gt;
+											Drama										&lt;/a&gt;
+																			&lt;a class="popup_menu_item" href="http://store.steampowered.com/search/?category1=992&amp;sort_by=Released_DESC&amp;page=1&amp;tags=150626&amp;snr=1_stats_4__12"&gt;
+											Gaming										&lt;/a&gt;
+																			&lt;a class="popup_menu_item" href="http://store.steampowered.com/search/?category1=992&amp;sort_by=Released_DESC&amp;page=1&amp;tags=1667&amp;snr=1_stats_4__12"&gt;
+											Horror										&lt;/a&gt;
+																			&lt;a class="popup_menu_item" href="http://store.steampowered.com/search/?category1=992&amp;sort_by=Released_DESC&amp;page=1&amp;tags=3942&amp;snr=1_stats_4__12"&gt;
+											Sci-fi										&lt;/a&gt;
+																			&lt;a class="popup_menu_item" href="http://store.steampowered.com/search/?category1=992&amp;sort_by=Released_DESC&amp;page=1&amp;tags=4064&amp;snr=1_stats_4__12"&gt;
+											Thriller										&lt;/a&gt;
+									
+								&lt;/div&gt;
+							&lt;/div&gt;
+
+							&lt;a class="tab  " href="http://store.steampowered.com/news/?snr=1_stats_4__12"&gt;
+								&lt;span&gt;News&lt;/span&gt;
+							&lt;/a&gt;
+
+
+
+
+							&lt;div class="search_area"&gt;
+								&lt;div id="store_search"&gt;
+									&lt;form id="searchform" name="searchform" method="get" action="http://store.steampowered.com/search/" onsubmit="return SearchSuggestCheckTerm(this);"&gt;
+										&lt;input type="hidden" name="snr" value="1_stats_4__12" &gt;
+										&lt;div class="searchbox"&gt;
+											&lt;input id="store_nav_search_term" name="term" type="text" class="default" value="search the store" size="22" autocomplete="off"&gt;
+											&lt;a href="#" id="store_search_link" onclick="var $Form = $J(this).parents('form'); $Form.submit(); return false;"&gt;&lt;img src="http://store.akamai.steamstatic.com/public/images/blank.gif"&gt;&lt;/a&gt;
+										&lt;/div&gt;
+									&lt;/form&gt;
+								&lt;/div&gt;
+								&lt;div id="searchterm_options" class="search_suggest popup_block_new" style="display: none;"&gt;
+									&lt;div class="popup_body" style="border-top: none;"&gt;
+										&lt;div id="search_suggestion_contents"&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class="store_nav_rightcap"&gt;&lt;/div&gt;
+				&lt;/div&gt;
+					&lt;/div&gt;
+	&lt;/div&gt;
+				&lt;script type="text/javascript"&gt;
+			$J( function() {
+				BindAutoFlyoutEvents();
+
+				var $Window = $J(window);
+				var $Header = $J('#store_header');
+				var $ResponsiveNavCtn = $J('#responsive_store_nav_ctn');
+				var $HeaderWrapper;
+				$Window.on('Responsive_SmallScreenModeToggled.StoreMenu', function() {
+					var bUseSmallScreenMode =window.UseSmallScreenMode &amp;&amp; window.UseSmallScreenMode();
+
+					if ( !$HeaderWrapper )
+						$HeaderWrapper = $Header.wrap( $J('&lt;div/&gt;', {'class': 'responsive_store_nav_ctn_spacer'} ) ).parent();
+
+					if ( bUseSmallScreenMode )
+						$ResponsiveNavCtn.append( $Header );
+					else
+						$HeaderWrapper.append( $Header );
+
+
+					if ( bUseSmallScreenMode )
+					{
+						$Header.css( 'visibility', 'hidden' );
+						$Header.show();
+						var nMenuHeight = $J('#store_header' ).height() + $J('#store_header' ).offset().top;
+						if ( $Window.scrollTop() &lt; nMenuHeight )
+							$Window.scrollTop( nMenuHeight - GetResponsiveHeaderFixedOffsetAdjustment() );
+
+						$Header.css('visibility', 'visible');
+					}
+				} ).trigger('Responsive_SmallScreenModeToggled.StoreMenu');
+
+				EnableSearchSuggestions( $J('#searchform')[0].elements['term'], '1_stats_4_', 'LV', 'english', '0', '0', '2444535' );
+			} );
+		&lt;/script&gt;
+	&lt;script type="text/javascript"&gt;
+	var g_AccountID = 13815649;
+	var g_sessionID = "807a68327faf2fa5da47f81c";
+	var g_ServerTime = 1479042270;
+
+	$J( InitMiniprofileHovers );
+
+			GDynamicStore.Init( 13815649, false, "win" );
+		GStoreItemData.SetCurrencyFormatter( function( nValueInCents, bWholeUnitsOnly ) { var fnBase = function( nValueInCents, bWholeUnitsOnly ) { var fmt = function( nValueInCents, bWholeUnitsOnly ) {	var format = v_numberformat( nValueInCents / 100, bWholeUnitsOnly ? 0 : 2, ",", " "); return format; };var strNegativeSymbol = '';	if ( nValueInCents &lt; 0 ) { strNegativeSymbol = '-'; nValueInCents = -nValueInCents; }return strNegativeSymbol + fmt( nValueInCents, bWholeUnitsOnly ) + "\u20ac";}; return fnBase( nValueInCents, bWholeUnitsOnly ).replace(  ',00', ',--' ); } );
+		GStoreItemData.SetCurrencyMinPriceIncrement( 1 );
+	&lt;/script&gt;
+	&lt;div class="page_content"&gt;
+
+		&lt;div class="breadcrumbs"&gt;
+			&lt;a href="http://store.steampowered.com/stats/?snr=1_stats_4_"&gt;Steam Stats&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;h2 class="pageheader"&gt;Steam &amp;amp; Game Stats &lt;span class="statsTopSmall secondary_text"&gt;Updated: 13 November, 2016 @ 3:03pm&lt;/span&gt;&lt;/h2&gt;
+
+		&lt;div class=""&gt;
+			&lt;p class="body_text"&gt; Our on-going goal with Steam is to improve the service we offer customers. We believe that by sharing this
+                                     				data, we'll be able to spot problems earlier, improve the Steam service more efficiently, and ultimately build
+                                     				better products and experiences. &lt;a href="http://steamcommunity.com/discussions/?snr=1_stats_4_"&gt;Let us know&lt;/a&gt; what you think. &lt;/p&gt;
+			&lt;br&gt;
+			&lt;div class="block"&gt;
+				&lt;div class="block_header"&gt;&lt;div&gt;Concurrent Steam Users &lt;span id="community_activity_note" class="header_inline"&gt;(most recent 48 hours)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+				&lt;div class="block_content block_content_inner dark"&gt;
+					&lt;div class="chart_center"&gt;
+						&lt;div id="chartlegendUsers" class="chartLegend" &gt;&lt;/div&gt;
+						&lt;div id="chartdivUsers" class="chartdiv" &gt;&lt;/div&gt;
+						&lt;script type="text/javascript"&gt;
+							UsersChartPlot( '#chartdivUsers', '#chartlegendUsers', 'http://store.steampowered.com/stats/userdata.json' );
+						&lt;/script&gt;
+					&lt;/div&gt;
+					&lt;div class="statsTop"&gt;
+						&lt;table class="users_count_table" border="0" cellspacing="0" cellpadding="5"&gt;
+							&lt;tr&gt;
+								&lt;td align="left"&gt;&amp;nbsp;&lt;/td&gt;
+								&lt;td align="right"&gt;current&lt;/td&gt;
+								&lt;td align="right"&gt;peak&lt;/td&gt;
+								&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;td class="users_label" align="left"&gt;Concurrent Steam Users:&lt;/td&gt;
+								&lt;td class="users_count" align="right"&gt;&lt;span class="statsTopHi"&gt;12,222,712&lt;/span&gt;&lt;/td&gt;
+								&lt;td class="users_count" align="right"&gt;&lt;span class="statsTopHi"&gt;13,051,523&lt;/span&gt;&lt;/td&gt;
+								&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;/tr&gt;
+						&lt;/table&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class="page_content"&gt;
+
+	&lt;div class="rightcol"&gt;
+		&lt;div class="block"&gt;
+			&lt;div class="block_header"&gt;&lt;div&gt;Steam Hardware &amp; Software Survey&lt;/div&gt;&lt;/div&gt;
+			&lt;div class="block_content block_content_inner"&gt;
+				&lt;a class="linkbar" href="http://store.steampowered.com/hwsurvey"&gt;Steam Hardware &amp; Software Survey&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="block"&gt;
+			&lt;div class="block_header"&gt;&lt;div&gt;Steam Stats&lt;/div&gt;&lt;/div&gt;
+			&lt;div class="block_content block_content_inner"&gt;
+				&lt;a class="linkbar" href="http://store.steampowered.com/stats/content/"&gt;Steam Download Stats&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="topgames_col"&gt;
+		&lt;div class="block"&gt;
+			&lt;div class="block_header"&gt;&lt;div&gt;Top games by current player count&lt;/div&gt;&lt;/div&gt;
+			&lt;div class="block_content block_content_inner"&gt;
+
+				&lt;div id="detailStats"&gt;
+					&lt;table&gt;
+						&lt;tr&gt;
+							&lt;td align="right"&gt;&lt;b&gt;Current Players&lt;/b&gt;&lt;/td&gt;
+							&lt;td align="right" style="padding-left: 12px"&gt;&lt;b&gt;Peak Today&lt;/b&gt;&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td align="left"&gt;&lt;b&gt;Game&lt;/b&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr&gt;
+							&lt;td colspan="5"&gt;&amp;nbsp;&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style=""&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;919,221&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;996,373&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:570,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/570/"&gt;Dota 2&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style=""&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;508,686&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;626,471&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:730,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/730/"&gt;Counter-Strike: Global Offensive&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style=""&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;70,243&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;76,437&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:271590,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/271590/"&gt;Grand Theft Auto V&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style=""&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;63,025&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;73,309&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:440,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/440/"&gt;Team Fortress 2&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style=""&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;55,393&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;66,650&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:289070,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/289070/"&gt;Sid Meier's Civilization VI&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style=""&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;52,950&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;68,878&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:230410,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/230410/"&gt;Warframe&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style=""&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;50,508&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;53,989&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:482730,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/482730/"&gt;Football Manager 2017&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style=""&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;49,001&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;57,570&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:444090,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/444090/"&gt;Paladins&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style=""&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;44,500&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;48,295&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:346110,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/346110/"&gt;ARK: Survival Evolved&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style=""&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;39,553&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;41,392&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:359550,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/359550/"&gt;Tom Clancy's Rainbow Six Siege&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;39,369&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;48,528&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:72850,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/72850/"&gt;The Elder Scrolls V: Skyrim&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;38,531&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;51,439&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:489830,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/489830/"&gt;The Elder Scrolls V: Skyrim Special Edition&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;37,870&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;50,237&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:8930,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/8930/"&gt;Sid Meier's Civilization V&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;37,837&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;54,210&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:4000,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/4000/"&gt;Garry's Mod&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;33,047&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;52,432&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:252950,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/252950/"&gt;Rocket League&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;32,783&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;39,248&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:304930,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/304930/"&gt;Unturned&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;32,297&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;39,532&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:252490,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/252490/"&gt;Rust&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;29,282&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;40,832&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:321040,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/321040/"&gt;DiRT 3 Complete Edition&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;26,190&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;37,046&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:107410,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/107410/"&gt;Arma 3&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;24,557&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;30,971&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:377160,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/377160/"&gt;Fallout 4&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;23,417&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;24,874&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:378120,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/378120/"&gt;Football Manager 2016&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;23,348&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;23,734&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:381210,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/381210/"&gt;Dead by Daylight&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;20,960&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;25,616&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:433850,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/433850/"&gt;H1Z1: King of the Kill&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;20,167&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;23,092&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:10,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/10/"&gt;Counter-Strike&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;18,819&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;22,411&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:403640,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/403640/"&gt;Dishonored 2&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;18,240&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;24,218&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:105600,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/105600/"&gt;Terraria&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;17,867&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;19,666&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:447020,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/447020/"&gt;Farming Simulator 17&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;17,153&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;18,692&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:227300,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/227300/"&gt;Euro Truck Simulator 2&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;15,828&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;18,651&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:218620,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/218620/"&gt;PAYDAY 2&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;15,691&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;17,704&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:251570,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/251570/"&gt;7 Days to Die&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;15,476&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;15,958&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:363970,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/363970/"&gt;Clicker Heroes&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;14,125&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;16,846&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:236390,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/236390/"&gt;War Thunder&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;13,872&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;16,567&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:550,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/550/"&gt;Left 4 Dead 2&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;13,619&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;14,127&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:292030,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/292030/"&gt;The Witcher 3: Wild Hunt&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;13,533&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;17,619&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:236850,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/236850/"&gt;Europa Universalis IV&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;12,644&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;14,336&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:322330,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/322330/"&gt;Don't Starve Together&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;12,471&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;13,919&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:227940,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/227940/"&gt;Heroes &amp;amp; Generals&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;12,200&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;15,792&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:362960,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/362960/"&gt;Tyranny&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;12,034&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;18,313&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:386360,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/386360/"&gt;SMITE&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;11,130&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;14,027&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:238960,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/238960/"&gt;Path of Exile&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;9,620&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;11,299&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:374320,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/374320/"&gt;DARK SOULS III&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;8,730&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;10,258&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:364360,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/364360/"&gt;Total War: WARHAMMER&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;8,531&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;10,270&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:240,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/240/"&gt;Counter-Strike: Source&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;8,458&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;9,205&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:446800,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/446800/"&gt;Transport Fever&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;8,303&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;9,737&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:214950,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/214950/"&gt;Total War: ROME II - Emperor Edition&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;7,885&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;9,157&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:250900,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/250900/"&gt;The Binding of Isaac: Rebirth&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;7,806&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;8,325&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:385760,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/385760/"&gt;NBA 2K17&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;7,711&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;8,071&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:444200,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/444200/"&gt;World of Tanks Blitz&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;7,681&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;8,661&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:255710,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/255710/"&gt;Cities: Skylines&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;7,560&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;10,555&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:48700,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/48700/"&gt;Mount &amp;amp; Blade: Warband&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;7,532&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;10,820&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:281990,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/281990/"&gt;Stellaris&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;7,102&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;9,275&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:394360,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/394360/"&gt;Hearts of Iron IV&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;7,101&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;9,394&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:221100,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/221100/"&gt;DayZ&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;7,048&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;7,384&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:453480,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/453480/"&gt;Shadowverse&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;6,911&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;11,577&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:393380,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/393380/"&gt;Squad&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;6,902&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;10,670&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:413150,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/413150/"&gt;Stardew Valley&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;6,886&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;7,572&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink"  href="http://steamcommunity.com/app/295270"&gt;Football Manager 2015&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;6,883&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;8,229&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:304050,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/304050/"&gt;Trove&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;6,867&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;9,303&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:221380,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/221380/"&gt;Age of Empires II: HD Edition&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;6,595&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;8,363&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:427520,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/427520/"&gt;Factorio&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;6,450&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;9,175&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:49520,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/49520/"&gt;Borderlands 2&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;6,295&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;7,524&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:301520,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/301520/"&gt;Robocraft&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;6,082&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;6,309&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:534500,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/534500/"&gt;Tiger Knight: Empire War&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;5,938&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;6,409&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:365590,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/365590/"&gt;Tom Clancy's The Division&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;5,910&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;9,784&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:291550,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/291550/"&gt;Brawlhalla&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;5,870&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;6,859&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:346900,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/346900/"&gt;AdVenture Capitalist&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;5,817&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;6,750&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:231430,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/231430/"&gt;Company of Heroes 2&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;5,609&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;7,314&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink"  href="http://steamcommunity.com/app/291480"&gt;Warface&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;5,543&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;8,914&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:292730,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/292730/"&gt;Call of Duty: Infinite Warfare&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;5,483&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;5,964&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:372000,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/372000/"&gt;Tree of Savior (English Ver.)&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;5,377&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;6,037&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:294100,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/294100/"&gt;RimWorld&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;5,292&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;7,029&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:454650,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/454650/"&gt;DRAGON BALL XENOVERSE 2&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;5,222&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;6,403&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:10500,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/10500/"&gt;Empire: Total War&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;5,137&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;6,736&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:359320,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/359320/"&gt;Elite Dangerous&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;5,086&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;5,614&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:415200,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/415200/"&gt;Motorsport Manager&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;4,980&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;5,787&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:456610,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/456610/"&gt;Pro Evolution Soccer 2017&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;4,874&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;5,994&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:493340,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/493340/"&gt;Planet Coaster&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;4,792&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;4,858&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:360430,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/360430/"&gt;Mafia III&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;4,673&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;6,053&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:205100,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/205100/"&gt;Dishonored&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;4,307&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;4,552&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:219990,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/219990/"&gt;Grim Dawn&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;4,286&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;7,424&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:39210,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/39210/"&gt;FINAL FANTASY XIV: A Realm Reborn&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;4,149&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;4,724&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:325610,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/325610/"&gt;Total War: ATTILA&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;4,043&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;5,036&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:268500,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/268500/"&gt;XCOM 2&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;4,031&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;5,085&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:242760,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/242760/"&gt;The Forest&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;3,930&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;4,976&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:504370,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/504370/"&gt;Battlerite&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;3,919&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;4,081&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:219740,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/219740/"&gt;Don't Starve&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;3,916&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;5,418&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:306130,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/306130/"&gt;The Elder Scrolls Online: Tamriel Unlimited&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;3,842&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;5,622&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:203770,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/203770/"&gt;Crusader Kings II&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;3,747&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;4,039&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:316010,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/316010/"&gt;Magic Duels&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;3,737&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;4,656&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:33930,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/33930/"&gt;Arma 2: Operation Arrowhead&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;3,491&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;5,070&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:220200,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/220200/"&gt;Kerbal Space Program&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;3,320&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;4,474&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:273110,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/273110/"&gt;Counter-Strike Nexon: Zombies&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;3,299&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;4,628&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:211820,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/211820/"&gt;Starbound&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;3,297&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;4,280&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:4700,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/4700/"&gt;Medieval II: Total War&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;3,278&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;3,933&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:314160,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/314160/"&gt;Microsoft Flight Simulator X: Steam Edition&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;3,273&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;7,901&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:311210,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/311210/"&gt;Call of Duty: Black Ops III&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;3,272&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;3,272&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:438040,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/438040/"&gt;Shakes and Fidget&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;3,253&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;3,573&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:389430,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/389430/"&gt;Knight Online&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;3,206&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;3,850&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:239140,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/239140/"&gt;Dying Light&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+											&lt;tr class="player_count_row" style="display: none;"&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;3,121&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td align="right"&gt;
+								&lt;span class="currentServers"&gt;3,486&lt;/span&gt;
+							&lt;/td&gt;
+							&lt;td width="20"&gt;&amp;nbsp;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a class="gameLink" onmouseover="GameHover( this, event, 'global_hover', {&amp;quot;type&amp;quot;:&amp;quot;app&amp;quot;,&amp;quot;id&amp;quot;:537180,&amp;quot;v6&amp;quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="http://store.steampowered.com/app/537180/"&gt;Digimon Masters Online&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+										&lt;/table&gt;
+					&lt;br&gt;
+				&lt;div id="more_player_count_link"&gt;
+					&lt;img src="http://store.akamai.steamstatic.com/public/images/ico/ico_arrow_blue_old.gif" /&gt;&amp;nbsp;&lt;a id="detailLink" href="javascript:void(0)" onclick="$$('tr.player_count_row').invoke('show'); $('more_player_count_link').hide();"&gt;View all of the top 100 most-played games&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear: both;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Footer --&gt;
+		&lt;/div&gt;	&lt;!-- responsive_page_legacy_content --&gt;
+
+		&lt;div id="footer_spacer" class=""&gt;&lt;/div&gt;
+&lt;div id="footer"  class=""&gt;
+&lt;div class="footer_content"&gt;
+	&lt;div class="rule"&gt;&lt;/div&gt;
+
+	&lt;div id="footer_nav"&gt;
+
+		
+		
+			&lt;span class="pulldown btnv6_blue_hoverfade btn_small" id="footer_steam_pulldown"&gt;
+				&lt;span&gt;ABOUT STEAM&lt;/span&gt;
+			&lt;/span&gt;
+		&lt;div class="popup_block_new" id="footer_steam_dropdown" style="display: none;"&gt;
+						&lt;div class="popup_body popup_menu"&gt;
+				&lt;a class="popup_menu_item" href="http://store.steampowered.com/about/?snr=1_44_44__22"&gt;
+					What is Steam?				&lt;/a&gt;
+				&lt;!--
+					&lt;a class="popup_menu_item" href=""&gt;
+						Download Steam now					&lt;/a&gt;
+					--&gt;
+				&lt;a class="popup_menu_item" href="https://support.steampowered.com/kb_article.php?p_faqid=549#gifts" target="_blank" rel="noreferrer"&gt;
+					Gifting on Steam				&lt;/a&gt;
+				&lt;a class="popup_menu_item" href="https://steamcommunity.com/?snr=1_44_44__22"&gt;
+					The Steam Community				&lt;/a&gt;
+			&lt;/div&gt;
+					&lt;/div&gt;
+	
+			&lt;span class="pulldown btnv6_blue_hoverfade btn_small" id="footer_valve_pulldown"&gt;
+				&lt;span&gt;ABOUT VALVE&lt;/span&gt;
+			&lt;/span&gt;
+		&lt;div class="popup_block_new" id="footer_valve_dropdown" style="display: none;"&gt;
+			&lt;div class="popup_body popup_menu"&gt;
+				&lt;a class="popup_menu_item" href="http://www.valvesoftware.com/about.html" target="_blank" rel="noreferrer"&gt;
+					About Valve				&lt;/a&gt;
+				&lt;a class="popup_menu_item" href="http://www.valvesoftware.com/business/" target="_blank" rel="noreferrer"&gt;
+					Business Solutions				&lt;/a&gt;
+				&lt;a class="popup_menu_item" href="http://www.steampowered.com/steamworks/" target="_blank" rel="noreferrer"&gt;
+					Steamworks				&lt;/a&gt;
+				&lt;a class="popup_menu_item" href="http://www.valvesoftware.com/jobs.html" target="_blank" rel="noreferrer"&gt;
+					Jobs				&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+			
+			
+			&lt;span class="pulldown btnv6_blue_hoverfade btn_small" id="footer_help_pulldown"&gt;
+				&lt;span&gt;HELP&lt;/span&gt;
+			&lt;/span&gt;
+		&lt;div class="popup_block_new" id="footer_help_dropdown" style="display: none;"&gt;
+						&lt;div class="popup_body popup_menu"&gt;
+				&lt;a class="popup_menu_item" href="https://help.steampowered.com/en/?snr=1_44_44__23"&gt;
+					Support				&lt;/a&gt;
+				&lt;a class="popup_menu_item" href="http://store.steampowered.com/forums/?snr=1_44_44__23" target="_blank" rel="noreferrer"&gt;
+					Forums				&lt;/a&gt;
+				&lt;a class="popup_menu_item" href="http://store.steampowered.com/stats/?snr=1_44_44__23" target="_blank" rel="noreferrer"&gt;
+					Stats				&lt;/a&gt;
+			&lt;/div&gt;
+					&lt;/div&gt;
+
+			
+			&lt;span class="pulldown btnv6_blue_hoverfade btn_small" id="footer_feeds_pulldown"&gt;
+				&lt;span&gt;NEWS FEEDS&lt;/span&gt;
+			&lt;/span&gt;
+		&lt;div class="popup_block_new" id="footer_feeds_dropdown" style="display: none;"&gt;
+			&lt;div class="popup_body popup_menu"&gt;
+				&lt;a class="popup_menu_item" href="http://store.steampowered.com/feeds/news.xml"&gt;
+					&lt;img src="http://store.akamai.steamstatic.com/public/images/ico/ico_rss2.gif" width="13" height="13" border="0" alt="" align="top"&gt;&amp;nbsp;&amp;nbsp;Steam News				&lt;/a&gt;
+				&lt;a class="popup_menu_item" href="http://store.steampowered.com/feeds/newreleases.xml"&gt;
+					&lt;img src="http://store.akamai.steamstatic.com/public/images/ico/ico_rss2.gif" width="13" height="13" border="0" alt="" align="top"&gt;&amp;nbsp;&amp;nbsp;Game Releases				&lt;/a&gt;
+				&lt;a class="popup_menu_item" href="http://store.steampowered.com/feeds/daily_deals.xml"&gt;
+					&lt;img src="http://store.akamai.steamstatic.com/public/images/ico/ico_rss2.gif" width="13" height="13" border="0" alt="" align="top"&gt;&amp;nbsp;&amp;nbsp;Daily Deals				&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div style="clear: left;"&gt;&lt;/div&gt;
+
+		&lt;script type="text/javascript"&gt;
+			RegisterFlyout( 'footer_genre_pulldown', 'footer_genre_dropdown', null, null, true );
+			RegisterFlyout( 'footer_steam_pulldown', 'footer_steam_dropdown', null, null, true );
+			RegisterFlyout( 'footer_valve_pulldown', 'footer_valve_dropdown', null, null, true );
+			RegisterFlyout( 'footer_help_pulldown', 'footer_help_dropdown', null, null, true );
+			RegisterFlyout( 'footer_feeds_pulldown', 'footer_feeds_dropdown', null, null, true );
+		&lt;/script&gt;
+	&lt;/div&gt;
+
+	&lt;br&gt;
+
+    &lt;div class="rule"&gt;&lt;/div&gt;
+    &lt;div id="footer_logo"&gt;&lt;a href="http://www.valvesoftware.com" target="_blank" rel="noreferrer"&gt;&lt;img src="http://store.akamai.steamstatic.com/public/images/v6/logo_valve_footer.png" alt="Valve Software" border="0" /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div id="footer_text"&gt;
+        &lt;div&gt;&amp;copy; 2016 Valve Corporation.  All rights reserved.  All trademarks are property of their respective owners in the US and other countries.&lt;/div&gt;
+        &lt;div&gt;VAT included in all prices where applicable.&amp;nbsp;&amp;nbsp;
+
+            &lt;a href="http://store.steampowered.com/privacy_agreement/" target="_blank" rel="noreferrer"&gt;Privacy Policy&lt;/a&gt;
+            &amp;nbsp; | &amp;nbsp;
+            &lt;a href="http://store.steampowered.com/legal/" target="_blank" rel="noreferrer"&gt;Legal&lt;/a&gt;
+            &amp;nbsp; | &amp;nbsp;
+            &lt;a href="http://store.steampowered.com/subscriber_agreement/" target="_blank" rel="noreferrer"&gt;Steam Subscriber Agreement&lt;/a&gt;
+            &amp;nbsp; | &amp;nbsp;
+            &lt;a href="http://store.steampowered.com/steam_refunds/" target="_blank" rel="noreferrer"&gt;Refunds&lt;/a&gt;
+
+        &lt;/div&gt;
+					&lt;div class="responsive_optin_link"&gt;
+				&lt;div class="btn_medium btnv6_grey_black" onclick="Responsive_RequestMobileView()"&gt;
+					&lt;span&gt;View mobile website&lt;/span&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		    &lt;/div&gt;
+
+
+
+    &lt;div style="clear: left;"&gt;&lt;/div&gt;
+
+    &lt;div class="rule"&gt;&lt;/div&gt;
+
+    &lt;div class="valve_links"&gt;
+        &lt;a href="http://www.valvesoftware.com/about.html" target="_blank" rel="noreferrer"&gt;About Valve&lt;/a&gt;
+        &amp;nbsp; | &amp;nbsp;&lt;a href="http://www.steampowered.com/steamworks/" target="_blank" rel="noreferrer"&gt;Steamworks&lt;/a&gt;
+        &amp;nbsp; | &amp;nbsp;&lt;a href="http://www.valvesoftware.com/jobs.html" target="_blank" rel="noreferrer"&gt;Jobs&lt;/a&gt;
+        &amp;nbsp; | &amp;nbsp;&lt;a href="http://steamcommunity.com/greenlight" target="_blank" rel="noreferrer"&gt;Steam Distribution&lt;/a&gt;
+		&amp;nbsp; | &amp;nbsp;&lt;a href="https://store.steampowered.com/account/redeemwalletcode" target="_blank" rel="noreferrer"&gt;Gift Cards&lt;/a&gt;
+		&amp;nbsp; | &amp;nbsp;&lt;a href="http://www.facebook.com/Steam" target="_blank" rel="noreferrer"&gt;&lt;img src="http://store.akamai.steamstatic.com/public/images/ico/ico_facebook.gif"&gt; Steam&lt;/a&gt;
+		&amp;nbsp; | &amp;nbsp;&lt;a href="http://twitter.com/steam_games" target="_blank" rel="noreferrer"&gt;&lt;img src="http://store.akamai.steamstatic.com/public/images/ico/ico_twitter.gif"&gt; @steam_games&lt;/a&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+	&lt;/div&gt;	&lt;!-- responsive_page_content --&gt;
+
+&lt;/div&gt;	&lt;!-- responsive_page_frame --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
   </data>
 </root>

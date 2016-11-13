@@ -55,7 +55,7 @@ namespace Ed.Steamflix.Universal.ViewModels
                 if (_game == null)
                 {
                     // TODO: Not async, blocks UI
-                    _game = _playerService.GetGameInfoAsync((string)ApplicationData.Current.RoamingSettings.Values["SteamId"], _appId).Result;
+                    _game = _playerService.GetGameInfoAsync(_appId).Result;
                 }
 
                 return _game;

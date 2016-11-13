@@ -80,7 +80,7 @@
                         <Border Style="{StaticResource BorderStyle}">
                             <Image Source="Assets\settings-public.png"></Image>
                         </Border>
-                        <TextBlock Margin="0 10 0 20" Style="{StaticResource TextBlockStyle}">4. Paste the URL above and press Save.</TextBlock>
+                        <TextBlock Margin="0 10 0 20" Style="{StaticResource TextBlockStyle}">4. Paste the URL in the box above and press Save.</TextBlock>
                     </StackPanel>
                 </StackPanel>
             </ScrollViewer>

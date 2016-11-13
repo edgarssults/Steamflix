@@ -13,7 +13,7 @@
 
         <DataTemplate x:Key="GameListItemTemplate">
             <StackPanel Margin="2" Width="184">
-                <Border Width="184" Height="69" Background="{StaticResource MenuBackgroundColor}">
+                <Border Background="{StaticResource MenuBackgroundColor}">
                     <Image Source="{Binding FormattedLogoUrl}" />
                 </Border>
                 <Border Background="{StaticResource AppBackgroundColor}">
@@ -100,6 +100,38 @@
             </Setter>
         </Style>
 
+        <ControlTemplate x:Key="PopularGamesTemplate">
+            <HubSection Header="Popular" Margin="0 0 0 20">
+                <DataTemplate>
+                    <StackPanel>
+                        <ProgressBar Height="2" IsIndeterminate="{Binding PopularGames.IsNotCompleted}"
+                                     Visibility="{Binding PopularGames.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                        <ListView
+                            Visibility="{Binding PopularGames.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
+                            ScrollViewer.HorizontalScrollMode="Enabled"
+                            IsItemClickEnabled="True"
+                            IsSwipeEnabled="True"
+                            SelectionMode="Single"
+                            ItemTemplate="{StaticResource GameListItemTemplate}"
+                            ItemsSource="{Binding Path=PopularGames.Result}">
+                            <ListView.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <VirtualizingStackPanel Orientation="Horizontal" />
+                                </ItemsPanelTemplate>
+                            </ListView.ItemsPanel>
+                            <ListView.ItemContainerStyle>
+                                <Style TargetType="ListViewItem">
+                                    <Setter Property="Padding" Value="0"/>
+                                    <Setter Property="BorderThickness" Value="0"/>
+                                    <Setter Property="Margin" Value="0 0 20 0"/>
+                                </Style>
+                            </ListView.ItemContainerStyle>
+                        </ListView>
+                    </StackPanel>
+                </DataTemplate>
+            </HubSection>
+        </ControlTemplate>
+        
         <ControlTemplate x:Key="RecentGamesTemplate">
             <HubSection Header="Recent" Margin="0 0 0 20">
                 <DataTemplate>

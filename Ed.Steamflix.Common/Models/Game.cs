@@ -23,6 +23,11 @@ namespace Ed.Steamflix.Common.Models
         public string Name { get; set; }
 
         /// <summary>
+        /// Store page logo URL, 460x215 px.
+        /// </summary>
+        public string StoreLogoUrl { get; set; }
+
+        /// <summary>
         /// The program icon's file name.
         /// </summary>
         /// <remarks>
@@ -38,12 +43,12 @@ namespace Ed.Steamflix.Common.Models
         {
             get
             {
-                return string.Format(_settings.GetString("IconUrlFormat"), AppId, IconUrl);
+                return string.IsNullOrEmpty(IconUrl) ? null : string.Format(_settings.GetString("ImageUrlFormat"), AppId, IconUrl);
             }
         }
 
         /// <summary>
-        /// The program logo's file name.
+        /// The program logo's file name, 184x69 px.
         /// </summary>
         /// <remarks>
         /// http://media.steampowered.com/steamcommunity/public/images/apps/{appid}/{hash}.jpg
@@ -52,13 +57,31 @@ namespace Ed.Steamflix.Common.Models
         public string LogoUrl { get; set; }
 
         /// <summary>
-        /// Full logo URL, 184x69 px.
+        /// Full logo URL.
         /// </summary>
         public string FormattedLogoUrl
         {
             get
             {
-                return string.Format(_settings.GetString("IconUrlFormat"), AppId, LogoUrl);
+                var logoUrl = string.Empty;
+
+                if (!string.IsNullOrEmpty(LogoUrl))
+                {
+                    // Logo from Steam API
+                    logoUrl = string.Format(_settings.GetString("ImageUrlFormat"), AppId, LogoUrl);
+                }
+                else if (!string.IsNullOrEmpty(StoreLogoUrl))
+                {
+                    // Logo from app details call
+                    logoUrl = StoreLogoUrl;
+                }
+                else
+                {
+                    // Store logo
+                    logoUrl = $"http://cdn.akamai.steamstatic.com/steam/apps/{AppId}/header.jpg";
+                }
+
+                return logoUrl;
             }
         }
 

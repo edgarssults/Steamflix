@@ -23,5 +23,19 @@ namespace Ed.Steamflix.Common.Repositories
                 return await client.GetStringAsync(new Uri(broadcastUrl)).ConfigureAwait(false);
             }
         }
+
+        /// <summary>
+        /// Retrieves the Steam stats page HTML asynchronously.
+        /// </summary>
+        /// <returns></returns>
+        public async Task<string> GetStatsHtmlAsync()
+        {
+            var statsUrl = _settings.GetString("StatsUrl");
+
+            using (var client = new HttpClient())
+            {
+                return await client.GetStringAsync(new Uri(statsUrl)).ConfigureAwait(false);
+            }
+        }
     }
 }

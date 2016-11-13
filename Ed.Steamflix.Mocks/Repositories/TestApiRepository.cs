@@ -1,5 +1,6 @@
 ﻿using Ed.Steamflix.Common.Repositories;
 using System;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Windows.ApplicationModel.Resources;
 
@@ -11,13 +12,12 @@ namespace Ed.Steamflix.Mocks.Repositories
 
         public Task<string> ApiCallAsync(string service, string method, string version, string parameters)
         {
-            // Gets the method response from test resources
             return Task.Run(() => _rl.GetString(method + "ResponseJson"));
         }
 
         public Task<string> ReadUrlAsync(string url)
         {
-            throw new NotImplementedException();
+            return Task.Run(() => _rl.GetString(Regex.Replace(url, @"[\:\/\.\=\?]", "")));
         }
     }
 }

@@ -13,5 +13,10 @@ namespace Ed.Steamflix.Mocks.Repositories
             // Gets the method response from test resources
             return Task.Run(() => _rl.GetString("BroadcastsHtml" + appId));
         }
+
+        public Task<string> GetStatsHtmlAsync()
+        {
+            return Task.Run(() => _rl.GetString("StatsHtml"));
+        }
     }
 }

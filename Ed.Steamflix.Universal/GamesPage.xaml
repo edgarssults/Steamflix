@@ -28,6 +28,7 @@
              Tapped="Game_Tapped"
              Margin="10 0 10 0"
              Grid.Column="1">
+            <HubSection Template="{StaticResource PopularGamesTemplate}" />
             <HubSection Template="{StaticResource RecentGamesTemplate}" />
             <HubSection Template="{StaticResource OwnedGamesTemplate}" />
         </Hub>

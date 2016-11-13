@@ -15,8 +15,8 @@ namespace Ed.Steamflix.Common.Services
     {
         private readonly Regex _steamIdRegex = new Regex(@"steamcommunity\.com/profiles/(?<SteamId>[^/]*)", RegexOptions.Singleline);
         private readonly Regex _vanityUrlRegex = new Regex(@"steamcommunity\.com/id/(?<VanityUrlName>[^/]*)", RegexOptions.Singleline);
-
         private readonly string _servicename = "ISteamUser";
+
         private readonly IApiRepository _apiRepository;
 
         /// <summary>

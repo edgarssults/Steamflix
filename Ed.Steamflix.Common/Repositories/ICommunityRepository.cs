@@ -11,5 +11,11 @@ namespace Ed.Steamflix.Common.Repositories
         /// <param name="appId">Application identifier.</param>
         /// <returns>HTML string.</returns>
         Task<string> GetBroadcastHtmlAsync(int appId);
+
+        /// <summary>
+        /// Retrieves the Steam stats page HTML asynchronously.
+        /// </summary>
+        /// <returns></returns>
+        Task<string> GetStatsHtmlAsync();
     }
 }
