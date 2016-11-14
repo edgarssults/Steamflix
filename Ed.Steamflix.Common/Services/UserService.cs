@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Ed.Steamflix.Common.Repositories;
 using System.Text.RegularExpressions;
 using System;
+using System.Linq;
 
 namespace Ed.Steamflix.Common.Services
 {
@@ -35,6 +36,11 @@ namespace Ed.Steamflix.Common.Services
         /// <returns>List of friends.</returns>
         public async Task<FriendsList> GetFriendListAsync(string steamId)
         {
+            if (string.IsNullOrEmpty(steamId))
+            {
+                throw new ArgumentNullException(nameof(steamId));
+            }
+
             var call = _apiRepository.ApiCallAsync(
                 _servicename,
                 "GetFriendList",
@@ -57,6 +63,11 @@ namespace Ed.Steamflix.Common.Services
         /// <returns>List of player summaries.</returns>
         public async Task<PlayerSummaries> GetPlayerSummariesAsync(List<string> steamIds)
         {
+            if (steamIds == null || !steamIds.Any())
+            {
+                throw new ArgumentNullException(nameof(steamIds));
+            }
+
             var call = _apiRepository.ApiCallAsync(
                 _servicename,
                 "GetPlayerSummaries",
@@ -82,6 +93,11 @@ namespace Ed.Steamflix.Common.Services
         /// <returns>User info.</returns>
         public async Task<UserData> ResolveVanityUrlAsync(string vanityUrlName)
         {
+            if (string.IsNullOrEmpty(vanityUrlName))
+            {
+                throw new ArgumentNullException(nameof(vanityUrlName));
+            }
+
             var call = _apiRepository.ApiCallAsync(
                 _servicename,
                 "ResolveVanityUrl",
@@ -101,6 +117,11 @@ namespace Ed.Steamflix.Common.Services
         /// <returns>Steam ID.</returns>
         public async Task<string> GetSteamIdAsync(string profileUrl)
         {
+            if (string.IsNullOrEmpty(profileUrl))
+            {
+                throw new ArgumentNullException(nameof(profileUrl));
+            }
+
             var steamIdMatch = _steamIdRegex.Match(profileUrl);
             var vanityUrlMatch = _vanityUrlRegex.Match(profileUrl);
 

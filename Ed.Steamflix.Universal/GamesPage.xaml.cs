@@ -38,7 +38,7 @@ namespace Ed.Steamflix.Universal
             // If no view model, set it up
             if (ViewModel == null)
             {
-                ViewModel = new GamesPageViewModel((string)e.Parameter);
+                ViewModel = new GamesPageViewModel();
             }
 
             GamesHub.DataContext = ViewModel;
@@ -59,7 +59,5 @@ namespace Ed.Steamflix.Universal
                 Frame.Navigate(typeof(BroadcastsPage), game.AppId);
             }
         }
-
-        // TODO: What is shown when Steam ID not available?
     }
 }

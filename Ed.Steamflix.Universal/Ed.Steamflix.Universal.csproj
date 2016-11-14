@@ -99,6 +99,7 @@
       <DependentUpon>BroadcastsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Converters\NotVisibleWhenZeroConverter.cs" />
     <Compile Include="Extensions\PageExtensions.cs" />
     <Compile Include="GamesPage.xaml.cs">
       <DependentUpon>GamesPage.xaml</DependentUpon>

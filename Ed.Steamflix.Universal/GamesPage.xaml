@@ -7,10 +7,12 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:mocks="using:Ed.Steamflix.Mocks.ViewModels"
     mc:Ignorable="d"
-    Background="{StaticResource AppBackgroundColor}">
+    Background="{StaticResource AppBackgroundColor}"
+    xmlns:converters="using:Ed.Steamflix.Universal.Converters">
 
     <Page.Resources>
         <mocks:GamesPageViewModelMock x:Key="GamesPageViewModelMock" d:IsDataSource="True" />
+        <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
     </Page.Resources>
 
     <Grid Background="{StaticResource AppBackgroundColor}">
@@ -26,11 +28,11 @@
              Orientation="Vertical"
              d:DataContext="{StaticResource GamesPageViewModelMock}"
              Tapped="Game_Tapped"
-             Margin="10 0 10 0"
+             Margin="10 0 0 0"
              Grid.Column="1">
             <HubSection Template="{StaticResource PopularGamesTemplate}" />
-            <HubSection Template="{StaticResource RecentGamesTemplate}" />
-            <HubSection Template="{StaticResource OwnedGamesTemplate}" />
+            <HubSection Template="{StaticResource RecentGamesTemplate}" Visibility="{Binding SteamIdIsAvailable, Converter={StaticResource BooleanToVisibilityConverter}}" />
+            <HubSection Template="{StaticResource OwnedGamesTemplate}" Visibility="{Binding SteamIdIsAvailable, Converter={StaticResource BooleanToVisibilityConverter}}" />
         </Hub>
     </Grid>
 </Page>

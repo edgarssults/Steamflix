@@ -5,6 +5,7 @@ using Ed.Steamflix.Common.Repositories;
 using System.Linq;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using System;
 
 namespace Ed.Steamflix.Common.Services
 {
@@ -40,6 +41,11 @@ namespace Ed.Steamflix.Common.Services
         /// <returns>Total count and list of games.</returns>
         public async Task<List<Game>> GetRecentlyPlayedGamesAsync(string steamId)
         {
+            if (string.IsNullOrEmpty(steamId))
+            {
+                return null;
+            }
+
             var call = _apiRepository.ApiCallAsync(
                 _serviceName,
                 "GetRecentlyPlayedGames",
@@ -62,6 +68,11 @@ namespace Ed.Steamflix.Common.Services
         /// <returns>Total count and list of games.</returns>
         public async Task<List<Game>> GetOwnedGamesAsync(string steamId)
         {
+            if (string.IsNullOrEmpty(steamId))
+            {
+                return null;
+            }
+
             var call = _apiRepository.ApiCallAsync(
                 _serviceName,
                 "GetOwnedGames",

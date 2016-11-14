@@ -42,5 +42,13 @@ namespace Ed.Steamflix.Mocks.ViewModels
                 return new NotifyTaskCompletion<List<Game>>(_playerService.GetPopularGamesAsync());
             }
         }
+
+        public bool SteamIdIsAvailable
+        {
+            get
+            {
+                return true;
+            }
+        }
     }
 }

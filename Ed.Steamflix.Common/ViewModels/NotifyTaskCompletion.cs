@@ -17,7 +17,6 @@ namespace Ed.Steamflix.Common.ViewModels
                 var _ = WatchTaskAsync(task);
             }
         }
-
         private async Task WatchTaskAsync(Task task)
         {
             try

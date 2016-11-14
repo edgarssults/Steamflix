@@ -52,6 +52,7 @@ namespace Ed.Steamflix.Universal
 
                 // Save new profile URL
                 ApplicationData.Current.RoamingSettings.Values["ProfileUrl"] = SettingsProfileUrl.Text;
+                ApplicationData.Current.RoamingSettings.Values["StartWithoutSteamId"] = false;
             }
             else
             {

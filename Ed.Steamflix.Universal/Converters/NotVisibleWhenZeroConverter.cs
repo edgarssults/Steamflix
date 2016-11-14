@@ -5,14 +5,14 @@ using Windows.UI.Xaml.Data;
 namespace Ed.Steamflix.Universal.Converters
 {
     /// <summary>
-    /// Coverts bool to Visibility.
+    /// Coverts count to visibility.
     /// </summary>
-    public class BooleanToVisibilityConverter : IValueConverter
+    public class NotVisibleWhenZeroConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, string language) =>
-            (value is bool && (bool)value) ? Visibility.Visible : Visibility.Collapsed;
+            Equals(0d, (int)value) ? Visibility.Collapsed : Visibility.Visible;
 
         public object ConvertBack(object value, Type targetType, object parameter, string language) =>
-            value is Visibility && (Visibility)value == Visibility.Visible;
+            null;
     }
 }

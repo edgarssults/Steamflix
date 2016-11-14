@@ -12,11 +12,17 @@ namespace Ed.Steamflix.Universal.ViewModels
         private readonly GameService _playerService = DependencyHelper.Get<GameService>();
         private readonly UserService _steamUser = DependencyHelper.Get<UserService>();
 
-        private string _profileUrl;
+        public GamesPageViewModel() { }
 
-        public GamesPageViewModel(string profileUrl)
+        /// <summary>
+        /// Whether Steam ID was provided by the user. used to show/hide hub sections.
+        /// </summary>
+        public bool SteamIdIsAvailable
         {
-            _profileUrl = profileUrl;
+            get
+            {
+                return !string.IsNullOrEmpty(SteamId);
+            }
         }
 
         /// <summary>
@@ -26,17 +32,21 @@ namespace Ed.Steamflix.Universal.ViewModels
         {
             get
             {
-                // Try to get ID from settings
                 var steamId = (string)ApplicationData.Current.RoamingSettings.Values["SteamId"];
 
                 if (string.IsNullOrEmpty(steamId))
                 {
-                    // Have to extract ID from profile URL
-                    // TODO: Not async, blocks UI
-                    steamId = _steamUser.GetSteamIdAsync(_profileUrl).Result;
+                    var profileUrl = (string)ApplicationData.Current.RoamingSettings.Values["ProfileUrl"];
 
-                    // Save ID
-                    ApplicationData.Current.RoamingSettings.Values["SteamId"] = steamId;
+                    if (!string.IsNullOrEmpty(profileUrl))
+                    {
+                        // Have to extract ID from profile URL
+                        // TODO: Not async, blocks UI
+                        steamId = _steamUser.GetSteamIdAsync(profileUrl).Result;
+
+                        // Save ID
+                        ApplicationData.Current.RoamingSettings.Values["SteamId"] = steamId;
+                    }
                 }
 
                 return steamId;

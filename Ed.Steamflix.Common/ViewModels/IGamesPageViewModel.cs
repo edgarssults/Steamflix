@@ -6,6 +6,11 @@ namespace Ed.Steamflix.Common.ViewModels
     public interface IGamesPageViewModel
     {
         /// <summary>
+        /// Whether Steam ID was provided by the user. used to show/hide hub sections.
+        /// </summary>
+        bool SteamIdIsAvailable { get; }
+
+        /// <summary>
         /// User's Steam ID.
         /// </summary>
         string SteamId { get; }

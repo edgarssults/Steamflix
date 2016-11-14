@@ -48,9 +48,15 @@ namespace Ed.Steamflix.Universal
                 // Navigate to games page
                 Frame.Navigate(typeof(GamesPage), ProfileUrl.Text);
             }
-        }
+            else
+            {
+                // Not providing a profile URL
+                ApplicationData.Current.RoamingSettings.Values["StartWithoutSteamId"] = true;
+                ApplicationData.Current.RoamingSettings.Values["SteamId"] = null;
 
-        // TODO: Text box doesn't fit, Start button can't be pressed on mobile device, Enter button doesn't work
-        // TODO: Profile URL guide on Main page
+                // Navigate to games page
+                Frame.Navigate(typeof(GamesPage), null);
+            }
+        }
     }
 }

@@ -14,8 +14,8 @@
     </Page.Resources>
 
     <StackPanel Background="{StaticResource AppBackgroundColor}">
-        <CommandBar Style="{StaticResource CommandBarStyle}">
-            <AppBarButton Icon="Back" Label="Back" Tapped="AppBarButton_Tapped" Style="{StaticResource AppBarButtonStyle}" />
+        <CommandBar>
+            <AppBarButton Icon="Back" Label="Back" Tapped="AppBarButton_Tapped" />
         </CommandBar>
         
         <Hub x:Name="GamesHub"

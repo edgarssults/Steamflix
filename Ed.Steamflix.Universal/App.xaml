@@ -5,11 +5,12 @@
     xmlns:local="using:Ed.Steamflix.Universal"
     xmlns:mocks="using:Ed.Steamflix.Mocks.ViewModels"
     xmlns:converters="using:Ed.Steamflix.Universal.Converters"
-    RequestedTheme="Light">
+    RequestedTheme="Dark">
 
     <Application.Resources>
 
-        <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+        <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        <converters:NotVisibleWhenZeroConverter x:Key="NotVisibleWhenZeroConverter" />
 
         <DataTemplate x:Key="GameListItemTemplate">
             <StackPanel Margin="2" Width="184">
@@ -52,36 +53,9 @@
         <SolidColorBrush x:Key="AppForegroundColor" Color="{StaticResource White}" />
         <SolidColorBrush x:Key="HoverBorderColor" Color="{StaticResource Blue}" />
 
-        <SolidColorBrush x:Key="SystemControlHighlightListLowBrush" Color="{StaticResource Blue}" />
         <SolidColorBrush x:Key="SystemControlHighlightBaseMediumLowBrush" Color="{StaticResource Blue}" />
-        <SolidColorBrush x:Key="SystemControlHighlightBaseHighBrush" Color="{StaticResource White}" />
+        <SolidColorBrush x:Key="SystemControlHighlightListLowBrush" Color="{StaticResource Blue}" />
 
-        <Style x:Key="CommandBarStyle" TargetType="CommandBar">
-            <Setter Property="FlowDirection">
-                <Setter.Value>
-                    <FlowDirection>LeftToRight</FlowDirection>
-                </Setter.Value>
-            </Setter>
-            <Setter Property="Background">
-                <Setter.Value>
-                    <SolidColorBrush Color="{StaticResource Grey}"></SolidColorBrush>
-                </Setter.Value>
-            </Setter>
-            <Setter Property="Foreground">
-                <Setter.Value>
-                    <SolidColorBrush Color="{StaticResource White}"></SolidColorBrush>
-                </Setter.Value>
-            </Setter>
-        </Style>
-
-        <Style x:Key="AppBarButtonStyle" TargetType="AppBarButton">
-            <Setter Property="Foreground">
-                <Setter.Value>
-                    <SolidColorBrush Color="{StaticResource White}"></SolidColorBrush>
-                </Setter.Value>
-            </Setter>
-        </Style>
-        
         <Style TargetType="HubSection">
             <Setter Property="HeaderTemplate">
                 <Setter.Value>
@@ -101,7 +75,7 @@
         </Style>
 
         <ControlTemplate x:Key="PopularGamesTemplate">
-            <HubSection Header="Popular" Margin="0 0 0 20">
+            <HubSection Header="Popular" Margin="0 0 10 20">
                 <DataTemplate>
                     <StackPanel>
                         <ProgressBar Height="2" IsIndeterminate="{Binding PopularGames.IsNotCompleted}"
@@ -133,7 +107,7 @@
         </ControlTemplate>
         
         <ControlTemplate x:Key="RecentGamesTemplate">
-            <HubSection Header="Recent" Margin="0 0 0 20">
+            <HubSection Header="Recent" Margin="0 0 10 20">
                 <DataTemplate>
                     <StackPanel>
                         <ProgressBar Height="2" IsIndeterminate="{Binding RecentlyPlayedGames.IsNotCompleted}"
@@ -165,7 +139,7 @@
         </ControlTemplate>
 
         <ControlTemplate x:Key="OwnedGamesTemplate">
-            <HubSection Header="Owned" Margin="0 0 0 20">
+            <HubSection Header="Owned" Margin="0 0 10 20">
                 <DataTemplate>
                     <StackPanel>
                         <ProgressBar Height="2" IsIndeterminate="{Binding OwnedGames.IsNotCompleted}"
@@ -197,7 +171,7 @@
         </ControlTemplate>
 
         <ControlTemplate x:Key="BroadcastsTemplate">
-            <HubSection Header="Broadcasts" Margin="0 0 0 20">
+            <HubSection Header="Broadcasts" Margin="0 0 10 20">
                 <DataTemplate>
                     <StackPanel>
                         <ProgressBar Height="2" IsIndeterminate="{Binding Broadcasts.IsNotCompleted}"
