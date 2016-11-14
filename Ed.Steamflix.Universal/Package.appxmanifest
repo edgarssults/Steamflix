@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="Ed.Steamflix" Publisher="CN=Edgar" Version="0.1.1.0" />
+  <Identity Name="Ed.Steamflix" Publisher="CN=Edgar" Version="1.1.1.0" />
   <mp:PhoneIdentity PhoneProductId="8381acc4-4b2d-4cfc-b28f-4a26b06fd4bb" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Ed.Steamflix.Universal</DisplayName>
@@ -15,10 +15,16 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Ed.Steamflix.Universal.App">
-      <uap:VisualElements DisplayName="Steamflix" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Universal Steamflix application for watching community broadcasts of your recently played and owned games." BackgroundColor="transparent">
+      <uap:VisualElements DisplayName="Steamflix" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Application for watching Steam community broadcasts of popular and your own games." BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png">
         </uap:DefaultTile>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="portrait" />
+          <uap:Rotation Preference="landscape" />
+          <uap:Rotation Preference="portraitFlipped" />
+          <uap:Rotation Preference="landscapeFlipped" />
+        </uap:InitialRotationPreference>
       </uap:VisualElements>
     </Application>
   </Applications>
