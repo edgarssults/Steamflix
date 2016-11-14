@@ -59,5 +59,7 @@ namespace Ed.Steamflix.Universal
                 Frame.Navigate(typeof(BroadcastsPage), game.AppId);
             }
         }
+
+        // TODO: What is shown when Steam ID not available?
     }
 }

@@ -202,7 +202,7 @@
                     <StackPanel>
                         <ProgressBar Height="2" IsIndeterminate="{Binding Broadcasts.IsNotCompleted}"
                                      Visibility="{Binding Broadcasts.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}" />
-                        <ListView
+                        <GridView
                             Visibility="{Binding Broadcasts.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
                             ScrollViewer.HorizontalScrollMode="Enabled"
                             IsItemClickEnabled="True"
@@ -210,19 +210,19 @@
                             SelectionMode="Single"
                             ItemTemplate="{StaticResource BroadcastListItemTemplate}"
                             ItemsSource="{Binding Path=Broadcasts.Result}">
-                            <ListView.ItemsPanel>
+                            <GridView.ItemsPanel>
                                 <ItemsPanelTemplate>
-                                    <VirtualizingStackPanel Orientation="Horizontal" />
+                                    <ItemsWrapGrid Orientation="Horizontal" />
                                 </ItemsPanelTemplate>
-                            </ListView.ItemsPanel>
-                            <ListView.ItemContainerStyle>
-                                <Style TargetType="ListViewItem">
+                            </GridView.ItemsPanel>
+                            <GridView.ItemContainerStyle>
+                                <Style TargetType="GridViewItem">
                                     <Setter Property="Padding" Value="0"/>
                                     <Setter Property="BorderThickness" Value="0"/>
-                                    <Setter Property="Margin" Value="0 0 20 0"/>
+                                    <Setter Property="Margin" Value="0 0 20 20"/>
                                 </Style>
-                            </ListView.ItemContainerStyle>
-                        </ListView>
+                            </GridView.ItemContainerStyle>
+                        </GridView>
                     </StackPanel>
                 </DataTemplate>
             </HubSection>

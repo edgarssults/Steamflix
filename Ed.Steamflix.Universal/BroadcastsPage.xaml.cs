@@ -55,7 +55,5 @@ namespace Ed.Steamflix.Universal
         {
             this.GoBack(e);
         }
-
-        // TODO: Display broadcasts in a grid
     }
 }
