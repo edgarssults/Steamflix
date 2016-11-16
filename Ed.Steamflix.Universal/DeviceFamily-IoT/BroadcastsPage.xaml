@@ -23,7 +23,8 @@
              Header="{Binding Path=Game.Name}"
              d:DataContext="{StaticResource BroadcastsPageViewModelMock}"
              Tapped="Broadcast_Tapped"
-             Margin="10 0 10 0">
+             Margin="10 0 0 0"
+             Grid.Column="1">
             <HubSection Template="{StaticResource BroadcastsTemplate}" />
         </Hub>
     </StackPanel>

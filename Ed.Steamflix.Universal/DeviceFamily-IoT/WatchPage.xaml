@@ -16,7 +16,6 @@
 
         <CommandBar Grid.Row="0">
             <AppBarButton Icon="Back" Label="Back" Tapped="AppBarBackButton_Tapped" />
-            <AppBarButton Icon="FullScreen" Label="Full Screen" Tapped="AppBarFullScreenButton_Tapped" />
         </CommandBar>
 
         <WebView Grid.Row="1" x:Name="Browser" />

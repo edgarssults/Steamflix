@@ -17,16 +17,17 @@
         <CommandBar>
             <AppBarButton Icon="Back" Label="Back" Tapped="AppBarButton_Tapped" />
         </CommandBar>
-        
+
         <Hub x:Name="GamesHub"
              Header="Games"
              Orientation="Vertical"
              d:DataContext="{StaticResource GamesPageViewModelMock}"
              Tapped="Game_Tapped"
-             Margin="10 0 10 0">
+             Margin="10 0 0 0"
+             Grid.Column="1">
             <HubSection Template="{StaticResource PopularGamesTemplate}" />
-            <HubSection Template="{StaticResource RecentGamesTemplate}" />
-            <HubSection Template="{StaticResource OwnedGamesTemplate}" />
+            <HubSection Template="{StaticResource RecentGamesTemplate}" Visibility="{Binding SteamIdIsAvailable, Converter={StaticResource BooleanToVisibilityConverter}}" />
+            <HubSection Template="{StaticResource OwnedGamesTemplate}" Visibility="{Binding SteamIdIsAvailable, Converter={StaticResource BooleanToVisibilityConverter}}" />
         </Hub>
     </StackPanel>
 </Page>

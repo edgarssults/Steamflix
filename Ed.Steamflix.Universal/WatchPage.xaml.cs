@@ -115,8 +115,12 @@ namespace Ed.Steamflix.Universal
         /// </summary>
         void UpdateContent()
         {
-            var view = ApplicationView.GetForCurrentView();
-            WatchCommandBar.Visibility = view.IsFullScreenMode ? Visibility.Collapsed : Visibility.Visible;
+            // There is no watch command bar in IoT version
+            if (WatchCommandBar != null)
+            {
+                var view = ApplicationView.GetForCurrentView();
+                WatchCommandBar.Visibility = view.IsFullScreenMode ? Visibility.Collapsed : Visibility.Visible;
+            }
         }
     }
 }
