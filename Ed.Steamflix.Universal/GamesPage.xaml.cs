@@ -2,6 +2,7 @@
 using Ed.Steamflix.Common.ViewModels;
 using Ed.Steamflix.Universal.Extensions;
 using Ed.Steamflix.Universal.ViewModels;
+using System.Linq;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -33,7 +34,19 @@ namespace Ed.Steamflix.Universal
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            this.SetUpBackButton();
+            // Back button needs to be disabled if the previous page is the Main page
+            // Otherwise it's enabled
+            var previousPage = Frame.BackStack?.LastOrDefault();
+            var previousPageType = previousPage?.SourcePageType;
+
+            if (previousPageType != typeof(MainPage))
+            {
+                this.SetUpBackButton();
+            }
+            else
+            {
+                this.TearDownBackButton();
+            }
 
             // If no view model, set it up
             if (ViewModel == null)

@@ -19,6 +19,15 @@ namespace Ed.Steamflix.Universal.Extensions
         }
 
         /// <summary>
+        /// Disables the Windows 10 back button for a page.
+        /// </summary>
+        /// <param name="page">Page object.</param>
+        public static void TearDownBackButton(this Page page)
+        {
+            SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
+        }
+
+        /// <summary>
         /// Handles back navigation event for a page.
         /// </summary>
         /// <param name="page">Page object.</param>
