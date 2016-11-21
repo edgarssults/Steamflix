@@ -90,5 +90,13 @@ namespace Ed.Steamflix.Universal
             }
             return null;
         }
+
+        private void SettingsProfileUrl_KeyDown(object sender, KeyRoutedEventArgs e)
+        {
+            if (e.Key == Windows.System.VirtualKey.Enter)
+            {
+                Save_Tapped(sender, null);
+            }
+        }
     }
 }

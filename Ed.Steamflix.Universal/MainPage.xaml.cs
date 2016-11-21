@@ -65,5 +65,13 @@ namespace Ed.Steamflix.Universal
                 Frame.Navigate(typeof(GamesPage), null);
             }
         }
+
+        private void ProfileUrl_KeyDown(object sender, Windows.UI.Xaml.Input.KeyRoutedEventArgs e)
+        {
+            if (e.Key == Windows.System.VirtualKey.Enter)
+            {
+                Start_Tapped(sender, null);
+            }
+        }
     }
 }
