@@ -1,5 +1,6 @@
 ﻿using Ed.Steamflix.Universal.Extensions;
 using System;
+using Windows.System;
 using Windows.UI.Core;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
@@ -52,6 +53,11 @@ namespace Ed.Steamflix.Universal
             }
         }
 
+        /// <summary>
+        /// Handles back button press.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void App_BackRequested(object sender, BackRequestedEventArgs e)
         {
             this.GoBack(e);
@@ -84,11 +90,21 @@ namespace Ed.Steamflix.Universal
             UpdateContent();
         }
 
+        /// <summary>
+        /// Navigates back to the previous page.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AppBarBackButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.GoBack(e);
         }
 
+        /// <summary>
+        /// Switches the app to full screen.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AppBarFullScreenButton_Tapped(object sender, RoutedEventArgs e)
         {
             var view = ApplicationView.GetForCurrentView();
@@ -105,6 +121,32 @@ namespace Ed.Steamflix.Universal
             }
         }
 
+        /// <summary>
+        /// Opens the broadcast URL in the browser.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private async void AppBarBrowserButton_Tapped(object sender, RoutedEventArgs e)
+        {
+            // Pause playback
+            try
+            {
+                await Browser.InvokeScriptAsync("eval", new[] { "document.getElementsByClassName('play_button')[0].click();" });
+            }
+            catch
+            {
+                // Ignore script exceptions
+            }
+
+            // Launch browser
+            await Launcher.LaunchUriAsync(Browser.Source);
+        }
+
+        /// <summary>
+        /// Handles window size change event.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         void OnWindowResize(object sender, WindowSizeChangedEventArgs e)
         {
             UpdateContent();

@@ -17,6 +17,7 @@
         <WebView Grid.Row="0" x:Name="Browser" />
 
         <CommandBar x:Name="WatchCommandBar" Grid.Row="1">
+            <AppBarButton Icon="Globe" Label="Open in Browser" Tapped="AppBarBrowserButton_Tapped" />
             <AppBarButton Icon="FullScreen" Label="Full Screen" Tapped="AppBarFullScreenButton_Tapped" />
         </CommandBar>
     </Grid>
