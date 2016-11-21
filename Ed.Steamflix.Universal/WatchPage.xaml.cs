@@ -31,7 +31,7 @@ namespace Ed.Steamflix.Universal
         {
             try
             {
-                var elementsToHide = "#global_header, #footer_spacer, #footer_responsive_optin_spacer, #footer, #ChatWindow, .BroadcastInfoWrapper, .fullscreen_button";
+                var elementsToHide = "#global_header, #footer_spacer, #footer_responsive_optin_spacer, #footer, #ChatWindow, .BroadcastInfoWrapper, .fullscreen_button, .responsive_header";
 
                 // Hide HTML elements and change styles so it looks like the broadcast is in full-screen
                 // We can't call the broadcast's own toggle full-screen function
@@ -42,6 +42,7 @@ namespace Ed.Steamflix.Universal
                     "document.getElementById('video_content').style.padding = 0;",
                     "document.getElementById('video_content').style.margin = 0;",
                     "document.getElementsByClassName('pagecontent')[0].style.padding = 0;",
+                    "document.getElementsByClassName('responsive_page_content')[0].style.paddingTop = 0;",
                     "var list = document.querySelectorAll('" + elementsToHide + "');",
                     "for (var i = 0; i < list.length; i++) { var e = list[i]; e.style.display = 'none'; }"
                 };
