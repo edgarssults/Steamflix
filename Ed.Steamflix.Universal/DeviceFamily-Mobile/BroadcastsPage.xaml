@@ -8,19 +8,22 @@
     mc:Ignorable="d"
     Background="{StaticResource AppBackgroundColor}">
 
-    <StackPanel Background="{StaticResource AppBackgroundColor}">
-        <CommandBar>
-            <AppBarButton Icon="Back" Label="Back" Tapped="AppBarButton_Tapped"/>
-        </CommandBar>
-
+    <Grid Background="{StaticResource AppBackgroundColor}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        
         <Hub x:Name="BroadcastsHub"
              Orientation="Vertical"
              Header="{Binding Path=Game.Name}"
              d:DataContext="{StaticResource BroadcastsPageViewModelMock}"
              Tapped="Broadcast_Tapped"
              Margin="10 0 0 0"
-             Grid.Column="1">
+             Grid.Row="0">
             <HubSection Template="{StaticResource BroadcastsTemplate}" />
         </Hub>
-    </StackPanel>
+
+        <local:MobileNavigationPane Grid.Row="1" />
+    </Grid>
 </Page>

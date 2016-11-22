@@ -103,6 +103,12 @@
     <Compile Include="BroadcastsPage.xaml.cs">
       <DependentUpon>BroadcastsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\MobileNavigationPane.xaml.cs">
+      <DependentUpon>MobileNavigationPane.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SettingsPane.xaml.cs">
+      <DependentUpon>SettingsPane.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
     <Compile Include="Converters\NotVisibleWhenZeroConverter.cs" />
     <Compile Include="Extensions\PageExtensions.cs" />
@@ -121,6 +127,7 @@
     </Compile>
     <Compile Include="ViewModels\BroadcastsPageViewModel.cs" />
     <Compile Include="ViewModels\GamesPageViewModel.cs" />
+    <Compile Include="ViewModels\SettingsPaneViewModel.cs" />
     <Compile Include="WatchPage.xaml.cs">
       <DependentUpon>WatchPage.xaml</DependentUpon>
     </Compile>
@@ -157,6 +164,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Controls\MobileNavigationPane.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\SettingsPane.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="DeviceFamily-IoT\BroadcastsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -166,6 +181,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DeviceFamily-IoT\WatchPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceFamily-Mobile\BroadcastsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceFamily-Mobile\GamesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceFamily-Mobile\SettingsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -202,7 +229,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DeviceFamily-Desktop\" />
-    <Folder Include="DeviceFamily-Mobile\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

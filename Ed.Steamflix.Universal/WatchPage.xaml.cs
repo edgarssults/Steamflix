@@ -120,6 +120,9 @@ namespace Ed.Steamflix.Universal
                 view.TryEnterFullScreenMode();
                 WatchCommandBar.Visibility = Visibility.Collapsed;
             }
+
+            // TODO: Mobile full screen exit
+            // TODO: Tap to play on mobile
         }
 
         /// <summary>

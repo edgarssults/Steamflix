@@ -9,15 +9,13 @@
     Background="{StaticResource AppBackgroundColor}">
 
     <Grid Background="{StaticResource AppBackgroundColor}">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
         
-        <local:NavigationPane x:Name="MyNavigationPane" Grid.Column="0" />
+        <local:SettingsPane Grid.Row="0" />
 
-        <Grid Grid.Column="1">
-            <local:SettingsPane />
-        </Grid>
+        <local:MobileNavigationPane Grid.Row="1" />
     </Grid>
 </Page>

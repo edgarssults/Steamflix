@@ -5,10 +5,17 @@
     xmlns:local="using:Ed.Steamflix.Universal"
     xmlns:mocks="using:Ed.Steamflix.Mocks.ViewModels"
     xmlns:converters="using:Ed.Steamflix.Universal.Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
     RequestedTheme="Dark">
 
     <Application.Resources>
 
+        <mocks:GamesPageViewModelMock x:Key="GamesPageViewModelMock" d:IsDataSource="True" />
+        <mocks:BroadcastsPageViewModelMock x:Key="BroadcastsPageViewModelMock" d:IsDataSource="True" />
+        <mocks:SettingsPaneViewModelMock x:Key="SettingsPaneViewModelMock" d:IsDataSource="True" />
+        
         <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
         <converters:NotVisibleWhenZeroConverter x:Key="NotVisibleWhenZeroConverter" />
 

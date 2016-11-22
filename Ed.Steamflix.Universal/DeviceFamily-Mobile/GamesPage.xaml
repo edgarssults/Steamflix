@@ -6,16 +6,13 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{StaticResource AppBackgroundColor}"
-    xmlns:converters="using:Ed.Steamflix.Universal.Converters">
+    Background="{StaticResource AppBackgroundColor}">
 
     <Grid Background="{StaticResource AppBackgroundColor}">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        
-        <local:NavigationPane x:Name="MyNavigationPane" Grid.Column="0" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
         
         <Hub x:Name="GamesHub"
              Header="Games"
@@ -23,10 +20,12 @@
              d:DataContext="{StaticResource GamesPageViewModelMock}"
              Tapped="Game_Tapped"
              Margin="10 0 0 0"
-             Grid.Column="1">
+             Grid.Row="0">
             <HubSection Template="{StaticResource PopularGamesTemplate}" />
             <HubSection Template="{StaticResource RecentGamesTemplate}" Visibility="{Binding SteamIdIsAvailable, Converter={StaticResource BooleanToVisibilityConverter}}" />
             <HubSection Template="{StaticResource OwnedGamesTemplate}" Visibility="{Binding SteamIdIsAvailable, Converter={StaticResource BooleanToVisibilityConverter}}" />
         </Hub>
+
+        <local:MobileNavigationPane Grid.Row="1" />
     </Grid>
 </Page>

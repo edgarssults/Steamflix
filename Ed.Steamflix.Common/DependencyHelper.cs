@@ -11,7 +11,7 @@ namespace Ed.Steamflix.Common
         private static IKernel _kernel;
 
         /// <summary>
-        /// Used to set the ninject kernel that is in use.
+        /// Used to set the Ninject kernel that is in use.
         /// </summary>
         /// <param name="kernel"></param>
         public static void InitNinjectKernel(IKernel kernel)
@@ -33,5 +33,7 @@ namespace Ed.Steamflix.Common
 
             return _kernel.Get<T>();
         }
+
+        // TODO: Replace Ninject with Castle IoC
     }
 }

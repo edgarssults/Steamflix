@@ -1,10 +1,6 @@
 ﻿using Ed.Steamflix.Universal.Extensions;
-using Windows.Storage;
 using Windows.UI.Core;
-using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
@@ -20,13 +16,6 @@ namespace Ed.Steamflix.Universal
         {
             this.InitializeComponent();
 
-            // Load profile URL 
-            var profileUrl = (string)ApplicationData.Current.RoamingSettings.Values["ProfileUrl"];
-            if (!string.IsNullOrEmpty(profileUrl))
-            {
-                SettingsProfileUrl.Text = profileUrl;
-            }
-
             SystemNavigationManager.GetForCurrentView().BackRequested += App_BackRequested;
         }
 
@@ -38,37 +27,6 @@ namespace Ed.Steamflix.Universal
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             this.SetUpBackButton();
-        }
-
-        private void Save_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            if (!string.IsNullOrEmpty(SettingsProfileUrl.Text))
-            {
-                // If the profile URL is different, clear the extracted Steam ID
-                if (SettingsProfileUrl.Text != (string)ApplicationData.Current.RoamingSettings.Values["ProfileUrl"])
-                {
-                    ApplicationData.Current.RoamingSettings.Values["SteamId"] = null;
-                }
-
-                // Save new profile URL
-                ApplicationData.Current.RoamingSettings.Values["ProfileUrl"] = SettingsProfileUrl.Text;
-                ApplicationData.Current.RoamingSettings.Values["StartWithoutSteamId"] = false;
-            }
-            else
-            {
-                // Clearing saved values
-                ApplicationData.Current.RoamingSettings.Values["StartWithoutSteamId"] = true;
-                ApplicationData.Current.RoamingSettings.Values["SteamId"] = null;
-                ApplicationData.Current.RoamingSettings.Values["ProfileUrl"] = null;
-            }
-        }
-
-        private void SettingsProfileUrl_KeyDown(object sender, KeyRoutedEventArgs e)
-        {
-            if (e.Key == Windows.System.VirtualKey.Enter)
-            {
-                Save_Tapped(sender, null);
-            }
         }
     }
 }

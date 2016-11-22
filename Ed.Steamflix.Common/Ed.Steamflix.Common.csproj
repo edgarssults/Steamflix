@@ -140,6 +140,7 @@
     <Compile Include="Services\UserService.cs" />
     <Compile Include="ViewModels\IBroadcastsPageViewModel.cs" />
     <Compile Include="ViewModels\IGamesPageViewModel.cs" />
+    <Compile Include="ViewModels\ISettingsPaneViewModel.cs" />
     <Compile Include="ViewModels\NotifyTaskCompletion.cs" />
     <EmbeddedResource Include="Properties\Ed.Steamflix.Common.rd.xml" />
   </ItemGroup>
