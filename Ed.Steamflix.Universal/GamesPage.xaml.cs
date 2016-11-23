@@ -34,19 +34,9 @@ namespace Ed.Steamflix.Universal
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            // Back button needs to be disabled if the previous page is the Main page
-            // Otherwise it's enabled
-            var previousPage = Frame.BackStack?.LastOrDefault();
-            var previousPageType = previousPage?.SourcePageType;
-
-            if (previousPageType != typeof(MainPage))
-            {
-                this.SetUpBackButton();
-            }
-            else
-            {
-                this.TearDownBackButton();
-            }
+            // Back button needs to be disabled
+            Frame.BackStack.Clear();
+            this.TearDownBackButton();
 
             // If no view model, set it up
             if (ViewModel == null)
