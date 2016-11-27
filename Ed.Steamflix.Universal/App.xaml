@@ -62,7 +62,7 @@
 
         <SolidColorBrush x:Key="SystemControlHighlightBaseMediumLowBrush" Color="{StaticResource Blue}" />
         <SolidColorBrush x:Key="SystemControlHighlightListLowBrush" Color="{StaticResource Blue}" />
-
+        
         <Style TargetType="HubSection">
             <Setter Property="HeaderTemplate">
                 <Setter.Value>

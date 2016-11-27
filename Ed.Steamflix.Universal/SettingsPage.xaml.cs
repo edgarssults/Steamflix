@@ -1,6 +1,7 @@
 ﻿using Ed.Steamflix.Universal.Extensions;
 using Windows.UI.Core;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
@@ -17,6 +18,11 @@ namespace Ed.Steamflix.Universal
             this.InitializeComponent();
 
             SystemNavigationManager.GetForCurrentView().BackRequested += App_BackRequested;
+        }
+
+        private void AppBarButton_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.GoBack(e);
         }
 
         private void App_BackRequested(object sender, BackRequestedEventArgs e)
