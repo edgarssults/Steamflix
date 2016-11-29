@@ -111,6 +111,8 @@
     </Compile>
     <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
     <Compile Include="Converters\NotVisibleWhenZeroConverter.cs" />
+    <Compile Include="Extensions\CommandBarExtensions.cs" />
+    <Compile Include="Extensions\DependencyObjectExtensions.cs" />
     <Compile Include="Extensions\PageExtensions.cs" />
     <Compile Include="GamesPage.xaml.cs">
       <DependentUpon>GamesPage.xaml</DependentUpon>
@@ -187,6 +189,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DeviceFamily-IoT\GamesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceFamily-IoT\SettingsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
