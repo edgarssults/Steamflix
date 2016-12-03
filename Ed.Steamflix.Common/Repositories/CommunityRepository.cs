@@ -7,7 +7,7 @@ namespace Ed.Steamflix.Common.Repositories
 {
     public class CommunityRepository : ICommunityRepository
     {
-        private readonly ResourceLoader _settings = new ResourceLoader("Ed.Steamflix.Common/Settings");
+        private readonly ResourceLoader _settings = ResourceLoader.GetForViewIndependentUse("Ed.Steamflix.Common/Settings");
 
         /// <summary>
         /// Retrieves the broadcasts page HTML for a game asynchronously.

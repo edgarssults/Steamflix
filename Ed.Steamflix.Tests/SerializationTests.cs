@@ -11,7 +11,7 @@ namespace Ed.Steamflix.Tests
     [TestClass]
     public class SerializationTests
     {
-        private readonly ResourceLoader _rl = new ResourceLoader("Ed.Steamflix.Mocks/Resources");
+        private readonly ResourceLoader _rl = ResourceLoader.GetForViewIndependentUse("Ed.Steamflix.Mocks/Resources");
 
         [TestMethod]
         public void GetNewsForAppResponseDeserializeSuccess()

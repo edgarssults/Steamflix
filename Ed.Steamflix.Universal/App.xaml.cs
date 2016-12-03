@@ -1,6 +1,7 @@
 ﻿using Ed.Steamflix.Common;
 using Ed.Steamflix.Common.Repositories;
 using Ed.Steamflix.Common.Services;
+using Microsoft.HockeyApp;
 using Ninject;
 using System;
 using Windows.ApplicationModel;
@@ -30,14 +31,12 @@ namespace Ed.Steamflix.Universal
             IKernel kernel = new StandardKernel();
             DependencyHelper.InitNinjectKernel(kernel);
 
-            // Services
-            kernel.Bind<UserService>().To<UserService>().InSingletonScope();
-            kernel.Bind<GameService>().To<GameService>().InSingletonScope();
-            kernel.Bind<BroadcastService>().To<BroadcastService>().InSingletonScope();
-
             // Repositories
             kernel.Bind<IApiRepository>().To<ApiRepository>().InSingletonScope();
             kernel.Bind<ICommunityRepository>().To<CommunityRepository>().InSingletonScope();
+
+            // HockeyApp
+            HockeyClient.Current.Configure("ba87431fcc8c44d3b3562a9a07e8d58f");
         }
 
         /// <summary>

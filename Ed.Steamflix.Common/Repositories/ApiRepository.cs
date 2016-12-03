@@ -9,7 +9,7 @@ namespace Ed.Steamflix.Common.Repositories
 
     public class ApiRepository : IApiRepository
     {
-        private readonly ResourceLoader _settings = new ResourceLoader("Ed.Steamflix.Common/Settings");
+        private readonly ResourceLoader _settings = ResourceLoader.GetForViewIndependentUse("Ed.Steamflix.Common/Settings");
 
         /// <summary>
         /// Reads JSON from a URL asynchronously.

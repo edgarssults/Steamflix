@@ -7,7 +7,7 @@ namespace Ed.Steamflix.Mocks.Repositories
 {
     public class TestApiRepository : IApiRepository
     {
-        private readonly ResourceLoader _rl = ResourceLoader.GetForCurrentView("Ed.Steamflix.Mocks/Resources");
+        private readonly ResourceLoader _rl = ResourceLoader.GetForViewIndependentUse("Ed.Steamflix.Mocks/Resources");
 
         public Task<string> ApiCallAsync(string service, string method, string version, string parameters)
         {
