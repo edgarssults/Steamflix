@@ -1,39 +1,34 @@
-﻿using Ninject;
+﻿using DryIoc;
 using System;
 
 namespace Ed.Steamflix.Common
 {
     public static class DependencyHelper
     {
-        /// <summary>
-        /// The Ninject kernel.
-        /// </summary>
-        private static IKernel _kernel;
+        private static IContainer _container;
 
         /// <summary>
-        /// Used to set the Ninject kernel that is in use.
+        /// Initialises the container.
         /// </summary>
-        /// <param name="kernel"></param>
-        public static void InitNinjectKernel(IKernel kernel)
+        /// <param name="container">Container to initialise.</param>
+        public static void InitContainer(IContainer container)
         {
-            _kernel = kernel;
+            _container = container;
         }
 
         /// <summary>
-        /// Calls a get on the current Ninject kernel.
+        /// Calls a resolve on the container.
         /// </summary>
         /// <typeparam name="T">The type of T to get.</typeparam>
         /// <returns>T or Exception if not wired.</returns>
-        public static T Get<T>()
+        public static T Resolve<T>()
         {
-            if (_kernel == null)
+            if (_container == null)
             {
-                throw new Exception("_kernel is null");
+                throw new NullReferenceException(nameof(_container));
             }
 
-            return _kernel.Get<T>();
+            return _container.Resolve<T>();
         }
-
-        // TODO: Replace Ninject with Castle IoC
     }
 }

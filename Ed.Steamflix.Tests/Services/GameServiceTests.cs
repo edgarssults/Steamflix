@@ -13,13 +13,24 @@ namespace Ed.Steamflix.Tests.Services
     public class GameServiceTests
     {
         private readonly string _steamId = "76561197974081377"; // Me
+        private IApiRepository _apiRepository;
+        private IApiRepository _testApiRepository;
+        private ICommunityRepository _communityRepository;
+        private ICommunityRepository _testCommunityRepository;
+
+        [TestInitialize]
+        public void Initialize()
+        {
+            _apiRepository = new ApiRepository();
+            _testApiRepository = new TestApiRepository();
+            _communityRepository = new CommunityRepository();
+            _testCommunityRepository = new TestCommunityRepository();
+        }
 
         [TestMethod]
         public void GetRecentlyPlayedGamesSuccess()
         {
-            var apiRepository = new ApiRepository();
-            var communityRepository = new CommunityRepository();
-            var service = new GameService(apiRepository, communityRepository);
+            var service = new GameService(_apiRepository, _communityRepository);
             var model = service.GetRecentlyPlayedGamesAsync(_steamId).Result;
 
             Assert.AreNotEqual(default(RecentlyPlayedGames), model, "Games object is empty.");
@@ -29,9 +40,7 @@ namespace Ed.Steamflix.Tests.Services
         [TestMethod]
         public void GetRecentlyPlayedGamesMockSuccess()
         {
-            var apiRepository = new TestApiRepository();
-            var communityRepository = new TestCommunityRepository();
-            var service = new GameService(apiRepository, communityRepository);
+            var service = new GameService(_testApiRepository, _testCommunityRepository);
             var model = service.GetRecentlyPlayedGamesAsync(_steamId).Result;
 
             Assert.AreNotEqual(default(RecentlyPlayedGames), model, "Games object is empty.");
@@ -43,9 +52,7 @@ namespace Ed.Steamflix.Tests.Services
         [TestMethod]
         public void GetOwnedGamesSuccess()
         {
-            var apiRepository = new ApiRepository();
-            var communityRepository = new CommunityRepository();
-            var service = new GameService(apiRepository, communityRepository);
+            var service = new GameService(_apiRepository, _communityRepository);
             var model = service.GetOwnedGamesAsync(_steamId).Result;
 
             Assert.AreNotEqual(default(OwnedGames), model, "Games object is empty.");
@@ -55,9 +62,7 @@ namespace Ed.Steamflix.Tests.Services
         [TestMethod]
         public void GetOwnedGamesMockSuccess()
         {
-            var apiRepository = new TestApiRepository();
-            var communityRepository = new TestCommunityRepository();
-            var service = new GameService(apiRepository, communityRepository);
+            var service = new GameService(_testApiRepository, _testCommunityRepository);
             var model = service.GetOwnedGamesAsync(_steamId).Result;
 
             Assert.AreNotEqual(default(OwnedGames), model, "Games object is empty.");
@@ -69,9 +74,7 @@ namespace Ed.Steamflix.Tests.Services
         [TestMethod]
         public void GetGameInfoSuccess()
         {
-            var apiRepository = new ApiRepository();
-            var communityRepository = new CommunityRepository();
-            var service = new GameService(apiRepository, communityRepository);
+            var service = new GameService(_apiRepository, _communityRepository);
             var game = service.GetGameInfoAsync(72850).Result; // Skyrim
 
             Assert.IsTrue(game != null, "Expected a game.");
@@ -81,9 +84,7 @@ namespace Ed.Steamflix.Tests.Services
         [TestMethod]
         public void GetGameInfoMockSuccess()
         {
-            var apiRepository = new TestApiRepository();
-            var communityRepository = new TestCommunityRepository();
-            var service = new GameService(apiRepository, communityRepository);
+            var service = new GameService(_testApiRepository, _testCommunityRepository);
             var game = service.GetGameInfoAsync(72850).Result; // Skyrim
 
             Assert.IsTrue(game != null, "Expected a game.");
@@ -93,9 +94,7 @@ namespace Ed.Steamflix.Tests.Services
         [TestMethod]
         public void GetPopularGamesSuccess()
         {
-            var apiRepository = new ApiRepository();
-            var communityRepository = new CommunityRepository();
-            var service = new GameService(apiRepository, communityRepository);
+            var service = new GameService(_apiRepository, _communityRepository);
             var games = service.GetPopularGamesAsync().Result;
 
             Assert.IsTrue(games.Count > 0, "Expected a different number of broadcasts.");
@@ -104,9 +103,7 @@ namespace Ed.Steamflix.Tests.Services
         [TestMethod]
         public void GetPopularGamesMockSuccess()
         {
-            var apiRepository = new TestApiRepository();
-            var communityRepository = new TestCommunityRepository();
-            var service = new GameService(apiRepository, communityRepository);
+            var service = new GameService(_testApiRepository, _testCommunityRepository);
             var games = service.GetPopularGamesAsync().Result;
 
             Assert.AreEqual(100, games.Count, "Expected a different number of games.");

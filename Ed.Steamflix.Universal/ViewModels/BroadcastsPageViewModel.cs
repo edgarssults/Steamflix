@@ -3,14 +3,13 @@ using Ed.Steamflix.Common.Models;
 using Ed.Steamflix.Common.Services;
 using Ed.Steamflix.Common.ViewModels;
 using System.Collections.Generic;
-using Windows.Storage;
 
 namespace Ed.Steamflix.Universal.ViewModels
 {
     public class BroadcastsPageViewModel : IBroadcastsPageViewModel
     {
-        private readonly BroadcastService _broadcastService = DependencyHelper.Get<BroadcastService>();
-        private readonly GameService _playerService = DependencyHelper.Get<GameService>();
+        private readonly BroadcastService _broadcastService = DependencyHelper.Resolve<BroadcastService>();
+        private readonly GameService _playerService = DependencyHelper.Resolve<GameService>();
 
         private int _appId;
         private Game _game;
@@ -54,7 +53,6 @@ namespace Ed.Steamflix.Universal.ViewModels
             {
                 if (_game == null)
                 {
-                    // TODO: Not async, blocks UI
                     _game = _playerService.GetGameInfoAsync(_appId).Result;
                 }
 

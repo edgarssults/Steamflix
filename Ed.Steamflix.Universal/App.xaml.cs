@@ -1,8 +1,8 @@
-﻿using Ed.Steamflix.Common;
+﻿using DryIoc;
+using Ed.Steamflix.Common;
 using Ed.Steamflix.Common.Repositories;
 using Ed.Steamflix.Common.Services;
 using Microsoft.HockeyApp;
-using Ninject;
 using System;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
@@ -27,13 +27,18 @@ namespace Ed.Steamflix.Universal
             this.InitializeComponent();
             this.Suspending += OnSuspending;
 
-            // DI kernel
-            IKernel kernel = new StandardKernel();
-            DependencyHelper.InitNinjectKernel(kernel);
+            // Dependency Injection
+            var container = new Container();
+            DependencyHelper.InitContainer(container);
+
+            // Services
+            container.Register<BroadcastService, BroadcastService>(Reuse.Singleton);
+            container.Register<GameService, GameService>(Reuse.Singleton);
+            container.Register<UserService, UserService>(Reuse.Singleton);
 
             // Repositories
-            kernel.Bind<IApiRepository>().To<ApiRepository>().InSingletonScope();
-            kernel.Bind<ICommunityRepository>().To<CommunityRepository>().InSingletonScope();
+            container.Register<IApiRepository, ApiRepository>(Reuse.Singleton);
+            container.Register<ICommunityRepository, CommunityRepository>(Reuse.Singleton);
 
             // HockeyApp
             HockeyClient.Current.Configure("ba87431fcc8c44d3b3562a9a07e8d58f");

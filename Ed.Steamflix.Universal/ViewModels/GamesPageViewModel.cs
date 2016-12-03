@@ -9,8 +9,8 @@ namespace Ed.Steamflix.Universal.ViewModels
 {
     public class GamesPageViewModel : IGamesPageViewModel
     {
-        private readonly GameService _playerService = DependencyHelper.Get<GameService>();
-        private readonly UserService _steamUser = DependencyHelper.Get<UserService>();
+        private readonly GameService _playerService = DependencyHelper.Resolve<GameService>();
+        private readonly UserService _steamUser = DependencyHelper.Resolve<UserService>();
 
         public GamesPageViewModel() { }
 
@@ -41,7 +41,6 @@ namespace Ed.Steamflix.Universal.ViewModels
                     if (!string.IsNullOrEmpty(profileUrl))
                     {
                         // Have to extract ID from profile URL
-                        // TODO: Not async, blocks UI
                         steamId = _steamUser.GetSteamIdAsync(profileUrl).Result;
 
                         // Save ID

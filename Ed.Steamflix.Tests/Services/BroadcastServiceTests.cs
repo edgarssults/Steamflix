@@ -9,11 +9,20 @@ namespace Ed.Steamflix.Tests.Services
     [TestClass]
     public class BroadcastServiceTests
     {
+        private ICommunityRepository _communityRepository;
+        private ICommunityRepository _testCommunityRepository;
+
+        [TestInitialize]
+        public void Initialize()
+        {
+            _communityRepository = new CommunityRepository();
+            _testCommunityRepository = new TestCommunityRepository();
+        }
+
         [TestMethod]
         public void GetBroadcastsMockSuccess()
         {
-            var communityRepository = new TestCommunityRepository();
-            var service = new BroadcastService(communityRepository);
+            var service = new BroadcastService(_testCommunityRepository);
             var broadcasts = service.GetBroadcastsAsync(292030).Result; // Witcher 3
 
             Assert.AreEqual(10, broadcasts.Count, "Expected a different number of broadcasts.");
@@ -25,8 +34,7 @@ namespace Ed.Steamflix.Tests.Services
         [TestMethod]
         public void GetBroadcastsSuccess()
         {
-            var communityRepository = new CommunityRepository();
-            var service = new BroadcastService(communityRepository);
+            var service = new BroadcastService(_communityRepository);
             var broadcasts = service.GetBroadcastsAsync(570).Result; // Dota 2
 
             Assert.IsTrue(broadcasts.Count > 0, "Expected a different number of broadcasts.");
