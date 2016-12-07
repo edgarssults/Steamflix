@@ -13,6 +13,6 @@ namespace Ed.Steamflix.Common.ViewModels
         /// <summary>
         /// The game the broadcasts page is about.
         /// </summary>
-        Game Game { get; set; }
+        NotifyTaskCompletion<Game> Game { get; }
     }
 }

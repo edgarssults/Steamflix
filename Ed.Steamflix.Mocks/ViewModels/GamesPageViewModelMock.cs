@@ -11,19 +11,16 @@ namespace Ed.Steamflix.Mocks.ViewModels
     {
         private readonly GameService _playerService = new GameService(new TestApiRepository(), new TestCommunityRepository());
 
-        public string SteamId
+        public string GetSteamId()
         {
-            get
-            {
-                return "76561197974081377"; // Me
-            }
+            return "76561197974081377"; // Me
         }
 
         public NotifyTaskCompletion<List<Game>> RecentlyPlayedGames
         {
             get
             {
-                return new NotifyTaskCompletion<List<Game>>(_playerService.GetRecentlyPlayedGamesAsync(SteamId));
+                return new NotifyTaskCompletion<List<Game>>(_playerService.GetRecentlyPlayedGamesAsync(GetSteamId()));
             }
         }
 
@@ -31,7 +28,7 @@ namespace Ed.Steamflix.Mocks.ViewModels
         {
             get
             {
-                return new NotifyTaskCompletion<List<Game>>(_playerService.GetOwnedGamesAsync(SteamId));
+                return new NotifyTaskCompletion<List<Game>>(_playerService.GetOwnedGamesAsync(GetSteamId()));
             }
         }
 

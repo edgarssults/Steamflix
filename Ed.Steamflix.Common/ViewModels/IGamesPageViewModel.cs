@@ -11,11 +11,6 @@ namespace Ed.Steamflix.Common.ViewModels
         bool SteamIdIsAvailable { get; }
 
         /// <summary>
-        /// User's Steam ID.
-        /// </summary>
-        string SteamId { get; }
-
-        /// <summary>
         /// List of recently played games.
         /// </summary>
         NotifyTaskCompletion<List<Game>> RecentlyPlayedGames { get; }
