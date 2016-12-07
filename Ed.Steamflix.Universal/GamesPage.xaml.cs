@@ -2,7 +2,6 @@
 using Ed.Steamflix.Common.ViewModels;
 using Ed.Steamflix.Universal.Extensions;
 using Ed.Steamflix.Universal.ViewModels;
-using System.Linq;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;

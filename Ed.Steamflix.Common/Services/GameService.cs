@@ -1,11 +1,10 @@
-﻿using Newtonsoft.Json;
-using Ed.Steamflix.Common.Models;
-using System.Threading.Tasks;
+﻿using Ed.Steamflix.Common.Models;
 using Ed.Steamflix.Common.Repositories;
-using System.Linq;
+using Newtonsoft.Json;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
-using System;
+using System.Threading.Tasks;
 
 namespace Ed.Steamflix.Common.Services
 {

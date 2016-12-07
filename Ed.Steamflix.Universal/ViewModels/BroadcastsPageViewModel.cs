@@ -9,7 +9,7 @@ namespace Ed.Steamflix.Universal.ViewModels
     public class BroadcastsPageViewModel : IBroadcastsPageViewModel
     {
         private readonly BroadcastService _broadcastService = DependencyHelper.Resolve<BroadcastService>();
-        private readonly GameService _playerService = DependencyHelper.Resolve<GameService>();
+        private readonly GameService _gameService = DependencyHelper.Resolve<GameService>();
 
         private int _appId;
 
@@ -42,7 +42,7 @@ namespace Ed.Steamflix.Universal.ViewModels
         {
             get
             {
-                return new NotifyTaskCompletion<Game>(_playerService.GetGameInfoAsync(_appId));
+                return new NotifyTaskCompletion<Game>(_gameService.GetGameInfoAsync(_appId));
             }
         }
     }

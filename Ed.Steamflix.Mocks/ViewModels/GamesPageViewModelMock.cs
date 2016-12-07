@@ -3,13 +3,12 @@ using Ed.Steamflix.Common.Services;
 using Ed.Steamflix.Common.ViewModels;
 using Ed.Steamflix.Mocks.Repositories;
 using System.Collections.Generic;
-using System;
 
 namespace Ed.Steamflix.Mocks.ViewModels
 {
     public class GamesPageViewModelMock : IGamesPageViewModel
     {
-        private readonly GameService _playerService = new GameService(new TestApiRepository(), new TestCommunityRepository());
+        private readonly GameService _gameService = new GameService(new TestApiRepository(), new TestCommunityRepository());
 
         public string GetSteamId()
         {
@@ -20,7 +19,7 @@ namespace Ed.Steamflix.Mocks.ViewModels
         {
             get
             {
-                return new NotifyTaskCompletion<List<Game>>(_playerService.GetRecentlyPlayedGamesAsync(GetSteamId()));
+                return new NotifyTaskCompletion<List<Game>>(_gameService.GetRecentlyPlayedGamesAsync(GetSteamId()));
             }
         }
 
@@ -28,7 +27,7 @@ namespace Ed.Steamflix.Mocks.ViewModels
         {
             get
             {
-                return new NotifyTaskCompletion<List<Game>>(_playerService.GetOwnedGamesAsync(GetSteamId()));
+                return new NotifyTaskCompletion<List<Game>>(_gameService.GetOwnedGamesAsync(GetSteamId()));
             }
         }
 
@@ -36,7 +35,7 @@ namespace Ed.Steamflix.Mocks.ViewModels
         {
             get
             {
-                return new NotifyTaskCompletion<List<Game>>(_playerService.GetPopularGamesAsync());
+                return new NotifyTaskCompletion<List<Game>>(_gameService.GetPopularGamesAsync());
             }
         }
 

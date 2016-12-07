@@ -3,10 +3,14 @@ using Ed.Steamflix.Common;
 using Ed.Steamflix.Common.Repositories;
 using Ed.Steamflix.Common.Services;
 using Microsoft.HockeyApp;
+using Microsoft.Toolkit.Uwp.Notifications;
 using System;
+using System.Linq;
+using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Storage;
+using Windows.UI.Notifications;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
@@ -49,7 +53,7 @@ namespace Ed.Steamflix.Universal
         /// will be used such as when the application is launched to open a specific file.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected override void OnLaunched(LaunchActivatedEventArgs e)
+        protected async override void OnLaunched(LaunchActivatedEventArgs e)
         {
 
 #if DEBUG
@@ -109,6 +113,105 @@ namespace Ed.Steamflix.Universal
 
             // Ensure the current window is active
             Window.Current.Activate();
+
+            SetupTileImages();
+        }
+
+        /// <summary>
+        /// Sets up game images for tile.
+        /// </summary>
+        private async void SetupTileImages()
+        {
+            var binding = await GenerateImageBinding();
+
+            var content = new TileContent
+            {
+                Visual = new TileVisual
+                {
+                    TileWide = binding
+                }
+            };
+
+            // TODO: Other tile sizes
+
+            // This does not work, tile isn't updated :(
+            TileUpdateManager.CreateTileUpdaterForApplication().Update(new TileNotification(content.GetXml()));
+        }
+
+        /// <summary>
+        /// Gathers popular and recently played game images for tile.
+        /// </summary>
+        /// <returns></returns>
+        private async Task<TileBinding> GenerateImageBinding()
+        {
+            var gameService = DependencyHelper.Resolve<GameService>();
+
+            int max = 12;
+            var content = new TileBindingContentPhotos();
+
+            // Add recently played games
+            var recentGames = await gameService.GetRecentlyPlayedGamesAsync(GetSteamId());
+            if (recentGames != null)
+            {
+                foreach (var game in recentGames.Take(max))
+                {
+                    content.Images.Add(new TileBasicImage { Source = game.FormattedLogoUrl, AlternateText = game.Name });
+                }
+            }
+
+            // Add popular games
+            if (content.Images.Count < max)
+            {
+                var popularGames = await gameService.GetPopularGamesAsync();
+                if (popularGames != null)
+                {
+                    foreach (var game in popularGames)
+                    {
+                        if (content.Images.Count == max)
+                        {
+                            break;
+                        }
+
+                        // Add game if it's not already added by recent games
+                        if (!content.Images.Any(i => i.Source == game.FormattedLogoUrl))
+                        {
+                            content.Images.Add(new TileBasicImage { Source = game.FormattedLogoUrl, AlternateText = game.Name });
+                        }
+                    }
+                }
+            }
+
+            return new TileBinding
+            {
+                Content = content
+            };
+        }
+
+        /// <summary>
+        /// Gets Steam ID from settings.
+        /// </summary>
+        /// <returns></returns>
+        private string GetSteamId()
+        {
+            // TODO: Move to Utils?
+
+            var steamId = (string)ApplicationData.Current.RoamingSettings.Values["SteamId"];
+
+            if (string.IsNullOrEmpty(steamId))
+            {
+                var profileUrl = (string)ApplicationData.Current.RoamingSettings.Values["ProfileUrl"];
+
+                if (!string.IsNullOrEmpty(profileUrl))
+                {
+                    // Have to extract ID from profile URL
+                    steamId = DependencyHelper.Resolve<UserService>().GetSteamIdAsync(profileUrl).Result;
+
+                    // Save ID
+                    ApplicationData.Current.RoamingSettings.Values["SteamId"] = steamId;
+                }
+            }
+
+            return steamId;
         }
 
         /// <summary>
