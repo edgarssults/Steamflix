@@ -17,5 +17,19 @@ namespace Ed.Steamflix.Mocks.Repositories
         {
             return Task.Run(() => _rl.GetString("StatsHtml"));
         }
+
+        public Task<string> GetUserSearchHtmlAsync(string user)
+        {
+            return Task.Run(() => string.Format(_rl.GetString("UserSearchUrlFormat"), user));
+        }
+        public Task<string> FindUsersAsync(string user, string sessionId, string steamCountry)
+        {
+            return Task.Run(() => _rl.GetString("UserSearchResponse"));
+        }
+        
+        public Task<string> GetSteamSetCookiesAsync()
+        {
+            return Task.Run(() => _rl.GetString("SteamCookies"));
+        }
     }
 }

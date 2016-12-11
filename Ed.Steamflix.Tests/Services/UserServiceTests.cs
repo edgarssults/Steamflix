@@ -20,7 +20,8 @@ namespace Ed.Steamflix.Tests.Services
         public void GetFriendListSuccess()
         {
             var apiRepository = new ApiRepository();
-            var service = new UserService(apiRepository);
+            var communityRepository = new CommunityRepository();
+            var service = new UserService(apiRepository, communityRepository);
             var model = service.GetFriendListAsync(_steamId).Result;
 
             Assert.AreNotEqual(default(FriendsList), model, "Deserialized object is empty.");
@@ -31,7 +32,8 @@ namespace Ed.Steamflix.Tests.Services
         public void GetFriendListMockSuccess()
         {
             var apiRepository = new TestApiRepository();
-            var service = new UserService(apiRepository);
+            var communityRepository = new CommunityRepository();
+            var service = new UserService(apiRepository, communityRepository);
             var model = service.GetFriendListAsync(_steamId).Result;
 
             Assert.AreNotEqual(default(FriendsList), model, "Deserialized object is empty.");
@@ -44,7 +46,8 @@ namespace Ed.Steamflix.Tests.Services
         public void GetPlayerSummariesSuccess()
         {
             var apiRepository = new ApiRepository();
-            var service = new UserService(apiRepository);
+            var communityRepository = new CommunityRepository();
+            var service = new UserService(apiRepository, communityRepository);
             var model = service.GetPlayerSummariesAsync(new List<string> { _steamId }).Result;
 
             Assert.AreNotEqual(default(PlayerSummaries), model, "Deserialized object is empty.");
@@ -55,7 +58,8 @@ namespace Ed.Steamflix.Tests.Services
         public void GetPlayerSummariesMockSuccess()
         {
             var apiRepository = new TestApiRepository();
-            var service = new UserService(apiRepository);
+            var communityRepository = new CommunityRepository();
+            var service = new UserService(apiRepository, communityRepository);
             var model = service.GetPlayerSummariesAsync(new List<string> { _steamId }).Result;
 
             Assert.AreNotEqual(default(PlayerSummaries), model, "Deserialized object is empty.");
@@ -68,7 +72,8 @@ namespace Ed.Steamflix.Tests.Services
         public void ResolveVanityUrlSuccess()
         {
             var apiRepository = new ApiRepository();
-            var service = new UserService(apiRepository);
+            var communityRepository = new CommunityRepository();
+            var service = new UserService(apiRepository, communityRepository);
             var model = service.ResolveVanityUrlAsync(_vanityUrl).Result;
 
             Assert.AreNotEqual(default(UserData), model, "Deserialized object is empty.");
@@ -79,7 +84,8 @@ namespace Ed.Steamflix.Tests.Services
         public void ResolveVanityUrlMockSuccess()
         {
             var apiRepository = new TestApiRepository();
-            var service = new UserService(apiRepository);
+            var communityRepository = new CommunityRepository();
+            var service = new UserService(apiRepository, communityRepository);
             var model = service.ResolveVanityUrlAsync(_vanityUrl).Result;
 
             Assert.AreNotEqual(default(UserData), model, "Deserialized object is empty.");

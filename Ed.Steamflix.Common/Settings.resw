@@ -126,10 +126,22 @@
   <data name="BroadcastUrlFormat" xml:space="preserve">
     <value>http://steamcommunity.com/app/{0}/broadcasts/</value>
   </data>
+  <data name="CountryCookie" xml:space="preserve">
+    <value>steamCountry</value>
+  </data>
   <data name="ImageUrlFormat" xml:space="preserve">
     <value>http://media.steampowered.com/steamcommunity/public/images/apps/{0}/{1}.jpg</value>
   </data>
+  <data name="SessionIdCookie" xml:space="preserve">
+    <value>sessionid</value>
+  </data>
   <data name="StatsUrl" xml:space="preserve">
     <value>http://store.steampowered.com/stats/</value>
+  </data>
+  <data name="SteamCommunityUrl" xml:space="preserve">
+    <value>http://steamcommunity.com</value>
+  </data>
+  <data name="UserSearchUrlFormat" xml:space="preserve">
+    <value>http://steamcommunity.com/search/SearchCommunityAjax?text={0}&amp;filter=users&amp;sessionid={1}&amp;steamid_user=false</value>
   </data>
 </root>
