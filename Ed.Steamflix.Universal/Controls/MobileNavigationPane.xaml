@@ -20,5 +20,18 @@
                 <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE115;" FontSize="20" />
             </AppBarButton.Icon>
         </AppBarButton>
+        
+        <CommandBar.SecondaryCommands>
+            <AppBarButton x:Name="Rate" Tapped="Rate_Tapped" Label="Rate">
+                <AppBarButton.Icon>
+                    <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE76E;" FontSize="20" />
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton x:Name="Feedback" Tapped="Feedback_Tapped" Label="Feedback" Visibility="Collapsed">
+                <AppBarButton.Icon>
+                    <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE939;" FontSize="20" />
+                </AppBarButton.Icon>
+            </AppBarButton>
+        </CommandBar.SecondaryCommands>
     </CommandBar>
 </UserControl>

@@ -8,7 +8,7 @@ namespace Ed.Steamflix.Common.Models
     /// </summary>
     public class Game
     {
-        private readonly ResourceLoader _settings = new ResourceLoader("Ed.Steamflix.Common/Settings");
+        private readonly ResourceLoader _settings = ResourceLoader.GetForViewIndependentUse("Ed.Steamflix.Common/Settings");
 
         /// <summary>
         /// An integer containing the program's ID.

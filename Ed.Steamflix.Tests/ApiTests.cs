@@ -1,5 +1,4 @@
 ﻿using Ed.Steamflix.Common.Repositories;
-using Ed.Steamflix.Common.Services;
 using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 
 namespace Ed.Steamflix.Tests

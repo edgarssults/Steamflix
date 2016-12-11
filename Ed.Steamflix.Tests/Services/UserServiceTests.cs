@@ -15,13 +15,22 @@ namespace Ed.Steamflix.Tests.Services
     {
         private readonly string _steamId = "76561197974081377"; // Me
         private readonly string _vanityUrl = "edgarssults";
+        private IApiRepository _apiRepository;
+        private IApiRepository _testApiRepository;
+        private ICommunityRepository _communityRepository;
+
+        [TestInitialize]
+        public void Initialize()
+        {
+            _apiRepository = new ApiRepository();
+            _testApiRepository = new TestApiRepository();
+            _communityRepository = new CommunityRepository();
+        }
 
         [TestMethod]
         public void GetFriendListSuccess()
         {
-            var apiRepository = new ApiRepository();
-            var communityRepository = new CommunityRepository();
-            var service = new UserService(apiRepository, communityRepository);
+            var service = new UserService(_apiRepository, _communityRepository);
             var model = service.GetFriendListAsync(_steamId).Result;
 
             Assert.AreNotEqual(default(FriendsList), model, "Deserialized object is empty.");
@@ -31,9 +40,7 @@ namespace Ed.Steamflix.Tests.Services
         [TestMethod]
         public void GetFriendListMockSuccess()
         {
-            var apiRepository = new TestApiRepository();
-            var communityRepository = new CommunityRepository();
-            var service = new UserService(apiRepository, communityRepository);
+            var service = new UserService(_testApiRepository, _communityRepository);
             var model = service.GetFriendListAsync(_steamId).Result;
 
             Assert.AreNotEqual(default(FriendsList), model, "Deserialized object is empty.");
@@ -45,9 +52,7 @@ namespace Ed.Steamflix.Tests.Services
         [TestMethod]
         public void GetPlayerSummariesSuccess()
         {
-            var apiRepository = new ApiRepository();
-            var communityRepository = new CommunityRepository();
-            var service = new UserService(apiRepository, communityRepository);
+            var service = new UserService(_apiRepository, _communityRepository);
             var model = service.GetPlayerSummariesAsync(new List<string> { _steamId }).Result;
 
             Assert.AreNotEqual(default(PlayerSummaries), model, "Deserialized object is empty.");
@@ -57,9 +62,7 @@ namespace Ed.Steamflix.Tests.Services
         [TestMethod]
         public void GetPlayerSummariesMockSuccess()
         {
-            var apiRepository = new TestApiRepository();
-            var communityRepository = new CommunityRepository();
-            var service = new UserService(apiRepository, communityRepository);
+            var service = new UserService(_testApiRepository, _communityRepository);
             var model = service.GetPlayerSummariesAsync(new List<string> { _steamId }).Result;
 
             Assert.AreNotEqual(default(PlayerSummaries), model, "Deserialized object is empty.");
@@ -71,9 +74,7 @@ namespace Ed.Steamflix.Tests.Services
         [TestMethod]
         public void ResolveVanityUrlSuccess()
         {
-            var apiRepository = new ApiRepository();
-            var communityRepository = new CommunityRepository();
-            var service = new UserService(apiRepository, communityRepository);
+            var service = new UserService(_apiRepository, _communityRepository);
             var model = service.ResolveVanityUrlAsync(_vanityUrl).Result;
 
             Assert.AreNotEqual(default(UserData), model, "Deserialized object is empty.");
@@ -83,9 +84,7 @@ namespace Ed.Steamflix.Tests.Services
         [TestMethod]
         public void ResolveVanityUrlMockSuccess()
         {
-            var apiRepository = new TestApiRepository();
-            var communityRepository = new CommunityRepository();
-            var service = new UserService(apiRepository, communityRepository);
+            var service = new UserService(_testApiRepository, _communityRepository);
             var model = service.ResolveVanityUrlAsync(_vanityUrl).Result;
 
             Assert.AreNotEqual(default(UserData), model, "Deserialized object is empty.");

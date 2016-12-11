@@ -25,9 +25,19 @@
                     </StackPanel>
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal" Grid.Row="1">
-                    <Button x:Name="SettingsButton" FontFamily="Segoe MDL2 Assets" FontSize="20" Content="&#xE115;" Background="Transparent" Width="48" Height="48" Click="NavigateToSettings" />
-                    <TextBlock Padding="10 0 0 0" Text="Settings" FontSize="18" VerticalAlignment="Center" />
+                <StackPanel Grid.Row="1">
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="RateButton" FontFamily="Segoe MDL2 Assets" FontSize="20" Content="&#xE76E;" Background="Transparent" Width="48" Height="48" Click="RateButton_Click"/>
+                        <TextBlock Padding="10 0 0 0" Text="Rate" FontSize="18" VerticalAlignment="Center" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Visibility="Collapsed" x:Name="FeedbackButtonWrapper">
+                        <Button x:Name="FeedbackButton" FontFamily="Segoe MDL2 Assets" FontSize="20" Content="&#xE939;" Background="Transparent" Width="48" Height="48" Click="FeedbackButton_Click"/>
+                        <TextBlock Padding="10 0 0 0" Text="Feedback" FontSize="18" VerticalAlignment="Center" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="SettingsButton" FontFamily="Segoe MDL2 Assets" FontSize="20" Content="&#xE115;" Background="Transparent" Width="48" Height="48" Click="NavigateToSettings" />
+                        <TextBlock Padding="10 0 0 0" Text="Settings" FontSize="18" VerticalAlignment="Center" />
+                    </StackPanel>
                 </StackPanel>
             </Grid>
         </SplitView.Pane>

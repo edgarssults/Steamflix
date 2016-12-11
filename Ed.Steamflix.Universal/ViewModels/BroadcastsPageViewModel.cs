@@ -3,27 +3,17 @@ using Ed.Steamflix.Common.Models;
 using Ed.Steamflix.Common.Services;
 using Ed.Steamflix.Common.ViewModels;
 using System.Collections.Generic;
-using Windows.Storage;
 
 namespace Ed.Steamflix.Universal.ViewModels
 {
     public class BroadcastsPageViewModel : IBroadcastsPageViewModel
     {
-        private readonly BroadcastService _broadcastService = DependencyHelper.Get<BroadcastService>();
-        private readonly GameService _playerService = DependencyHelper.Get<GameService>();
+        private readonly BroadcastService _broadcastService = DependencyHelper.Resolve<BroadcastService>();
+        private readonly GameService _playerService = DependencyHelper.Resolve<GameService>();
 
         private int _appId;
-        private Game _game;
 
-        /// <summary>
-        /// Constructor when a game object is available.
-        /// </summary>
-        /// <param name="game">Game object.</param>
-        public BroadcastsPageViewModel(Game game)
-        {
-            _game = game;
-            _appId = game.AppId;
-        }
+        public BroadcastsPageViewModel() { }
 
         /// <summary>
         /// Constructor when only an app identifier is available.
@@ -41,28 +31,18 @@ namespace Ed.Steamflix.Universal.ViewModels
         {
             get
             {
-                return new NotifyTaskCompletion<List<Broadcast>>(_broadcastService.GetBroadcastsAsync(Game.AppId));
+                return new NotifyTaskCompletion<List<Broadcast>>(_broadcastService.GetBroadcastsAsync(_appId));
             }
         }
 
         /// <summary>
         /// The game the broadcasts page is about.
         /// </summary>
-        public Game Game
+        public NotifyTaskCompletion<Game> Game
         {
             get
             {
-                if (_game == null)
-                {
-                    // TODO: Not async, blocks UI
-                    _game = _playerService.GetGameInfoAsync(_appId).Result;
-                }
-
-                return _game;
-            }
-            set
-            {
-                _game = value;
+                return new NotifyTaskCompletion<Game>(_playerService.GetGameInfoAsync(_appId));
             }
         }
     }
