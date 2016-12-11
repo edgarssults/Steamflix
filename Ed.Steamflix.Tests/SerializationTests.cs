@@ -1,7 +1,6 @@
 ﻿using Ed.Steamflix.Common.Models;
 using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 using Newtonsoft.Json;
-using Windows.ApplicationModel.Resources;
 
 namespace Ed.Steamflix.Tests
 {
@@ -11,12 +10,10 @@ namespace Ed.Steamflix.Tests
     [TestClass]
     public class SerializationTests
     {
-        private readonly ResourceLoader _rl = ResourceLoader.GetForViewIndependentUse("Ed.Steamflix.Mocks/Resources");
-
         [TestMethod]
         public void GetNewsForAppResponseDeserializeSuccess()
         {
-            var json = _rl.GetString("GetNewsForAppResponseJson");
+            var json = Mocks.Resources.GetNewsForAppResponseJson;
             var model = JsonConvert.DeserializeObject<GetNewsForAppResponse>(json);
 
             Assert.AreNotEqual(default(GetNewsForAppResponse), model, "Deserialized response is empty.");

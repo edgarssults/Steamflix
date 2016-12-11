@@ -1,12 +1,9 @@
 ﻿using DryIoc;
-using Ed.Steamflix.Common;
 using Ed.Steamflix.Common.Repositories;
 using Ed.Steamflix.Common.Services;
 using Microsoft.HockeyApp;
-using Microsoft.Toolkit.Uwp.Notifications;
 using System;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Collections.Generic;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Storage;
@@ -18,7 +15,7 @@ using Windows.UI.Xaml.Navigation;
 namespace Ed.Steamflix.Universal
 {
     /// <summary>
-    /// Provides application-specific behavior to supplement the default Application class.
+    /// Provides application-specific behaviour to supplement the default Application class.
     /// </summary>
     sealed partial class App : Application
     {
@@ -114,77 +111,29 @@ namespace Ed.Steamflix.Universal
             // Ensure the current window is active
             Window.Current.Activate();
 
-            SetupTileImages();
+            // Tile
+            SetupPeriotidcTileUpdate();
         }
 
         /// <summary>
-        /// Sets up game images for tile.
+        /// Sets up a periodic tile update that shows 5 recently played and popular game images from the Steamflix API.
         /// </summary>
-        private async void SetupTileImages()
+        private void SetupPeriotidcTileUpdate()
         {
-            var binding = await GenerateImageBinding();
-
-            var content = new TileContent
+            var apiUrl = "http://steamflix.azurewebsites.net/api/tile";
+            var steamId = GetSteamId();
+            var uris = new List<Uri>
             {
-                Visual = new TileVisual
-                {
-                    TileWide = binding
-                }
+                new Uri($"{apiUrl}/0/{steamId}"),
+                new Uri($"{apiUrl}/1/{steamId}"),
+                new Uri($"{apiUrl}/2/{steamId}"),
+                new Uri($"{apiUrl}/3/{steamId}"),
+                new Uri($"{apiUrl}/4/{steamId}")
             };
 
-            // TODO: Other tile sizes
-
-            // This does not work, tile isn't updated :(
-            TileUpdateManager.CreateTileUpdaterForApplication().Update(new TileNotification(content.GetXml()));
-        }
-
-        /// <summary>
-        /// Gathers popular and recently played game images for tile.
-        /// </summary>
-        /// <returns></returns>
-        private async Task<TileBinding> GenerateImageBinding()
-        {
-            var gameService = DependencyHelper.Resolve<GameService>();
-
-            int max = 12;
-            var content = new TileBindingContentPhotos();
-
-            // Add recently played games
-            var recentGames = await gameService.GetRecentlyPlayedGamesAsync(GetSteamId());
-            if (recentGames != null)
-            {
-                foreach (var game in recentGames.Take(max))
-                {
-                    content.Images.Add(new TileBasicImage { Source = game.FormattedLogoUrl, AlternateText = game.Name });
-                }
-            }
-
-            // Add popular games
-            if (content.Images.Count < max)
-            {
-                var popularGames = await gameService.GetPopularGamesAsync();
-                if (popularGames != null)
-                {
-                    foreach (var game in popularGames)
-                    {
-                        if (content.Images.Count == max)
-                        {
-                            break;
-                        }
-
-                        // Add game if it's not already added by recent games
-                        if (!content.Images.Any(i => i.Source == game.FormattedLogoUrl))
-                        {
-                            content.Images.Add(new TileBasicImage { Source = game.FormattedLogoUrl, AlternateText = game.Name });
-                        }
-                    }
-                }
-            }
-
-            return new TileBinding
-            {
-                Content = content
-            };
+            var tileUpdateManager = TileUpdateManager.CreateTileUpdaterForApplication();
+            tileUpdateManager.EnableNotificationQueue(true);
+            tileUpdateManager.StartPeriodicUpdateBatch(uris, PeriodicUpdateRecurrence.TwelveHours);
         }
 
         /// <summary>

@@ -41,14 +41,14 @@ namespace Ed.Steamflix.Common.Services
                 throw new ArgumentNullException(nameof(steamId));
             }
 
-            var call = _apiRepository.ApiCallAsync(
+            var response = await _apiRepository.ApiCallAsync(
                 _servicename,
                 "GetFriendList",
                 "v0001",
                 $"steamid={steamId}&relationship=friend"
             ).ConfigureAwait(false);
 
-            var model = JsonConvert.DeserializeObject<GetFriendListResponse>(await call);
+            var model = JsonConvert.DeserializeObject<GetFriendListResponse>(response);
 
             return model.FriendsList;
         }
@@ -68,14 +68,14 @@ namespace Ed.Steamflix.Common.Services
                 throw new ArgumentNullException(nameof(steamIds));
             }
 
-            var call = _apiRepository.ApiCallAsync(
+            var response = await _apiRepository.ApiCallAsync(
                 _servicename,
                 "GetPlayerSummaries",
                 "v0002",
                 $"steamids={string.Join(",", steamIds)}"
             ).ConfigureAwait(false);
 
-            var model = JsonConvert.DeserializeObject<GetPlayerSummariesResponse>(await call);
+            var model = JsonConvert.DeserializeObject<GetPlayerSummariesResponse>(response);
 
             return model.PlayerSummaries;
         }
@@ -98,14 +98,14 @@ namespace Ed.Steamflix.Common.Services
                 throw new ArgumentNullException(nameof(vanityUrlName));
             }
 
-            var call = _apiRepository.ApiCallAsync(
+            var response = await _apiRepository.ApiCallAsync(
                 _servicename,
                 "ResolveVanityUrl",
                 "v0001",
                 $"vanityurl={vanityUrlName}"
             ).ConfigureAwait(false);
 
-            var model = JsonConvert.DeserializeObject<ResolveVanityUrlResponse>(await call);
+            var model = JsonConvert.DeserializeObject<ResolveVanityUrlResponse>(response);
 
             return model.UserData;
         }

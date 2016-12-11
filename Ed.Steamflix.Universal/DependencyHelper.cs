@@ -1,7 +1,7 @@
 ﻿using DryIoc;
 using System;
 
-namespace Ed.Steamflix.Common
+namespace Ed.Steamflix.Universal
 {
     public static class DependencyHelper
     {

@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "exports": {
+    "Ed.Steamflix.Common/1.0.0": {
+      "type": "project",
+      "framework": ".NETStandard,Version=v1.4",
+      "compile": {
+        "bin/Debug/Ed.Steamflix.Common.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/Ed.Steamflix.Common.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/Ed.Steamflix.Common.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    }
+  }
+}
