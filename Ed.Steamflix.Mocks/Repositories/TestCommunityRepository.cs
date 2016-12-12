@@ -1,5 +1,8 @@
 ﻿using Ed.Steamflix.Common.Repositories;
+using System.Collections.Generic;
+using System.Net;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace Ed.Steamflix.Mocks.Repositories
 {
@@ -17,16 +20,20 @@ namespace Ed.Steamflix.Mocks.Repositories
 
         public Task<string> GetUserSearchHtmlAsync(string user)
         {
-            return Task.Run(() => string.Format(_rl.GetString("UserSearchUrlFormat"), user));
+            return Task.Run(() => string.Format(Resources.ResourceManager.GetString("UserSearchUrlFormat"), user));
         }
-        public Task<string> FindUsersAsync(string user, string sessionId, string steamCountry)
+
+        public Task<string> GetUsersHtmlAsync(string user, string sessionId, string steamCountry)
         {
-            return Task.Run(() => _rl.GetString("UserSearchResponse"));
+            return Task.Run(() => Resources.ResourceManager.GetString("UserSearchResponse"));
         }
         
-        public Task<string> GetSteamSetCookiesAsync()
+        public Task<List<Cookie>> GetSteamSetCookiesAsync()
         {
-            return Task.Run(() => _rl.GetString("SteamCookies"));
+            var uri = new System.Uri("http://steamcommunity.com");
+            var cookies = new CookieContainer();
+            cookies.SetCookies(uri, Resources.SteamCookies);
+            return Task.Run(() => cookies.GetCookies(uri).Cast<Cookie>().ToList());
         }
     }
 }

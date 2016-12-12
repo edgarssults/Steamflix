@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -11,7 +13,7 @@ namespace Ed.Steamflix.Common.Repositories
         /// Retrieves the broadcasts page HTML for a game asynchronously.
         /// </summary>
         /// <param name="appId">Application identifier.</param>
-        /// <returns></returns>
+        /// <returns>HTML string.</returns>
         public async Task<string> GetBroadcastHtmlAsync(int appId)
         {
             var broadcastUrl = string.Format(Settings.BroadcastUrlFormat, appId);
@@ -25,7 +27,7 @@ namespace Ed.Steamflix.Common.Repositories
         /// <summary>
         /// Retrieves the Steam stats page HTML asynchronously.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>HTML string.</returns>
         public async Task<string> GetStatsHtmlAsync()
         {
             using (var client = new HttpClient())
@@ -35,36 +37,48 @@ namespace Ed.Steamflix.Common.Repositories
         }
 
         /// <summary>
-        /// Retrieves the steam community user search results page asynchonously.
+        /// Retrieves the Steam community user search results page HTML asynchronously.
         /// </summary>
-        /// <param name="user">Username to search for</param>
-        /// <param name="sessionId">Session id cookie</param>
-        /// <param name="steamCountry">Steam country cookie</param>
-        /// <returns>The response body</returns>
-        public async Task<string> FindUsersAsync(string user, string sessionId, string steamCountry)
+        /// <param name="user">Username to search for.</param>
+        /// <param name="sessionId">Session ID value from cookie.</param>
+        /// <param name="steamCountry">Steam country value from cookie.</param>
+        /// <returns>HTML string.</returns>
+        public async Task<string> GetUsersHtmlAsync(string user, string sessionId, string steamCountry)
         {
-            var userSearchUrl = string.Format(_settings.GetString("UserSearchUrlFormat"), user, sessionId);
-            var steamCommunityUrl = _settings.GetString("SteamCommunityUrl");
+            var userSearchUrl = string.Format(Settings.UserSearchUrlFormat, user, sessionId);
+            var steamCommunityUrl = Settings.SteamCommunityUrl;
 
             var cookieContainer = new CookieContainer();
-            using (var handler = new HttpClientHandler() { CookieContainer = cookieContainer })
-            using (var client = new HttpClient(handler))
+            using (var handler = new HttpClientHandler())
             {
-                cookieContainer.Add(new Uri(steamCommunityUrl), new Cookie(_settings.GetString("SessionCookie"), sessionId));
-                cookieContainer.Add(new Uri(steamCommunityUrl), new Cookie(_settings.GetString("CountryCookie"), steamCountry));
-                return await client.GetStringAsync(new Uri(userSearchUrl)).ConfigureAwait(false);
+                handler.CookieContainer = cookieContainer;
+
+                using (var client = new HttpClient(handler))
+                {
+                    cookieContainer.Add(new Uri(steamCommunityUrl), new Cookie(Settings.SessionIdCookie, sessionId));
+                    cookieContainer.Add(new Uri(steamCommunityUrl), new Cookie(Settings.CountryCookie, steamCountry));
+                    return await client.GetStringAsync(new Uri(userSearchUrl)).ConfigureAwait(false);
+                }
             }
         }
 
         /// <summary>
-        /// Gets cookies set by steamcommunity.com
+        /// Gets cookies set by steamcommunity.com.
         /// </summary>
-        /// <returns>String of set cookies</returns>
-        public async Task<string> GetSteamSetCookiesAsync()
+        /// <returns>List of cookies.</returns>
+        public async Task<List<Cookie>> GetSteamSetCookiesAsync()
         {
-            var request = HttpWebRequest.Create(_settings.GetString("SteamCommunityUrl")) as HttpWebRequest;
-            var response = await request.GetResponseAsync() as HttpWebResponse;
-            return response.Headers[HttpResponseHeader.SetCookie];
+            var cookieContainer = new CookieContainer();
+            using (var handler = new HttpClientHandler())
+            {
+                handler.CookieContainer = cookieContainer;
+
+                using (var client = new HttpClient(handler))
+                {
+                    var response = await client.GetAsync(Settings.SteamCommunityUrl).ConfigureAwait(false);
+                    return cookieContainer.GetCookies(new Uri(Settings.SteamCommunityUrl)).Cast<Cookie>().ToList();
+                }
+            }
         }
     }
 }

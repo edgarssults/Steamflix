@@ -62,15 +62,6 @@ namespace Ed.Steamflix.Common {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 8FAC8288FB26E59C1468DAD0DFED2683.
-        /// </summary>
-        internal static string ApiKey {
-            get {
-                return ResourceManager.GetString("ApiKey", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to http://api.steampowered.com.
         /// </summary>
         internal static string ApiUrl {
@@ -89,6 +80,15 @@ namespace Ed.Steamflix.Common {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to steamCountry.
+        /// </summary>
+        internal static string CountryCookie {
+            get {
+                return ResourceManager.GetString("CountryCookie", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to http://media.steampowered.com/steamcommunity/public/images/apps/{0}/{1}.jpg.
         /// </summary>
         internal static string ImageUrlFormat {
@@ -98,11 +98,38 @@ namespace Ed.Steamflix.Common {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to sessionid.
+        /// </summary>
+        internal static string SessionIdCookie {
+            get {
+                return ResourceManager.GetString("SessionIdCookie", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to http://store.steampowered.com/stats/.
         /// </summary>
         internal static string StatsUrl {
             get {
                 return ResourceManager.GetString("StatsUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to http://steamcommunity.com.
+        /// </summary>
+        internal static string SteamCommunityUrl {
+            get {
+                return ResourceManager.GetString("SteamCommunityUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to http://steamcommunity.com/search/SearchCommunityAjax?text={0}&amp;filter=users&amp;sessionid={1}&amp;steamid_user=false.
+        /// </summary>
+        internal static string UserSearchUrlFormat {
+            get {
+                return ResourceManager.GetString("UserSearchUrlFormat", resourceCulture);
             }
         }
     }

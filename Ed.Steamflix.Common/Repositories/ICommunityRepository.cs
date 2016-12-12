@@ -1,4 +1,6 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Net;
+using System.Threading.Tasks;
 
 namespace Ed.Steamflix.Common.Repositories
 {
@@ -14,22 +16,22 @@ namespace Ed.Steamflix.Common.Repositories
         /// <summary>
         /// Retrieves the Steam stats page HTML asynchronously.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>HTML string.</returns>
         Task<string> GetStatsHtmlAsync();
 
         /// <summary>
-        /// Retrieves the steam community user search results page asynchonously.
+        /// Retrieves the Steam community user search results page HTML asynchronously.
         /// </summary>
-        /// <param name="user">Username to search for</param>
-        /// <param name="sessionId">Session id cookie</param>
-        /// <param name="steamCountry">Steam country cookie</param>
-        /// <returns>The response body</returns>
-        Task<string> FindUsersAsync(string user, string sessionId, string steamCountry);
+        /// <param name="user">Username to search for.</param>
+        /// <param name="sessionId">Session ID value from cookie.</param>
+        /// <param name="steamCountry">Steam country value from cookie.</param>
+        /// <returns>HTML string.</returns>
+        Task<string> GetUsersHtmlAsync(string user, string sessionId, string steamCountry);
 
         /// <summary>
-        /// Gets cookies set by steamcommunity.com
+        /// Gets cookies set by steamcommunity.com.
         /// </summary>
-        /// <returns>String of set cookies</returns>
-        Task<string> GetSteamSetCookiesAsync();
+        /// <returns>List of cookies.</returns>
+        Task<List<Cookie>> GetSteamSetCookiesAsync();
     }
 }

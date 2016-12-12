@@ -262,5 +262,23 @@ namespace Ed.Steamflix.Mocks {
                 return ResourceManager.GetString("StatsHtml", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to sessionid=bfd5e0e9eb42560742234302; path=/,steamCountry=LV%7C6e52c8252a5042e90dec8a1634d40ebd; path=/.
+        /// </summary>
+        public static string SteamCookies {
+            get {
+                return ResourceManager.GetString("SteamCookies", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {&quot;success&quot;:1,&quot;search_text&quot;:&quot;eadgar&quot;,&quot;search_filter&quot;:&quot;users&quot;,&quot;search_page&quot;:1,&quot;html&quot;:&quot;\t\t&lt;div style=\&quot;float: right; padding-bottom: 2px\&quot;&gt;\r\n\t\t\t\t\t\tShowing 1 - 15 of 15\t\t\t&lt;\/div&gt;\r\n\t&lt;div style=\&quot;clear: both\&quot;&gt;&lt;\/div&gt;\r\n\t\t\t\t\t\t&lt;div class=\&quot;search_row\&quot;&gt;\r\n\t&lt;div class=\&quot;search_result_friend\&quot;&gt;\r\n\t\t\t&lt;\/div&gt;\r\n\t&lt;div class=\&quot;mediumHolder_default\&quot; data-miniprofile=\&quot;13815649\&quot; style=\&quot;float:left;\&quot;&gt;&lt;div class=\&quot;avatarMedium\&quot;&gt;&lt;a href=\&quot;http:\/\/steamcommunity.com\/id\/edgarssults\&quot;&gt;&lt;img s [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string UserSearchResponse {
+            get {
+                return ResourceManager.GetString("UserSearchResponse", resourceCulture);
+            }
+        }
     }
 }

@@ -244,3 +244,4 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 /Ed.Steamflix.Universal/Assets/Thumbs.db
+/Ed.Steamflix.Common/apikey.txt
