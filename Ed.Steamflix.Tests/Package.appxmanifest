@@ -5,11 +5,11 @@
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
   IgnorableNamespaces="uap mp">
 
-  <Identity Name="398a92b0-7778-4806-9526-be844ebddac7"
+  <Identity Name="7d172d63-35e1-437f-bdf7-5ad186b8fac6"
             Publisher="CN=Edgar"
             Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="398a92b0-7778-4806-9526-be844ebddac7" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="7d172d63-35e1-437f-bdf7-5ad186b8fac6" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>Ed.Steamflix.Tests</DisplayName>

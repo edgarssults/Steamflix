@@ -113,6 +113,7 @@
     </Compile>
     <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
     <Compile Include="Converters\NotVisibleWhenZeroConverter.cs" />
+    <Compile Include="DependencyHelper.cs" />
     <Compile Include="Extensions\CommandBarExtensions.cs" />
     <Compile Include="Extensions\DependencyObjectExtensions.cs" />
     <Compile Include="Extensions\PageExtensions.cs" />
@@ -236,16 +237,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Ed.Steamflix.Common\Ed.Steamflix.Common.csproj">
-      <Project>{75eafce8-0959-4bcb-9632-4f5d424b7fcb}</Project>
-      <Name>Ed.Steamflix.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Ed.Steamflix.Mocks\Ed.Steamflix.Mocks.csproj">
-      <Project>{441a8c60-11d4-4e02-95c9-e8341e0ebb95}</Project>
-      <Name>Ed.Steamflix.Mocks</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="DeviceFamily-Desktop\" />
   </ItemGroup>
   <ItemGroup>
@@ -258,6 +249,16 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ed.Steamflix.Common\Ed.Steamflix.Common.csproj">
+      <Project>{d1d1b26c-2fdd-4bf6-92b4-36b6e1db8fa4}</Project>
+      <Name>Ed.Steamflix.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ed.Steamflix.Mocks\Ed.Steamflix.Mocks.csproj">
+      <Project>{6134d286-0ea7-4e8c-9361-d4ed331b244b}</Project>
+      <Name>Ed.Steamflix.Mocks</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

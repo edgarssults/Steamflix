@@ -1,12 +1,13 @@
 ﻿using DryIoc;
-using Ed.Steamflix.Common;
 using Ed.Steamflix.Common.Repositories;
 using Ed.Steamflix.Common.Services;
 using Microsoft.HockeyApp;
 using System;
+using System.Collections.Generic;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Storage;
+using Windows.UI.Notifications;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
@@ -14,7 +15,7 @@ using Windows.UI.Xaml.Navigation;
 namespace Ed.Steamflix.Universal
 {
     /// <summary>
-    /// Provides application-specific behavior to supplement the default Application class.
+    /// Provides application-specific behaviour to supplement the default Application class.
     /// </summary>
     sealed partial class App : Application
     {
@@ -49,7 +50,7 @@ namespace Ed.Steamflix.Universal
         /// will be used such as when the application is launched to open a specific file.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected override void OnLaunched(LaunchActivatedEventArgs e)
+        protected async override void OnLaunched(LaunchActivatedEventArgs e)
         {
 
 #if DEBUG
@@ -109,6 +110,57 @@ namespace Ed.Steamflix.Universal
 
             // Ensure the current window is active
             Window.Current.Activate();
+
+            // Tile
+            SetupPeriotidcTileUpdate();
+        }
+
+        /// <summary>
+        /// Sets up a periodic tile update that shows 5 recently played and popular game images from the Steamflix API.
+        /// </summary>
+        private void SetupPeriotidcTileUpdate()
+        {
+            var apiUrl = "http://steamflix.azurewebsites.net/api/tile";
+            var steamId = GetSteamId();
+            var uris = new List<Uri>
+            {
+                new Uri($"{apiUrl}/0/{steamId}"),
+                new Uri($"{apiUrl}/1/{steamId}"),
+                new Uri($"{apiUrl}/2/{steamId}"),
+                new Uri($"{apiUrl}/3/{steamId}"),
+                new Uri($"{apiUrl}/4/{steamId}")
+            };
+
+            var tileUpdateManager = TileUpdateManager.CreateTileUpdaterForApplication();
+            tileUpdateManager.EnableNotificationQueue(true);
+            tileUpdateManager.StartPeriodicUpdateBatch(uris, PeriodicUpdateRecurrence.TwelveHours);
+        }
+
+        /// <summary>
+        /// Gets Steam ID from settings.
+        /// </summary>
+        /// <returns></returns>
+        private string GetSteamId()
+        {
+            // TODO: Move to Utils?
+
+            var steamId = (string)ApplicationData.Current.RoamingSettings.Values["SteamId"];
+
+            if (string.IsNullOrEmpty(steamId))
+            {
+                var profileUrl = (string)ApplicationData.Current.RoamingSettings.Values["ProfileUrl"];
+
+                if (!string.IsNullOrEmpty(profileUrl))
+                {
+                    // Have to extract ID from profile URL
+                    steamId = DependencyHelper.Resolve<UserService>().GetSteamIdAsync(profileUrl).Result;
+
+                    // Save ID
+                    ApplicationData.Current.RoamingSettings.Values["SteamId"] = steamId;
+                }
+            }
+
+            return steamId;
         }
 
         /// <summary>

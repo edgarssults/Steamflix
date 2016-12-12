@@ -3,14 +3,13 @@ using Ed.Steamflix.Common.Models;
 using Ed.Steamflix.Common.Services;
 using Ed.Steamflix.Common.ViewModels;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using Windows.Storage;
 
 namespace Ed.Steamflix.Universal.ViewModels
 {
     public class GamesPageViewModel : IGamesPageViewModel
     {
-        private readonly GameService _playerService = DependencyHelper.Resolve<GameService>();
+        private readonly GameService _gameService = DependencyHelper.Resolve<GameService>();
         private readonly UserService _steamUser = DependencyHelper.Resolve<UserService>();
 
         public GamesPageViewModel() { }
@@ -57,7 +56,7 @@ namespace Ed.Steamflix.Universal.ViewModels
         {
             get
             {
-                return new NotifyTaskCompletion<List<Game>>(_playerService.GetRecentlyPlayedGamesAsync(GetSteamId()));
+                return new NotifyTaskCompletion<List<Game>>(_gameService.GetRecentlyPlayedGamesAsync(GetSteamId()));
             }
         }
 
@@ -68,7 +67,7 @@ namespace Ed.Steamflix.Universal.ViewModels
         {
             get
             {
-                return new NotifyTaskCompletion<List<Game>>(_playerService.GetOwnedGamesAsync(GetSteamId()));
+                return new NotifyTaskCompletion<List<Game>>(_gameService.GetOwnedGamesAsync(GetSteamId()));
             }
         }
 
@@ -79,7 +78,7 @@ namespace Ed.Steamflix.Universal.ViewModels
         {
             get
             {
-                return new NotifyTaskCompletion<List<Game>>(_playerService.GetPopularGamesAsync());
+                return new NotifyTaskCompletion<List<Game>>(_gameService.GetPopularGamesAsync());
             }
         }
     }

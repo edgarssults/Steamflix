@@ -2,14 +2,11 @@
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Windows.ApplicationModel.Resources;
 
 namespace Ed.Steamflix.Common.Repositories
 {
     public class CommunityRepository : ICommunityRepository
     {
-        private readonly ResourceLoader _settings = ResourceLoader.GetForViewIndependentUse("Ed.Steamflix.Common/Settings");
-
         /// <summary>
         /// Retrieves the broadcasts page HTML for a game asynchronously.
         /// </summary>
@@ -17,7 +14,7 @@ namespace Ed.Steamflix.Common.Repositories
         /// <returns></returns>
         public async Task<string> GetBroadcastHtmlAsync(int appId)
         {
-            var broadcastUrl = string.Format(_settings.GetString("BroadcastUrlFormat"), appId);
+            var broadcastUrl = string.Format(Settings.BroadcastUrlFormat, appId);
 
             using (var client = new HttpClient())
             {
@@ -31,11 +28,9 @@ namespace Ed.Steamflix.Common.Repositories
         /// <returns></returns>
         public async Task<string> GetStatsHtmlAsync()
         {
-            var statsUrl = _settings.GetString("StatsUrl");
-
             using (var client = new HttpClient())
             {
-                return await client.GetStringAsync(new Uri(statsUrl)).ConfigureAwait(false);
+                return await client.GetStringAsync(new Uri(Settings.StatsUrl)).ConfigureAwait(false);
             }
         }
 

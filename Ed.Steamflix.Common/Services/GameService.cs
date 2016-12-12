@@ -1,11 +1,10 @@
-﻿using Newtonsoft.Json;
-using Ed.Steamflix.Common.Models;
-using System.Threading.Tasks;
+﻿using Ed.Steamflix.Common.Models;
 using Ed.Steamflix.Common.Repositories;
-using System.Linq;
+using Newtonsoft.Json;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
-using System;
+using System.Threading.Tasks;
 
 namespace Ed.Steamflix.Common.Services
 {
@@ -46,14 +45,14 @@ namespace Ed.Steamflix.Common.Services
                 return null;
             }
 
-            var call = _apiRepository.ApiCallAsync(
+            var response = await _apiRepository.ApiCallAsync(
                 _serviceName,
                 "GetRecentlyPlayedGames",
                 "v1",
                 $"steamid={steamId}"
             ).ConfigureAwait(false);
 
-            var model = JsonConvert.DeserializeObject<GetRecentlyPlayedGamesResponse>(await call);
+            var model = JsonConvert.DeserializeObject<GetRecentlyPlayedGamesResponse>(response);
 
             return model.RecentlyPlayedGames.Games;
         }
@@ -73,14 +72,14 @@ namespace Ed.Steamflix.Common.Services
                 return null;
             }
 
-            var call = _apiRepository.ApiCallAsync(
+            var response = await _apiRepository.ApiCallAsync(
                 _serviceName,
                 "GetOwnedGames",
                 "v1",
                 $"steamid={steamId}&include_appinfo=1"
             ).ConfigureAwait(false);
 
-            var model = JsonConvert.DeserializeObject<GetOwnedGamesResponse>(await call);
+            var model = JsonConvert.DeserializeObject<GetOwnedGamesResponse>(response);
 
             // Re-order the game list
             if (model.OwnedGames.Games != null
@@ -126,8 +125,8 @@ namespace Ed.Steamflix.Common.Services
         /// <returns>Game info.</returns>
         public async Task<Game> GetGameInfoAsync(int appId)
         {
-            var call = _apiRepository.ReadUrlAsync($"http://store.steampowered.com/api/appdetails?appids={appId}").ConfigureAwait(false);
-            var model = JsonConvert.DeserializeObject<GetAppDetailsResponse>(await call);
+            var response = await _apiRepository.ReadUrlAsync($"http://store.steampowered.com/api/appdetails?appids={appId}").ConfigureAwait(false);
+            var model = JsonConvert.DeserializeObject<GetAppDetailsResponse>(response);
 
             if (!model.AppDetails.Success)
             {

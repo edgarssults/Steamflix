@@ -1,7 +1,6 @@
 ﻿using System.Threading.Tasks;
 using System;
 using System.Net.Http;
-using Windows.ApplicationModel.Resources;
 
 namespace Ed.Steamflix.Common.Repositories
 {
@@ -9,8 +8,6 @@ namespace Ed.Steamflix.Common.Repositories
 
     public class ApiRepository : IApiRepository
     {
-        private readonly ResourceLoader _settings = ResourceLoader.GetForViewIndependentUse("Ed.Steamflix.Common/Settings");
-
         /// <summary>
         /// Reads JSON from a URL asynchronously.
         /// </summary>
@@ -35,7 +32,7 @@ namespace Ed.Steamflix.Common.Repositories
         /// <returns>JSON string.</returns>
         public async Task<string> ApiCallAsync(string service, string method, string version, string parameters)
         {
-            return await ReadUrlAsync($"{_settings.GetString("ApiUrl")}/{service}/{method}/{version}/?key={_settings.GetString("ApiKey")}&format=json&{parameters}").ConfigureAwait(false);
+            return await ReadUrlAsync($"{Settings.ApiUrl}/{service}/{method}/{version}/?key={Settings.ApiKey}&format=json&{parameters}").ConfigureAwait(false);
         }
     }
 }

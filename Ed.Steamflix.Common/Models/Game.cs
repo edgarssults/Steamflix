@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using Windows.ApplicationModel.Resources;
 
 namespace Ed.Steamflix.Common.Models
 {
@@ -8,8 +7,6 @@ namespace Ed.Steamflix.Common.Models
     /// </summary>
     public class Game
     {
-        private readonly ResourceLoader _settings = ResourceLoader.GetForViewIndependentUse("Ed.Steamflix.Common/Settings");
-
         /// <summary>
         /// An integer containing the program's ID.
         /// </summary>
@@ -43,7 +40,7 @@ namespace Ed.Steamflix.Common.Models
         {
             get
             {
-                return string.IsNullOrEmpty(IconUrl) ? null : string.Format(_settings.GetString("ImageUrlFormat"), AppId, IconUrl);
+                return string.IsNullOrEmpty(IconUrl) ? null : string.Format(Settings.ImageUrlFormat, AppId, IconUrl);
             }
         }
 
@@ -63,23 +60,23 @@ namespace Ed.Steamflix.Common.Models
         {
             get
             {
-                var logoUrl = string.Empty;
+                var logoUrl = $"http://cdn.akamai.steamstatic.com/steam/apps/{AppId}/header.jpg";
 
-                if (!string.IsNullOrEmpty(LogoUrl))
-                {
-                    // Logo from Steam API
-                    logoUrl = string.Format(_settings.GetString("ImageUrlFormat"), AppId, LogoUrl);
-                }
-                else if (!string.IsNullOrEmpty(StoreLogoUrl))
-                {
-                    // Logo from app details call
-                    logoUrl = StoreLogoUrl;
-                }
-                else
-                {
-                    // Store logo
-                    logoUrl = $"http://cdn.akamai.steamstatic.com/steam/apps/{AppId}/header.jpg";
-                }
+                //if (!string.IsNullOrEmpty(LogoUrl))
+                //{
+                //    // Logo from Steam API
+                //    logoUrl = string.Format(Settings.ImageUrlFormat, AppId, LogoUrl);
+                //}
+                //else if (!string.IsNullOrEmpty(StoreLogoUrl))
+                //{
+                //    // Logo from app details call
+                //    logoUrl = StoreLogoUrl;
+                //}
+                //else
+                //{
+                //    // Store logo
+                //    logoUrl = $"http://cdn.akamai.steamstatic.com/steam/apps/{AppId}/header.jpg";
+                //}
 
                 return logoUrl;
             }
