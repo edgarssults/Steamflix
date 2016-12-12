@@ -39,7 +39,6 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApiKeyHelper.cs" />
     <Compile Include="Converters\AppDetailsresponseConverter.cs" />
     <Compile Include="Models\AppDetails.cs" />
     <Compile Include="Models\AppNews.cs" />
@@ -86,10 +85,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="apikey.sample.txt" />
-    <Content Include="apikey.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -6,7 +6,7 @@ namespace Ed.Steamflix.Common.Repositories
 {
     // https://wiki.teamfortress.com/wiki/WebAPI
     // https://partner.steamgames.com/documentation/webapi
-    // http://api.steampowered.com/ISteamWebAPIUtil/GetSupportedAPIList/v0001/?format=json&key=8FAC8288FB26E59C1468DAD0DFED2683
+    // http://api.steampowered.com/ISteamWebAPIUtil/GetSupportedAPIList/v0001/?format=json&key=XYZ
 
     public class ApiRepository : IApiRepository
     {
@@ -34,7 +34,7 @@ namespace Ed.Steamflix.Common.Repositories
         /// <returns>JSON string.</returns>
         public async Task<string> ApiCallAsync(string service, string method, string version, string parameters)
         {
-            return await ReadUrlAsync($"{Settings.ApiUrl}/{service}/{method}/{version}/?key={ApiKeyHelper.ApiKey}&format=json&{parameters}").ConfigureAwait(false);
+            return await ReadUrlAsync($"{Settings.ApiUrl}/{service}/{method}/{version}/?key={Settings.ApiKey}&format=json&{parameters}").ConfigureAwait(false);
         }
     }
 }

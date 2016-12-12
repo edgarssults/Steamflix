@@ -62,6 +62,15 @@ namespace Ed.Steamflix.Common {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 8FAC8288FB26E59C1468DAD0DFED2683.
+        /// </summary>
+        internal static string ApiKey {
+            get {
+                return ResourceManager.GetString("ApiKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to http://api.steampowered.com.
         /// </summary>
         internal static string ApiUrl {

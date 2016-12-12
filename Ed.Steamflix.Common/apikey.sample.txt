@@ -1,4 +1,0 @@
-﻿8FABC288FB26123C146XYZD0DFED2683
-
-Add an apikey.txt file to this project containing a real Steam API key as the first line, example above.
-Its properties should be the same as for this file.
