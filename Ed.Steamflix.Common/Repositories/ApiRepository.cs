@@ -34,7 +34,7 @@ namespace Ed.Steamflix.Common.Repositories
         /// <returns>JSON string.</returns>
         public async Task<string> ApiCallAsync(string service, string method, string version, string parameters)
         {
-            return await ReadUrlAsync($"{Settings.ApiUrl}/{service}/{method}/{version}/?key={Settings.ApiKey}&format=json&{parameters}").ConfigureAwait(false);
+            return await ReadUrlAsync($"{Settings.ApiUrl}/{service}/{method}/{version}/?key={ApiHelper.SteamApiKey}&format=json&{parameters}").ConfigureAwait(false);
         }
     }
 }

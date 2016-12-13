@@ -14,7 +14,7 @@ namespace Ed.Steamflix.Tests
     {
         private readonly string _steamId = "76561197974081377"; // Me
         private readonly string _otherSteamId = "76561198084024217"; // Someone else
-        private readonly string _apiKey = "8FAC8288FB26E59C1468DAD0DFED2683";
+        private readonly string _apiKey = Common.ApiHelper.SteamApiKey;
         private IApiRepository _apiRepository;
 
         [TestInitialize]

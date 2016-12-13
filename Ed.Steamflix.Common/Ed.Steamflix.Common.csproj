@@ -39,6 +39,7 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApiHelper.cs" />
     <Compile Include="Converters\AppDetailsresponseConverter.cs" />
     <Compile Include="Models\AppDetails.cs" />
     <Compile Include="Models\AppNews.cs" />

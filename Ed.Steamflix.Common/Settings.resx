@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ApiKey" xml:space="preserve">
-    <value>8FAC8288FB26E59C1468DAD0DFED2683</value>
-  </data>
   <data name="ApiUrl" xml:space="preserve">
     <value>http://api.steampowered.com</value>
   </data>
