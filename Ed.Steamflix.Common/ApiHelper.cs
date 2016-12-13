@@ -7,6 +7,17 @@ namespace Ed.Steamflix.Common
         /// <summary>
         /// Replace this with a real API key.
         /// </summary>
+        /// <remarks>
+        /// 
+        /// To prevent it from being accidentally checked in, open the Git Bash in the root of this project and execute the following command:
+        /// git update-index --assume-unchanged ApiHelper.cs
+        /// 
+        /// To revert it, execute the following:
+        /// git update-index --no-assume-unchanged ApiHelper.cs
+        /// 
+        /// From http://stackoverflow.com/questions/3319479/git-can-i-commit-a-file-and-ignore-the-content-changes
+        /// 
+        /// </remarks>
         private static readonly string _steamApiKey = "TEMP";
 
         /// <summary>
