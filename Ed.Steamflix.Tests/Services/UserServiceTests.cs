@@ -2,15 +2,14 @@
 using Ed.Steamflix.Common.Repositories;
 using Ed.Steamflix.Common.Services;
 using Ed.Steamflix.Mocks.Repositories;
-using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 using System.Collections.Generic;
+using Xunit;
 
 namespace Ed.Steamflix.Tests.Services
 {
     /// <summary>
     /// Tests SteamUser method implementations.
     /// </summary>
-    [TestClass]
     public class UserServiceTests
     {
         private readonly string _steamId = "76561197974081377"; // Me
@@ -21,8 +20,7 @@ namespace Ed.Steamflix.Tests.Services
         private ICommunityRepository _communityRepository;
         private ICommunityRepository _testCommunityRepository;
 
-        [TestInitialize]
-        public void Initialize()
+        public UserServiceTests()
         {
             _apiRepository = new ApiRepository();
             _testApiRepository = new TestApiRepository();
@@ -30,116 +28,116 @@ namespace Ed.Steamflix.Tests.Services
             _testCommunityRepository = new TestCommunityRepository();
         }
 
-        [TestMethod]
+        [Fact]
         public void GetFriendListSuccess()
         {
             var service = new UserService(_apiRepository, _communityRepository);
             var model = service.GetFriendListAsync(_steamId).Result;
 
-            Assert.AreNotEqual(default(FriendsList), model, "Deserialized object is empty.");
-            Assert.IsTrue(model.Friends.Count > 0, "Expected at least one friend.");
+            Assert.NotEqual(default(FriendsList), model);
+            Assert.True(model.Friends.Count > 0, "Expected at least one friend.");
         }
 
-        [TestMethod]
+        [Fact]
         public void GetFriendListMockSuccess()
         {
             var service = new UserService(_testApiRepository, _testCommunityRepository);
             var model = service.GetFriendListAsync(_steamId).Result;
 
-            Assert.AreNotEqual(default(FriendsList), model, "Deserialized object is empty.");
-            Assert.IsTrue(model.Friends.Count > 0, "Expected at least one friend.");
-            Assert.AreEqual(34, model.Friends.Count, "Incorrect amount of friend items deserialized.");
-            Assert.AreEqual("76561197961947067", model.Friends[0].SteamId, "SteamId incorrectly deserialized for the first item.");
+            Assert.NotEqual(default(FriendsList), model);
+            Assert.True(model.Friends.Count > 0, "Expected at least one friend.");
+            Assert.Equal(34, model.Friends.Count);
+            Assert.Equal("76561197961947067", model.Friends[0].SteamId);
         }
 
-        [TestMethod]
+        [Fact]
         public void GetPlayerSummariesSuccess()
         {
             var service = new UserService(_apiRepository, _communityRepository);
             var model = service.GetPlayerSummariesAsync(new List<string> { _steamId }).Result;
 
-            Assert.AreNotEqual(default(PlayerSummaries), model, "Deserialized object is empty.");
-            Assert.IsTrue(model.Players.Count > 0, "Expected at least one player.");
+            Assert.NotEqual(default(PlayerSummaries), model);
+            Assert.True(model.Players.Count > 0, "Expected at least one player.");
         }
 
-        [TestMethod]
+        [Fact]
         public void GetPlayerSummariesMockSuccess()
         {
             var service = new UserService(_testApiRepository, _testCommunityRepository);
             var model = service.GetPlayerSummariesAsync(new List<string> { _steamId }).Result;
 
-            Assert.AreNotEqual(default(PlayerSummaries), model, "Deserialized object is empty.");
-            Assert.IsTrue(model.Players.Count > 0, "Expected at least one player.");
-            Assert.AreEqual(2, model.Players.Count, "Incorrect amount of player items deserialized.");
-            Assert.AreEqual("76561198084024217", model.Players[0].SteamId, "SteamId incorrectly deserialized for the first item.");
+            Assert.NotEqual(default(PlayerSummaries), model);
+            Assert.True(model.Players.Count > 0, "Expected at least one player.");
+            Assert.Equal(2, model.Players.Count);
+            Assert.Equal("76561198084024217", model.Players[0].SteamId);
         }
 
-        [TestMethod]
+        [Fact]
         public void ResolveVanityUrlSuccess()
         {
             var service = new UserService(_apiRepository, _communityRepository);
             var model = service.ResolveVanityUrlAsync(_vanityUrl).Result;
 
-            Assert.AreNotEqual(default(UserData), model, "Deserialized object is empty.");
-            Assert.IsTrue(model.Success == 1, "Expected a successful response.");
+            Assert.NotEqual(default(UserData), model);
+            Assert.True(model.Success == 1, "Expected a successful response.");
         }
 
-        [TestMethod]
+        [Fact]
         public void ResolveVanityUrlMockSuccess()
         {
             var service = new UserService(_testApiRepository, _testCommunityRepository);
             var model = service.ResolveVanityUrlAsync(_vanityUrl).Result;
 
-            Assert.AreNotEqual(default(UserData), model, "Deserialized object is empty.");
-            Assert.IsTrue(model.Success == 1, "Expected a successful response.");
-            Assert.AreEqual(1, model.Success, "Success code incorrectly deserialized.");
-            Assert.AreEqual("76561197974081377", model.SteamId, "SteamId incorrectly deserialized.");
+            Assert.NotEqual(default(UserData), model);
+            Assert.True(model.Success == 1, "Expected a successful response.");
+            Assert.Equal(1, model.Success);
+            Assert.Equal("76561197974081377", model.SteamId);
         }
 
-        [TestMethod]
+        [Fact]
         public void FindUsersSuccess()
         {
             var service = new UserService(_apiRepository, _communityRepository);
             var model = service.FindUsersAsync("eadgar").Result;
 
-            Assert.IsNotNull(model);
-            Assert.IsTrue(model.Count > 0);
-            Assert.IsNotNull(model[0].Name);
-            Assert.IsNotNull(model[0].Username);
-            Assert.IsNotNull(model[0].ProfileUrl);
-            Assert.IsNotNull(model[0].AvatarUrl);
+            Assert.NotNull(model);
+            Assert.True(model.Count > 0);
+            Assert.NotNull(model[0].Name);
+            Assert.NotNull(model[0].Username);
+            Assert.NotNull(model[0].ProfileUrl);
+            Assert.NotNull(model[0].AvatarUrl);
         }
 
-        [TestMethod]
+        [Fact]
         public void FindUsersMockSuccess()
         {
             var service = new UserService(_testApiRepository, _testCommunityRepository);
             var model = service.FindUsersAsync("eadgar").Result;
 
-            Assert.IsNotNull(model);
-            Assert.IsTrue(model.Count > 0);
-            Assert.AreEqual("Edgars Šults", model[0].Name);
-            Assert.AreEqual("Eadgar", model[0].Username);
-            Assert.AreEqual(_profileUrl, model[0].ProfileUrl);
-            Assert.AreEqual("http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/6d/6dd0bc925d93a031b1493af1cbdb8b9d7550fce9_medium.jpg", model[0].AvatarUrl);
+            Assert.NotNull(model);
+            Assert.True(model.Count > 0);
+            Assert.Equal("Edgars Šults", model[0].Name);
+            Assert.Equal("Eadgar", model[0].Username);
+            Assert.Equal(_profileUrl, model[0].ProfileUrl);
+            Assert.Equal("http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/6d/6dd0bc925d93a031b1493af1cbdb8b9d7550fce9_medium.jpg", model[0].AvatarUrl);
         }
 
-        [TestMethod]
+        [Fact]
         public void GetSteamIdSuccess()
         {
             var service = new UserService(_apiRepository, _communityRepository);
             var model = service.GetSteamIdAsync(_profileUrl).Result;
 
-            Assert.AreEqual(_steamId, model);
+            Assert.Equal(_steamId, model);
         }
 
-        [TestMethod]
+        [Fact]
         public void GetSteamIdMockSuccess()
         {
             var service = new UserService(_testApiRepository, _testCommunityRepository);
             var model = service.GetSteamIdAsync(_profileUrl).Result;
 
-            Assert.AreEqual(_steamId, model);
+            Assert.Equal(_steamId, model);
         }
     }
 }

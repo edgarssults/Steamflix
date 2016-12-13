@@ -2,14 +2,14 @@
 using Ed.Steamflix.Common.Repositories;
 using Ed.Steamflix.Common.Services;
 using Ed.Steamflix.Mocks.Repositories;
-using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
+using System.Collections.Generic;
+using Xunit;
 
 namespace Ed.Steamflix.Tests.Services
 {
     /// <summary>
     /// Tests PlayerService method implementations.
     /// </summary>
-    [TestClass]
     public class GameServiceTests
     {
         private readonly string _steamId = "76561197974081377"; // Me
@@ -18,8 +18,7 @@ namespace Ed.Steamflix.Tests.Services
         private ICommunityRepository _communityRepository;
         private ICommunityRepository _testCommunityRepository;
 
-        [TestInitialize]
-        public void Initialize()
+        public GameServiceTests()
         {
             _apiRepository = new ApiRepository();
             _testApiRepository = new TestApiRepository();
@@ -27,88 +26,88 @@ namespace Ed.Steamflix.Tests.Services
             _testCommunityRepository = new TestCommunityRepository();
         }
 
-        [TestMethod]
+        [Fact]
         public void GetRecentlyPlayedGamesSuccess()
         {
             var service = new GameService(_apiRepository, _communityRepository);
             var model = service.GetRecentlyPlayedGamesAsync(_steamId).Result;
 
-            Assert.AreNotEqual(default(RecentlyPlayedGames), model, "Games object is empty.");
-            Assert.IsTrue(model.Count > 0, "Expected at least one recently played game.");
+            Assert.NotEqual(default(List<Game>), model);
+            Assert.True(model.Count > 0, "Expected at least one recently played game.");
         }
 
-        [TestMethod]
+        [Fact]
         public void GetRecentlyPlayedGamesMockSuccess()
         {
             var service = new GameService(_testApiRepository, _testCommunityRepository);
             var model = service.GetRecentlyPlayedGamesAsync(_steamId).Result;
 
-            Assert.AreNotEqual(default(RecentlyPlayedGames), model, "Games object is empty.");
-            Assert.IsTrue(model.Count > 0, "Expected at least one recently played game.");
-            Assert.AreEqual(15, model.Count, "Incorrect amount of game items deserialized.");
-            Assert.AreEqual(107410, model[0].AppId, "AppId incorrectly deserialized for the first item.");
+            Assert.NotEqual(default(List<Game>), model);
+            Assert.True(model.Count > 0);
+            Assert.Equal(15, model.Count);
+            Assert.Equal(107410, model[0].AppId);
         }
 
-        [TestMethod]
+        [Fact]
         public void GetOwnedGamesSuccess()
         {
             var service = new GameService(_apiRepository, _communityRepository);
             var model = service.GetOwnedGamesAsync(_steamId).Result;
 
-            Assert.AreNotEqual(default(OwnedGames), model, "Games object is empty.");
-            Assert.IsTrue(model.Count > 0, "Expected at least one recently played game.");
+            Assert.NotEqual(default(List<Game>), model);
+            Assert.True(model.Count > 0, "Expected at least one recently played game.");
         }
 
-        [TestMethod]
+        [Fact]
         public void GetOwnedGamesMockSuccess()
         {
             var service = new GameService(_testApiRepository, _testCommunityRepository);
             var model = service.GetOwnedGamesAsync(_steamId).Result;
 
-            Assert.AreNotEqual(default(OwnedGames), model, "Games object is empty.");
-            Assert.IsTrue(model.Count > 0, "Expected at least one recently played game.");
-            Assert.AreEqual(199, model.Count, "Incorrect amount of game items deserialized.");
-            Assert.AreEqual(212500, model[0].AppId, "AppId incorrectly deserialized for the first item.");
+            Assert.NotEqual(default(List<Game>), model);
+            Assert.True(model.Count > 0, "Expected at least one recently played game.");
+            Assert.Equal(199, model.Count);
+            Assert.Equal(212500, model[0].AppId);
         }
 
-        [TestMethod]
+        [Fact]
         public void GetGameInfoSuccess()
         {
             var service = new GameService(_apiRepository, _communityRepository);
             var game = service.GetGameInfoAsync(72850).Result; // Skyrim
 
-            Assert.IsTrue(game != null, "Expected a game.");
-            Assert.AreEqual(72850, game.AppId, "Expected the same app identifier.");
+            Assert.True(game != null, "Expected a game.");
+            Assert.Equal(72850, game.AppId);
         }
 
-        [TestMethod]
+        [Fact]
         public void GetGameInfoMockSuccess()
         {
             var service = new GameService(_testApiRepository, _testCommunityRepository);
             var game = service.GetGameInfoAsync(72850).Result; // Skyrim
 
-            Assert.IsTrue(game != null, "Expected a game.");
-            Assert.AreEqual(72850, game.AppId, "Expected the same app identifier.");
+            Assert.True(game != null, "Expected a game.");
+            Assert.Equal(72850, game.AppId);
         }
 
-        [TestMethod]
+        [Fact]
         public void GetPopularGamesSuccess()
         {
             var service = new GameService(_apiRepository, _communityRepository);
             var games = service.GetPopularGamesAsync().Result;
 
-            Assert.IsTrue(games.Count > 0, "Expected a different number of broadcasts.");
+            Assert.True(games.Count > 0, "Expected a different number of broadcasts.");
         }
 
-        [TestMethod]
+        [Fact]
         public void GetPopularGamesMockSuccess()
         {
             var service = new GameService(_testApiRepository, _testCommunityRepository);
             var games = service.GetPopularGamesAsync().Result;
 
-            Assert.AreEqual(100, games.Count, "Expected a different number of games.");
-            Assert.AreEqual("Dota 2", games[0].Name, "First game's name not parsed correctly.");
-            Assert.AreEqual(570, games[0].AppId, "First game's app ID not parsed correctly.");
+            Assert.Equal(100, games.Count);
+            Assert.Equal("Dota 2", games[0].Name);
+            Assert.Equal(570, games[0].AppId);
         }
     }
 }
