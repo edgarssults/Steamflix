@@ -38,7 +38,7 @@ namespace Ed.Steamflix.Universal
             }
         }
 
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
             this.SetUpBackButton();
 
@@ -49,6 +49,7 @@ namespace Ed.Steamflix.Universal
             }
 
             BroadcastsHub.DataContext = ViewModel;
+            BroadcastsHub.Header = (await ViewModel.Game.Task).Name;
         }
 
         private void AppBarButton_Tapped(object sender, TappedRoutedEventArgs e)
