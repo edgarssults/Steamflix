@@ -5,6 +5,7 @@
     xmlns:local="using:Ed.Steamflix.Universal"
     xmlns:mocks="using:Ed.Steamflix.Mocks.ViewModels"
     xmlns:converters="using:Ed.Steamflix.Universal.Converters"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
@@ -20,9 +21,13 @@
         <converters:NotVisibleWhenZeroConverter x:Key="NotVisibleWhenZeroConverter" />
 
         <DataTemplate x:Key="GameListItemTemplate">
-            <StackPanel Margin="2" Width="184">
-                <Border Background="{StaticResource MenuBackgroundColor}">
-                    <Image Source="{Binding FormattedLogoUrl}" />
+            <StackPanel Margin="2" Width="230">
+                <Border Width="230" MinHeight="108" Background="{StaticResource MenuBackgroundColor}">
+                    <controls:ImageEx
+                        IsCacheEnabled="True"
+                        Source="{Binding FormattedLogoUrl}"
+                        PlaceholderSource="/Assets/game_thumbnail.jpg"
+                    />
                 </Border>
                 <Border Background="{StaticResource AppBackgroundColor}">
                     <TextBlock Margin="0 5 0 0" Text="{Binding Name}" Padding="2" Foreground="{StaticResource AppForegroundColor}" TextTrimming="WordEllipsis" />
@@ -32,16 +37,12 @@
 
         <DataTemplate x:Key="BroadcastListItemTemplate">
             <StackPanel Margin="2" Width="313">
-                <Border Width="313" Height="176" Background="{StaticResource MenuBackgroundColor}">
-                    <Image>
-                        <Image.Source>
-                            <Binding Path="ImageUrl" >
-                                <Binding.TargetNullValue>
-                                    <ImageSource>/Assets/broadcast_thumbnail.jpg</ImageSource>
-                                </Binding.TargetNullValue>
-                            </Binding>
-                        </Image.Source>
-                    </Image>
+                <Border Width="313" MinHeight="176" Background="{StaticResource MenuBackgroundColor}">
+                    <controls:ImageEx
+                        IsCacheEnabled="True"
+                        Source="{Binding ImageUrl}"
+                        PlaceholderSource="/Assets/broadcast_thumbnail.jpg"
+                    />
                 </Border>
                 <Border Background="{StaticResource AppBackgroundColor}">
                     <TextBlock Margin="0 5 0 0" Text="{Binding UserName}" Padding="2" Foreground="{StaticResource AppForegroundColor}" TextTrimming="WordEllipsis" />
@@ -81,12 +82,23 @@
             </Setter>
         </Style>
 
+        <Style TargetType="ProgressBar">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <SolidColorBrush Color="{StaticResource LightGrey}" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+
         <ControlTemplate x:Key="PopularGamesTemplate">
             <HubSection Header="Popular" Margin="0 0 10 20">
                 <DataTemplate>
                     <StackPanel>
-                        <ProgressBar Height="2" IsIndeterminate="{Binding PopularGames.IsNotCompleted}"
-                                     Visibility="{Binding PopularGames.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                        <ProgressBar
+                            Height="108"
+                            IsIndeterminate="{Binding PopularGames.IsNotCompleted}"
+                            Visibility="{Binding PopularGames.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
+                        />
                         <ListView
                             Visibility="{Binding PopularGames.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
                             ScrollViewer.HorizontalScrollMode="Enabled"
@@ -117,8 +129,11 @@
             <HubSection Header="Recent" Margin="0 0 10 20">
                 <DataTemplate>
                     <StackPanel>
-                        <ProgressBar Height="2" IsIndeterminate="{Binding RecentlyPlayedGames.IsNotCompleted}"
-                                     Visibility="{Binding RecentlyPlayedGames.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                        <ProgressBar
+                            Height="108"
+                            IsIndeterminate="{Binding RecentlyPlayedGames.IsNotCompleted}"
+                            Visibility="{Binding RecentlyPlayedGames.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
+                        />
                         <ListView
                             Visibility="{Binding RecentlyPlayedGames.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
                             ScrollViewer.HorizontalScrollMode="Enabled"
@@ -149,8 +164,11 @@
             <HubSection Header="Owned" Margin="0 0 10 20">
                 <DataTemplate>
                     <StackPanel>
-                        <ProgressBar Height="2" IsIndeterminate="{Binding OwnedGames.IsNotCompleted}"
-                                     Visibility="{Binding OwnedGames.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                        <ProgressBar
+                            Height="108"
+                            IsIndeterminate="{Binding OwnedGames.IsNotCompleted}"
+                            Visibility="{Binding OwnedGames.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
+                        />
                         <ListView
                             Visibility="{Binding OwnedGames.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
                             ScrollViewer.HorizontalScrollMode="Enabled"
@@ -181,8 +199,11 @@
             <HubSection Header="Broadcasts" Margin="0 0 10 20">
                 <DataTemplate>
                     <StackPanel>
-                        <ProgressBar Height="2" IsIndeterminate="{Binding Broadcasts.IsNotCompleted}"
-                                     Visibility="{Binding Broadcasts.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                        <ProgressBar
+                            Height="176"
+                            IsIndeterminate="{Binding Broadcasts.IsNotCompleted}"
+                            Visibility="{Binding Broadcasts.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
+                        />
                         <GridView
                             Visibility="{Binding Broadcasts.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
                             ScrollViewer.HorizontalScrollMode="Enabled"

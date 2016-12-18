@@ -145,6 +145,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\broadcast_thumbnail.jpg" />
+    <Content Include="Assets\game_thumbnail.jpg" />
     <Content Include="Assets\settings-edit.png" />
     <Content Include="Assets\settings-privacy.png" />
     <Content Include="Assets\settings-profile.png" />
