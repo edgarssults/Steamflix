@@ -111,8 +111,6 @@
     <Compile Include="Controls\SettingsPane.xaml.cs">
       <DependentUpon>SettingsPane.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
-    <Compile Include="Converters\NotVisibleWhenZeroConverter.cs" />
     <Compile Include="DependencyHelper.cs" />
     <Compile Include="Extensions\CommandBarExtensions.cs" />
     <Compile Include="Extensions\DependencyObjectExtensions.cs" />
