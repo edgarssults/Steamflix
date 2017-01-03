@@ -7,7 +7,7 @@ using Windows.System;
 
 // The User Control item template is documented at http://go.microsoft.com/fwlink/?LinkId=234236
 
-namespace Ed.Steamflix.Universal
+namespace Ed.Steamflix.Universal.Controls
 {
     public sealed partial class MobileNavigationPane : UserControl
     {

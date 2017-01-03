@@ -2,7 +2,7 @@
     x:Class="Ed.Steamflix.Universal.BroadcastsPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Ed.Steamflix.Universal"
+    xmlns:controls="using:Ed.Steamflix.Universal.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
@@ -13,8 +13,8 @@
             <ColumnDefinition Width="Auto"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        
-        <local:NavigationPane x:Name="MyNavigationPane" Grid.Column="0" />
+
+        <controls:NavigationPane x:Name="MyNavigationPane" Grid.Column="0" />
         
         <Hub x:Name="BroadcastsHub"
              Orientation="Vertical"

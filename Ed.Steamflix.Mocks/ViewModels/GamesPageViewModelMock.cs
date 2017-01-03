@@ -9,7 +9,7 @@ namespace Ed.Steamflix.Mocks.ViewModels
     public class GamesPageViewModelMock : IGamesPageViewModel
     {
         private readonly GameService _gameService = new GameService(new TestApiRepository(), new TestCommunityRepository());
-
+        
         public string GetSteamId()
         {
             return "76561197974081377"; // Me

@@ -2,7 +2,7 @@
     x:Class="Ed.Steamflix.Universal.GamesPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Ed.Steamflix.Universal"
+    xmlns:controls="using:Ed.Steamflix.Universal.Controls"
     xmlns:extensions="using:Ed.Steamflix.Universal.Extensions"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -32,6 +32,6 @@
             <HubSection Template="{StaticResource OwnedGamesTemplate}" Visibility="{Binding SteamIdIsAvailable, Converter={StaticResource BooleanToVisibilityConverter}}" />
         </Hub>
 
-        <local:MobileNavigationPane Grid.Row="2" />
+        <controls:MobileNavigationPane Grid.Row="2" />
     </Grid>
 </Page>

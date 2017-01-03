@@ -2,7 +2,7 @@
     x:Class="Ed.Steamflix.Universal.SettingsPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Ed.Steamflix.Universal"
+    xmlns:controls="using:Ed.Steamflix.Universal.Controls"
     xmlns:extensions="using:Ed.Steamflix.Universal.Extensions"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -20,8 +20,8 @@
             <AppBarButton Icon="Back" Tapped="AppBarButton_Tapped" />
         </CommandBar>
 
-        <local:SettingsPane Grid.Row="1" />
+        <controls:SettingsPane Grid.Row="1" />
 
-        <local:MobileNavigationPane Grid.Row="2" />
+        <controls:MobileNavigationPane Grid.Row="2" />
     </Grid>
 </Page>
