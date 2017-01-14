@@ -1,12 +1,11 @@
-﻿using Newtonsoft.Json;
-using Ed.Steamflix.Common.Models;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using Ed.Steamflix.Common.Models;
 using Ed.Steamflix.Common.Repositories;
-using System.Text.RegularExpressions;
+using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 using System.Linq;
-using System.Collections;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 
 namespace Ed.Steamflix.Common.Services
 {
@@ -17,7 +16,7 @@ namespace Ed.Steamflix.Common.Services
     {
         private readonly Regex _steamIdRegex = new Regex(@"steamcommunity\.com/profiles/(?<SteamId>[^/]*)", RegexOptions.Singleline);
         private readonly Regex _vanityUrlRegex = new Regex(@"steamcommunity\.com/id/(?<VanityUrlName>[^/]*)", RegexOptions.Singleline);
-        private readonly Regex _userSearchRegex = new Regex(@"<div[^>]*class=""avatarMedium"".*?<img.*?src=""(?<image>[^""]*)"".*?>.*?<div[^>]*class=""searchPersonaInfo"".*?<a[^>]*class=""searchPersonaName""[^>]*href=""(?<profile>[^""]*)[^>]*>(?<username>[^<]*).*?</a>.*?<br />(?<name>[^<]*)", RegexOptions.Singleline);
+        private readonly Regex _userSearchRegex = new Regex(@"<div[^>]*class=""search_row"".*?<div[^>]*class=""avatarMedium""[^>]*>\s*<a[^>]*href=""(?<ProfileUrl>[^""]*)""[^>]*>\s*<img[^>]*src=""(?<AvatarUrl>[^""]*)""[^>]*>.*?<div[^>]*class=""searchPersonaInfo""[^>]*>\s*<a[^>]*>(?<ProfileName>[^<]+)</a>\s*(<br[^>]*>\s*(?<Name>[^<]+)<br[^>]*>\s*(?<Location>[^<]+)<img[^>]*src=""(?<LocationImageUrl>[^""]*)""[^>]*>\s*</div>|<br[^>]*>\s*(?<Name>[^<]+)<br[^>]*>\s*</div>|<br[^>]*>\s*(?<Location>[^<]+)<img[^>]*>\s*</div>)?", RegexOptions.Singleline);
         private readonly string _servicename = "ISteamUser";
 
         private readonly IApiRepository _apiRepository;
@@ -154,7 +153,7 @@ namespace Ed.Steamflix.Common.Services
         {
             if (string.IsNullOrWhiteSpace(username))
             {
-                throw new ArgumentNullException(nameof(username));
+                return new List<User>();
             }
 
             var users = new List<User>();
@@ -191,15 +190,19 @@ namespace Ed.Steamflix.Common.Services
                 return new List<User>();
             }
 
+            html = html.Replace("&nbsp;", "");
             var foundUsers = new List<User>();
+
             foreach (Match match in _userSearchRegex.Matches(html))
             {
                 foundUsers.Add(new User()
                 {
-                    Username = match.Groups["username"]?.Value,
-                    ProfileUrl = match.Groups["profile"]?.Value,
-                    Name = match.Groups["name"]?.Value,
-                    AvatarUrl = match.Groups["image"]?.Value
+                    ProfileName = match.Groups["ProfileName"]?.Value.Trim(),
+                    ProfileUrl = match.Groups["ProfileUrl"]?.Value.Trim(),
+                    Name = match.Groups["Name"]?.Value.Trim(),
+                    AvatarUrl = match.Groups["AvatarUrl"]?.Value.Trim(),
+                    Location = match.Groups["Location"]?.Value.Trim(),
+                    LocationImageUrl = match.Groups["LocationImageUrl"]?.Value.Trim()
                 });
             }
 

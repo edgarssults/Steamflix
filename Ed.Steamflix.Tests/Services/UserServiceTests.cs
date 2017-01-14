@@ -103,9 +103,11 @@ namespace Ed.Steamflix.Tests.Services
             Assert.NotNull(model);
             Assert.True(model.Count > 0);
             Assert.NotNull(model[0].Name);
-            Assert.NotNull(model[0].Username);
+            Assert.NotNull(model[0].ProfileName);
             Assert.NotNull(model[0].ProfileUrl);
             Assert.NotNull(model[0].AvatarUrl);
+            Assert.NotNull(model[0].Location);
+            Assert.NotNull(model[0].LocationImageUrl);
         }
 
         [Fact]
@@ -117,9 +119,11 @@ namespace Ed.Steamflix.Tests.Services
             Assert.NotNull(model);
             Assert.True(model.Count > 0);
             Assert.Equal("Edgars Šults", model[0].Name);
-            Assert.Equal("Eadgar", model[0].Username);
+            Assert.Equal("Eadgar", model[0].ProfileName);
             Assert.Equal(_profileUrl, model[0].ProfileUrl);
             Assert.Equal("http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/6d/6dd0bc925d93a031b1493af1cbdb8b9d7550fce9_medium.jpg", model[0].AvatarUrl);
+            Assert.Equal("Riga, Latvia", model[0].Location);
+            Assert.NotNull(model[0].LocationImageUrl);
         }
 
         [Fact]

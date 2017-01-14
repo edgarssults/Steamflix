@@ -18,6 +18,7 @@
         <mocks:SettingsPaneViewModelMock x:Key="SettingsPaneViewModelMock" d:IsDataSource="True" />
 
         <converters:BoolToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        <converters:StringVisibilityConverter x:Key="StringVisibilityConverter" />
 
         <DataTemplate x:Key="GameListItemTemplate">
             <StackPanel Margin="2" Width="230">
@@ -97,6 +98,7 @@
                             Height="108"
                             IsIndeterminate="{Binding PopularGames.IsNotCompleted}"
                             Visibility="{Binding PopularGames.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
+                            VerticalAlignment="Center"
                         />
                         <ListView
                             Visibility="{Binding PopularGames.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
@@ -132,6 +134,7 @@
                             Height="108"
                             IsIndeterminate="{Binding RecentlyPlayedGames.IsNotCompleted}"
                             Visibility="{Binding RecentlyPlayedGames.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
+                            VerticalAlignment="Center"
                         />
                         <ListView
                             Visibility="{Binding RecentlyPlayedGames.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
@@ -167,6 +170,7 @@
                             Height="108"
                             IsIndeterminate="{Binding OwnedGames.IsNotCompleted}"
                             Visibility="{Binding OwnedGames.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
+                            VerticalAlignment="Center"
                         />
                         <ListView
                             Visibility="{Binding OwnedGames.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
@@ -202,6 +206,7 @@
                             Height="176"
                             IsIndeterminate="{Binding Broadcasts.IsNotCompleted}"
                             Visibility="{Binding Broadcasts.IsNotCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"
+                            VerticalAlignment="Center"
                         />
                         <GridView
                             Visibility="{Binding Broadcasts.IsSuccessfullyCompleted, Converter={StaticResource BooleanToVisibilityConverter}}"

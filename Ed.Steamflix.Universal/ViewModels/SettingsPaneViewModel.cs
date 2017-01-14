@@ -1,41 +1,73 @@
-﻿using Ed.Steamflix.Common.ViewModels;
+﻿using Ed.Steamflix.Common.Models;
+using Ed.Steamflix.Common.Services;
+using Ed.Steamflix.Common.ViewModels;
+using System.Collections.Generic;
+using System.ComponentModel;
 using Windows.Storage;
 
 namespace Ed.Steamflix.Universal.ViewModels
 {
-    public class SettingsPaneViewModel : ISettingsPaneViewModel
+    public class SettingsPaneViewModel : ISettingsPaneViewModel, INotifyPropertyChanged
     {
+        private readonly UserService _userService = DependencyHelper.Resolve<UserService>();
+
         public SettingsPaneViewModel() { }
 
         /// <summary>
-        /// User's Steam community profile URL.
+        /// User search text.
         /// </summary>
-        public string ProfileUrl
+        public string SearchText
         {
             get
             {
-                return (string)ApplicationData.Current.RoamingSettings.Values["ProfileUrl"] ?? string.Empty;
+                return _searchText;
             }
             set
             {
-                if (!string.IsNullOrEmpty(value))
-                {
-                    // If the profile URL is different, clear the extracted Steam ID
-                    if (value != (string)ApplicationData.Current.RoamingSettings.Values["ProfileUrl"])
-                    {
-                        ApplicationData.Current.RoamingSettings.Values["SteamId"] = null;
-                    }
+                _searchText = value;
+                OnPropertyChanged(nameof(SearchText));
+            }
+        }
+        private string _searchText;
 
-                    // Save new profile URL
-                    ApplicationData.Current.RoamingSettings.Values["ProfileUrl"] = value;
-                    ApplicationData.Current.RoamingSettings.Values["StartWithoutSteamId"] = false;
-                }
-                else
+        /// <summary>
+        /// Saved Steam profile name.
+        /// </summary>
+        public string ProfileName
+        {
+            get
+            {
+                return (string)ApplicationData.Current.RoamingSettings.Values["ProfileName"] ?? string.Empty;
+            }
+            set
+            {
+                ApplicationData.Current.RoamingSettings.Values["ProfileName"] = value;
+                OnPropertyChanged(nameof(ProfileName));
+            }
+        }
+
+        /// <summary>
+        /// List of found users.
+        /// </summary>
+        public NotifyTaskCompletion<List<User>> Users
+        {
+            get
+            {
+                return new NotifyTaskCompletion<List<User>>(_userService.FindUsersAsync(SearchText));
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        public void OnPropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+
+                // If search text changed, user list also has to be refreshed
+                if (propertyName.Equals(nameof(SearchText)))
                 {
-                    // Clearing saved values
-                    ApplicationData.Current.RoamingSettings.Values["StartWithoutSteamId"] = true;
-                    ApplicationData.Current.RoamingSettings.Values["SteamId"] = null;
-                    ApplicationData.Current.RoamingSettings.Values["ProfileUrl"] = null;
+                    PropertyChanged(this, new PropertyChangedEventArgs(nameof(Users)));
                 }
             }
         }

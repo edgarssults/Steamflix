@@ -1,4 +1,10 @@
-﻿using Ed.Steamflix.Universal.ViewModels;
+﻿using Ed.Steamflix.Common.Models;
+using Ed.Steamflix.Common.ViewModels;
+using Ed.Steamflix.Mocks.ViewModels;
+using Ed.Steamflix.Universal.ViewModels;
+using Windows.ApplicationModel.Store.LicenseManagement;
+using Windows.Storage;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
 
@@ -8,7 +14,8 @@ namespace Ed.Steamflix.Universal.Controls
 {
     public sealed partial class SettingsPane : UserControl
     {
-        public SettingsPaneViewModel ViewModel { get; set; }
+        public ISettingsPaneViewModel ViewModel { get; set; }
+        public object LicenseUsageMode { get; private set; }
 
         public SettingsPane()
         {
@@ -16,22 +23,38 @@ namespace Ed.Steamflix.Universal.Controls
 
             if (ViewModel == null)
             {
-                ViewModel = new SettingsPaneViewModel();
+                bool designMode = Windows.ApplicationModel.DesignMode.DesignModeEnabled;
+                if (designMode)
+                {
+                    ViewModel = new SettingsPaneViewModelMock();
+                }
+                else
+                {
+                    ViewModel = new SettingsPaneViewModel();
+                }
             }
 
             this.DataContext = ViewModel;
         }
 
-        private void Save_Tapped(object sender, TappedRoutedEventArgs e)
+        private void UserList_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            ViewModel.ProfileUrl = SettingsProfileUrl.Text;
-        }
-
-        private void SettingsProfileUrl_KeyDown(object sender, KeyRoutedEventArgs e)
-        {
-            if (e.Key == Windows.System.VirtualKey.Enter)
+            var user = (e.OriginalSource as FrameworkElement).DataContext as User;
+            if (user != null)
             {
-                Save_Tapped(sender, null);
+                // If the profile URL is different, clear the extracted Steam ID
+                if (user.ProfileUrl != (string)ApplicationData.Current.RoamingSettings.Values["ProfileUrl"])
+                {
+                    ApplicationData.Current.RoamingSettings.Values["SteamId"] = null;
+                }
+
+                // Save new profile data
+                ApplicationData.Current.RoamingSettings.Values["ProfileUrl"] = user.ProfileUrl;
+                ApplicationData.Current.RoamingSettings.Values["StartWithoutSteamId"] = false;
+                ViewModel.ProfileName = user.ProfileName;
+
+                // Clear search box
+                this.SearchText.Text = string.Empty;
             }
         }
     }

@@ -49,7 +49,7 @@ namespace Ed.Steamflix.Universal
             }
 
             BroadcastsHub.DataContext = ViewModel;
-            BroadcastsHub.Header = (await ViewModel.Game.Task).Name;
+            //BroadcastsHub.Header = (await ViewModel.Game.Task).Name;
         }
 
         private void AppBarButton_Tapped(object sender, TappedRoutedEventArgs e)
