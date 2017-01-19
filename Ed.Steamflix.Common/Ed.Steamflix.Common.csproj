@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="ApiHelper.cs" />
     <Compile Include="Converters\AppDetailsresponseConverter.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="Models\AppDetails.cs" />
     <Compile Include="Models\AppNews.cs" />
     <Compile Include="Models\Broadcast.cs" />

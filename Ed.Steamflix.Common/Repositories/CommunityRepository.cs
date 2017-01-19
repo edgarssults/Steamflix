@@ -9,6 +9,8 @@ namespace Ed.Steamflix.Common.Repositories
 {
     public class CommunityRepository : ICommunityRepository
     {
+        private List<Cookie> _cookieCache = new List<Cookie>();
+
         /// <summary>
         /// Retrieves the broadcasts page HTML for a game asynchronously.
         /// </summary>
@@ -68,15 +70,24 @@ namespace Ed.Steamflix.Common.Repositories
         /// <returns>List of cookies.</returns>
         public async Task<List<Cookie>> GetSteamSetCookiesAsync()
         {
-            var cookieContainer = new CookieContainer();
-            using (var handler = new HttpClientHandler())
+            if (_cookieCache.Any())
             {
-                handler.CookieContainer = cookieContainer;
+                return _cookieCache;
+            }
 
-                using (var client = new HttpClient(handler))
+            using (var client = new HttpClient())
+            {
+                using (var response = await client.GetAsync(Settings.SteamCommunityUrl).ConfigureAwait(false))
                 {
-                    var response = await client.GetAsync(Settings.SteamCommunityUrl).ConfigureAwait(false);
-                    return cookieContainer.GetCookies(new Uri(Settings.SteamCommunityUrl)).Cast<Cookie>().ToList();
+                    var cookieContainer = response.ReadCookies();
+                    var cookies = cookieContainer.GetCookies(new Uri(Settings.SteamCommunityUrl)).Cast<Cookie>().ToList();
+
+                    if (cookies.Any())
+                    {
+                        _cookieCache = cookies;
+                    }
+
+                    return cookies;
                 }
             }
         }

@@ -57,5 +57,12 @@ namespace Ed.Steamflix.Universal.Controls
                 this.SearchText.Text = string.Empty;
             }
         }
+
+        private void SearchText_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            var textBox = sender as TextBox;
+            var bindingExpr = textBox.GetBindingExpression(TextBox.TextProperty);
+            bindingExpr.UpdateSource();
+        }
     }
 }

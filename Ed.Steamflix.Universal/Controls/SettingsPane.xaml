@@ -19,10 +19,10 @@
         <StackPanel Grid.Row="0">
             <StackPanel Orientation="Horizontal" Margin="0 20 0 0" Visibility="{Binding ProfileName, Converter={StaticResource StringVisibilityConverter}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                 <TextBlock>Current profile:</TextBlock>
-                <TextBlock Margin="5 0 0 0" Text="{Binding ProfileName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+                <TextBlock Margin="5 0 0 0" Text="{Binding ProfileName, Mode=OneWay}"></TextBlock>
             </StackPanel>
-            <TextBlock Margin="0 20 0 0" TextWrapping="WrapWholeWords">Search by your Steam profile name to update your profile:</TextBlock>
-            <TextBox x:Name="SearchText" Margin="0 5 0 20" Text="{Binding SearchText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+            <TextBlock Margin="0 20 0 0" TextWrapping="WrapWholeWords">Search by your Steam profile name and select it:</TextBlock>
+            <TextBox x:Name="SearchText" Margin="0 5 0 20" Text="{Binding SearchText, Mode=TwoWay, UpdateSourceTrigger=Explicit}" TextChanged="SearchText_TextChanged"></TextBox>
         </StackPanel>
         <ProgressBar
             Grid.Row="1"

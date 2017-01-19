@@ -76,7 +76,7 @@ namespace Ed.Steamflix.Universal
             if (view.IsFullScreenMode)
             {
                 view.ExitFullScreenMode();
-                UpdateContent();
+                UpdateContent(true);
             }
 
             // Stop listening for full screen exit event
@@ -122,13 +122,13 @@ namespace Ed.Steamflix.Universal
             if (view.IsFullScreenMode)
             {
                 view.ExitFullScreenMode();
+                UpdateContent(true);
             }
             else
             {
                 view.TryEnterFullScreenMode();
+                UpdateContent(false);
             }
-
-            UpdateContent();
         }
 
         /// <summary>
@@ -165,13 +165,13 @@ namespace Ed.Steamflix.Universal
         /// <summary>
         /// Shows/hides the command bar depending on full screen mode status.
         /// </summary>
-        void UpdateContent()
+        void UpdateContent(bool? commandBarVisible = null)
         {
             // There is no watch command bar in IoT version
-            if (WatchCommandBar != null)
+            if (WatchCommandBar != null && commandBarVisible.HasValue)
             {
                 var view = ApplicationView.GetForCurrentView();
-                WatchCommandBar.Visibility = view.IsFullScreenMode ? Visibility.Collapsed : Visibility.Visible;
+                WatchCommandBar.Visibility = commandBarVisible.Value ? Visibility.Visible : Visibility.Collapsed;
             }
         }
     }
