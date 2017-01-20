@@ -1,1 +1,1 @@
-C:\Users\Edgar\Documents\Repos\Steamflix\Ed.Steamflix.Universal\AppPackages\Ed.Steamflix.Universal_1.2.0.0\Ed.Steamflix.Universal_1.2.0.0_x86_x64_arm.appxbundle
+C:\Users\Edgar\Documents\Repos\Steamflix\Ed.Steamflix.Universal\AppPackages\Ed.Steamflix.Universal_1.3.0.0\Ed.Steamflix.Universal_1.3.0.0_x86_x64_arm.appxbundle
