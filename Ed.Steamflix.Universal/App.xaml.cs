@@ -7,7 +7,9 @@ using System.Collections.Generic;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Storage;
+using Windows.System.Profile;
 using Windows.UI.Notifications;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
@@ -50,7 +52,7 @@ namespace Ed.Steamflix.Universal
         /// will be used such as when the application is launched to open a specific file.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected async override void OnLaunched(LaunchActivatedEventArgs e)
+        protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
 
 #if DEBUG
@@ -113,6 +115,16 @@ namespace Ed.Steamflix.Universal
 
             // Tile
             SetupPeriotidcTileUpdate();
+
+            // Full screen on phones
+            if (AnalyticsInfo.VersionInfo.DeviceFamily == "Windows.Mobile")
+            {
+                var view = ApplicationView.GetForCurrentView();
+                if (!view.IsFullScreenMode)
+                {
+                    view.TryEnterFullScreenMode();
+                }
+            }
         }
 
         /// <summary>

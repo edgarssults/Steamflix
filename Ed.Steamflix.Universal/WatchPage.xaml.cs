@@ -1,6 +1,7 @@
 ﻿using Ed.Steamflix.Universal.Extensions;
 using System;
 using Windows.System;
+using Windows.System.Profile;
 using Windows.UI.Core;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
@@ -71,16 +72,24 @@ namespace Ed.Steamflix.Universal
             // Stop the broadcast playback before navigating away
             Browser.NavigateToString("");
 
-            // Exit full screen
-            var view = ApplicationView.GetForCurrentView();
-            if (view.IsFullScreenMode)
+            if (AnalyticsInfo.VersionInfo.DeviceFamily == "Windows.Mobile")
             {
-                view.ExitFullScreenMode();
-                UpdateContent(true);
+                // Mobiles just show the command bar
+                if (WatchCommandBar.Visibility == Visibility.Collapsed)
+                {
+                    WatchCommandBar.Visibility = Visibility.Visible;
+                }
             }
-
-            // Stop listening for full screen exit event
-            Window.Current.SizeChanged -= OnWindowResize;
+            else
+            {
+                // All others exit full screen and show the command bar
+                var view = ApplicationView.GetForCurrentView();
+                if (view.IsFullScreenMode)
+                {
+                    view.ExitFullScreenMode();
+                    WatchCommandBar.Visibility = Visibility.Visible;
+                }
+            }
 
             base.OnNavigatedFrom(e);
         }
@@ -93,12 +102,6 @@ namespace Ed.Steamflix.Universal
             // URL should be passed in navigation parameters
             var watchUrl = (string)e.Parameter;
             Browser.Source = new Uri(watchUrl);
-
-            // Listen for full screen exit event
-            Window.Current.SizeChanged += OnWindowResize;
-
-            // Show/hide the command bar
-            UpdateContent();
         }
 
         /// <summary>
@@ -112,22 +115,38 @@ namespace Ed.Steamflix.Universal
         }
 
         /// <summary>
-        /// Switches the app to full screen.
+        /// Switches the app to full screen depending on device family.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void AppBarFullScreenButton_Tapped(object sender, RoutedEventArgs e)
         {
-            var view = ApplicationView.GetForCurrentView();
-            if (view.IsFullScreenMode)
+            if (AnalyticsInfo.VersionInfo.DeviceFamily == "Windows.Mobile")
             {
-                view.ExitFullScreenMode();
-                UpdateContent(true);
+                // Mobiles show/hide the command bar
+                if (WatchCommandBar.Visibility == Visibility.Collapsed)
+                {
+                    WatchCommandBar.Visibility = Visibility.Visible;
+                }
+                else
+                {
+                    WatchCommandBar.Visibility = Visibility.Collapsed;
+                }
             }
             else
             {
-                view.TryEnterFullScreenMode();
-                UpdateContent(false);
+                // All others enter/exit full screen and show/hide the command bar
+                var view = ApplicationView.GetForCurrentView();
+                if (view.IsFullScreenMode)
+                {
+                    view.ExitFullScreenMode();
+                    WatchCommandBar.Visibility = Visibility.Visible;
+                }
+                else
+                {
+                    view.TryEnterFullScreenMode();
+                    WatchCommandBar.Visibility = Visibility.Collapsed;
+                }
             }
         }
 
@@ -150,29 +169,6 @@ namespace Ed.Steamflix.Universal
 
             // Launch browser
             await Launcher.LaunchUriAsync(Browser.Source);
-        }
-
-        /// <summary>
-        /// Handles window size change event.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        void OnWindowResize(object sender, WindowSizeChangedEventArgs e)
-        {
-            UpdateContent();
-        }
-
-        /// <summary>
-        /// Shows/hides the command bar depending on full screen mode status.
-        /// </summary>
-        void UpdateContent(bool? commandBarVisible = null)
-        {
-            // There is no watch command bar in IoT version
-            if (WatchCommandBar != null && commandBarVisible.HasValue)
-            {
-                var view = ApplicationView.GetForCurrentView();
-                WatchCommandBar.Visibility = commandBarVisible.Value ? Visibility.Visible : Visibility.Collapsed;
-            }
         }
     }
 }
