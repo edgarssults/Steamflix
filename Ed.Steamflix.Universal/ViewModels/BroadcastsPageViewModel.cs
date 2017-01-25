@@ -1,7 +1,6 @@
 ﻿using Ed.Steamflix.Common.Models;
 using Ed.Steamflix.Common.Services;
 using Ed.Steamflix.Common.ViewModels;
-using System.Collections.Generic;
 
 namespace Ed.Steamflix.Universal.ViewModels
 {
@@ -26,22 +25,11 @@ namespace Ed.Steamflix.Universal.ViewModels
         /// <summary>
         /// List of broadcasts for a game.
         /// </summary>
-        public NotifyTaskCompletion<List<Broadcast>> Broadcasts
+        public NotifyTaskCompletion<GetBroadcastsResponse> Broadcasts
         {
             get
             {
-                return new NotifyTaskCompletion<List<Broadcast>>(_broadcastService.GetBroadcastsAsync(_appId));
-            }
-        }
-
-        /// <summary>
-        /// The game the broadcasts page is about.
-        /// </summary>
-        public NotifyTaskCompletion<Game> Game
-        {
-            get
-            {
-                return new NotifyTaskCompletion<Game>(_gameService.GetGameInfoAsync(_appId));
+                return new NotifyTaskCompletion<GetBroadcastsResponse>(_broadcastService.GetBroadcastsAsync(_appId));
             }
         }
     }

@@ -11,6 +11,7 @@ namespace Ed.Steamflix.Common.Services
     /// </summary>
     public class BroadcastService
     {
+        private readonly Regex _gameNameRegex = new Regex(@"class=""apphub_AppName[^""]*[^>]*>(?<Name>[^<]*)", RegexOptions.Singleline);
         private readonly Regex _broadcastsRegex = new Regex(@"<div[^>]*class=""[^""]*Broadcast_Card[^>]*>\s*<a[^>]*href=""(?<Url>[^""]*)"".*?<div\s*style=""clear:\s*left""></div>\s*</div>", RegexOptions.Singleline);
         private readonly Regex _userNameRegex = new Regex(@"apphub_CardContentAuthorName[^>]*>\s*<a[^>]*>(?<Name>[^<]*)", RegexOptions.Singleline);
         private readonly Regex _imageRegex = new Regex(@"class=""[^""]*apphub_CardContentPreviewImage[^""]*""[^>]*src=""(?<Url>[^""]+)""", RegexOptions.Singleline);
@@ -31,11 +32,11 @@ namespace Ed.Steamflix.Common.Services
         /// </summary>
         /// <param name="appId">Application identifier.</param>
         /// <returns>List of broadcasts.</returns>
-        public async Task<List<Broadcast>> GetBroadcastsAsync(int appId)
+        public async Task<GetBroadcastsResponse> GetBroadcastsAsync(int appId)
         {
-            var broadcasts = new List<Broadcast>();
             var html = await _communityRepository.GetBroadcastHtmlAsync(appId).ConfigureAwait(false);
 
+            var broadcasts = new List<Broadcast>();
             foreach (Match match in _broadcastsRegex.Matches(html))
             {
                 broadcasts.Add(new Broadcast
@@ -46,7 +47,13 @@ namespace Ed.Steamflix.Common.Services
                 });
             }
 
-            return broadcasts;
+            var name = _gameNameRegex.Match(html).Groups["Name"].Value.Trim();
+
+            return new GetBroadcastsResponse
+            {
+                GameName = name,
+                Broadcasts = broadcasts
+            };
         }
 
         // TODO: Method for getting more broadcasts for the same app

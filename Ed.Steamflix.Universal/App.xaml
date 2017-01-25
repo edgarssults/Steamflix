@@ -215,7 +215,7 @@
                             IsSwipeEnabled="True"
                             SelectionMode="Single"
                             ItemTemplate="{StaticResource BroadcastListItemTemplate}"
-                            ItemsSource="{Binding Broadcasts.Result}">
+                            ItemsSource="{Binding Broadcasts.Result.Broadcasts}">
                             <GridView.ItemsPanel>
                                 <ItemsPanelTemplate>
                                     <ItemsWrapGrid Orientation="Horizontal" />

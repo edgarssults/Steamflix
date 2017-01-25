@@ -50,6 +50,7 @@
     <Compile Include="Models\Game.cs" />
     <Compile Include="Models\GameDetails.cs" />
     <Compile Include="Models\GetAppDetailsResponse.cs" />
+    <Compile Include="Models\GetBroadcastsResponse.cs" />
     <Compile Include="Models\GetFriendListResponse.cs" />
     <Compile Include="Models\GetNewsForAppResponse.cs" />
     <Compile Include="Models\GetOwnedGamesResponse.cs" />

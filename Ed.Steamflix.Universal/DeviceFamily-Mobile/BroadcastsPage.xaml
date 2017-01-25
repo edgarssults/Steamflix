@@ -16,7 +16,7 @@
         
         <Hub x:Name="BroadcastsHub"
              Orientation="Vertical"
-             Header="{Binding Path=Game.Name}"
+             Header="{Binding Broadcasts.Result.GameName}"
              d:DataContext="{StaticResource BroadcastsPageViewModelMock}"
              Tapped="Broadcast_Tapped"
              Margin="10 0 0 0"
