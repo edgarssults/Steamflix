@@ -15,6 +15,7 @@ namespace Ed.Steamflix.Common.Services
         private readonly Regex _broadcastsRegex = new Regex(@"<div[^>]*class=""[^""]*Broadcast_Card[^>]*>\s*<a[^>]*href=""(?<Url>[^""]*)"".*?<div\s*style=""clear:\s*left""></div>\s*</div>", RegexOptions.Singleline);
         private readonly Regex _userNameRegex = new Regex(@"apphub_CardContentAuthorName[^>]*>\s*<a[^>]*>(?<Name>[^<]*)", RegexOptions.Singleline);
         private readonly Regex _imageRegex = new Regex(@"class=""[^""]*apphub_CardContentPreviewImage[^""]*""[^>]*src=""(?<Url>[^""]+)""", RegexOptions.Singleline);
+        private readonly Regex _viewerRegex = new Regex(@"class=""[^""]*apphub_CardContentViewers[^""]*""[^>]*>\s*(?<Viewers>\d+)\s*viewer", RegexOptions.Singleline);
 
         private readonly ICommunityRepository _communityRepository;
 
@@ -43,7 +44,8 @@ namespace Ed.Steamflix.Common.Services
                 {
                     WatchUrl = match.Groups["Url"].Value.Trim(),
                     UserName = _userNameRegex.Match(match.Value).Groups["Name"].Value,
-                    ImageUrl = _imageRegex.IsMatch(match.Value) ? _imageRegex.Match(match.Value).Groups["Url"].Value : null
+                    ImageUrl = _imageRegex.IsMatch(match.Value) ? _imageRegex.Match(match.Value).Groups["Url"].Value : null,
+                    ViewerCount = _viewerRegex.IsMatch(match.Value) ? int.Parse(_viewerRegex.Match(match.Value).Groups["Viewers"].Value) : (int?)null
                 });
             }
 

@@ -28,6 +28,7 @@ namespace Ed.Steamflix.Tests.Services
             Assert.Equal("sp1rt", broadcasts.Broadcasts[0].UserName);
             Assert.Equal("http://steamcommunity.com/broadcast/watch/76561197993685873", broadcasts.Broadcasts[0].WatchUrl);
             Assert.True(broadcasts.Broadcasts.Any(b => !string.IsNullOrEmpty(b.ImageUrl)), "No broadcasts have images.");
+            Assert.Equal(1, broadcasts.Broadcasts[0].ViewerCount);
         }
 
         [Fact]
@@ -38,6 +39,9 @@ namespace Ed.Steamflix.Tests.Services
 
             Assert.Equal("Dota 2", broadcasts.GameName);
             Assert.True(broadcasts.Broadcasts.Count > 0, "Expected a different number of broadcasts.");
+            Assert.NotNull(broadcasts.Broadcasts[0].UserName);
+            Assert.NotNull(broadcasts.Broadcasts[0].WatchUrl);
+            Assert.NotNull(broadcasts.Broadcasts[0].ViewerCount);
         }
     }
 }

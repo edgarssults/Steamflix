@@ -16,8 +16,24 @@
         public string UserName { get; set; }
 
         /// <summary>
-        /// URL of the broadcasts's thumbnail image.
+        /// URL of the broadcast's thumbnail image.
         /// </summary>
         public string ImageUrl { get; set; }
+
+        /// <summary>
+        /// Number of broadcast's viewers.
+        /// </summary>
+        public int? ViewerCount { get; set; }
+
+        /// <summary>
+        /// Returns true if the broadcast has any viewers.
+        /// </summary>
+        public bool HasViewers
+        {
+            get
+            {
+                return this.ViewerCount.HasValue && this.ViewerCount > 0;
+            }
+        }
     }
 }
