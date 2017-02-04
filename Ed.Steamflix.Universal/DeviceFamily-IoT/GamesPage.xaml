@@ -17,7 +17,7 @@
         </Grid.RowDefinitions>
 
         <CommandBar FlowDirection="RightToLeft" Grid.Row="0" extensions:CommandBarExtensions.HideMoreButton="True">
-            <AppBarButton Icon="Back" Tapped="AppBarButton_Tapped" />
+            <!--<AppBarButton Icon="Back" Tapped="AppBarButton_Tapped" />-->
         </CommandBar>
 
         <Hub x:Name="GamesHub"

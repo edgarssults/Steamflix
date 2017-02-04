@@ -14,7 +14,7 @@ namespace Ed.Steamflix.Universal.Controls
         {
             this.InitializeComponent();
 
-            // Show the feedback button if it's supported
+            // Show the feedback button if it's supported or if we're in design mode
             bool designMode = Windows.ApplicationModel.DesignMode.DesignModeEnabled;
             if (designMode || StoreServicesFeedbackLauncher.IsSupported())
             {

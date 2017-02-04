@@ -132,6 +132,18 @@ namespace Ed.Steamflix.Universal
         /// </summary>
         private void SetupPeriotidcTileUpdate()
         {
+            TileUpdater tileUpdateManager = null;
+
+            try
+            {
+                // IoT Core doesn't support tile updates
+                tileUpdateManager = TileUpdateManager.CreateTileUpdaterForApplication();
+            }
+            catch
+            {
+                return;
+            }
+
             var apiUrl = "http://steamflix.azurewebsites.net/api/tile";
             var steamId = GetSteamId();
             var uris = new List<Uri>
@@ -143,7 +155,6 @@ namespace Ed.Steamflix.Universal
                 new Uri($"{apiUrl}/4/{steamId}")
             };
 
-            var tileUpdateManager = TileUpdateManager.CreateTileUpdaterForApplication();
             tileUpdateManager.EnableNotificationQueue(true);
             tileUpdateManager.StartPeriodicUpdateBatch(uris, PeriodicUpdateRecurrence.TwelveHours);
         }
