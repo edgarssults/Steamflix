@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ed.Steamflix.Universal", "Ed.Steamflix.Universal\Ed.Steamflix.Universal.csproj", "{668C1652-0534-49C6-A810-C38E2BA6EA0D}"
 EndProject
@@ -9,9 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ed.Steamflix.Mocks", "Ed.St
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ed.Steamflix.Common", "Ed.Steamflix.Common\Ed.Steamflix.Common.csproj", "{D1D1B26C-2FDD-4BF6-92B4-36B6E1DB8FA4}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Ed.Steamflix.Api", "Ed.Steamflix.Api\Ed.Steamflix.Api.xproj", "{9E5467F6-BEEE-4BDE-BBB1-32123E6B467A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ed.Steamflix.Tests", "Ed.Steamflix.Tests\Ed.Steamflix.Tests.csproj", "{2E3DF5C2-8A38-4A03-86D7-8D463C917E47}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ed.Steamflix.Api", "Ed.Steamflix.Api\Ed.Steamflix.Api.csproj", "{041DBF14-A7FC-4733-9602-B62C9D584BD1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,22 +81,6 @@ Global
 		{D1D1B26C-2FDD-4BF6-92B4-36B6E1DB8FA4}.Release|x64.Build.0 = Release|Any CPU
 		{D1D1B26C-2FDD-4BF6-92B4-36B6E1DB8FA4}.Release|x86.ActiveCfg = Release|Any CPU
 		{D1D1B26C-2FDD-4BF6-92B4-36B6E1DB8FA4}.Release|x86.Build.0 = Release|Any CPU
-		{9E5467F6-BEEE-4BDE-BBB1-32123E6B467A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9E5467F6-BEEE-4BDE-BBB1-32123E6B467A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9E5467F6-BEEE-4BDE-BBB1-32123E6B467A}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{9E5467F6-BEEE-4BDE-BBB1-32123E6B467A}.Debug|ARM.Build.0 = Debug|Any CPU
-		{9E5467F6-BEEE-4BDE-BBB1-32123E6B467A}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{9E5467F6-BEEE-4BDE-BBB1-32123E6B467A}.Debug|x64.Build.0 = Debug|Any CPU
-		{9E5467F6-BEEE-4BDE-BBB1-32123E6B467A}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{9E5467F6-BEEE-4BDE-BBB1-32123E6B467A}.Debug|x86.Build.0 = Debug|Any CPU
-		{9E5467F6-BEEE-4BDE-BBB1-32123E6B467A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9E5467F6-BEEE-4BDE-BBB1-32123E6B467A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9E5467F6-BEEE-4BDE-BBB1-32123E6B467A}.Release|ARM.ActiveCfg = Release|Any CPU
-		{9E5467F6-BEEE-4BDE-BBB1-32123E6B467A}.Release|ARM.Build.0 = Release|Any CPU
-		{9E5467F6-BEEE-4BDE-BBB1-32123E6B467A}.Release|x64.ActiveCfg = Release|Any CPU
-		{9E5467F6-BEEE-4BDE-BBB1-32123E6B467A}.Release|x64.Build.0 = Release|Any CPU
-		{9E5467F6-BEEE-4BDE-BBB1-32123E6B467A}.Release|x86.ActiveCfg = Release|Any CPU
-		{9E5467F6-BEEE-4BDE-BBB1-32123E6B467A}.Release|x86.Build.0 = Release|Any CPU
 		{2E3DF5C2-8A38-4A03-86D7-8D463C917E47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2E3DF5C2-8A38-4A03-86D7-8D463C917E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E3DF5C2-8A38-4A03-86D7-8D463C917E47}.Debug|ARM.ActiveCfg = Debug|Any CPU
@@ -113,6 +97,22 @@ Global
 		{2E3DF5C2-8A38-4A03-86D7-8D463C917E47}.Release|x64.Build.0 = Release|Any CPU
 		{2E3DF5C2-8A38-4A03-86D7-8D463C917E47}.Release|x86.ActiveCfg = Release|Any CPU
 		{2E3DF5C2-8A38-4A03-86D7-8D463C917E47}.Release|x86.Build.0 = Release|Any CPU
+		{041DBF14-A7FC-4733-9602-B62C9D584BD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{041DBF14-A7FC-4733-9602-B62C9D584BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{041DBF14-A7FC-4733-9602-B62C9D584BD1}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{041DBF14-A7FC-4733-9602-B62C9D584BD1}.Debug|ARM.Build.0 = Debug|Any CPU
+		{041DBF14-A7FC-4733-9602-B62C9D584BD1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{041DBF14-A7FC-4733-9602-B62C9D584BD1}.Debug|x64.Build.0 = Debug|Any CPU
+		{041DBF14-A7FC-4733-9602-B62C9D584BD1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{041DBF14-A7FC-4733-9602-B62C9D584BD1}.Debug|x86.Build.0 = Debug|Any CPU
+		{041DBF14-A7FC-4733-9602-B62C9D584BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{041DBF14-A7FC-4733-9602-B62C9D584BD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{041DBF14-A7FC-4733-9602-B62C9D584BD1}.Release|ARM.ActiveCfg = Release|Any CPU
+		{041DBF14-A7FC-4733-9602-B62C9D584BD1}.Release|ARM.Build.0 = Release|Any CPU
+		{041DBF14-A7FC-4733-9602-B62C9D584BD1}.Release|x64.ActiveCfg = Release|Any CPU
+		{041DBF14-A7FC-4733-9602-B62C9D584BD1}.Release|x64.Build.0 = Release|Any CPU
+		{041DBF14-A7FC-4733-9602-B62C9D584BD1}.Release|x86.ActiveCfg = Release|Any CPU
+		{041DBF14-A7FC-4733-9602-B62C9D584BD1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

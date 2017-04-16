@@ -27,7 +27,7 @@ namespace Ed.Steamflix.Universal
         /// </summary>
         public App()
         {
-            this.InitializeComponent();
+            InitializeComponent();
             this.Suspending += OnSuspending;
 
             // Dependency Injection
@@ -114,7 +114,7 @@ namespace Ed.Steamflix.Universal
             Window.Current.Activate();
 
             // Tile
-            SetupPeriotidcTileUpdate();
+            SetupPeriodicTileUpdate();
 
             // Full screen on phones
             if (AnalyticsInfo.VersionInfo.DeviceFamily == "Windows.Mobile")
@@ -130,33 +130,33 @@ namespace Ed.Steamflix.Universal
         /// <summary>
         /// Sets up a periodic tile update that shows 5 recently played and popular game images from the Steamflix API.
         /// </summary>
-        private void SetupPeriotidcTileUpdate()
+        private void SetupPeriodicTileUpdate()
         {
-            TileUpdater tileUpdateManager = null;
-
             try
             {
+                TileUpdater tileUpdateManager = null;
+            
                 // IoT Core doesn't support tile updates
                 tileUpdateManager = TileUpdateManager.CreateTileUpdaterForApplication();
+
+                var apiUrl = "http://steamflix.azurewebsites.net/api/tile";
+                var steamId = GetSteamId();
+                var uris = new List<Uri>
+                {
+                    new Uri($"{apiUrl}/0/{steamId}"),
+                    new Uri($"{apiUrl}/1/{steamId}"),
+                    new Uri($"{apiUrl}/2/{steamId}"),
+                    new Uri($"{apiUrl}/3/{steamId}"),
+                    new Uri($"{apiUrl}/4/{steamId}")
+                };
+
+                tileUpdateManager.EnableNotificationQueue(true);
+                tileUpdateManager.StartPeriodicUpdateBatch(uris, PeriodicUpdateRecurrence.TwelveHours);
             }
             catch
             {
                 return;
             }
-
-            var apiUrl = "http://steamflix.azurewebsites.net/api/tile";
-            var steamId = GetSteamId();
-            var uris = new List<Uri>
-            {
-                new Uri($"{apiUrl}/0/{steamId}"),
-                new Uri($"{apiUrl}/1/{steamId}"),
-                new Uri($"{apiUrl}/2/{steamId}"),
-                new Uri($"{apiUrl}/3/{steamId}"),
-                new Uri($"{apiUrl}/4/{steamId}")
-            };
-
-            tileUpdateManager.EnableNotificationQueue(true);
-            tileUpdateManager.StartPeriodicUpdateBatch(uris, PeriodicUpdateRecurrence.TwelveHours);
         }
 
         /// <summary>
