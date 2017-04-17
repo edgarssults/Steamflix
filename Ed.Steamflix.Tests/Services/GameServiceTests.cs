@@ -1,8 +1,11 @@
 ﻿using Ed.Steamflix.Common.Models;
 using Ed.Steamflix.Common.Repositories;
 using Ed.Steamflix.Common.Services;
-using Ed.Steamflix.Mocks.Repositories;
+using Ed.Steamflix.Mocks;
+using Moq;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace Ed.Steamflix.Tests.Services
@@ -13,34 +16,46 @@ namespace Ed.Steamflix.Tests.Services
     public class GameServiceTests
     {
         private readonly string _steamId = "76561197974081377"; // Me
-        private IApiRepository _apiRepository;
-        private IApiRepository _testApiRepository;
-        private ICommunityRepository _communityRepository;
-        private ICommunityRepository _testCommunityRepository;
+        private readonly IApiRepository _apiRepository;
+        private readonly ICommunityRepository _communityRepository;
+        private readonly Mock<IApiRepository> _apiRepositoryMock;
+        private readonly Mock<ICommunityRepository> _communityRepositoryMock;
+        private readonly GameService _target;
+        private readonly GameService _targetReal;
 
         public GameServiceTests()
         {
             _apiRepository = new ApiRepository();
-            _testApiRepository = new TestApiRepository();
             _communityRepository = new CommunityRepository();
-            _testCommunityRepository = new TestCommunityRepository();
+            _apiRepositoryMock = new Mock<IApiRepository>();
+            _communityRepositoryMock = new Mock<ICommunityRepository>();
+
+            _apiRepositoryMock.Setup(m => m.ApiCallAsync(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>()))
+                .Returns((string service, string method, string version, string parameters) => { return Task.FromResult(Resources.ResourceManager.GetString(method + "ResponseJson")); });
+
+            _apiRepositoryMock.Setup(m => m.ReadUrlAsync(It.IsAny<string>()))
+                .Returns((string url) => { return Task.FromResult(Resources.ResourceManager.GetString(Regex.Replace(url, @"[\:\/\.\=\?]", ""))); });
+
+            _communityRepositoryMock.Setup(m => m.GetStatsHtmlAsync())
+                .Returns(Task.FromResult(Resources.ResourceManager.GetString("StatsHtml")));
+
+            _targetReal = new GameService(_apiRepository, _communityRepository);
+            _target = new GameService(_apiRepositoryMock.Object, _communityRepositoryMock.Object);
         }
 
         [Fact]
-        public void GetRecentlyPlayedGamesSuccess()
+        public void GetRecentlyPlayedGames_Real_Success()
         {
-            var service = new GameService(_apiRepository, _communityRepository);
-            var model = service.GetRecentlyPlayedGamesAsync(_steamId).Result;
+            var model = _targetReal.GetRecentlyPlayedGamesAsync(_steamId).Result;
 
             Assert.NotEqual(default(List<Game>), model);
             Assert.True(model.Count > 0, "Expected at least one recently played game.");
         }
 
         [Fact]
-        public void GetRecentlyPlayedGamesMockSuccess()
+        public void GetRecentlyPlayedGames_Success()
         {
-            var service = new GameService(_testApiRepository, _testCommunityRepository);
-            var model = service.GetRecentlyPlayedGamesAsync(_steamId).Result;
+            var model = _target.GetRecentlyPlayedGamesAsync(_steamId).Result;
 
             Assert.NotEqual(default(List<Game>), model);
             Assert.True(model.Count > 0);
@@ -49,20 +64,26 @@ namespace Ed.Steamflix.Tests.Services
         }
 
         [Fact]
-        public void GetOwnedGamesSuccess()
+        public void GetRecentlyPlayedGames_NoSteamId_ReturnsNull()
         {
-            var service = new GameService(_apiRepository, _communityRepository);
-            var model = service.GetOwnedGamesAsync(_steamId).Result;
+            var model = _target.GetRecentlyPlayedGamesAsync(null).Result;
+
+            Assert.Equal(null, model);
+        }
+
+        [Fact]
+        public void GetOwnedGames_Real_Success()
+        {
+            var model = _targetReal.GetOwnedGamesAsync(_steamId).Result;
 
             Assert.NotEqual(default(List<Game>), model);
             Assert.True(model.Count > 0, "Expected at least one recently played game.");
         }
 
         [Fact]
-        public void GetOwnedGamesMockSuccess()
+        public void GetOwnedGames_Success()
         {
-            var service = new GameService(_testApiRepository, _testCommunityRepository);
-            var model = service.GetOwnedGamesAsync(_steamId).Result;
+            var model = _target.GetOwnedGamesAsync(_steamId).Result;
 
             Assert.NotEqual(default(List<Game>), model);
             Assert.True(model.Count > 0, "Expected at least one recently played game.");
@@ -71,39 +92,65 @@ namespace Ed.Steamflix.Tests.Services
         }
 
         [Fact]
-        public void GetGameInfoSuccess()
+        public void GetOwnedGames_NoSteamId_ReturnsNull()
         {
-            var service = new GameService(_apiRepository, _communityRepository);
-            var game = service.GetGameInfoAsync(72850).Result; // Skyrim
+            var model = _target.GetOwnedGamesAsync(null).Result;
+
+            Assert.Equal(null, model);
+        }
+
+        [Fact]
+        public void GetGameInfo_Real_Success()
+        {
+            var game = _targetReal.GetGameInfoAsync(72850).Result; // Skyrim
 
             Assert.True(game != null, "Expected a game.");
             Assert.Equal(72850, game.AppId);
         }
 
         [Fact]
-        public void GetGameInfoMockSuccess()
+        public void GetGameInfo_Success()
         {
-            var service = new GameService(_testApiRepository, _testCommunityRepository);
-            var game = service.GetGameInfoAsync(72850).Result; // Skyrim
+            var game = _target.GetGameInfoAsync(72850).Result; // Skyrim
 
             Assert.True(game != null, "Expected a game.");
             Assert.Equal(72850, game.AppId);
         }
 
         [Fact]
-        public void GetPopularGamesSuccess()
+        public void GetGameInfo_NullApiResult_ReturnsNull()
         {
-            var service = new GameService(_apiRepository, _communityRepository);
-            var games = service.GetPopularGamesAsync().Result;
+            _apiRepositoryMock.Setup(m => m.ReadUrlAsync(It.IsAny<string>()))
+                .Returns(Task.FromResult<string>(null));
+
+            var game = _target.GetGameInfoAsync(999).Result;
+
+            Assert.True(game == null, "Expected no game.");
+        }
+
+        [Fact]
+        public void GetGameInfo_GameNotFound_ReturnsNull()
+        {
+            _apiRepositoryMock.Setup(m => m.ReadUrlAsync(It.IsAny<string>()))
+                .Returns(Task.FromResult("{\"999\": {\"success\": false}}"));
+
+            var game = _target.GetGameInfoAsync(999).Result;
+
+            Assert.True(game == null, "Expected no game.");
+        }
+
+        [Fact]
+        public void GetPopular_Real_Success()
+        {
+            var games = _targetReal.GetPopularGamesAsync().Result;
 
             Assert.True(games.Count > 0, "Expected a different number of broadcasts.");
         }
 
         [Fact]
-        public void GetPopularGamesMockSuccess()
+        public void GetPopularGames_Success()
         {
-            var service = new GameService(_testApiRepository, _testCommunityRepository);
-            var games = service.GetPopularGamesAsync().Result;
+            var games = _target.GetPopularGamesAsync().Result;
 
             Assert.Equal(100, games.Count);
             Assert.Equal("Dota 2", games[0].Name);

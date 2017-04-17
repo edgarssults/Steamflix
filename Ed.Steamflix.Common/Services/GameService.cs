@@ -126,9 +126,15 @@ namespace Ed.Steamflix.Common.Services
         public async Task<Game> GetGameInfoAsync(int appId)
         {
             var response = await _apiRepository.ReadUrlAsync($"http://store.steampowered.com/api/appdetails?appids={appId}").ConfigureAwait(false);
-            var model = JsonConvert.DeserializeObject<GetAppDetailsResponse>(response);
+            if (response == null)
+            {
+                return null;
+            }
 
-            if (!model.AppDetails.Success)
+            var model = JsonConvert.DeserializeObject<GetAppDetailsResponse>(response);
+            if (model == null
+                || model.AppDetails == null
+                || !model.AppDetails.Success)
             {
                 return null;
             }
