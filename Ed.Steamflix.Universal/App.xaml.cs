@@ -1,7 +1,6 @@
 ﻿using DryIoc;
 using Ed.Steamflix.Common.Repositories;
 using Ed.Steamflix.Common.Services;
-using Microsoft.HockeyApp;
 using System;
 using System.Collections.Generic;
 using Windows.ApplicationModel;
@@ -42,9 +41,6 @@ namespace Ed.Steamflix.Universal
             // Repositories
             container.Register<IApiRepository, ApiRepository>(Reuse.Singleton);
             container.Register<ICommunityRepository, CommunityRepository>(Reuse.Singleton);
-
-            // HockeyApp
-            HockeyClient.Current.Configure("ba87431fcc8c44d3b3562a9a07e8d58f");
         }
 
         /// <summary>

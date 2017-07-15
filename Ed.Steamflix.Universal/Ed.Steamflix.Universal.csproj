@@ -96,7 +96,6 @@
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
     <None Include="Ed.Steamflix.Universal_StoreKey.pfx" />
     <None Include="project.json" />
-    <None Include="Service References\HockeyApp\ConnectedService.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
