@@ -19,10 +19,9 @@
     <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
     <AppxBundle>Always</AppxBundle>
     <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
-    <HockeyAppResourceId>ba87431fcc8c44d3b3562a9a07e8d58f</HockeyAppResourceId>
-    <PackageCertificateThumbprint>4E26692A01FAB220F4DFD7DAE4B725466097F076</PackageCertificateThumbprint>
-    <PackageCertificateKeyFile>Ed.Steamflix.Universal_StoreKey.pfx</PackageCertificateKeyFile>
     <RuntimeIdentifiers>win10-arm;win10-arm-aot;win10-x86;win10-x86-aot;win10-x64;win10-x64-aot</RuntimeIdentifiers>
+    <PackageCertificateThumbprint>15617996DA9455B71CF8DE255CC7AEE4F63D4671</PackageCertificateThumbprint>
+    <PackageCertificateKeyFile>Ed.Steamflix.Universal_StoreKey.pfx</PackageCertificateKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
