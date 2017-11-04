@@ -6,9 +6,9 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource SystemControlAcrylicElementBrush}">
+    Background="{StaticResource AppBackgroundColor}">
 
-    <Grid Background="{ThemeResource SystemControlAcrylicElementBrush}">
+    <Grid Background="{StaticResource AppBackgroundColor}">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
