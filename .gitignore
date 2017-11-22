@@ -245,3 +245,4 @@ ModelManifest.xml
 .fake/
 /Ed.Steamflix.Universal/Assets/Thumbs.db
 *.appx
+/Ed.Steamflix.Universal/_pkginfo.txt
