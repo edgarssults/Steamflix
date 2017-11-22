@@ -20,6 +20,8 @@ namespace Ed.Steamflix.Universal
     /// </summary>
     sealed partial class App : Application
     {
+        private readonly string _steamflixTileApiUrl = "http://steamflix.azurewebsites.net/api/tile";
+
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -135,15 +137,14 @@ namespace Ed.Steamflix.Universal
                 // IoT Core doesn't support tile updates
                 tileUpdateManager = TileUpdateManager.CreateTileUpdaterForApplication();
 
-                var apiUrl = "http://steamflix.azurewebsites.net/api/tile";
                 var steamId = GetSteamId();
                 var uris = new List<Uri>
                 {
-                    new Uri($"{apiUrl}/0/{steamId}"),
-                    new Uri($"{apiUrl}/1/{steamId}"),
-                    new Uri($"{apiUrl}/2/{steamId}"),
-                    new Uri($"{apiUrl}/3/{steamId}"),
-                    new Uri($"{apiUrl}/4/{steamId}")
+                    new Uri($"{_steamflixTileApiUrl}/0/{steamId}"),
+                    new Uri($"{_steamflixTileApiUrl}/1/{steamId}"),
+                    new Uri($"{_steamflixTileApiUrl}/2/{steamId}"),
+                    new Uri($"{_steamflixTileApiUrl}/3/{steamId}"),
+                    new Uri($"{_steamflixTileApiUrl}/4/{steamId}")
                 };
 
                 tileUpdateManager.EnableNotificationQueue(true);

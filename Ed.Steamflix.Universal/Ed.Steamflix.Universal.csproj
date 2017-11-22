@@ -249,34 +249,34 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Ed.Steamflix.Common\Ed.Steamflix.Common.csproj">
-      <Project>{d1d1b26c-2fdd-4bf6-92b4-36b6e1db8fa4}</Project>
-      <Name>Ed.Steamflix.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Ed.Steamflix.Mocks\Ed.Steamflix.Mocks.csproj">
-      <Project>{6134d286-0ea7-4e8c-9361-d4ed331b244b}</Project>
-      <Name>Ed.Steamflix.Mocks</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="DryIoc">
       <Version>2.12.5</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>5.4.1</Version>
+      <Version>6.0.2</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.Services.Store.Engagement">
       <Version>10.1710.25002</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.Toolkit.Uwp">
-      <Version>2.0.0</Version>
+      <Version>2.1.0</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications">
-      <Version>2.0.0</Version>
+      <Version>2.1.0</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls">
-      <Version>2.0.0</Version>
+      <Version>2.1.0</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ed.Steamflix.Common\Ed.Steamflix.Common.csproj">
+      <Project>{8eaa2e6b-6a2d-49ba-b2e4-510cbaa1c2da}</Project>
+      <Name>Ed.Steamflix.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ed.Steamflix.Mocks\Ed.Steamflix.Mocks.csproj">
+      <Project>{2da26417-2286-4a19-b189-eca94b5e7e89}</Project>
+      <Name>Ed.Steamflix.Mocks</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

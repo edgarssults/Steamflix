@@ -14,10 +14,10 @@ namespace Ed.Steamflix.Common.Repositories
         /// <summary>
         /// Reads JSON from Steam API asynchronously.
         /// </summary>
-        /// <param name="service">Steam service name, f.ex., IPlayerService.</param>
-        /// <param name="method">Service method name, f.ex., GetRecentlyPlayedGames.</param>
-        /// <param name="version">Method version, f.ex., v0001.</param>
-        /// <param name="parameters">Additional parameters, f.ex., steamid=XYZ.</param>
+        /// <param name="service">Steam service name, f.ex. IPlayerService.</param>
+        /// <param name="method">Service method name, f.ex. GetRecentlyPlayedGames.</param>
+        /// <param name="version">Method version, f.ex. v0001.</param>
+        /// <param name="parameters">Additional parameters, f.ex. steamid=XYZ.</param>
         /// <returns>JSON string.</returns>
         Task<string> ApiCallAsync(string service, string method, string version, string parameters);
     }
