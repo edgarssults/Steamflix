@@ -38,7 +38,7 @@ namespace Ed.Steamflix.Universal.ViewModels
                 if (!string.IsNullOrEmpty(profileUrl))
                 {
                     // Have to extract ID from profile URL
-                    steamId = _userService.GetSteamIdAsync(profileUrl).Result;
+                    steamId = _userService.GetSteamId(profileUrl).Result;
 
                     // Save ID
                     ApplicationData.Current.RoamingSettings.Values["SteamId"] = steamId;
@@ -55,7 +55,7 @@ namespace Ed.Steamflix.Universal.ViewModels
         {
             get
             {
-                return new NotifyTaskCompletion<List<Game>>(_gameService.GetRecentlyPlayedGamesAsync(GetSteamId()));
+                return new NotifyTaskCompletion<List<Game>>(_gameService.GetRecentlyPlayedGames(GetSteamId()));
             }
         }
 
@@ -66,7 +66,7 @@ namespace Ed.Steamflix.Universal.ViewModels
         {
             get
             {
-                return new NotifyTaskCompletion<List<Game>>(_gameService.GetOwnedGamesAsync(GetSteamId()));
+                return new NotifyTaskCompletion<List<Game>>(_gameService.GetOwnedGames(GetSteamId()));
             }
         }
 
@@ -77,7 +77,7 @@ namespace Ed.Steamflix.Universal.ViewModels
         {
             get
             {
-                return new NotifyTaskCompletion<List<Game>>(_gameService.GetPopularGamesAsync());
+                return new NotifyTaskCompletion<List<Game>>(_gameService.GetPopularGames());
             }
         }
     }

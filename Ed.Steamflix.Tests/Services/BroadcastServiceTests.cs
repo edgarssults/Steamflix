@@ -1,7 +1,6 @@
 ﻿using Ed.Steamflix.Common.Repositories;
 using Ed.Steamflix.Common.Services;
 using Ed.Steamflix.Mocks;
-using Ed.Steamflix.Mocks.Repositories;
 using Moq;
 using System.Linq;
 using System.Threading.Tasks;
@@ -21,7 +20,7 @@ namespace Ed.Steamflix.Tests.Services
             _communityRepository = new CommunityRepository();
             _communityRepositoryMock = new Mock<ICommunityRepository>();
 
-            _communityRepositoryMock.Setup(m => m.GetBroadcastHtmlAsync(It.IsAny<int>()))
+            _communityRepositoryMock.Setup(m => m.GetBroadcastHtml(It.IsAny<int>()))
                 .Returns((int appId) => { return Task.FromResult(Resources.ResourceManager.GetString("BroadcastsHtml" + appId)); });
 
             _targetReal = new BroadcastService(_communityRepository);
@@ -29,9 +28,9 @@ namespace Ed.Steamflix.Tests.Services
         }
 
         [Fact]
-        public void GetBroadcasts_Success()
+        public async Task GetBroadcasts_Success()
         {
-            var broadcasts = _target.GetBroadcastsAsync(292030).Result; // Witcher 3
+            var broadcasts = await _target.GetBroadcasts(292030); // Witcher 3
 
             Assert.Equal("The Witcher 3: Wild Hunt", broadcasts.GameName);
             Assert.Equal(10, broadcasts.Broadcasts.Count);
@@ -42,9 +41,10 @@ namespace Ed.Steamflix.Tests.Services
         }
 
         [Fact]
-        public void GetBroadcasts_Real_Success()
+        [Trait("Category", "Integration")]
+        public async Task GetBroadcasts_Real_Success()
         {
-            var broadcasts = _targetReal.GetBroadcastsAsync(570).Result; // Dota 2
+            var broadcasts = await _targetReal.GetBroadcasts(570); // Dota 2
 
             Assert.Equal("Dota 2", broadcasts.GameName);
             Assert.True(broadcasts.Broadcasts.Count > 0, "Expected a different number of broadcasts.");

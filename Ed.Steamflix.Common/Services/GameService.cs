@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Ed.Steamflix.Common.Services
 {
     /// <summary>
-    /// Service class for Steam's IPlayerService API.
+    /// Steam's IPlayerService API interaction logic.
     /// </summary>
     public class GameService
     {
@@ -20,7 +20,7 @@ namespace Ed.Steamflix.Common.Services
         private readonly ICommunityRepository _communityRepository;
 
         /// <summary>
-        /// Constructor.
+        /// Steam's IPlayerService API interaction logic.
         /// </summary>
         /// <param name="apiRepository">API repository implementation.</param>
         /// <param name="communityRepository">Community repository implementation.</param>
@@ -38,14 +38,14 @@ namespace Ed.Steamflix.Common.Services
         /// </remarks>
         /// <param name="steamId">User's Steam ID.</param>
         /// <returns>Total count and list of games.</returns>
-        public async Task<List<Game>> GetRecentlyPlayedGamesAsync(string steamId)
+        public async Task<List<Game>> GetRecentlyPlayedGames(string steamId)
         {
             if (string.IsNullOrEmpty(steamId))
             {
                 return null;
             }
 
-            var response = await _apiRepository.ApiCallAsync(
+            var response = await _apiRepository.ApiCall(
                 _serviceName,
                 "GetRecentlyPlayedGames",
                 "v1",
@@ -65,14 +65,14 @@ namespace Ed.Steamflix.Common.Services
         /// </remarks>
         /// <param name="steamId">User's Steam ID.</param>
         /// <returns>Total count and list of games.</returns>
-        public async Task<List<Game>> GetOwnedGamesAsync(string steamId)
+        public async Task<List<Game>> GetOwnedGames(string steamId)
         {
             if (string.IsNullOrEmpty(steamId))
             {
                 return null;
             }
 
-            var response = await _apiRepository.ApiCallAsync(
+            var response = await _apiRepository.ApiCall(
                 _serviceName,
                 "GetOwnedGames",
                 "v1",
@@ -98,10 +98,10 @@ namespace Ed.Steamflix.Common.Services
         /// http://store.steampowered.com/stats/
         /// </remarks>
         /// <returns>List of games.</returns>
-        public async Task<List<Game>> GetPopularGamesAsync()
+        public async Task<List<Game>> GetPopularGames()
         {
             var games = new List<Game>();
-            var html = await _communityRepository.GetStatsHtmlAsync().ConfigureAwait(false);
+            var html = await _communityRepository.GetStatsHtml().ConfigureAwait(false);
 
             foreach (Match match in _statsRegex.Matches(html))
             {
@@ -123,9 +123,9 @@ namespace Ed.Steamflix.Common.Services
         /// </remarks>
         /// <param name="appId">Steam app identifier.</param>
         /// <returns>Game info.</returns>
-        public async Task<Game> GetGameInfoAsync(int appId)
+        public async Task<Game> GetGameInfo(int appId)
         {
-            var response = await _apiRepository.ReadUrlAsync($"http://store.steampowered.com/api/appdetails?appids={appId}").ConfigureAwait(false);
+            var response = await _apiRepository.ReadUrl($"http://store.steampowered.com/api/appdetails?appids={appId}").ConfigureAwait(false);
             if (response == null)
             {
                 return null;

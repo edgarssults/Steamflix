@@ -7,16 +7,19 @@ using System.Threading.Tasks;
 
 namespace Ed.Steamflix.Common.Repositories
 {
+    /// <summary>
+    /// Steam Community interaction logic.
+    /// </summary>
     public class CommunityRepository : ICommunityRepository
     {
         private List<Cookie> _cookieCache = new List<Cookie>();
 
         /// <summary>
-        /// Retrieves the broadcasts page HTML for a game asynchronously.
+        /// Retrieves the broadcasts page HTML for a game.
         /// </summary>
         /// <param name="appId">Application identifier.</param>
         /// <returns>HTML string.</returns>
-        public async Task<string> GetBroadcastHtmlAsync(int appId)
+        public async Task<string> GetBroadcastHtml(int appId)
         {
             var broadcastUrl = string.Format(Settings.BroadcastUrlFormat, appId);
 
@@ -27,10 +30,10 @@ namespace Ed.Steamflix.Common.Repositories
         }
 
         /// <summary>
-        /// Retrieves the Steam stats page HTML asynchronously.
+        /// Retrieves the Steam stats page HTML.
         /// </summary>
         /// <returns>HTML string.</returns>
-        public async Task<string> GetStatsHtmlAsync()
+        public async Task<string> GetStatsHtml()
         {
             using (var client = new HttpClient())
             {
@@ -39,13 +42,13 @@ namespace Ed.Steamflix.Common.Repositories
         }
 
         /// <summary>
-        /// Retrieves the Steam community user search results page HTML asynchronously.
+        /// Retrieves the Steam community user search results page HTML.
         /// </summary>
         /// <param name="user">Username to search for.</param>
         /// <param name="sessionId">Session ID value from cookie.</param>
         /// <param name="steamCountry">Steam country value from cookie.</param>
         /// <returns>HTML string.</returns>
-        public async Task<string> GetUsersHtmlAsync(string user, string sessionId, string steamCountry)
+        public async Task<string> GetUsersHtml(string user, string sessionId, string steamCountry)
         {
             var userSearchUrl = string.Format(Settings.UserSearchUrlFormat, user, sessionId);
             var steamCommunityUrl = Settings.SteamCommunityUrl;
@@ -68,7 +71,7 @@ namespace Ed.Steamflix.Common.Repositories
         /// Gets cookies set by steamcommunity.com.
         /// </summary>
         /// <returns>List of cookies.</returns>
-        public async Task<List<Cookie>> GetSteamSetCookiesAsync()
+        public async Task<List<Cookie>> GetSteamCookies()
         {
             if (_cookieCache.Any())
             {

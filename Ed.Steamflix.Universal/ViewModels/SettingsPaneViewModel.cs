@@ -53,7 +53,7 @@ namespace Ed.Steamflix.Universal.ViewModels
         {
             get
             {
-                return new NotifyTaskCompletion<List<User>>(_userService.FindUsersAsync(SearchText));
+                return new NotifyTaskCompletion<List<User>>(_userService.FindUsers(SearchText));
             }
         }
 

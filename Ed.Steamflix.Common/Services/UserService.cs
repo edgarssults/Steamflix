@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Ed.Steamflix.Common.Services
 {
     /// <summary>
-    /// Service class for Steam's ISteamUser API.
+    /// Steam's ISteamUser API interaction logic.
     /// </summary>
     public class UserService
     {
@@ -23,7 +23,7 @@ namespace Ed.Steamflix.Common.Services
         private readonly ICommunityRepository _communityRepository;
 
         /// <summary>
-        /// Constructor.
+        /// Steam's ISteamUser API interaction logic.
         /// </summary>
         /// <param name="apiRepository">API repository implementation.</param>
         /// <param name="communityRepository">Community repository implementation.</param>
@@ -38,14 +38,14 @@ namespace Ed.Steamflix.Common.Services
         /// </summary>
         /// <param name="steamId">User's Steam ID.</param>
         /// <returns>List of friends.</returns>
-        public async Task<FriendsList> GetFriendListAsync(string steamId)
+        public async Task<FriendsList> GetFriendList(string steamId)
         {
             if (string.IsNullOrEmpty(steamId))
             {
                 throw new ArgumentNullException(nameof(steamId));
             }
 
-            var response = await _apiRepository.ApiCallAsync(
+            var response = await _apiRepository.ApiCall(
                 _servicename,
                 "GetFriendList",
                 "v0001",
@@ -65,14 +65,14 @@ namespace Ed.Steamflix.Common.Services
         /// Up to 100 Steam IDs can be requested.
         /// </param>
         /// <returns>List of player summaries.</returns>
-        public async Task<PlayerSummaries> GetPlayerSummariesAsync(List<string> steamIds)
+        public async Task<PlayerSummaries> GetPlayerSummaries(List<string> steamIds)
         {
             if (steamIds == null || !steamIds.Any())
             {
                 throw new ArgumentNullException(nameof(steamIds));
             }
 
-            var response = await _apiRepository.ApiCallAsync(
+            var response = await _apiRepository.ApiCall(
                 _servicename,
                 "GetPlayerSummaries",
                 "v0002",
@@ -95,14 +95,14 @@ namespace Ed.Steamflix.Common.Services
         /// e.g. http://steamcommunity.com/id/edgarssults/ would use "edgarssults".
         /// </param>
         /// <returns>User info.</returns>
-        public async Task<UserData> ResolveVanityUrlAsync(string vanityUrlName)
+        public async Task<UserData> ResolveVanityUrl(string vanityUrlName)
         {
             if (string.IsNullOrEmpty(vanityUrlName))
             {
                 throw new ArgumentNullException(nameof(vanityUrlName));
             }
 
-            var response = await _apiRepository.ApiCallAsync(
+            var response = await _apiRepository.ApiCall(
                 _servicename,
                 "ResolveVanityUrl",
                 "v0001",
@@ -119,7 +119,7 @@ namespace Ed.Steamflix.Common.Services
         /// </summary>
         /// <param name="profileUrl">Steam community profile URL</param>
         /// <returns>Steam ID.</returns>
-        public async Task<string> GetSteamIdAsync(string profileUrl)
+        public async Task<string> GetSteamId(string profileUrl)
         {
             if (string.IsNullOrEmpty(profileUrl))
             {
@@ -135,7 +135,7 @@ namespace Ed.Steamflix.Common.Services
             }
             else if (vanityUrlMatch.Success)
             {
-                var userData = await ResolveVanityUrlAsync(vanityUrlMatch.Groups["VanityUrlName"].Value).ConfigureAwait(false);
+                var userData = await ResolveVanityUrl(vanityUrlMatch.Groups["VanityUrlName"].Value).ConfigureAwait(false);
                 return userData.SteamId;
             }
             else
@@ -149,7 +149,7 @@ namespace Ed.Steamflix.Common.Services
         /// </summary>
         /// <param name="username">Username to search for.</param>
         /// <returns>List of users.</returns>
-        public async Task<List<User>> FindUsersAsync(string username)
+        public async Task<List<User>> FindUsers(string username)
         {
             if (string.IsNullOrWhiteSpace(username))
             {
@@ -158,7 +158,7 @@ namespace Ed.Steamflix.Common.Services
 
             var users = new List<User>();
 
-            var steamCookies = await _communityRepository.GetSteamSetCookiesAsync().ConfigureAwait(false);
+            var steamCookies = await _communityRepository.GetSteamCookies().ConfigureAwait(false);
             if (steamCookies != null && steamCookies.Any())
             {
                 var sessionIdCookie = steamCookies.FirstOrDefault(c => c.Name.Equals(Settings.SessionIdCookie));
@@ -166,7 +166,7 @@ namespace Ed.Steamflix.Common.Services
 
                 if (sessionIdCookie != null && steamCountryCookie != null)
                 {
-                    var searchResults = await _communityRepository.GetUsersHtmlAsync(username, sessionIdCookie.Value, steamCountryCookie.Value).ConfigureAwait(false);
+                    var searchResults = await _communityRepository.GetUsersHtml(username, sessionIdCookie.Value, steamCountryCookie.Value).ConfigureAwait(false);
                     var result = JsonConvert.DeserializeObject<UserSearchResult>(searchResults);
                     if (result?.Success == 1)
                     {

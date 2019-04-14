@@ -30,13 +30,13 @@ namespace Ed.Steamflix.Tests.Services
             _apiRepositoryMock = new Mock<IApiRepository>();
             _communityRepositoryMock = new Mock<ICommunityRepository>();
 
-            _apiRepositoryMock.Setup(m => m.ApiCallAsync(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>()))
+            _apiRepositoryMock.Setup(m => m.ApiCall(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>()))
                 .Returns((string service, string method, string version, string parameters) => { return Task.FromResult(Resources.ResourceManager.GetString(method + "ResponseJson")); });
 
-            _apiRepositoryMock.Setup(m => m.ReadUrlAsync(It.IsAny<string>()))
+            _apiRepositoryMock.Setup(m => m.ReadUrl(It.IsAny<string>()))
                 .Returns((string url) => { return Task.FromResult(Resources.ResourceManager.GetString(Regex.Replace(url, @"[\:\/\.\=\?]", ""))); });
 
-            _communityRepositoryMock.Setup(m => m.GetStatsHtmlAsync())
+            _communityRepositoryMock.Setup(m => m.GetStatsHtml())
                 .Returns(Task.FromResult(Resources.ResourceManager.GetString("StatsHtml")));
 
             _targetReal = new GameService(_apiRepository, _communityRepository);
@@ -44,113 +44,117 @@ namespace Ed.Steamflix.Tests.Services
         }
 
         [Fact]
-        public void GetRecentlyPlayedGames_Real_Success()
+        [Trait("Category", "Integration")]
+        public async Task GetRecentlyPlayedGames_Real_Success()
         {
-            var model = _targetReal.GetRecentlyPlayedGamesAsync(_steamId).Result;
+            var model = await _targetReal.GetRecentlyPlayedGames(_steamId);
 
-            Assert.NotEqual(default(List<Game>), model);
+            Assert.NotEqual(default, model);
             Assert.True(model.Count > 0, "Expected at least one recently played game.");
         }
 
         [Fact]
-        public void GetRecentlyPlayedGames_Success()
+        public async Task GetRecentlyPlayedGames_Success()
         {
-            var model = _target.GetRecentlyPlayedGamesAsync(_steamId).Result;
+            var model = await _target.GetRecentlyPlayedGames(_steamId);
 
-            Assert.NotEqual(default(List<Game>), model);
+            Assert.NotEqual(default, model);
             Assert.True(model.Count > 0);
             Assert.Equal(15, model.Count);
             Assert.Equal(107410, model[0].AppId);
         }
 
         [Fact]
-        public void GetRecentlyPlayedGames_NoSteamId_ReturnsNull()
+        public async Task GetRecentlyPlayedGames_NoSteamId_ReturnsNull()
         {
-            var model = _target.GetRecentlyPlayedGamesAsync(null).Result;
+            var model = await _target.GetRecentlyPlayedGames(null);
 
-            Assert.Equal(null, model);
+            Assert.Null(model);
         }
 
         [Fact]
-        public void GetOwnedGames_Real_Success()
+        [Trait("Category", "Integration")]
+        public async Task GetOwnedGames_Real_Success()
         {
-            var model = _targetReal.GetOwnedGamesAsync(_steamId).Result;
+            var model = await _targetReal.GetOwnedGames(_steamId);
 
-            Assert.NotEqual(default(List<Game>), model);
+            Assert.NotEqual(default, model);
             Assert.True(model.Count > 0, "Expected at least one recently played game.");
         }
 
         [Fact]
-        public void GetOwnedGames_Success()
+        public async Task GetOwnedGames_Success()
         {
-            var model = _target.GetOwnedGamesAsync(_steamId).Result;
+            var model = await _target.GetOwnedGames(_steamId);
 
-            Assert.NotEqual(default(List<Game>), model);
+            Assert.NotEqual(default, model);
             Assert.True(model.Count > 0, "Expected at least one recently played game.");
             Assert.Equal(199, model.Count);
             Assert.Equal(212500, model[0].AppId);
         }
 
         [Fact]
-        public void GetOwnedGames_NoSteamId_ReturnsNull()
+        public async Task GetOwnedGames_NoSteamId_ReturnsNull()
         {
-            var model = _target.GetOwnedGamesAsync(null).Result;
+            var model = await _target.GetOwnedGames(null);
 
-            Assert.Equal(null, model);
+            Assert.Null(model);
         }
 
         [Fact]
-        public void GetGameInfo_Real_Success()
+        [Trait("Category", "Integration")]
+        public async Task GetGameInfo_Real_Success()
         {
-            var game = _targetReal.GetGameInfoAsync(72850).Result; // Skyrim
+            var game = await _targetReal.GetGameInfo(72850); // Skyrim
 
             Assert.True(game != null, "Expected a game.");
             Assert.Equal(72850, game.AppId);
         }
 
         [Fact]
-        public void GetGameInfo_Success()
+        public async Task GetGameInfo_Success()
         {
-            var game = _target.GetGameInfoAsync(72850).Result; // Skyrim
+            var game = await _target.GetGameInfo(72850); // Skyrim
 
             Assert.True(game != null, "Expected a game.");
             Assert.Equal(72850, game.AppId);
         }
 
         [Fact]
-        public void GetGameInfo_NullApiResult_ReturnsNull()
+        public async Task GetGameInfo_NullApiResult_ReturnsNull()
         {
-            _apiRepositoryMock.Setup(m => m.ReadUrlAsync(It.IsAny<string>()))
+            _apiRepositoryMock.Setup(m => m.ReadUrl(It.IsAny<string>()))
                 .Returns(Task.FromResult<string>(null));
 
-            var game = _target.GetGameInfoAsync(999).Result;
+            var game = await _target.GetGameInfo(999);
 
             Assert.True(game == null, "Expected no game.");
         }
 
         [Fact]
-        public void GetGameInfo_GameNotFound_ReturnsNull()
+        public async Task GetGameInfo_GameNotFound_ReturnsNull()
         {
-            _apiRepositoryMock.Setup(m => m.ReadUrlAsync(It.IsAny<string>()))
+            _apiRepositoryMock.Setup(m => m.ReadUrl(It.IsAny<string>()))
                 .Returns(Task.FromResult("{\"999\": {\"success\": false}}"));
 
-            var game = _target.GetGameInfoAsync(999).Result;
+            var game = await _target.GetGameInfo(999);
 
             Assert.True(game == null, "Expected no game.");
         }
 
         [Fact]
-        public void GetPopular_Real_Success()
+        [Trait("Category", "Integration")]
+        public async Task GetPopular_Real_Success()
         {
-            var games = _targetReal.GetPopularGamesAsync().Result;
+            var games = await _targetReal.GetPopularGames();
 
             Assert.True(games.Count > 0, "Expected a different number of broadcasts.");
         }
 
         [Fact]
-        public void GetPopularGames_Success()
+        public async Task GetPopularGames_Success()
         {
-            var games = _target.GetPopularGamesAsync().Result;
+            var games = await _target.GetPopularGames();
 
             Assert.Equal(100, games.Count);
             Assert.Equal("Dota 2", games[0].Name);

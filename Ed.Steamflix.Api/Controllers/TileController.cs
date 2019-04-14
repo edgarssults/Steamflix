@@ -91,12 +91,11 @@ namespace Ed.Steamflix.Api.Controllers
         {
             Game selectedGame = null;
             int maxRecentGames = 0;
-            var recentGames = new List<Game>();
 
             // Get a recently played game
             if (!string.IsNullOrEmpty(steamId))
             {
-                recentGames = await _gameService.GetRecentlyPlayedGamesAsync(steamId);
+                var recentGames = await _gameService.GetRecentlyPlayedGames(steamId);
                 if (recentGames != null && recentGames.Count > index)
                 {
                     selectedGame = recentGames[index];
@@ -117,7 +116,7 @@ namespace Ed.Steamflix.Api.Controllers
                     index -= maxRecentGames;
                 }
 
-                var popularGames = await _gameService.GetPopularGamesAsync();
+                var popularGames = await _gameService.GetPopularGames();
                 if (popularGames != null && popularGames.Count > index)
                 {
                     selectedGame = popularGames[index];

@@ -1,4 +1,5 @@
 ﻿using Ed.Steamflix.Common.Repositories;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace Ed.Steamflix.Tests
@@ -22,46 +23,46 @@ namespace Ed.Steamflix.Tests
         }
 
         [Fact]
-        public void GetRecentlyPlayedGamesApiRequestSuccess()
+        public async Task GetRecentlyPlayedGamesApiRequestSuccess()
         {
             var requestUrl = $"http://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v1/?key={_apiKey}&steamid={_steamId}&format=json";
-            var result = _apiRepository.ReadUrlAsync(requestUrl).Result;
+            var result = await _apiRepository.ReadUrl(requestUrl);
 
             Assert.False(string.IsNullOrEmpty(result), "Result should not be empty.");
         }
 
         [Fact]
-        public void GetOwnedGamesApiRequestSuccess()
+        public async Task GetOwnedGamesApiRequestSuccess()
         {
             var requestUrl = $"http://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key={_apiKey}&steamid={_steamId}&include_appinfo=1&format=json";
-            var result = _apiRepository.ReadUrlAsync(requestUrl).Result;
+            var result = await _apiRepository.ReadUrl(requestUrl);
 
             Assert.False(string.IsNullOrEmpty(result), "Result should not be empty.");
         }
 
         [Fact]
-        public void GetFriendListApiRequestSuccess()
+        public async Task GetFriendListApiRequestSuccess()
         {
             var requestUrl = $"http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key={_apiKey}&steamid={_steamId}&relationship=friend&format=json";
-            var result = _apiRepository.ReadUrlAsync(requestUrl).Result;
+            var result = await _apiRepository.ReadUrl(requestUrl);
 
             Assert.False(string.IsNullOrEmpty(result), "Result should not be empty.");
         }
 
         [Fact]
-        public void GetPlayerSummariesApiRequestSuccess()
+        public async Task GetPlayerSummariesApiRequestSuccess()
         {
             var requestUrl = $"http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key={_apiKey}&steamids={_steamId + "," + _otherSteamId}&format=json";
-            var result = _apiRepository.ReadUrlAsync(requestUrl).Result;
+            var result = await _apiRepository.ReadUrl(requestUrl);
 
             Assert.False(string.IsNullOrEmpty(result), "Result should not be empty.");
         }
 
         [Fact]
-        public void ResolveVanityUrlApiRequestSuccess()
+        public async Task ResolveVanityUrlApiRequestSuccess()
         {
             var requestUrl = $"http://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/?key={_apiKey}&vanityurl=edgarssults&format=json";
-            var result = _apiRepository.ReadUrlAsync(requestUrl).Result;
+            var result = await _apiRepository.ReadUrl(requestUrl);
 
             Assert.False(string.IsNullOrEmpty(result), "Result should not be empty.");
         }

@@ -29,7 +29,7 @@ namespace Ed.Steamflix.Universal.ViewModels
         {
             get
             {
-                return new NotifyTaskCompletion<GetBroadcastsResponse>(_broadcastService.GetBroadcastsAsync(_appId));
+                return new NotifyTaskCompletion<GetBroadcastsResponse>(_broadcastService.GetBroadcasts(_appId));
             }
         }
     }

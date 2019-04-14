@@ -173,7 +173,7 @@ namespace Ed.Steamflix.Universal
                 if (!string.IsNullOrEmpty(profileUrl))
                 {
                     // Have to extract ID from profile URL
-                    steamId = DependencyHelper.Resolve<UserService>().GetSteamIdAsync(profileUrl).Result;
+                    steamId = DependencyHelper.Resolve<UserService>().GetSteamId(profileUrl).Result;
 
                     // Save ID
                     ApplicationData.Current.RoamingSettings.Values["SteamId"] = steamId;

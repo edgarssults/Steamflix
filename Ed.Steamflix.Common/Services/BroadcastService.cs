@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Ed.Steamflix.Common.Services
 {
     /// <summary>
-    /// Service class for Steam's broadcast page.
+    /// Steam's broadcast page interaction logic.
     /// </summary>
     public class BroadcastService
     {
@@ -20,7 +20,7 @@ namespace Ed.Steamflix.Common.Services
         private readonly ICommunityRepository _communityRepository;
 
         /// <summary>
-        /// Constructor.
+        /// Steam's broadcast page interaction logic.
         /// </summary>
         /// <param name="communityRepository">Community repository implementation.</param>
         public BroadcastService(ICommunityRepository communityRepository)
@@ -33,9 +33,9 @@ namespace Ed.Steamflix.Common.Services
         /// </summary>
         /// <param name="appId">Application identifier.</param>
         /// <returns>List of broadcasts.</returns>
-        public async Task<GetBroadcastsResponse> GetBroadcastsAsync(int appId)
+        public async Task<GetBroadcastsResponse> GetBroadcasts(int appId)
         {
-            var html = await _communityRepository.GetBroadcastHtmlAsync(appId).ConfigureAwait(false);
+            var html = await _communityRepository.GetBroadcastHtml(appId).ConfigureAwait(false);
 
             var broadcasts = new List<Broadcast>();
             foreach (Match match in _broadcastsRegex.Matches(html))
@@ -58,6 +58,6 @@ namespace Ed.Steamflix.Common.Services
             };
         }
 
-        // TODO: Method for getting more broadcasts for the same app
+        // TODO: Method for getting more broadcasts for the same app, currently it gets only the first page
     }
 }

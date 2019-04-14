@@ -19,7 +19,7 @@ namespace Ed.Steamflix.Mocks.ViewModels
         {
             get
             {
-                return new NotifyTaskCompletion<List<Game>>(_gameService.GetRecentlyPlayedGamesAsync(GetSteamId()));
+                return new NotifyTaskCompletion<List<Game>>(_gameService.GetRecentlyPlayedGames(GetSteamId()));
             }
         }
 
@@ -27,7 +27,7 @@ namespace Ed.Steamflix.Mocks.ViewModels
         {
             get
             {
-                return new NotifyTaskCompletion<List<Game>>(_gameService.GetOwnedGamesAsync(GetSteamId()));
+                return new NotifyTaskCompletion<List<Game>>(_gameService.GetOwnedGames(GetSteamId()));
             }
         }
 
@@ -35,7 +35,7 @@ namespace Ed.Steamflix.Mocks.ViewModels
         {
             get
             {
-                return new NotifyTaskCompletion<List<Game>>(_gameService.GetPopularGamesAsync());
+                return new NotifyTaskCompletion<List<Game>>(_gameService.GetPopularGames());
             }
         }
 
