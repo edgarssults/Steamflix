@@ -1,5 +1,4 @@
-﻿using Ed.Steamflix.Common.Models;
-using Ed.Steamflix.Common.Repositories;
+﻿using Ed.Steamflix.Common.Repositories;
 using Ed.Steamflix.Common.Services;
 using Ed.Steamflix.Mocks.Repositories;
 using System.Collections.Generic;
