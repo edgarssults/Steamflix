@@ -21,6 +21,23 @@ namespace Ed.Steamflix.Universal
 
             SystemNavigationManager.GetForCurrentView().BackRequested += App_BackRequested;
             Browser.DOMContentLoaded += Browser_HideElements;
+            SizeChanged += this.WatchPage_SizeChanged;
+        }
+
+        private void WatchPage_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            if (e.PreviousSize.Width == 0 && e.PreviousSize.Height == 0)
+            {
+                // Fresh window
+                return;
+            }
+
+            var view = ApplicationView.GetForCurrentView();
+            if (!view.IsFullScreenMode)
+            {
+                // Size changed because full screen mode was exited
+                WatchCommandBar.Visibility = Visibility.Visible;
+            }
         }
 
         /// <summary>
@@ -33,23 +50,28 @@ namespace Ed.Steamflix.Universal
             try
             {
                 // Hiding a bunch of elements like menus, header, chat, footer, content, built-in full screen button
-                var elementsToHide = "#global_header, #footer_spacer, #footer_responsive_optin_spacer, #footer, #ChatWindow, .BroadcastInfoWrapper, .fullscreen_button, .responsive_header";
+                var elementsToHide = "#global_header, #footer_spacer, #footer_responsive_optin_spacer, #footer";
 
                 // Hide HTML elements and change styles so it looks like the broadcast is in full-screen
                 // We can't call the broadcast's own toggle full-screen function
                 var lines = new[]
                 {
-                    "document.body.style.overflow = 'hidden';", // Get rid of scrollbars (there shouldn't be a need for any)
-                    "document.getElementById('video_wrapper').className += ' fullscreen';", // Switch video to full screen mode
-                    "document.getElementById('video_content').style.padding = 0;", // Remove video padding
-                    "document.getElementById('video_content').style.margin = 0;", // Remove video margin
-                    "document.getElementsByClassName('pagecontent')[0].style.padding = 0;", // Remove content padding
-                    "document.getElementsByClassName('responsive_page_content')[0].style.paddingTop = 0;", // Remove small screen content padding
-                    "var list = document.querySelectorAll('" + elementsToHide + "');", // Find all elements in the list
-                    "for (var i = 0; i < list.length; i++) { var e = list[i]; e.style.display = 'none'; }", // Hide all found elements
-                    "if (document.getElementById('PageLoadingText').innerHTML.indexOf('Touch to start') > -1) { AndroidClickStart(); }" // Start playing the video on small screens
+                    "var checkVideoExists = setInterval(function() {", // Have to wait for the video to load
+                    "if (document.getElementsByClassName('videoSrc').length) {",
+                    "clearInterval(checkVideoExists);",
+                    "$J('[class^=broadcast_embeddable_detail_chat_ctn]').hide();", // Hide chat
+                    "$J('[class^=broadcast_embeddable_video_placeholder]').css('height', '100vh');", // Full video height
+                    "$J('[class^=broadcast_embeddable_video_placeholder]').css('padding-right', '0');", // Remove video padding
+                    "var elementList = document.querySelectorAll('" + elementsToHide + "');", // Find all elements in the list
+                    "for (var i = 0; i < elementList.length; i++) { var e = elementList[i]; e.style.display = 'none'; }", // Hide elements
+                    "var checkFullscreenExists = setInterval(function() { if ($J('.BroadcastFullscreenToggle').is(':visible')) { $J('.BroadcastFullscreenToggle').hide(); }}, 200);", // Hide fullscreen button when it becomes visible
+                    "}}, 100);",
+                    "var checkProfileExists = setInterval(function() { if ($J('[class^=broadcastprofile_ProfileCtn]').length) { clearInterval(checkProfileExists); $J('[class^=broadcastprofile_ProfileCtn]').hide(); }}, 100);",
+                    "var checkInfoExists = setInterval(function() { if ($J('[class^=broadcastplayer_GameInfoCtn]').length) { clearInterval(checkInfoExists); $J('[class^=broadcastplayer_GameInfoCtn]').hide(); }}, 100);",
+                    "var checkEventsExist = setInterval(function() { if ($J('[class^=broadcastplayer_RelatedEvents]').length) { clearInterval(checkEventsExist); $J('[class^=broadcastplayer_RelatedEvents]').hide(); }}, 100);",
+                    "setTimeout(() => { clearInterval(checkVideoExists); clearInterval(checkProfileExists); clearInterval(checkInfoExists); clearInterval(checkEventsExist); }, 10000);", // Clear all intervals after a while
                 };
-                await Browser.InvokeScriptAsync("eval", new[] { string.Join(" ", lines) });
+                await Browser.InvokeScriptAsync("eval", new string[] { string.Join(" ", lines) });
             }
             catch
             {
@@ -157,16 +179,7 @@ namespace Ed.Steamflix.Universal
         /// <param name="e"></param>
         private async void AppBarBrowserButton_Tapped(object sender, RoutedEventArgs e)
         {
-            // Pause playback
-            try
-            {
-                await Browser.InvokeScriptAsync("eval", new[] { "document.getElementsByClassName('play_button')[0].click();" });
-            }
-            catch
-            {
-                // Ignore script exceptions
-            }
-
+            // Can't pause playback because pause button is not visible
             // Launch browser
             await Launcher.LaunchUriAsync(Browser.Source);
         }
