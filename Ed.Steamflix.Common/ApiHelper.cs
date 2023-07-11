@@ -18,7 +18,7 @@ namespace Ed.Steamflix.Common
         /// From http://stackoverflow.com/questions/3319479/git-can-i-commit-a-file-and-ignore-the-content-changes
         /// 
         /// </remarks>
-        private static readonly string _steamApiKey = "TEMP";
+        private static readonly string _steamApiKey = "8FAC8288FB26E59C1468DAD0DFED2683";
 
         /// <summary>
         /// The Steam API key to be used with all API requests.

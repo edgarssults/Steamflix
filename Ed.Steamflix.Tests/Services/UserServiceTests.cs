@@ -30,29 +30,6 @@ namespace Ed.Steamflix.Tests.Services
 
         [Fact]
         [Trait("Category", "Integration")]
-        public void GetFriendList_Success()
-        {
-            var service = new UserService(_apiRepository, _communityRepository);
-            var model = service.GetFriendList(_steamId).Result;
-
-            Assert.NotEqual(default, model);
-            Assert.True(model.Friends.Count > 0, "Expected at least one friend.");
-        }
-
-        [Fact]
-        public void GetFriendList_Mock_Success()
-        {
-            var service = new UserService(_testApiRepository, _testCommunityRepository);
-            var model = service.GetFriendList(_steamId).Result;
-
-            Assert.NotEqual(default, model);
-            Assert.True(model.Friends.Count > 0, "Expected at least one friend.");
-            Assert.Equal(34, model.Friends.Count);
-            Assert.Equal("76561197961947067", model.Friends[0].SteamId);
-        }
-
-        [Fact]
-        [Trait("Category", "Integration")]
         public void GetPlayerSummaries_Success()
         {
             var service = new UserService(_apiRepository, _communityRepository);

@@ -34,30 +34,6 @@ namespace Ed.Steamflix.Common.Services
         }
 
         /// <summary>
-        /// Retrieves the list of friends for a user.
-        /// </summary>
-        /// <param name="steamId">User's Steam ID.</param>
-        /// <returns>List of friends.</returns>
-        public async Task<FriendsList> GetFriendList(string steamId)
-        {
-            if (string.IsNullOrEmpty(steamId))
-            {
-                throw new ArgumentNullException(nameof(steamId));
-            }
-
-            var response = await _apiRepository.ApiCall(
-                _servicename,
-                "GetFriendList",
-                "v0001",
-                $"steamid={steamId}&relationship=friend"
-            ).ConfigureAwait(false);
-
-            var model = JsonConvert.DeserializeObject<GetFriendListResponse>(response);
-
-            return model.FriendsList;
-        }
-
-        /// <summary>
         /// Retrieves a list of player summaries for the specified users.
         /// </summary>
         /// <param name="steamIds">
