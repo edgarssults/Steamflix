@@ -13,6 +13,7 @@ namespace Ed.Steamflix.Common.Services
     /// </summary>
     public class GameService
     {
+        // TODO: Fix regex for https://store.steampowered.com/charts/mostplayed
         private readonly Regex _statsRegex = new Regex(@"<tr[^>]*class=""player_count_row"".*?<a[^>]*class=""gameLink""[^>]*href=""[^""]*app/(?<AppId>[^""/]*)[^>]*>(?<Name>[^<]*)</a>.*?</tr>", RegexOptions.Singleline);
         private readonly string _serviceName = "IPlayerService";
 

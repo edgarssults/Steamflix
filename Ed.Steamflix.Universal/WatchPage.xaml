@@ -13,6 +13,7 @@
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
 
+        <!-- TODO: Current version of broadcast page doesn't work, update to WebView2? -->
         <WebView Grid.Row="0" x:Name="Browser" />
 
         <CommandBar x:Name="WatchCommandBar" Grid.Row="1">
